@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#faf7f2" id="theme-color-meta">
+<title>Korean for Beginners</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #faf7f2;
+  --surface: #fff;
+  --surface2: #f0ebe3;
+  --border: #e0d8cc;
+  --text: #2d2418;
+  --dim: #8c7e6a;
+  --blue: #4a90d9;
+  --green: #3a9d5c;
+  --red: #d94452;
+  --orange: #e08a3c;
+  --yellow: #c9a227;
+  --cyan: #2d9ea8;
+  --magenta: #9b6ab0;
+  --pink: #d4739d;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-md: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+[data-theme="dark"] {
+  --bg: #1a1a2e;
+  --surface: #16213e;
+  --surface2: #1a2745;
+  --border: #2a3a5e;
+  --text: #e0d8cc;
+  --dim: #99aabb;
+  --blue: #60a5fa;
+  --green: #4ade80;
+  --red: #f87171;
+  --orange: #fb923c;
+  --yellow: #facc15;
+  --cyan: #22d3ee;
+  --magenta: #c084fc;
+  --pink: #f472b6;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.2);
+  --shadow-md: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+button, .option-btn, .rating button, .menu button, .btn { user-select: none; }
+.btn:focus-visible, .option-btn:focus-visible, .rating button:focus-visible, .menu button:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+
+body {
+  font-family: 'Inter', 'Noto Sans KR', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.5;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  transition: background-color 0.3s, color 0.3s;
+  overscroll-behavior: none;
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.95em;
+  margin-bottom: 15px;
+}
+
+/* Menu */
+.menu { display: flex; flex-direction: column; gap: 8px; margin: 15px 0; }
+.menu button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.15s;
+  text-align: left;
+  box-shadow: var(--shadow-sm);
+  animation: menuSlideIn 0.3s ease-out both;
+}
+.menu button:nth-child(1) { animation-delay: 0s; }
+.menu button:nth-child(2) { animation-delay: 0.03s; }
+.menu button:nth-child(3) { animation-delay: 0.04s; }
+.menu button:nth-child(4) { animation-delay: 0.06s; }
+.menu button:nth-child(5) { animation-delay: 0.09s; }
+.menu button:nth-child(6) { animation-delay: 0.12s; }
+.menu button:nth-child(7) { animation-delay: 0.15s; }
+.menu button:hover { background: var(--surface2); border-color: var(--blue); box-shadow: var(--shadow-md); }
+.menu button:active { transform: scale(0.97); opacity: 0.8; }
+.menu .num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: var(--surface2);
+  color: var(--blue);
+  font-weight: bold;
+  font-size: 0.85em;
+  flex-shrink: 0;
+}
+
+.stats-bar {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.85em;
+  margin: 6px 0;
+}
+.stats-bar span { color: var(--text); font-weight: bold; }
+
+/* Card */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 30px;
+  margin: 15px 0;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.card-korean {
+  font-size: 2.2em;
+  font-weight: bold;
+  color: var(--text);
+  margin-bottom: 8px;
+  font-family: 'Noto Sans KR', sans-serif;
+  overflow-wrap: break-word;
+}
+
+.card-english {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.card-prompt {
+  color: var(--dim);
+  margin: 15px 0 20px;
+  font-size: 0.95em;
+}
+
+/* TTS button */
+.tts-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--surface2);
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: all 0.15s;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+.tts-btn:hover { background: var(--blue); color: #fff; border-color: var(--blue); }
+.tts-btn:active { transform: scale(0.92); }
+
+/* Answer area */
+.answer-input {
+  width: 100%;
+  padding: 14px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.answer-input:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(74,144,217,0.15); }
+.answer-input::placeholder { color: var(--dim); }
+.show-answer-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--dim);
+  font-size: 0.95em;
+  cursor: pointer;
+}
+.show-answer-btn:hover { background: var(--surface); border-color: var(--blue); color: var(--text); }
+.show-answer-btn:active { transform: scale(0.97); opacity: 0.8; }
+
+/* Reveal */
+.reveal {
+  background: var(--surface);
+  border: 1px solid var(--blue);
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin: 15px 0;
+  box-shadow: var(--shadow-md);
+}
+
+.reveal-answer {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.reveal-notes {
+  color: var(--dim);
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.example {
+  margin: 12px 0;
+  padding-left: 12px;
+  border-left: 3px solid var(--yellow);
+}
+
+.example-kr {
+  color: var(--text);
+  font-size: 1em;
+  font-weight: 500;
+  overflow-wrap: break-word;
+}
+
+.example-en {
+  color: var(--dim);
+  font-size: 0.9em;
+  margin-top: 2px;
+}
+
+/* Result */
+.result-correct { border-color: var(--green); }
+.result-correct .reveal-answer::before { content: 'Correct! '; color: var(--green); }
+.result-incorrect { border-color: var(--red); }
+.result-incorrect .reveal-answer::before { content: 'Incorrect — '; color: var(--red); }
+
+/* Rating buttons */
+.rating {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.rating button {
+  flex: 1;
+  min-width: 70px;
+  min-height: 44px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-size: 0.95em;
+}
+
+.rating button:hover { transform: translateY(-1px); box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+.rating button:active { transform: scale(0.97); }
+button:disabled, input:disabled { opacity: 0.5; cursor: not-allowed; }
+mark { background: rgba(96,165,250,0.2); color: inherit; padding: 0 2px; border-radius: 3px; }
+.skip-rating { text-align: center; margin-top: 10px; }
+.skip-rating button { color: var(--dim); border: 1px solid var(--border); background: var(--surface); padding: 8px 24px; border-radius: 8px; cursor: pointer; font-size: 0.9em; }
+
+.rating .btn-again { border-color: var(--red); }
+.rating .btn-again:hover { background: rgba(217,68,82,0.1); }
+.rating .btn-again .label { color: var(--red); font-weight: bold; }
+
+.rating .btn-hard { border-color: var(--orange); }
+.rating .btn-hard:hover { background: rgba(224,138,60,0.1); }
+.rating .btn-hard .label { color: var(--orange); font-weight: bold; }
+
+.rating .btn-good { border-color: var(--green); }
+.rating .btn-good:hover { background: rgba(58,157,92,0.1); }
+.rating .btn-good .label { color: var(--green); font-weight: bold; }
+
+.rating .btn-easy { border-color: var(--cyan); }
+.rating .btn-easy:hover { background: rgba(45,158,168,0.1); }
+.rating .btn-easy .label { color: var(--cyan); font-weight: bold; }
+
+.rating .desc { color: var(--dim); font-size: 0.75em; }
+.rating .interval { color: var(--dim); font-size: 0.85em; margin-bottom: 2px; }
+
+/* Progress bar */
+.progress-bar {
+  height: 4px;
+  background: var(--surface2);
+  border-radius: 2px;
+  margin: 15px 0;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--blue), var(--cyan));
+  border-radius: 2px;
+  transition: width 0.3s ease-out;
+  box-shadow: 0 0 8px rgba(74,144,217,0.3);
+}
+
+/* Option grid */
+.option-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.option-btn {
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 1.05em;
+  transition: all 0.15s;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.option-btn:hover { background: var(--surface2); border-color: var(--blue); box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+.option-btn:active { transform: scale(0.97); }
+.option-btn.correct { border-color: var(--green); background: rgba(58,157,92,0.1); color: var(--green); font-weight: bold; }
+.option-btn.correct::before { content: '\2713 '; }
+.option-btn.wrong { border-color: var(--red); background: rgba(217,68,82,0.08); color: var(--red); }
+.option-btn.wrong::before { content: '\2717 '; }
+
+/* Cloze */
+.cloze-sentence {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 25px;
+  margin: 15px 0;
+  line-height: 1.8;
+  font-size: 1.15em;
+  color: var(--text);
+  text-align: center;
+  overflow-wrap: break-word;
+}
+.cloze-blank {
+  display: inline-block;
+  min-width: 80px;
+  border-bottom: 2px solid var(--cyan);
+  color: var(--cyan);
+  font-weight: bold;
+  text-align: center;
+  padding: 0 8px;
+}
+
+/* Grammar drill */
+.fill-prompt {
+  color: var(--cyan);
+  font-weight: bold;
+  margin: 15px 0 8px;
+}
+
+.fill-sentence {
+  color: var(--text);
+  margin-bottom: 12px;
+  font-size: 1.1em;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 25px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.fill-sentence .blank {
+  display: inline-block;
+  min-width: 80px;
+  border-bottom: 2px solid var(--cyan);
+  color: var(--cyan);
+  font-weight: bold;
+  text-align: center;
+  padding: 0 8px;
+}
+
+/* Summary */
+.summary {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  margin: 20px 0;
+  box-shadow: var(--shadow-md);
+}
+.summary h2 { margin-bottom: 15px; color: var(--blue); }
+
+.summary-stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+
+.summary-stat { text-align: center; }
+.summary-stat .value { font-size: 1.8em; font-weight: bold; }
+.summary-stat .label { color: var(--dim); font-size: 0.85em; }
+.comment { color: var(--dim); font-style: italic; margin-top: 10px; }
+
+/* Progress table */
+.progress-table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+.progress-table th, .progress-table td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--border); }
+.progress-table th { color: var(--cyan); font-size: 0.85em; text-transform: uppercase; }
+
+/* Buttons */
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.15s;
+}
+.btn:hover { background: var(--surface2); border-color: var(--blue); }
+.btn:active { transform: scale(0.96); opacity: 0.85; }
+.btn-primary { background: linear-gradient(135deg, var(--blue), #818cf8); border-color: var(--blue); color: #fff; font-weight: bold; }
+.btn-primary:hover { background: linear-gradient(135deg, #5a9ee0, #a5b4fc); }
+.btn:active, .btn-primary:active { transform: scale(0.97); }
+
+.back-btn {
+  background: none;
+  border: none;
+  color: var(--dim);
+  cursor: pointer;
+  font-size: 0.9em;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+}
+.back-btn:hover { color: var(--text); }
+.back-btn:active { opacity: 0.5; }
+
+.counter {
+  color: var(--dim);
+  font-size: 0.85em;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.your-guess {
+  color: var(--dim);
+  font-size: 0.95em;
+  margin: 10px 0;
+  padding: 10px 14px;
+  background: var(--surface2);
+  border-radius: 8px;
+}
+.your-guess span { color: var(--text); font-weight: bold; }
+
+.hidden { display: none; }
+
+.shortcuts {
+  color: var(--dim);
+  font-size: 0.8em;
+  text-align: center;
+  margin: 5px 0;
+}
+
+/* Timer */
+.timer-bar {
+  height: 4px;
+  background: var(--surface2);
+  border-radius: 2px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+.timer-fill { height: 100%; border-radius: 2px; transition: width 0.1s linear; }
+.timer-label { text-align: right; font-size: 0.8em; color: var(--dim); margin-bottom: 4px; }
+
+/* Timed toggle */
+.timed-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 8px 0;
+  font-size: 0.85em;
+  color: var(--dim);
+  cursor: pointer;
+}
+.timed-toggle .switch {
+  width: 36px; height: 20px; background: var(--surface2);
+  border-radius: 10px; position: relative; transition: background 0.2s;
+}
+.timed-toggle .switch::after {
+  content: ''; position: absolute; width: 16px; height: 16px;
+  background: var(--dim); border-radius: 50%; top: 2px; left: 2px; transition: all 0.2s;
+}
+.timed-toggle.active .switch { background: var(--blue); }
+.timed-toggle.active .switch::after { left: 18px; background: #fff; }
+
+/* Direction toggle */
+.direction-toggle { display: flex; justify-content: center; margin: 8px 0; gap: 0; }
+.direction-toggle button { padding: 6px 14px; border: 1px solid var(--border); background: var(--surface); color: var(--dim); cursor: pointer; font-size: 0.85em; transition: all 0.15s; }
+.direction-toggle button:first-child { border-radius: 8px 0 0 8px; }
+.direction-toggle button:last-child { border-radius: 0 8px 8px 0; }
+.direction-toggle button:not(:first-child) { border-left: none; }
+.direction-toggle button.active { background: var(--blue); color: #fff; border-color: var(--blue); }
+
+/* Settings row */
+.settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+.settings-row:last-child { border-bottom: none; }
+.settings-label { color: var(--text); font-size: 0.95em; }
+.settings-desc { color: var(--dim); font-size: 0.8em; margin-top: 2px; }
+
+/* Sync */
+.sync-status { text-align: center; font-size: 0.8em; color: var(--dim); margin-bottom: 5px; }
+.sync-status.synced { color: var(--green); }
+.sync-status.syncing { color: var(--yellow); }
+.sync-status.offline { color: var(--dim); }
+
+.offline-banner {
+  background: rgba(224,138,60,0.12);
+  color: var(--orange);
+  text-align: center;
+  padding: 8px;
+  font-size: 0.85em;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: none;
+}
+.offline-banner.visible { display: block; }
+
+/* Listening drill */
+.listen-prompt {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 30px;
+  margin: 15px 0;
+  text-align: center;
+}
+.listen-big-btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid var(--blue);
+  background: var(--surface2);
+  cursor: pointer;
+  font-size: 2em;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+}
+.listen-big-btn:hover { background: var(--blue); color: #fff; }
+.listen-hint { color: var(--dim); font-size: 0.9em; margin-top: 12px; }
+
+/* Category badges */
+.cat-badge {
+  display: inline-block;
+  background: var(--surface2);
+  color: var(--dim);
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-size: 0.82em;
+  margin-bottom: 8px;
+}
+
+/* Category progress in select screen */
+.cat-progress-wrap {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+.cat-progress-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+.cat-progress-bar {
+  flex: 1;
+  height: 4px;
+  background: var(--surface2);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.cat-progress-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.3s;
+}
+.cat-progress-label {
+  color: var(--dim);
+  font-size: 0.7em;
+  white-space: nowrap;
+}
+
+/* Streak */
+.streak-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(224,138,60,0.12);
+  color: var(--orange);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.85em;
+  font-weight: bold;
+  cursor: pointer;
+}
+.cal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 100; display: flex; align-items: center; justify-content: center; }
+.cal-box { background: var(--surface); border-radius: 16px; padding: 20px; max-width: 340px; width: 90%; box-shadow: var(--shadow-md); }
+.cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; text-align: center; }
+.cal-header { font-size: 0.7em; color: var(--dim); font-weight: 600; padding: 4px 0; }
+.cal-day { width: 100%; aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 8px; font-size: 0.8em; color: var(--dim); position: relative; }
+.cal-day.studied { color: var(--text); }
+.cal-day.studied::after { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--green); position: absolute; bottom: 2px; }
+.cal-day.today { outline: 2px solid var(--blue); border-radius: 8px; }
+
+/* Animations */
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes correctPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(58,157,92,0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(58,157,92,0); }
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(3px); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes menuSlideIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.loading-spinner {
+  width: 32px; height: 32px;
+  border: 3px solid var(--border);
+  border-top-color: var(--blue);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 40px auto;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.progress-fill[style*="width:100%"] { animation: progressGlow 1.5s ease-in-out infinite; }
+@keyframes progressGlow {
+  0%, 100% { box-shadow: 0 0 4px var(--green); }
+  50% { box-shadow: 0 0 12px var(--green); }
+}
+
+.card, .reveal, .listen-prompt, .cloze-sentence, .fill-sentence {
+  animation: slideIn 0.3s ease-out;
+}
+.result-correct { animation: correctPulse 0.6s ease-out; }
+.result-incorrect { animation: shake 0.4s ease-out; }
+.summary, .menu { animation: fadeIn 0.25s ease-out; }
+
+@media (max-width: 600px) {
+  .container { padding: 12px; }
+  .card-korean { font-size: 1.7em; }
+  .card-english { font-size: 1.3em; }
+  .rating button { min-width: 60px; padding: 10px 4px; }
+  h1 { font-size: 1.5em; }
+  .summary-stats { gap: 15px; }
+  .option-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 380px) {
+  .option-grid { grid-template-columns: 1fr; }
+  .rating { flex-wrap: wrap; }
+  .cloze-blank, .fill-sentence .blank { min-width: 50px; }
+}
+
+/* Error correction */
+.error-sentence {
+  background: var(--surface);
+  border: 1px solid var(--red);
+  border-radius: 12px;
+  padding: 25px;
+  margin: 15px 0;
+}
+.error-sentence .korean {
+  font-size: 1.3em;
+  color: var(--text);
+  overflow-wrap: break-word;
+  line-height: 1.5;
+}
+.error-type-badge {
+  display: inline-block;
+  background: rgba(217,68,82,0.1);
+  color: var(--red);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  margin-bottom: 12px;
+}
+.correction-reveal {
+  background: var(--surface);
+  border: 1px solid var(--green);
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin: 10px 0;
+}
+.correction-reveal .correct {
+  font-size: 1.15em;
+  color: var(--green);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.correction-reveal .explanation {
+  color: var(--dim);
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+/* Reading comprehension */
+.reading-passage {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 25px;
+  margin: 15px 0;
+  line-height: 1.9;
+  font-size: 1.05em;
+  color: var(--text);
+  overflow-wrap: break-word;
+}
+.question-block { margin: 20px 0; }
+.question-text {
+  color: var(--cyan);
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+/* Dialogue drill */
+.dialogue-context {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin: 10px 0;
+  color: var(--dim);
+  font-size: 0.9em;
+  font-style: italic;
+}
+.dialogue-area {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.chat-bubble {
+  max-width: 80%;
+  padding: 12px 16px;
+  border-radius: 16px;
+  font-size: 1.05em;
+  line-height: 1.5;
+  position: relative;
+  overflow-wrap: break-word;
+}
+.chat-bubble .speaker-label {
+  font-size: 0.75em;
+  color: var(--dim);
+  margin-bottom: 4px;
+}
+.chat-bubble-left {
+  align-self: flex-start;
+  background: var(--surface2);
+  color: var(--text);
+  border-bottom-left-radius: 4px;
+}
+.chat-bubble-right {
+  align-self: flex-end;
+  background: var(--blue);
+  color: #fff;
+  border-bottom-right-radius: 4px;
+}
+.chat-bubble-blank {
+  align-self: flex-end;
+  background: var(--surface);
+  border: 2px dashed var(--blue);
+  color: var(--dim);
+  border-bottom-right-radius: 4px;
+  padding: 12px 16px;
+  max-width: 80%;
+  text-align: center;
+}
+.chat-bubble-correct {
+  align-self: flex-end;
+  background: var(--green);
+  color: #fff;
+  border-bottom-right-radius: 4px;
+}
+.dialogue-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin: 15px 0;
+}
+@media (max-width: 360px) {
+  .card { padding: 20px; }
+  .cloze-sentence { padding: 16px; }
+  .error-sentence { padding: 16px; }
+  .reading-passage { padding: 16px; }
+  .chat-bubble { padding: 10px 12px; }
+}
+@media (max-height: 500px) {
+  .menu button { padding: 10px 14px; }
+  .menu { gap: 4px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+</style>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+</head>
+<body>
+
+<div class="container" id="app">
+  <!-- Populated by JS -->
+</div>
+
+<script src="../korean-core.js"></script>
+<script>
+// ===== IMPORTS FROM SHARED LIBRARY =====
+const { AGAIN, HARD, GOOD, EASY, shuffle, escHtml, safeSave, normalizeKorean,
+  highlightWord, validateVocab, speak, ttsBtn, startTimer, clearTimer, timerHtml,
+  getNextInterval, formatInterval, ratingButtonsHtml, getStreak, showStreakCalendar,
+  setKeyHandler, buildPool, prioritizeCards, DrillEngine, drillHeader,
+  setupOptionHandlers, setupNextButton, setupTextInput, SRSEngine,
+  createFirebaseSync, initTTS } = KoreanCore;
+
+// ===== FIREBASE CONFIG =====
+const FIREBASE_CONFIG = {
+  apiKey: "AIzaSyBR1IVxvrL-g9VXiZdtfiNUGDIlDDhAI9k",
+  authDomain: "korean-coach.firebaseapp.com",
+  projectId: "korean-coach",
+  storageBucket: "korean-coach.firebasestorage.app",
+  messagingSenderId: "301323193532",
+  appId: "1:301323193532:web:358c303f635334ed9454b9"
+};
+
+const firebaseSync = createFirebaseSync({
+  collectionName: 'beginner_users',
+  srsStorageKey: 'beginner_korean_srs',
+  uidStorageKey: 'beginner_korean_uid',
+  firebaseConfig: FIREBASE_CONFIG
+});
+
+// ===== APP STATE =====
+const app = document.getElementById('app');
+const srs = new SRSEngine('beginner_korean_srs', firebaseSync.debouncedSync);
+let vocabData = {}, grammarData = {}, errorDrills = [], readingDrills = [], dialogueDrills = [];
+let timedMode = localStorage.getItem('beginner_korean_timed') === 'true';
+let drillDirection = localStorage.getItem('beginner_korean_direction') || 'both';
+let autoTts = localStorage.getItem('beginner_korean_autotts') === 'true';
+let darkMode = localStorage.getItem('beginner_korean_dark') === 'true';
+
+if (darkMode) { document.documentElement.setAttribute('data-theme', 'dark'); document.getElementById('theme-color-meta').content = '#1a1a2e'; }
+
+// ===== SESSION & TIMER CONSTANTS =====
+const SESSION = { vocab: 12, grammar: 12, mc: 12, listening: 10, mixed: 15, cloze: 12, error: 10, reading: 8, dialogue: 8 };
+const TIMER = { vocab: 15, grammar: 20, mc: 12, listening: 15, cloze: 12, error: 25, reading: 30 };
+
+// ===== APP SETTINGS =====
+function toggleTimedMode() {
+  timedMode = !timedMode;
+  safeSave('beginner_korean_timed', timedMode);
+  showMenu();
+}
+
+function setDirection(dir) {
+  drillDirection = dir;
+  safeSave('beginner_korean_direction', dir);
+  showMenu();
+}
+
+function toggleAutoTts() {
+  autoTts = !autoTts;
+  safeSave('beginner_korean_autotts', autoTts);
+  showMenu();
+}
+
+function getShowKorean(entry) {
+  if (drillDirection === 'kor') return true;
+  if (drillDirection === 'eng') return false;
+  return Math.random() < 0.5;
+}
+
+function countTotal() {
+  let v = 0, g = 0;
+  for (const entries of Object.values(vocabData)) v += entries.length;
+  for (const entries of Object.values(grammarData)) g += entries.length;
+  return {vocab: v, grammar: g, total: v + g, cats: Object.keys(vocabData).length + Object.keys(grammarData).length};
+}
+
+// ===== MAIN MENU =====
+function showMenu() {
+  window.scrollTo(0, 0);
+  clearTimer();
+  const stats = srs.getStats();
+  const totals = countTotal();
+  const streak = getStreak();
+  const reviewedPct = totals.total > 0 ? Math.round(stats.total / totals.total * 100) : 0;
+
+  const streakHtml = streak > 0
+    ? `<div style="text-align:center;margin:8px 0"><span class="streak-badge" onclick="showStreakCalendar()">\u{1F525} ${streak} day${streak > 1 ? 's' : ''} streak</span></div>`
+    : `<div style="text-align:center;margin:8px 0"><span class="streak-badge" onclick="showStreakCalendar()" style="opacity:0.6">\u{1F4C5} Study calendar</span></div>`;
+
+  const statsHtml = `
+    <div class="stats-bar">
+      <span>${totals.vocab.toLocaleString()}</span> vocab &nbsp;|&nbsp;
+      <span>${totals.grammar}</span> grammar &nbsp;|&nbsp;
+      <span>${totals.cats}</span> categories
+    </div>
+    ${stats.total > 0 ? `<div class="stats-bar">
+      Reviewed: <span>${stats.total}/${totals.total}</span> (${reviewedPct}%) &nbsp;|&nbsp;
+      Due: <span>${stats.due}</span> &nbsp;|&nbsp;
+      Accuracy: <span>${Math.round(stats.accuracy * 100)}%</span>
+    </div>` : ''}`;
+
+  const syncHtml = firebaseSync.syncEnabled ? '<div id="sync-status" class="sync-status synced">Synced</div>'
+    : FIREBASE_CONFIG.apiKey ? '<div id="sync-status" class="sync-status offline">Connecting...</div>'
+    : '';
+
+  app.innerHTML = `
+    <h1>한국어 첫걸음</h1>
+    <p class="subtitle">Korean for Beginners</p>
+    <div id="offline-banner" class="offline-banner${isOffline ? ' visible' : ''}">${isOffline ? 'Offline — using cached data' : ''}</div>
+    ${syncHtml}
+    ${streakHtml}
+    ${statsHtml}
+    <div class="menu">
+      <button onclick="showCategorySelect('vocab')"><span class="num">1</span> \u{1F4D6} Vocabulary Drill</button>
+      <button onclick="startMultipleChoice()"><span class="num">2</span> \u{2753} Multiple Choice Quiz</button>
+      <button onclick="showCategorySelect('grammar')"><span class="num">3</span> \u{270F}\u{FE0F} Grammar Practice</button>
+      <button onclick="startListeningDrill()"><span class="num">4</span> \u{1F3A7} Listening Drill</button>
+      <button onclick="startMixedReview()"><span class="num">5</span> \u{1F500} Mixed Review (weakest first)</button>
+      <button onclick="startClozeDrill()"><span class="num">6</span> \u{1F9E9} Cloze Drill (fill the gap)</button>
+      <button onclick="startErrorCorrection()"><span class="num">7</span> \u{1F6A8} Error Correction</button>
+      <button onclick="startReadingComprehension()"><span class="num">8</span> \u{1F4DA} Reading Comprehension</button>
+      <button onclick="startDialogueDrill()"><span class="num">9</span> \u{1F4AC} Dialogue Practice</button>
+      <button onclick="showProgress()"><span class="num">0</span> \u{1F4CA} View Progress</button>
+    </div>
+    <div class="timed-toggle${timedMode ? ' active' : ''}" onclick="toggleTimedMode()">
+      <div class="switch"></div> Timed Mode ${timedMode ? 'ON' : 'OFF'}
+    </div>
+    <div class="direction-toggle">
+      <button class="${drillDirection === 'kor' ? 'active' : ''}" onclick="setDirection('kor')">\ud55c\u2192\uc601</button>
+      <button class="${drillDirection === 'eng' ? 'active' : ''}" onclick="setDirection('eng')">\uc601\u2192\ud55c</button>
+      <button class="${drillDirection === 'both' ? 'active' : ''}" onclick="setDirection('both')">Both</button>
+    </div>
+    <div class="timed-toggle${autoTts ? ' active' : ''}" onclick="toggleAutoTts()">
+      <div class="switch"></div> \uD83D\uDD0A Auto-play ${autoTts ? 'ON' : 'OFF'}
+    </div>
+    <div style="text-align:center;margin-top:8px">
+      <button class="back-btn" onclick="toggleDarkMode()" style="margin:0">${darkMode ? 'Light Mode' : 'Dark Mode'}</button>
+    </div>
+    <div class="shortcuts">Keyboard: 1-9, 0 to select &nbsp;|&nbsp; T for timer</div>`;
+
+  setKeyHandler(e => {
+    if (e.key === '1') showCategorySelect('vocab');
+    else if (e.key === '2') startMultipleChoice();
+    else if (e.key === '3') showCategorySelect('grammar');
+    else if (e.key === '4') startListeningDrill();
+    else if (e.key === '5') startMixedReview();
+    else if (e.key === '6') startClozeDrill();
+    else if (e.key === '7') startErrorCorrection();
+    else if (e.key === '8') startReadingComprehension();
+    else if (e.key === '9') startDialogueDrill();
+    else if (e.key === '0') showProgress();
+    else if (e.key === 't') toggleTimedMode();
+  });
+}
+
+function toggleDarkMode() {
+  darkMode = !darkMode;
+  safeSave('beginner_korean_dark', darkMode);
+  document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : '');
+  document.getElementById('theme-color-meta').content = darkMode ? '#1a1a2e' : '#faf7f2';
+  showMenu();
+}
+
+// ===== CATEGORY SELECT =====
+function getCatProgress(type, cat, entries) {
+  const ids = entries.map((_, i) => `${type}:${cat}:${i}`);
+  const reviewed = ids.filter(id => srs.cards[id]).length;
+  const total = entries.length;
+  const pct = total > 0 ? Math.round(reviewed / total * 100) : 0;
+  const color = pct === 0 ? 'var(--dim)' : pct < 30 ? 'var(--red)' : pct < 70 ? 'var(--orange)' : pct < 100 ? 'var(--blue)' : 'var(--green)';
+  return {reviewed, total, pct, color};
+}
+
+function showCategorySelect(type) {
+  const data = type === 'vocab' ? vocabData : grammarData;
+  const cats = Object.keys(data);
+  const title = type === 'vocab' ? 'Vocabulary Drill' : 'Grammar Practice';
+
+  // Overall progress for "All Categories"
+  let allReviewed = 0, allTotal = 0;
+  for (const c of cats) { const p = getCatProgress(type, c, data[c]); allReviewed += p.reviewed; allTotal += p.total; }
+  const allPct = allTotal > 0 ? Math.round(allReviewed / allTotal * 100) : 0;
+  const allColor = allPct === 0 ? 'var(--dim)' : allPct < 30 ? 'var(--red)' : allPct < 70 ? 'var(--orange)' : allPct < 100 ? 'var(--blue)' : 'var(--green)';
+
+  app.innerHTML = `
+    <button class="back-btn" onclick="showMenu()">&#8592; Back</button>
+    <h2 style="margin-bottom:15px">${title}</h2>
+    <div class="menu">
+      <button onclick="startDrill('${type}', null)"><span class="num">0</span>
+        <div class="cat-progress-wrap">All Categories
+          <div class="cat-progress-row">
+            <div class="cat-progress-bar"><div class="cat-progress-fill" style="width:${allPct}%;background:${allColor}"></div></div>
+            <span class="cat-progress-label">${allReviewed}/${allTotal}</span>
+          </div>
+        </div>
+      </button>
+      ${cats.map((c, i) => {
+        const p = getCatProgress(type, c, data[c]);
+        return `<button onclick="startDrill('${type}', '${escHtml(c)}')"><span class="num">${i+1}</span>
+          <div class="cat-progress-wrap">${escHtml(c)}
+            <div class="cat-progress-row">
+              <div class="cat-progress-bar"><div class="cat-progress-fill" style="width:${p.pct}%;background:${p.color}"></div></div>
+              <span class="cat-progress-label">${p.reviewed}/${p.total}</span>
+            </div>
+          </div>
+        </button>`;
+      }).join('')}
+    </div>`;
+  setKeyHandler(e => {
+    if (e.key === 'Escape') { e.preventDefault(); showMenu(); }
+    else if (e.key === '0') { e.preventDefault(); startDrill(type, null); }
+    else {
+      const num = parseInt(e.key);
+      if (num >= 1 && num <= cats.length) { e.preventDefault(); startDrill(type, cats[num - 1]); }
+    }
+  });
+}
+
+// ===== VOCAB FLASHCARD DRILL =====
+function startDrill(type, category) {
+  const pool = buildPool(type, category);
+  const session = prioritizeCards(pool, type === 'grammar' ? SESSION.grammar : SESSION.vocab);
+  if (session.length === 0) { showMenu(); return; }
+  if (type === 'grammar') { runGrammarSession(session); return; }
+  runVocabSession(session);
+}
+
+function runVocabSession(cards) {
+  DrillEngine({
+    session: cards,
+    renderCard(item, prog, onReveal) {
+      const {cat, entry} = item;
+      const showKorean = getShowKorean(entry);
+      const prompt = showKorean
+        ? `<div class="card"><div class="card-korean">${escHtml(entry.korean)} ${ttsBtn(entry.korean)}</div></div><div class="card-prompt">What does this mean?</div>`
+        : `<div class="card"><div class="card-english">${escHtml(entry.english).replace(/\n/g,'<br>')}</div></div><div class="card-prompt">What is this in Korean?</div>`;
+      const answer = showKorean ? entry.english : entry.korean;
+      app.innerHTML = `${drillHeader(cat, prog)}
+        ${timerHtml(TIMER.vocab)}
+        ${prompt}
+        <input class="answer-input" autocomplete="off" placeholder="Your answer (Enter to reveal)" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus>
+        <button class="show-answer-btn" id="show-answer">Show Answer</button>`;
+      if (showKorean && autoTts) setTimeout(() => speak(entry.korean), 300);
+      setupTextInput(guess => onReveal({guess, answer, showKorean}), TIMER.vocab);
+    },
+    renderReveal(item, result, prog) {
+      const {id, cat, entry} = item;
+      const isKoreanAnswer = (result.answer === entry.korean);
+      const promptWord = isKoreanAnswer ? entry.english : entry.korean;
+      let extra = '';
+      if (entry.notes) extra += `<div class="reveal-notes">${escHtml(entry.notes)}</div>`;
+      if (entry.example) extra += `<div class="example"><div class="example-kr">${highlightWord(entry.example, entry.korean)} ${ttsBtn(entry.example)}</div>
+        ${entry.example_en ? `<div class="example-en">${highlightWord(entry.example_en, entry.english)}</div>` : ''}</div>`;
+      const guessHtml = result.guess ? `<div class="your-guess">Your answer: <span>${escHtml(result.guess)}</span></div>` : '';
+      app.innerHTML = `${drillHeader(cat, prog)}
+        <div class="card" style="margin-bottom:8px"><div class="${isKoreanAnswer ? 'card-english' : 'card-korean'}">${escHtml(promptWord)} ${!isKoreanAnswer ? ttsBtn(promptWord) : ''}</div></div>
+        ${guessHtml}
+        <div class="reveal"><div class="reveal-answer">${escHtml(result.answer)} ${isKoreanAnswer ? ttsBtn(entry.korean) : ''}</div>${extra}</div>
+        ${ratingButtonsHtml(id)}`;
+    }
+  });
+}
+
+// ===== GRAMMAR DRILL =====
+function runGrammarSession(cards) {
+  const engine = DrillEngine({
+    session: cards,
+    renderCard(item, prog, onReveal) {
+      const {cat, entry} = item;
+      app.innerHTML = `${drillHeader(cat, prog)}
+        ${timerHtml(TIMER.grammar)}
+        <div class="card"><div class="card-korean">${escHtml(entry.pattern)}</div></div>
+        <div class="card-prompt">What does this pattern mean?</div>
+        <input class="answer-input" autocomplete="off" placeholder="Your answer (Enter to reveal)" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus>
+        <button class="show-answer-btn" id="show-answer">Show Answer</button>`;
+      setupTextInput(guess => onReveal({guess}), TIMER.grammar);
+    },
+    renderReveal(item, result, prog) {
+      const {id, cat, entry} = item;
+      let examplesHtml = '';
+      for (const ex of (entry.examples || [])) {
+        examplesHtml += `<div class="example"><div class="example-kr">${escHtml(ex.korean)} ${ttsBtn(ex.korean)}</div>
+          ${ex.english ? `<div class="example-en">${escHtml(ex.english)}</div>` : ''}</div>`;
+      }
+      let drillHtml = '';
+      if (entry.drill && entry.drill.options) {
+        const sentenceHtml = escHtml(entry.drill.prompt).replace('_____', '<span class="blank">?</span>');
+        drillHtml = `<div class="fill-prompt">Fill in the blank:</div>
+          <div class="fill-sentence">${sentenceHtml}</div>
+          <div class="option-grid" id="grammar-options">
+            ${entry.drill.options.map((opt, i) => `<button class="option-btn" data-idx="${i}">${escHtml(opt)}</button>`).join('')}
+          </div>
+          <div id="drill-result" class="hidden"></div>`;
+      } else if (entry.drill) {
+        drillHtml = `<div class="fill-prompt">Fill in the blank:</div>
+          <div class="fill-sentence">${escHtml(entry.drill.prompt)}</div>
+          <input class="answer-input" id="drill-input" autocomplete="off" placeholder="Your answer" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus>
+          <div id="drill-result" class="hidden"></div>`;
+      }
+      const guessHtml = result.guess ? `<div class="your-guess">Your answer: <span>${escHtml(result.guess)}</span></div>` : '';
+      app.innerHTML = `${drillHeader(cat, prog)}
+        ${guessHtml}
+        <div class="reveal">
+          <div class="reveal-answer">${escHtml(entry.meaning)}</div>
+          <div class="reveal-notes">${escHtml(entry.explanation)}</div>
+        </div>
+        ${examplesHtml}
+        ${drillHtml}
+        ${entry.drill ? '' : ratingButtonsHtml(id)}`;
+      if (entry.drill && entry.drill.options) {
+        document.querySelectorAll('#grammar-options .option-btn').forEach(btn => {
+          btn.onclick = () => {
+            const chosen = parseInt(btn.dataset.idx);
+            const isCorrect = entry.drill.options[chosen] === entry.drill.answer;
+            document.querySelectorAll('#grammar-options .option-btn').forEach((b, i) => {
+              b.disabled = true;
+              if (entry.drill.options[i] === entry.drill.answer) b.classList.add('correct');
+              else if (i === chosen && !isCorrect) b.classList.add('wrong');
+            });
+            const fullSentence = entry.drill.full_sentence || '';
+            document.getElementById('drill-result').innerHTML = `
+              <div class="reveal ${isCorrect ? 'result-correct' : 'result-incorrect'}" style="margin-top:12px">
+                <div class="reveal-answer">${escHtml(entry.drill.answer)}</div>
+              </div>
+              ${fullSentence ? `<div class="example"><div class="example-kr">${escHtml(fullSentence)} ${ttsBtn(fullSentence)}</div>
+                ${entry.drill.full_sentence_en ? `<div class="example-en">${escHtml(entry.drill.full_sentence_en)}</div>` : ''}</div>` : ''}
+              ${ratingButtonsHtml(id)}`;
+            document.getElementById('drill-result').classList.remove('hidden');
+            engine.setupRating(id);
+          };
+        });
+        return false; // Don't setup rating yet — wait for drill
+      } else if (entry.drill) {
+        const di = document.getElementById('drill-input');
+        if (di) {
+          di.focus();
+          di.onkeydown = e => {
+            if (e.key === 'Enter') {
+              const isCorrect = di.value.trim() === entry.drill.answer;
+              document.getElementById('drill-result').innerHTML = `
+                <div class="reveal ${isCorrect ? 'result-correct' : 'result-incorrect'}" style="margin-top:12px">
+                  <div class="reveal-answer">${escHtml(entry.drill.answer)}</div>
+                </div>
+                ${entry.drill.full_sentence ? `<div class="example"><div class="example-kr">${escHtml(entry.drill.full_sentence)} ${ttsBtn(entry.drill.full_sentence)}</div></div>` : ''}
+                ${ratingButtonsHtml(id)}`;
+              document.getElementById('drill-result').classList.remove('hidden');
+              di.disabled = true;
+              engine.setupRating(id);
+            }
+            if (e.key === 'Escape') showMenu();
+          };
+        }
+        return false; // Don't setup rating yet — wait for drill input
+      }
+    }
+  });
+}
+
+// ===== MULTIPLE CHOICE QUIZ =====
+function startMultipleChoice() {
+  const pool = buildPool('vocab', null);
+  const session = prioritizeCards(pool, SESSION.mc);
+  if (session.length === 0) { showMenu(); return; }
+
+  const engine = DrillEngine({
+    session,
+    renderCard(item, prog, onReveal) {
+      const {id, cat, entry} = item;
+      const distractors = getDistractors(entry, cat, 'english');
+      const options = shuffle([entry.english, ...distractors]);
+      app.innerHTML = `${drillHeader('Multiple Choice', prog)}
+        ${timerHtml(TIMER.mc)}
+        <div class="card"><div class="card-korean">${escHtml(entry.korean)} ${ttsBtn(entry.korean)}</div></div>
+        <div class="card-prompt">Choose the correct meaning:</div>
+        <div class="option-grid">
+          ${options.map((opt, i) => `<button class="option-btn" data-idx="${i}" data-val="${escHtml(opt)}">${escHtml(opt)}</button>`).join('')}
+        </div>`;
+      const reveal = (chosenIdx) => {
+        const chosen = chosenIdx >= 0 ? options[chosenIdx] : '';
+        const isCorrect = chosen === entry.english;
+        const optionsHtml = options.map((opt, i) => {
+          let cls = opt === entry.english ? 'correct' : (i === chosenIdx && !isCorrect ? 'wrong' : '');
+          return `<button class="option-btn ${cls}" disabled>${escHtml(opt)}</button>`;
+        }).join('');
+        let extra = '';
+        if (entry.notes) extra += `<div class="reveal-notes">${escHtml(entry.notes)}</div>`;
+        if (entry.example) extra += `<div class="example"><div class="example-kr">${escHtml(entry.example)} ${ttsBtn(entry.example)}</div>
+          ${entry.example_en ? `<div class="example-en">${escHtml(entry.example_en)}</div>` : ''}</div>`;
+        engine.autoGrade(id, isCorrect);
+        app.innerHTML = `${drillHeader('Multiple Choice', prog)}
+          <div class="card"><div class="card-korean">${escHtml(entry.korean)} ${ttsBtn(entry.korean)}</div></div>
+          <div class="option-grid">${optionsHtml}</div>
+          <div class="reveal ${isCorrect ? 'result-correct' : 'result-incorrect'}">
+            <div class="reveal-answer">${escHtml(entry.english)}</div>
+            ${extra}
+          </div>
+          <button class="btn btn-primary" id="next-btn" style="width:100%;margin-top:15px">Next &#8594;</button>`;
+        setupNextButton(engine);
+      };
+      const fire = setupOptionHandlers(reveal);
+      if (timedMode) startTimer(TIMER.mc, () => fire(-1));
+    },
+    renderReveal() {} // handled inline
+  });
+}
+
+// ===== LISTENING DRILL =====
+function startListeningDrill() {
+  const pool = buildPool('vocab', null);
+  const session = prioritizeCards(pool, SESSION.listening);
+  if (session.length === 0) { showMenu(); return; }
+
+  const engine = DrillEngine({
+    session,
+    renderCard(item, prog, onReveal) {
+      const {id, cat, entry} = item;
+      const distractors = getDistractors(entry, cat, 'english');
+      const options = shuffle([entry.english, ...distractors]);
+      app.innerHTML = `${drillHeader('Listening Drill', prog)}
+        ${timerHtml(TIMER.listening)}
+        <div class="listen-prompt">
+          <button class="listen-big-btn" data-tts="${escHtml(entry.korean)}" onclick="speak(this.dataset.tts)">&#128264;</button>
+          <div class="listen-hint">Tap to listen again</div>
+        </div>
+        <div class="card-prompt">What did you hear?</div>
+        <div class="option-grid">
+          ${options.map((opt, i) => `<button class="option-btn" data-idx="${i}" data-val="${escHtml(opt)}">${escHtml(opt)}</button>`).join('')}
+        </div>`;
+      setTimeout(() => speak(entry.korean), 300);
+      const reveal = (chosenIdx) => {
+        const chosen = chosenIdx >= 0 ? options[chosenIdx] : '';
+        const isCorrect = chosen === entry.english;
+        const optionsHtml = options.map((opt, i) => {
+          let cls = opt === entry.english ? 'correct' : (i === chosenIdx && !isCorrect ? 'wrong' : '');
+          return `<button class="option-btn ${cls}" disabled>${escHtml(opt)}</button>`;
+        }).join('');
+        engine.autoGrade(id, isCorrect);
+        app.innerHTML = `${drillHeader('Listening Drill', prog)}
+          <div class="card"><div class="card-korean">${escHtml(entry.korean)} ${ttsBtn(entry.korean)}</div></div>
+          <div class="option-grid">${optionsHtml}</div>
+          <div class="reveal ${isCorrect ? 'result-correct' : 'result-incorrect'}">
+            <div class="reveal-answer">${escHtml(entry.english)}</div>
+            ${entry.notes ? `<div class="reveal-notes">${escHtml(entry.notes)}</div>` : ''}
+          </div>
+          <button class="btn btn-primary" id="next-btn" style="width:100%;margin-top:15px">Next &#8594;</button>`;
+        setupNextButton(engine);
+      };
+      const fire = setupOptionHandlers(reveal, e => { if (e.key === 'r') speak(entry.korean); });
+      if (timedMode) startTimer(TIMER.listening, () => fire(-1));
+    },
+    renderReveal() {} // handled inline
+  });
+}
+
+// ===== MIXED REVIEW =====
+function startMixedReview() {
+  const vPool = buildPool('vocab', null);
+  const gPool = buildPool('grammar', null);
+  const pool = [...vPool, ...gPool];
+  const session = prioritizeCards(pool, SESSION.mixed);
+  if (session.length === 0) { showMenu(); return; }
+  runMixedSession(session);
+}
+
+function runMixedSession(cards) {
+  DrillEngine({
+    session: cards,
+    renderCard(item, prog, onReveal) {
+      const {type, cat, entry} = item;
+      if (type === 'grammar') {
+        app.innerHTML = `${drillHeader('Mixed Review', prog)}
+          ${timerHtml(TIMER.grammar)}
+          <div class="card"><div class="card-korean">${escHtml(entry.pattern)}</div></div>
+          <div class="card-prompt">What does this pattern mean?</div>
+          <input class="answer-input" autocomplete="off" placeholder="Your answer (Enter to reveal)" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus>
+          <button class="show-answer-btn" id="show-answer">Show Answer</button>`;
+        setupTextInput(guess => onReveal({guess, answer: entry.meaning}), TIMER.grammar);
+      } else {
+        const showKorean = getShowKorean(entry);
+        const prompt = showKorean
+          ? `<div class="card"><div class="card-korean">${escHtml(entry.korean)} ${ttsBtn(entry.korean)}</div></div><div class="card-prompt">What does this mean?</div>`
+          : `<div class="card"><div class="card-english">${escHtml(entry.english).replace(/\n/g,'<br>')}</div></div><div class="card-prompt">What is this in Korean?</div>`;
+        const answer = showKorean ? entry.english : entry.korean;
+        app.innerHTML = `${drillHeader('Mixed Review', prog)}
+          ${timerHtml(TIMER.vocab)}
+          ${prompt}
+          <input class="answer-input" autocomplete="off" placeholder="Your answer (Enter to reveal)" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus>
+          <button class="show-answer-btn" id="show-answer">Show Answer</button>`;
+        if (showKorean && autoTts) setTimeout(() => speak(entry.korean), 300);
+        setupTextInput(guess => onReveal({guess, answer}), TIMER.vocab);
+      }
+    },
+    renderReveal(item, result, prog) {
+      const {id, entry} = item;
+      const guessHtml = result.guess ? `<div class="your-guess">Your answer: <span>${escHtml(result.guess)}</span></div>` : '';
+      let extra = '';
+      if (entry.notes) extra += `<div class="reveal-notes">${escHtml(entry.notes)}</div>`;
+      if (entry.example) extra += `<div class="example"><div class="example-kr">${highlightWord(entry.example, entry.korean)} ${ttsBtn(entry.example)}</div>
+        ${entry.example_en ? `<div class="example-en">${highlightWord(entry.example_en, entry.english)}</div>` : ''}</div>`;
+      if (entry.examples) {
+        for (const ex of entry.examples) {
+          extra += `<div class="example"><div class="example-kr">${escHtml(ex.korean)} ${ttsBtn(ex.korean)}</div>
+            ${ex.english ? `<div class="example-en">${escHtml(ex.english)}</div>` : ''}</div>`;
+        }
+      }
+      app.innerHTML = `${drillHeader('Mixed Review', prog)}
+        ${guessHtml}
+        <div class="reveal"><div class="reveal-answer">${escHtml(result.answer)}</div>${extra}</div>
+        ${ratingButtonsHtml(id)}`;
+    }
+  });
+}
+
+// ===== CLOZE DRILL =====
+function startClozeDrill() {
+  const pool = [];
+  for (const [cat, entries] of Object.entries(vocabData)) {
+    for (let i = 0; i < entries.length; i++) {
+      const e = entries[i];
+      if (e.example && e.korean && e.example.includes(e.korean)) {
+        pool.push({id: `cloze:${cat}:${i}`, cat, entry: e});
+      }
+    }
+  }
+  if (pool.length === 0) { showMenu(); return; }
+  const session = prioritizeCards(pool, SESSION.cloze);
+  if (session.length === 0) { showMenu(); return; }
+
+  const engine = DrillEngine({
+    session,
+    renderCard(item, prog, onReveal) {
+      const {id, cat, entry} = item;
+      const sentenceHtml = escHtml(entry.example).split(escHtml(entry.korean)).join('<span class="cloze-blank">?</span>');
+      const distractors = getDistractors(entry, cat, 'korean');
+      const options = shuffle([entry.korean, ...distractors]);
+      app.innerHTML = `${drillHeader('Cloze Drill', prog)}
+        ${timerHtml(TIMER.cloze)}
+        <div class="cloze-sentence">${sentenceHtml}</div>
+        <div class="card-prompt">Fill in the blank:</div>
+        <div class="option-grid">
+          ${options.map((opt, i) => `<button class="option-btn" data-idx="${i}" data-val="${escHtml(opt)}">${escHtml(opt)}</button>`).join('')}
+        </div>
+        ${entry.example_en ? `<div style="color:var(--dim);font-size:0.85em;text-align:center;margin-top:8px">${escHtml(entry.example_en)}</div>` : ''}`;
+      const reveal = (chosenIdx) => {
+        const chosen = chosenIdx >= 0 ? options[chosenIdx] : '';
+        const isCorrect = chosen === entry.korean;
+        const revealSentence = escHtml(entry.example).split(escHtml(entry.korean)).join(
+          `<span class="cloze-blank" style="border-color:var(--green);color:var(--green)">${escHtml(entry.korean)}</span>`);
+        const optionsHtml = options.map((opt, i) => {
+          let cls = '';
+          if (opt === entry.korean) cls = 'correct';
+          else if (i === chosenIdx && !isCorrect) cls = 'wrong';
+          return `<button class="option-btn ${cls}" disabled>${escHtml(opt)}</button>`;
+        }).join('');
+        engine.autoGrade(id, isCorrect);
+        app.innerHTML = `${drillHeader('Cloze Drill', prog)}
+          <div class="cloze-sentence">${revealSentence}</div>
+          <div class="option-grid">${optionsHtml}</div>
+          <div class="reveal ${isCorrect ? 'result-correct' : 'result-incorrect'}">
+            <div class="reveal-answer">${escHtml(entry.korean)} — ${escHtml(entry.english)}</div>
+            ${entry.notes ? `<div class="reveal-notes">${escHtml(entry.notes)}</div>` : ''}
+          </div>
+          <button class="btn btn-primary" id="next-btn" style="width:100%;margin-top:15px">Next &#8594;</button>`;
+        setupNextButton(engine);
+      };
+      const fire = setupOptionHandlers(reveal);
+      if (timedMode) startTimer(TIMER.cloze, () => fire(-1));
+    },
+    renderReveal() {} // handled inline
+  });
+}
+
+// ===== DISTRACTOR HELPER =====
+function getDistractors(entry, cat, field) {
+  const candidates = [];
+  const sameCat = vocabData[cat] || [];
+  for (const e of sameCat) {
+    if (e[field] !== entry[field] && e[field] && e[field].length > 1) {
+      candidates.push(e[field]);
+    }
+  }
+  if (candidates.length < 3) {
+    for (const [c, entries] of Object.entries(vocabData)) {
+      if (c === cat) continue;
+      for (const e of entries) {
+        if (e[field] !== entry[field] && e[field] && e[field].length > 1) {
+          candidates.push(e[field]);
+        }
+      }
+      if (candidates.length >= 20) break;
+    }
+  }
+  // Deduplicate
+  const unique = [...new Set(candidates)];
+  return shuffle(unique).slice(0, 3);
+}
+
+// ===== ERROR CORRECTION DRILL =====
+function startErrorCorrection() {
+  if (errorDrills.length === 0) {
+    app.innerHTML = `<button class="back-btn" onclick="showMenu()">&#8592; Back</button>
+      <div class="card"><p>Error drill data not loaded. Make sure data/error_drills.json exists.</p></div>`;
+    setKeyHandler(e => { if (e.key === 'Escape') showMenu(); });
+    return;
+  }
+
+  const pool = errorDrills.map((d, i) => ({id: `err:${i}`, drill: d}));
+  const session = prioritizeCards(pool, SESSION.error);
+  if (session.length === 0) { showMenu(); return; }
+
+  const engine = DrillEngine({
+    session,
+    ratingDescs: {again: 'missed it', hard: 'partially right', good: 'found the error', easy: 'obvious fix'},
+    renderCard(item, prog, onReveal) {
+      const {drill} = item;
+      app.innerHTML = `${drillHeader('Error Correction', prog)}
+        ${timerHtml(TIMER.error)}
+        <div class="error-sentence">
+          <div class="error-type-badge">${escHtml(drill.error_type)}</div>
+          <div class="korean">${escHtml(drill.incorrect)}</div>
+        </div>
+        <div class="card-prompt">Find and fix the error:</div>
+        <input class="answer-input" autocomplete="off" placeholder="Type the corrected sentence (Enter to check)" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus>
+        <button class="show-answer-btn" id="show-answer">Show Answer</button>`;
+      setupTextInput(guess => onReveal({guess}), TIMER.error);
+    },
+    renderReveal(item, result, prog) {
+      const {id, drill} = item;
+      const guess = result.guess;
+      const isCorrect = normalizeKorean(guess) === normalizeKorean(drill.correct);
+      const guessHtml = guess ? `<div class="your-guess">Your correction: <span>${escHtml(guess)}</span></div>` : '';
+      app.innerHTML = `${drillHeader('Error Correction', prog)}
+        ${guessHtml}
+        <div class="correction-reveal">
+          <div class="correct">${isCorrect ? '\u2713 ' : ''}${escHtml(drill.correct)}</div>
+          <div class="explanation">${escHtml(drill.explanation)}</div>
+        </div>
+        <div class="reveal" style="border-color:var(--dim)">
+          <div class="reveal-notes" style="color:var(--red)">Original (incorrect): ${escHtml(drill.incorrect)}</div>
+        </div>
+        ${ratingButtonsHtml(id, {again: 'missed it', hard: 'partially right', good: 'found the error', easy: 'obvious fix'})}`;
+    }
+  });
+}
+
+// ===== READING COMPREHENSION DRILL =====
+function startReadingComprehension() {
+  if (readingDrills.length === 0) {
+    app.innerHTML = `<button class="back-btn" onclick="showMenu()">&#8592; Back</button>
+      <div class="card"><p>Reading comprehension data not loaded.</p></div>`;
+    setKeyHandler(e => { if (e.key === 'Escape') showMenu(); });
+    return;
+  }
+
+  const pool = readingDrills.map((d, i) => ({id: `read:${i}`, drill: d}));
+  const session = prioritizeCards(pool, SESSION.reading);
+  if (session.length === 0) { showMenu(); return; }
+
+  const engine = DrillEngine({
+    session,
+    renderCard(item, prog, onReveal) {
+      const {id, drill} = item;
+      showPassage(engine, id, drill, 0, prog);
+    },
+    renderReveal() { return false; } // handled by showPassage internally
+  });
+
+  function showPassage(engine, id, drill, qIdx, prog) {
+    const q = drill.questions[qIdx];
+    app.innerHTML = `${drillHeader('Reading Comprehension', prog)}
+      <div class="counter" style="font-size:0.85em;margin-top:-8px;margin-bottom:8px">Q${qIdx + 1}/${drill.questions.length}</div>
+      ${timerHtml(TIMER.reading)}
+      <div class="reading-passage">${escHtml(drill.passage)}</div>
+      <div class="question-block">
+        <div class="question-text">${escHtml(q.question)}</div>
+        <div class="option-grid">
+          ${q.options.map((opt, i) => `<button class="option-btn" data-idx="${i}">${escHtml(opt)}</button>`).join('')}
+        </div>
+      </div>`;
+    const fire = setupOptionHandlers(idx => revealReading(engine, id, drill, qIdx, idx, prog));
+    if (timedMode) startTimer(TIMER.reading, () => fire(-1));
+  }
+
+  function revealReading(engine, id, drill, qIdx, chosen, prog) {
+    const q = drill.questions[qIdx];
+    const isCorrect = chosen === q.correct;
+    const isLastQ = qIdx >= drill.questions.length - 1;
+    const optionsHtml = q.options.map((opt, i) => {
+      let cls = i === q.correct ? 'correct' : (i === chosen && !isCorrect ? 'wrong' : '');
+      return `<button class="option-btn ${cls}" disabled>${escHtml(opt)}</button>`;
+    }).join('');
+    const nextBtnHtml = isLastQ
+      ? ratingButtonsHtml(id, {again: 'struggled', hard: 'some guessing', good: 'understood', easy: 'clear'})
+      : `<button class="btn btn-primary" id="next-q-btn" style="width:100%;margin-top:15px">Next Question &#8594;</button>`;
+    app.innerHTML = `${drillHeader('Reading Comprehension', prog)}
+      <div class="counter" style="font-size:0.85em;margin-top:-8px;margin-bottom:8px">Q${qIdx + 1}/${drill.questions.length}</div>
+      <div class="reading-passage">${escHtml(drill.passage)}</div>
+      <div class="question-block">
+        <div class="question-text">${escHtml(q.question)}</div>
+        <div class="option-grid">${optionsHtml}</div>
+        <div class="reveal ${isCorrect ? 'result-correct' : 'result-incorrect'}" style="margin-top:12px">
+          <div class="reveal-answer">${escHtml(q.options[q.correct])}</div>
+          <div class="reveal-notes">${escHtml(q.explanation)}</div>
+        </div>
+      </div>
+      ${nextBtnHtml}`;
+    if (isLastQ) {
+      engine.setupRating(id);
+    } else {
+      const nextBtn = document.getElementById('next-q-btn');
+      nextBtn.onclick = () => showPassage(engine, id, drill, qIdx + 1, prog);
+      setKeyHandler(e => {
+        if (e.key === 'Enter') showPassage(engine, id, drill, qIdx + 1, prog);
+        if (e.key === 'Escape') showMenu();
+      });
+    }
+  }
+}
+
+// ===== DIALOGUE DRILL =====
+function startDialogueDrill() {
+  if (dialogueDrills.length === 0) {
+    app.innerHTML = `<button class="back-btn" onclick="showMenu()">&#8592; Back</button>
+      <div class="card"><p>Dialogue drill data not loaded. Make sure data/dialogue_drills.json exists.</p></div>`;
+    setKeyHandler(e => { if (e.key === 'Escape') showMenu(); });
+    return;
+  }
+
+  const pool = dialogueDrills.map((d, i) => ({id: `dlg:${i}`, drill: d}));
+  const session = prioritizeCards(pool, SESSION.dialogue);
+  if (session.length === 0) { showMenu(); return; }
+
+  const engine = DrillEngine({
+    session,
+    renderCard(item, prog, onReveal) {
+      const {id, drill} = item;
+      runDialogue(engine, id, drill, 0, [], prog);
+    },
+    renderReveal() { return false; } // handled by runDialogue internally
+  });
+
+  function findNextBlank(turns, fromIdx) {
+    for (let i = fromIdx; i < turns.length; i++) {
+      if (turns[i].options) return i;
+    }
+    return -1;
+  }
+
+  function runDialogue(engine, id, drill, turnIdx, answered, prog) {
+    const blankIdx = findNextBlank(drill.turns, turnIdx);
+
+    let bubblesHtml = '';
+    for (let i = 0; i < drill.turns.length; i++) {
+      const t = drill.turns[i];
+      const isYou = t.speaker === 'You';
+      if (i < blankIdx || (blankIdx === -1)) {
+        if (isYou) {
+          const wasAnswered = answered.includes(i);
+          bubblesHtml += `<div class="chat-bubble ${wasAnswered ? 'chat-bubble-correct' : 'chat-bubble-right'}">
+            <div class="speaker-label">${escHtml(t.speaker)}</div>${escHtml(t.line)}</div>`;
+        } else {
+          bubblesHtml += `<div class="chat-bubble chat-bubble-left">
+            <div class="speaker-label">${escHtml(t.speaker)}</div>${escHtml(t.line)}</div>`;
+        }
+      } else if (i === blankIdx) {
+        bubblesHtml += `<div class="chat-bubble-blank">
+          <div class="speaker-label">You</div>???</div>`;
+        break;
+      } else {
+        break;
+      }
+    }
+
+    if (blankIdx === -1) {
+      // All blanks answered — show explanation and rating
+      app.innerHTML = `${drillHeader('Dialogue Practice', prog)}
+        <div class="dialogue-context">${escHtml(drill.title)} &#8212; ${escHtml(drill.context)}</div>
+        <div class="dialogue-area">${bubblesHtml}</div>
+        <div class="reveal"><div class="reveal-notes">${escHtml(drill.explanation)}</div></div>
+        ${ratingButtonsHtml(id, {again: 'struggled', hard: 'some guessing', good: 'understood', easy: 'natural'})}`;
+      engine.setupRating(id);
+      return;
+    }
+
+    const turn = drill.turns[blankIdx];
+    const shuffledOpts = shuffle(turn.options.map((o, i) => ({text: o, idx: i})));
+    const optionsHtml = shuffledOpts.map((o, i) =>
+      `<button class="option-btn" data-text="${escHtml(o.text)}">${escHtml(o.text)}</button>`
+    ).join('');
+
+    app.innerHTML = `${drillHeader('Dialogue Practice', prog)}
+      <div class="dialogue-context">${escHtml(drill.title)} &#8212; ${escHtml(drill.context)}</div>
+      <div class="dialogue-area">${bubblesHtml}</div>
+      <div class="dialogue-options">${optionsHtml}</div>`;
+
+    let dlgFired = false;
+    document.querySelectorAll('.option-btn').forEach(btn => {
+      btn.onclick = () => {
+        const chosen = btn.dataset.text;
+        if (chosen === turn.line) {
+          if (dlgFired) return;
+          dlgFired = true;
+          answered.push(blankIdx);
+          runDialogue(engine, id, drill, blankIdx + 1, answered, prog);
+        } else {
+          btn.classList.add('wrong');
+          btn.disabled = true;
+        }
+      };
+    });
+    setKeyHandler(e => {
+      const num = parseInt(e.key);
+      if (num >= 1 && num <= shuffledOpts.length) {
+        const btns = document.querySelectorAll('.option-btn');
+        if (btns[num - 1]) btns[num - 1].click();
+      }
+      if (e.key === 'Escape') showMenu();
+    });
+  }
+}
+
+// ===== PROGRESS VIEW =====
+function showProgress() {
+  const stats = srs.getStats();
+  const totals = countTotal();
+  const cards = Object.values(srs.cards);
+  const weak = [...cards].sort((a,b) => a.ease_factor - b.ease_factor).slice(0, 15);
+  const streak = getStreak();
+
+  let weakRows = '';
+  for (const c of weak) {
+    const parts = c.card_id.split(':');
+    let label = c.card_id;
+    try {
+      const type = parts[0];
+      if (type === 'err') {
+        const idx = parseInt(parts[1]);
+        if (errorDrills[idx]) label = errorDrills[idx].incorrect;
+      } else if (type === 'read') {
+        const idx = parseInt(parts[1]);
+        if (readingDrills[idx]) label = readingDrills[idx].passage.substring(0, 30) + '...';
+      } else if (type === 'dlg') {
+        const idx = parseInt(parts[1]);
+        if (dialogueDrills[idx]) label = dialogueDrills[idx].title;
+      } else {
+        const cat = parts[1], pidx = parseInt(parts[2]);
+        const data = type === 'vocab' || type === 'cloze' ? vocabData : grammarData;
+        if (data[cat] && data[cat][pidx]) {
+          label = type === 'vocab' || type === 'cloze' ? data[cat][pidx].korean : data[cat][pidx].pattern;
+        }
+      }
+    } catch(e) { console.error('Progress label lookup:', e); }
+    weakRows += `<tr><td>${escHtml(label)}</td><td>${Math.round(c.accuracy*100)}%</td><td>${c.total_reviews}</td><td>${c.ease_factor.toFixed(1)}</td></tr>`;
+  }
+
+  // Category breakdown
+  let catBreakdown = '';
+  for (const [cat, entries] of Object.entries(vocabData)) {
+    const catIds = entries.map((_, i) => `vocab:${cat}:${i}`);
+    const reviewed = catIds.filter(id => srs.cards[id]).length;
+    const pct = entries.length > 0 ? Math.round(reviewed / entries.length * 100) : 0;
+    catBreakdown += `<tr><td>${escHtml(cat)}</td><td>${reviewed}/${entries.length}</td><td>${pct}%</td></tr>`;
+  }
+  for (const [cat, entries] of Object.entries(grammarData)) {
+    const catIds = entries.map((_, i) => `grammar:${cat}:${i}`);
+    const reviewed = catIds.filter(id => srs.cards[id]).length;
+    const pct = entries.length > 0 ? Math.round(reviewed / entries.length * 100) : 0;
+    catBreakdown += `<tr><td>${escHtml(cat)} (grammar)</td><td>${reviewed}/${entries.length}</td><td>${pct}%</td></tr>`;
+  }
+
+  app.innerHTML = `
+    <button class="back-btn" onclick="showMenu()">&#8592; Back</button>
+    <h2 style="margin-bottom:20px">Progress</h2>
+    ${streak > 0 ? `<div style="text-align:center;margin-bottom:15px"><span class="streak-badge" onclick="showStreakCalendar()">\u{1F525} ${streak} day${streak > 1 ? 's' : ''} streak</span></div>` : ''}
+    <div class="summary-stats" style="margin-bottom:25px">
+      <div class="summary-stat"><div class="value" style="color:var(--cyan)">${stats.total}</div><div class="label">Cards Seen</div></div>
+      <div class="summary-stat"><div class="value" style="color:var(--orange)">${stats.due}</div><div class="label">Due Now</div></div>
+      <div class="summary-stat"><div class="value" style="color:var(--green)">${stats.mature}</div><div class="label">Mature</div></div>
+      <div class="summary-stat"><div class="value" style="color:var(--blue)">${Math.round(stats.accuracy*100)}%</div><div class="label">Accuracy</div></div>
+    </div>
+    ${weak.length > 0 ? `
+      <h3 style="margin-bottom:10px;color:var(--dim)">Weakest Cards</h3>
+      <div style="overflow-x:auto"><table class="progress-table">
+        <tr><th>Card</th><th>Acc</th><th>Reviews</th><th>Ease</th></tr>
+        ${weakRows}
+      </table></div>` : '<p style="color:var(--dim)">No cards reviewed yet. Start a drill!</p>'}
+    ${catBreakdown ? `
+      <h3 style="margin:20px 0 10px;color:var(--dim)">Categories</h3>
+      <div style="overflow-x:auto"><table class="progress-table">
+        <tr><th>Category</th><th>Reviewed</th><th>%</th></tr>
+        ${catBreakdown}
+      </table></div>` : ''}
+    <button class="btn" onclick="if(confirm('Reset all progress? This cannot be undone.')){localStorage.removeItem('beginner_korean_srs');localStorage.removeItem('beginner_korean_streak');location.reload()}" style="margin-top:20px;color:var(--red);border-color:var(--red)">Reset Progress</button>`;
+  setKeyHandler(e => { if (e.key === 'Escape') showMenu(); });
+}
+
+// ===== LOAD DATA =====
+async function init() {
+  app.innerHTML = '<h1>&#54620;&#44397;&#50612; &#52395;&#44152;&#51020;</h1><div class="loading-spinner"></div>';
+  try {
+    const [vResp, gResp, eResp, rdResp, dlResp] = await Promise.all([
+      fetch('data/vocab.json'),
+      fetch('data/grammar.json'),
+      fetch('data/error_drills.json').catch(() => null),
+      fetch('data/reading_drills.json').catch(() => null),
+      fetch('data/dialogue_drills.json').catch(() => null)
+    ]);
+    vocabData = await vResp.json();
+    grammarData = await gResp.json();
+    validateVocab(vocabData);
+    if (eResp && eResp.ok) errorDrills = await eResp.json();
+    if (rdResp && rdResp.ok) readingDrills = await rdResp.json();
+    if (dlResp && dlResp.ok) dialogueDrills = await dlResp.json();
+  } catch(e) {
+    try {
+      const [vResp, gResp, eResp, rdResp, dlResp] = await Promise.all([
+        fetch('../data/vocab.json'),
+        fetch('../data/grammar.json'),
+        fetch('../data/error_drills.json').catch(() => null),
+        fetch('../data/reading_drills.json').catch(() => null),
+        fetch('../data/dialogue_drills.json').catch(() => null)
+      ]);
+      vocabData = await vResp.json();
+      grammarData = await gResp.json();
+      validateVocab(vocabData);
+      if (eResp && eResp.ok) errorDrills = await eResp.json();
+      if (rdResp && rdResp.ok) readingDrills = await rdResp.json();
+      if (dlResp && dlResp.ok) dialogueDrills = await dlResp.json();
+    } catch(e2) {
+      app.innerHTML = '<h1>Error</h1><p>Could not load data files.</p><button class="btn" onclick="location.reload()" style="margin-top:20px">Retry</button>';
+      return;
+    }
+  }
+  initTTS();
+  KoreanCore.init({
+    app,
+    srs,
+    showMenu,
+    getTimedMode: () => timedMode,
+    streakKey: 'beginner_korean_streak',
+    vocabData: () => vocabData,
+    grammarData: () => grammarData,
+    toneConfig: {
+      comments: [
+        {min: 0.9, text: 'Amazing work!', ring: '#3a9d5c'},
+        {min: 0.7, text: 'Great job! Keep it up!', ring: '#4a90d9'},
+        {min: 0.5, text: 'Getting there! Practice makes perfect.', ring: '#e08a3c'},
+        {min: 0, text: "Don't worry, these will come back for more practice!", ring: '#d94452'}
+      ]
+    }
+  });
+  await firebaseSync.initFirebase(srs);
+  showMenu();
+}
+
+// ===== OFFLINE MODE =====
+let isOffline = !navigator.onLine;
+
+function updateOfflineBanner() {
+  const banner = document.getElementById('offline-banner');
+  if (banner) {
+    banner.classList.toggle('visible', isOffline);
+    banner.textContent = isOffline ? 'Offline — using cached data' : '';
+  }
+}
+
+window.addEventListener('online', () => { isOffline = false; updateOfflineBanner(); firebaseSync.updateSyncStatus('synced', 'Back online'); firebaseSync.pushToFirestore(); });
+window.addEventListener('offline', () => { isOffline = true; updateOfflineBanner(); firebaseSync.updateSyncStatus('offline', 'Offline'); });
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').catch(() => {});
+}
+
+init();
+</script>
+</body>
+</html>

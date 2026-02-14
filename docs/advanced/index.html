@@ -1,0 +1,1882 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0f1117">
+<title>한국어 코치 — Korean Coach</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0f1117;
+  --surface: #1a1d27;
+  --surface2: #232733;
+  --border: #2d3348;
+  --text: #e4e4e7;
+  --dim: #71717a;
+  --blue: #60a5fa;
+  --cyan: #22d3ee;
+  --green: #4ade80;
+  --red: #f87171;
+  --yellow: #facc15;
+  --magenta: #c084fc;
+  --orange: #fb923c;
+  --shadow-sm: 0 1px 4px rgba(0,0,0,0.2);
+  --shadow-md: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+button, .option-btn, .rating button, .menu button, .btn { user-select: none; }
+.btn:focus-visible, .option-btn:focus-visible, .rating button:focus-visible, .menu button:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+
+body {
+  font-family: 'Inter', 'Noto Sans KR', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  overscroll-behavior: none;
+}
+
+.container {
+  max-width: 680px;
+  width: 100%;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin: 30px 0 5px;
+  color: #fff;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--dim);
+  margin-bottom: 30px;
+  font-size: 0.95em;
+}
+
+.stats-bar {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 25px;
+  color: var(--dim);
+  font-size: 0.85em;
+}
+
+.stats-bar span { color: var(--cyan); }
+
+/* Menu */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.menu button {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 16px 20px;
+  border-radius: 10px;
+  font-size: 1.05em;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: var(--shadow-sm);
+  animation: menuSlideIn 0.3s ease-out both;
+}
+
+.menu button:nth-child(1) { animation-delay: 0s; }
+.menu button:nth-child(2) { animation-delay: 0.03s; }
+.menu button:nth-child(3) { animation-delay: 0.06s; }
+.menu button:nth-child(4) { animation-delay: 0.09s; }
+.menu button:nth-child(5) { animation-delay: 0.12s; }
+.menu button:nth-child(6) { animation-delay: 0.15s; }
+.menu button:nth-child(7) { animation-delay: 0.18s; }
+.menu button:nth-child(8) { animation-delay: 0.21s; }
+.menu button:nth-child(9) { animation-delay: 0.24s; }
+.menu button:nth-child(10) { animation-delay: 0.27s; }
+
+.menu button:hover {
+  background: var(--surface2);
+  border-color: var(--blue);
+  box-shadow: var(--shadow-md);
+}
+.menu button:active { transform: scale(0.97); opacity: 0.8; }
+
+.menu button .num {
+  color: var(--cyan);
+  font-weight: bold;
+  min-width: 24px;
+}
+
+/* Card */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 30px;
+  margin: 15px 0;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.card-korean {
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 8px;
+  font-family: 'Noto Sans KR', sans-serif;
+  overflow-wrap: break-word;
+}
+
+.card-hint {
+  color: var(--dim);
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.card-prompt {
+  color: var(--dim);
+  margin: 15px 0 20px;
+  font-size: 0.95em;
+}
+
+.card-english {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+/* Answer area */
+.answer-input {
+  width: 100%;
+  padding: 14px 18px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.answer-input:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(96,165,250,0.2);
+}
+
+.answer-input::placeholder {
+  color: var(--dim);
+}
+.show-answer-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--dim);
+  font-size: 0.95em;
+  cursor: pointer;
+}
+.show-answer-btn:hover { background: var(--surface); border-color: var(--blue); color: var(--text); }
+.show-answer-btn:active { transform: scale(0.97); opacity: 0.8; }
+
+/* Reveal */
+.reveal {
+  background: var(--surface);
+  border: 1px solid var(--blue);
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin: 15px 0;
+  box-shadow: var(--shadow-md);
+}
+
+.reveal-answer {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.reveal-notes {
+  color: var(--dim);
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.breakdown {
+  color: var(--magenta);
+  font-size: 0.95em;
+  margin: 10px 0;
+}
+
+.breakdown::before {
+  content: '한자 breakdown: ';
+  font-weight: bold;
+}
+
+.example {
+  margin: 12px 0;
+  padding-left: 12px;
+  border-left: 2px solid var(--yellow);
+}
+
+.example-kr {
+  color: var(--yellow);
+  font-style: italic;
+  font-size: 1em;
+}
+
+.example-en {
+  color: var(--dim);
+  font-size: 0.9em;
+  margin-top: 2px;
+}
+
+/* Result for fill-in drills */
+.result-correct {
+  border-color: var(--green);
+}
+.result-correct .reveal-answer::before {
+  content: '✓ Correct! ';
+  color: var(--green);
+}
+.result-incorrect {
+  border-color: var(--red);
+}
+.result-incorrect .reveal-answer::before {
+  content: '✗ Incorrect — ';
+  color: var(--red);
+}
+
+/* Rating buttons */
+.rating {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.rating button {
+  flex: 1;
+  min-width: 120px;
+  min-height: 44px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-size: 0.95em;
+}
+
+.rating button:hover { transform: translateY(-1px); box-shadow: 0 2px 6px rgba(0,0,0,0.25); }
+.rating button:active { transform: scale(0.97); }
+button:disabled, input:disabled { opacity: 0.5; cursor: not-allowed; }
+mark { background: rgba(96,165,250,0.2); color: inherit; padding: 0 2px; border-radius: 3px; }
+.skip-rating { text-align: center; margin-top: 10px; }
+.skip-rating button { color: var(--dim); border: 1px solid var(--border); background: var(--surface); padding: 8px 24px; border-radius: 8px; cursor: pointer; font-size: 0.9em; }
+
+.rating .btn-again { border-color: var(--red); }
+.rating .btn-again:hover { background: rgba(248,113,113,0.15); }
+.rating .btn-again .label { color: var(--red); font-weight: bold; }
+
+.rating .btn-hard { border-color: var(--orange); }
+.rating .btn-hard:hover { background: rgba(251,146,60,0.15); }
+.rating .btn-hard .label { color: var(--orange); font-weight: bold; }
+
+.rating .btn-good { border-color: var(--green); }
+.rating .btn-good:hover { background: rgba(74,222,128,0.15); }
+.rating .btn-good .label { color: var(--green); font-weight: bold; }
+
+.rating .btn-easy { border-color: var(--cyan); }
+.rating .btn-easy:hover { background: rgba(34,211,238,0.15); }
+.rating .btn-easy .label { color: var(--cyan); font-weight: bold; }
+
+.rating .desc { color: var(--dim); font-size: 0.8em; }
+.rating .interval { color: var(--dim); font-size: 0.85em; margin-bottom: 2px; }
+
+/* Streak badge */
+.streak-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(251,146,60,0.15);
+  color: var(--orange);
+  padding: 4px 14px;
+  border-radius: 12px;
+  font-size: 0.85em;
+  font-weight: bold;
+  cursor: pointer;
+}
+.cal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 100; display: flex; align-items: center; justify-content: center; }
+.cal-box { background: var(--surface); border-radius: 16px; padding: 20px; max-width: 340px; width: 90%; box-shadow: var(--shadow-md); }
+.cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; text-align: center; }
+.cal-header { font-size: 0.7em; color: var(--dim); font-weight: 600; padding: 4px 0; }
+.cal-day { width: 100%; aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 8px; font-size: 0.8em; color: var(--dim); position: relative; }
+.cal-day.studied { color: var(--text); }
+.cal-day.studied::after { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--green); position: absolute; bottom: 2px; }
+.cal-day.today { outline: 2px solid var(--blue); border-radius: 8px; }
+
+/* Progress bar */
+.progress-bar {
+  height: 4px;
+  background: var(--surface2);
+  border-radius: 2px;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--blue), var(--cyan));
+  border-radius: 2px;
+  transition: width 0.3s ease-out;
+  box-shadow: 0 0 8px rgba(96,165,250,0.4);
+}
+
+/* Category selector */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 15px 0;
+}
+
+.categories button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: all 0.15s;
+}
+
+.categories button:hover, .categories button.active {
+  background: var(--surface2);
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+/* Session summary */
+.summary {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  margin: 20px 0;
+  box-shadow: var(--shadow-md);
+}
+
+.summary h2 { margin-bottom: 15px; color: var(--blue); }
+
+.summary-stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 15px 0;
+}
+
+.summary-stat {
+  text-align: center;
+}
+
+.summary-stat .value {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.summary-stat .label {
+  color: var(--dim);
+  font-size: 0.85em;
+}
+
+.comment {
+  color: var(--dim);
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* Progress view */
+.progress-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+
+.progress-table th, .progress-table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.progress-table th {
+  color: var(--cyan);
+  font-size: 0.85em;
+  text-transform: uppercase;
+}
+
+.progress-table td {
+  font-size: 0.95em;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.15s;
+}
+
+.btn:hover {
+  background: var(--surface2);
+  border-color: var(--blue);
+}
+.btn:active { transform: scale(0.96); opacity: 0.85; }
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--blue), #818cf8);
+  border-color: var(--blue);
+  color: #000;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #93bbfd, #a5b4fc);
+}
+
+.btn:active, .btn-primary:active {
+  transform: scale(0.97);
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: var(--dim);
+  cursor: pointer;
+  font-size: 0.9em;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+}
+
+.back-btn:hover { color: var(--text); }
+.back-btn:active { opacity: 0.5; }
+
+.counter {
+  color: var(--dim);
+  font-size: 0.85em;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.fill-prompt {
+  color: var(--cyan);
+  font-weight: bold;
+  margin: 15px 0 8px;
+}
+
+.fill-sentence {
+  color: var(--text);
+  margin-bottom: 12px;
+  font-size: 1.05em;
+}
+
+.your-guess {
+  color: var(--dim);
+  font-size: 0.95em;
+  margin: 10px 0;
+  padding: 10px 14px;
+  background: var(--surface2);
+  border-radius: 8px;
+}
+
+.your-guess span {
+  color: var(--text);
+  font-weight: bold;
+}
+
+.hidden { display: none; }
+
+/* Sentence production */
+.production-prompt {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 25px;
+  margin: 15px 0;
+}
+
+.production-english {
+  font-size: 1.3em;
+  color: #fff;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.production-context {
+  color: var(--dim);
+  font-size: 0.9em;
+}
+
+.model-answer {
+  background: var(--surface);
+  border: 1px solid var(--green);
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin: 10px 0;
+}
+
+.model-answer .label {
+  color: var(--green);
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.model-answer .korean {
+  font-size: 1.2em;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Error correction */
+.error-sentence {
+  background: var(--surface);
+  border: 1px solid var(--red);
+  border-radius: 12px;
+  padding: 25px;
+  margin: 15px 0;
+}
+
+.error-sentence .korean {
+  font-size: 1.3em;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.error-type-badge {
+  display: inline-block;
+  background: rgba(248,113,113,0.15);
+  color: var(--red);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  margin-bottom: 12px;
+}
+
+.correction-reveal {
+  background: var(--surface);
+  border: 1px solid var(--green);
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin: 10px 0;
+}
+
+.correction-reveal .correct {
+  font-size: 1.15em;
+  color: var(--green);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.correction-reveal .explanation {
+  color: var(--dim);
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.diff-highlight {
+  background: rgba(74,222,128,0.15);
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* Grammar in Context */
+.context-passage {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 25px;
+  margin: 15px 0;
+  line-height: 1.8;
+  font-size: 1.1em;
+  color: var(--text);
+}
+
+.context-passage .blank {
+  display: inline-block;
+  min-width: 100px;
+  border-bottom: 2px solid var(--cyan);
+  color: var(--cyan);
+  font-weight: bold;
+  text-align: center;
+  padding: 0 8px;
+}
+
+.option-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.option-btn {
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 1.05em;
+  transition: all 0.15s;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.option-btn:hover { background: var(--surface2); border-color: var(--blue); box-shadow: 0 2px 6px rgba(0,0,0,0.25); }
+.option-btn:active { transform: scale(0.97); }
+.option-btn.selected { border-color: var(--blue); background: rgba(96,165,250,0.15); }
+.option-btn.correct { border-color: var(--green); background: rgba(74,222,128,0.15); color: var(--green); }
+.option-btn.correct::before { content: '\2713 '; }
+.option-btn.wrong { border-color: var(--red); background: rgba(248,113,113,0.1); color: var(--red); }
+.option-btn.wrong::before { content: '\2717 '; }
+
+/* Reading comprehension */
+.reading-passage {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 25px;
+  margin: 15px 0;
+  line-height: 1.9;
+  font-size: 1.05em;
+  color: var(--text);
+}
+
+.question-block {
+  margin: 20px 0;
+}
+
+.question-text {
+  color: var(--cyan);
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+/* Register switching */
+.register-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 25px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.register-badge {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.register-badge.banmal { background: rgba(251,146,60,0.15); color: var(--orange); }
+.register-badge.haeyo { background: rgba(96,165,250,0.15); color: var(--blue); }
+.register-badge.gyeoksik { background: rgba(192,132,252,0.15); color: var(--magenta); }
+
+.register-sentence {
+  font-size: 1.25em;
+  color: #fff;
+  line-height: 1.5;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.register-arrow {
+  color: var(--dim);
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+  .option-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 380px) {
+  .option-grid { grid-template-columns: 1fr; }
+  .rating { flex-wrap: wrap; }
+  .cloze-blank, .context-passage .blank { min-width: 50px; }
+}
+
+/* Animations */
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes correctPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(74,222,128,0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(74,222,128,0); }
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(3px); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes menuSlideIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.loading-spinner {
+  width: 32px; height: 32px;
+  border: 3px solid var(--border);
+  border-top-color: var(--blue);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 40px auto;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.progress-fill[style*="width:100%"] { animation: progressGlow 1.5s ease-in-out infinite; }
+@keyframes progressGlow {
+  0%, 100% { box-shadow: 0 0 4px var(--green); }
+  50% { box-shadow: 0 0 12px var(--green); }
+}
+
+.card, .reveal, .production-prompt, .error-sentence, .context-passage, .reading-passage, .register-card, .model-answer, .correction-reveal, .cloze-sentence {
+  animation: slideIn 0.3s ease-out;
+}
+.result-correct { animation: correctPulse 0.6s ease-out; }
+.result-incorrect { animation: shake 0.4s ease-out; }
+.summary, .menu { animation: fadeIn 0.25s ease-out; }
+
+/* Keyboard shortcuts hint */
+.shortcuts {
+  color: var(--dim);
+  font-size: 0.8em;
+  text-align: center;
+  margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+  .container { padding: 12px; }
+  .card-korean { font-size: 1.7em; }
+  .card-english { font-size: 1.3em; }
+  .rating { flex-direction: column; }
+  .rating button { min-width: unset; width: 100%; }
+  .summary-stats { gap: 15px; }
+  h1 { font-size: 1.5em; }
+}
+.sync-status {
+  text-align: center;
+  font-size: 0.8em;
+  color: var(--dim);
+  margin-bottom: 5px;
+}
+.sync-status.synced { color: var(--green); }
+.sync-status.syncing { color: var(--yellow); }
+.sync-status.offline { color: var(--dim); }
+
+.offline-banner {
+  background: rgba(251,146,60,0.15);
+  color: var(--orange);
+  text-align: center;
+  padding: 8px;
+  font-size: 0.85em;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: none;
+}
+.offline-banner.visible { display: block; }
+
+/* Timer */
+.timer-bar {
+  height: 4px;
+  background: var(--surface2);
+  border-radius: 2px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+.timer-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.1s linear;
+}
+.timer-label {
+  text-align: right;
+  font-size: 0.8em;
+  color: var(--dim);
+  margin-bottom: 4px;
+}
+.timed-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 8px 0;
+  font-size: 0.85em;
+  color: var(--dim);
+  cursor: pointer;
+}
+.timed-toggle .switch {
+  width: 36px;
+  height: 20px;
+  background: var(--surface2);
+  border-radius: 10px;
+  position: relative;
+  transition: background 0.2s;
+}
+.timed-toggle .switch::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: var(--dim);
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: all 0.2s;
+}
+.timed-toggle.active .switch {
+  background: var(--blue);
+}
+.timed-toggle.active .switch::after {
+  left: 18px;
+  background: #fff;
+}
+
+/* Direction toggle */
+.direction-toggle { display: flex; justify-content: center; margin: 8px 0; gap: 0; }
+.direction-toggle button { padding: 6px 14px; border: 1px solid var(--border); background: var(--surface); color: var(--dim); cursor: pointer; font-size: 0.85em; transition: all 0.15s; }
+.direction-toggle button:first-child { border-radius: 8px 0 0 8px; }
+.direction-toggle button:last-child { border-radius: 0 8px 8px 0; }
+.direction-toggle button:not(:first-child) { border-left: none; }
+.direction-toggle button.active { background: var(--blue); color: #fff; border-color: var(--blue); }
+
+/* Cloze */
+.cloze-sentence {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 25px;
+  margin: 15px 0;
+  line-height: 1.8;
+  font-size: 1.15em;
+  color: var(--text);
+  text-align: center;
+}
+.cloze-blank {
+  display: inline-block;
+  min-width: 80px;
+  border-bottom: 2px solid var(--cyan);
+  color: var(--cyan);
+  font-weight: bold;
+  text-align: center;
+  padding: 0 8px;
+}
+
+/* Dialogue drill */
+.dialogue-context {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin: 10px 0;
+  color: var(--dim);
+  font-size: 0.9em;
+  font-style: italic;
+}
+.dialogue-area {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.chat-bubble {
+  max-width: 80%;
+  padding: 12px 16px;
+  border-radius: 16px;
+  font-size: 1.05em;
+  line-height: 1.5;
+  position: relative;
+  overflow-wrap: break-word;
+}
+.chat-bubble .speaker-label {
+  font-size: 0.75em;
+  color: var(--dim);
+  margin-bottom: 4px;
+}
+.chat-bubble-left {
+  align-self: flex-start;
+  background: var(--surface2);
+  color: var(--text);
+  border-bottom-left-radius: 4px;
+}
+.chat-bubble-right {
+  align-self: flex-end;
+  background: var(--blue);
+  color: #fff;
+  border-bottom-right-radius: 4px;
+}
+.chat-bubble-blank {
+  align-self: flex-end;
+  background: var(--surface);
+  border: 2px dashed var(--blue);
+  color: var(--dim);
+  border-bottom-right-radius: 4px;
+  padding: 12px 16px;
+  max-width: 80%;
+  text-align: center;
+}
+.chat-bubble-correct {
+  align-self: flex-end;
+  background: var(--green);
+  color: #fff;
+  border-bottom-right-radius: 4px;
+}
+.dialogue-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin: 15px 0;
+}
+@media (max-width: 360px) {
+  .card { padding: 20px; }
+  .cloze-sentence { padding: 16px; }
+  .error-sentence { padding: 16px; }
+  .reading-passage { padding: 16px; }
+  .chat-bubble { padding: 10px 12px; }
+  .production-prompt, .register-card, .context-passage { padding: 16px; }
+}
+@media (max-height: 500px) {
+  .menu button { padding: 10px 14px; }
+  .menu { gap: 4px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+</style>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+</head>
+<body>
+
+<div class="container" id="app">
+  <!-- Populated by JS -->
+</div>
+
+<script src="../korean-core.js"></script>
+<script>
+// ===== IMPORTS FROM SHARED LIBRARY =====
+const { AGAIN, HARD, GOOD, EASY, shuffle, escHtml, safeSave, normalizeKorean,
+  highlightWord, validateVocab, speak, ttsBtn, startTimer, clearTimer, timerHtml,
+  getNextInterval, formatInterval, ratingButtonsHtml, getStreak, showStreakCalendar,
+  setKeyHandler, buildPool, prioritizeCards, DrillEngine, drillHeader,
+  setupOptionHandlers, setupNextButton, setupTextInput, SRSEngine,
+  createFirebaseSync, initTTS } = KoreanCore;
+
+// ===== FIREBASE CONFIG =====
+const FIREBASE_CONFIG = {
+  apiKey: "AIzaSyBR1IVxvrL-g9VXiZdtfiNUGDIlDDhAI9k",
+  authDomain: "korean-coach.firebaseapp.com",
+  projectId: "korean-coach",
+  storageBucket: "korean-coach.firebasestorage.app",
+  messagingSenderId: "301323193532",
+  appId: "1:301323193532:web:358c303f635334ed9454b9"
+};
+
+const firebaseSync = createFirebaseSync({
+  collectionName: 'users',
+  srsStorageKey: 'korean_coach_srs',
+  uidStorageKey: 'korean_coach_uid',
+  firebaseConfig: FIREBASE_CONFIG
+});
+
+// ===== APP =====
+const app = document.getElementById('app');
+const srs = new SRSEngine('korean_coach_srs', firebaseSync.debouncedSync);
+let vocabData = {}, grammarData = {}, errorDrills = [], grammarContext = [], readingDrills = [], registerDrills = [], dialogueDrills = [];
+let timedMode = localStorage.getItem('korean_coach_timed') === 'true';
+let drillDirection = localStorage.getItem('korean_coach_direction') || 'both';
+let autoTts = localStorage.getItem('korean_coach_autotts') === 'true';
+
+function toggleTimedMode() {
+  timedMode = !timedMode;
+  safeSave('korean_coach_timed', timedMode);
+  showMenu();
+}
+
+function setDirection(dir) {
+  drillDirection = dir;
+  safeSave('korean_coach_direction', dir);
+  showMenu();
+}
+
+function toggleAutoTts() {
+  autoTts = !autoTts;
+  safeSave('korean_coach_autotts', autoTts);
+  showMenu();
+}
+
+function getShowKorean(entry) {
+  if (drillDirection === 'kor') return true;
+  if (drillDirection === 'eng') return false;
+  return Math.random() < 0.5;
+}
+
+const SESSION = { vocab: 15, grammar: 15, mixed: 15, production: 12, error: 10, grammarCtx: 10, reading: 8, register: 10, cloze: 12, dialogue: 8 };
+const TIMER = { vocab: 15, grammar: 20, production: 30, error: 25, grammarCtx: 20, reading: 30, register: 25, cloze: 12 };
+
+// ===== SCREENS =====
+function countTotal() {
+  let v = 0, g = 0;
+  for (const entries of Object.values(vocabData)) v += entries.length;
+  for (const entries of Object.values(grammarData)) g += entries.length;
+  return {vocab: v, grammar: g, total: v + g, cats: Object.keys(vocabData).length + Object.keys(grammarData).length};
+}
+
+function showMenu() {
+  window.scrollTo(0, 0);
+  clearTimer();
+  const stats = srs.getStats();
+  const totals = countTotal();
+  const streak = getStreak();
+  const reviewedPct = totals.total > 0 ? Math.round(stats.total / totals.total * 100) : 0;
+
+  const streakHtml = streak > 0
+    ? `<div style="text-align:center;margin:8px 0"><span class="streak-badge" onclick="showStreakCalendar()">\u{1F525} ${streak} day${streak > 1 ? 's' : ''} streak</span></div>`
+    : `<div style="text-align:center;margin:8px 0"><span class="streak-badge" onclick="showStreakCalendar()" style="opacity:0.6">\u{1F4C5} Study calendar</span></div>`;
+
+  const statsHtml = `
+    <div class="stats-bar">
+      <span>${totals.vocab.toLocaleString()}</span> vocab &nbsp;|&nbsp;
+      <span>${totals.grammar}</span> grammar &nbsp;|&nbsp;
+      <span>${totals.cats}</span> categories
+    </div>
+    ${stats.total > 0 ? `<div class="stats-bar">
+      Reviewed: <span>${stats.total}/${totals.total}</span> (${reviewedPct}%) &nbsp;|&nbsp;
+      Due: <span>${stats.due}</span> &nbsp;|&nbsp;
+      Accuracy: <span>${Math.round(stats.accuracy * 100)}%</span>
+    </div>` : ''}`;
+
+  const syncHtml = firebaseSync.syncEnabled ? '<div id="sync-status" class="sync-status synced">Synced</div>'
+    : FIREBASE_CONFIG.apiKey ? '<div id="sync-status" class="sync-status offline">Connecting...</div>'
+    : '<div id="sync-status" class="sync-status offline">Local only</div>';
+
+  app.innerHTML = `
+    <h1>한국어 코치</h1>
+    <p class="subtitle">Korean Coach — Advanced Fluency Trainer</p>
+    <div id="offline-banner" class="offline-banner${isOffline ? ' visible' : ''}">${isOffline ? 'Offline — using cached data' : ''}</div>
+    ${syncHtml}
+    ${streakHtml}
+    ${statsHtml}
+    <div class="menu">
+      <button onclick="showCategorySelect('vocab')"><span class="num">1</span> \u{1F4D6} Vocabulary Drill</button>
+      <button onclick="showCategorySelect('grammar')"><span class="num">2</span> \u{270F}\u{FE0F} Grammar Practice</button>
+      <button onclick="startMixedReview()"><span class="num">3</span> \u{1F500} Mixed Review (weakest first)</button>
+      <button onclick="startSentenceProduction()"><span class="num">4</span> \u{1F4AC} Sentence Production</button>
+      <button onclick="startErrorCorrection()"><span class="num">5</span> \u{1F6A8} Error Correction</button>
+      <button onclick="startGrammarContext()"><span class="num">6</span> \u{1F4CB} Grammar in Context</button>
+      <button onclick="startReadingComprehension()"><span class="num">7</span> \u{1F4DA} Reading Comprehension</button>
+      <button onclick="startRegisterSwitching()"><span class="num">8</span> \u{1F504} Register Switching</button>
+      <button onclick="startClozeDrill()"><span class="num">9</span> \u{1F9E9} Cloze Drill (fill the gap)</button>
+      <button onclick="startDialogueDrill()"><span class="num">D</span> \u{1F4AC} Dialogue Practice</button>
+      <button onclick="showProgress()"><span class="num">0</span> \u{1F4CA} View Progress</button>
+    </div>
+    <div class="timed-toggle${timedMode ? ' active' : ''}" onclick="toggleTimedMode()">
+      <div class="switch"></div> Timed Mode ${timedMode ? 'ON' : 'OFF'}
+    </div>
+    <div class="direction-toggle">
+      <button class="${drillDirection === 'kor' ? 'active' : ''}" onclick="setDirection('kor')">\ud55c\u2192\uc601</button>
+      <button class="${drillDirection === 'eng' ? 'active' : ''}" onclick="setDirection('eng')">\uc601\u2192\ud55c</button>
+      <button class="${drillDirection === 'both' ? 'active' : ''}" onclick="setDirection('both')">Both</button>
+    </div>
+    <div class="timed-toggle${autoTts ? ' active' : ''}" onclick="toggleAutoTts()">
+      <div class="switch"></div> \uD83D\uDD0A Auto-play ${autoTts ? 'ON' : 'OFF'}
+    </div>
+    <div class="shortcuts">Keyboard: 1-9, D, 0 to select</div>`;
+
+  setKeyHandler(e => {
+    if (e.key === '1') showCategorySelect('vocab');
+    else if (e.key === '2') showCategorySelect('grammar');
+    else if (e.key === '3') startMixedReview();
+    else if (e.key === '4') startSentenceProduction();
+    else if (e.key === '5') startErrorCorrection();
+    else if (e.key === '6') startGrammarContext();
+    else if (e.key === '7') startReadingComprehension();
+    else if (e.key === '8') startRegisterSwitching();
+    else if (e.key === '9') startClozeDrill();
+    else if (e.key === 'd') startDialogueDrill();
+    else if (e.key === '0') showProgress();
+    else if (e.key === 't') toggleTimedMode();
+  });
+}
+
+function showCategorySelect(type) {
+  const data = type === 'vocab' ? vocabData : grammarData;
+  const cats = Object.keys(data);
+  const title = type === 'vocab' ? 'Vocabulary Drill' : 'Grammar Practice';
+
+  app.innerHTML = `
+    <button class="back-btn" onclick="showMenu()">← Back</button>
+    <h2 style="margin-bottom:15px">${title}</h2>
+    <input id="cat-search" type="text" placeholder="Search categories..." style="width:100%;padding:10px 14px;margin-bottom:12px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text);font-size:16px;outline:none;">
+    <div class="menu">
+      <button data-cat="" onclick="startDrill('${type}', null)"><span class="num">0</span> All Categories</button>
+      ${cats.map((c, i) => `<button data-cat="${escHtml(c)}" onclick="startDrill('${type}', '${escHtml(c)}')"><span class="num">${i+1}</span> ${escHtml(c)}</button>`).join('')}
+    </div>`;
+  const searchInput = document.getElementById('cat-search');
+  searchInput.addEventListener('input', () => {
+    const q = searchInput.value.toLowerCase();
+    document.querySelectorAll('.menu button[data-cat]').forEach(btn => {
+      const cat = btn.getAttribute('data-cat');
+      btn.style.display = (!q || cat === '' || cat.toLowerCase().includes(q)) ? '' : 'none';
+    });
+  });
+  searchInput.focus();
+  setKeyHandler(e => {
+    if (e.key === 'Escape') { e.preventDefault(); showMenu(); }
+    else if (e.key === '0' && !searchInput.value) { e.preventDefault(); startDrill(type, null); }
+    else if (!searchInput.value) {
+      const num = parseInt(e.key);
+      if (num >= 1 && num <= cats.length) { e.preventDefault(); startDrill(type, cats[num - 1]); }
+    }
+  });
+}
+
+function startDrill(type, category) {
+  const pool = buildPool(type, category);
+  const session = prioritizeCards(pool, type === 'vocab' ? SESSION.vocab : SESSION.grammar);
+  if (session.length === 0) { showMenu(); return; }
+  runSession(session);
+}
+
+function startMixedReview() {
+  const vPool = buildPool('vocab', null);
+  const gPool = buildPool('grammar', null);
+  const pool = [...vPool, ...gPool];
+  const session = prioritizeCards(pool, SESSION.mixed);
+  if (session.length === 0) { showMenu(); return; }
+  runSession(session);
+}
+
+function runSession(cards) {
+  const engine = DrillEngine({
+    session: cards,
+    renderCard(item, prog, onReveal) {
+      const {type, cat, entry} = item;
+      if (type === 'vocab') {
+        const isComparison = entry.korean.includes(' vs ');
+        const showKorean = isComparison || getShowKorean(entry);
+        const prompt = showKorean
+          ? `<div class="card"><div class="card-korean">${escHtml(entry.korean)}</div>
+             ${entry.hanja ? `<div class="card-hint">${escHtml(entry.hanja)}</div>` : ''}
+             </div><div class="card-prompt">What does this mean?</div>`
+          : `<div class="card"><div class="card-english">${escHtml(entry.english).replace(/\n/g,'<br>')}</div>
+             </div><div class="card-prompt">What is this in Korean?</div>`;
+        const answer = showKorean ? entry.english : entry.korean;
+        app.innerHTML = `${drillHeader(cat, prog)}
+          ${timerHtml(TIMER.vocab)}
+          ${prompt}
+          <input class="answer-input" autocomplete="off" placeholder="Your answer (Enter to reveal)" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus>
+          <button class="show-answer-btn" id="show-answer">Show Answer</button>`;
+        if (showKorean && autoTts) setTimeout(() => speak(entry.korean), 300);
+        setupTextInput(guess => onReveal({guess, answer, showKorean}), TIMER.vocab);
+      } else {
+        app.innerHTML = `${drillHeader(cat, prog)}
+          ${timerHtml(TIMER.grammar)}
+          <div class="card"><div class="card-korean">${escHtml(entry.pattern)}</div></div>
+          <div class="card-prompt">What does this pattern mean?</div>
+          <input class="answer-input" autocomplete="off" placeholder="Your answer (Enter to reveal)" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus>
+          <button class="show-answer-btn" id="show-answer">Show Answer</button>`;
+        setupTextInput(guess => onReveal({guess}), TIMER.grammar);
+      }
+    },
+    renderReveal(item, result, prog) {
+      const {id, type, cat, entry} = item;
+      if (type === 'vocab') {
+        const isKoreanAnswer = (result.answer === entry.korean);
+        const promptWord = isKoreanAnswer ? entry.english : entry.korean;
+        let extra = '';
+        if (entry.hanja) extra += `<div class="breakdown">${escHtml(entry.hanja)}</div>`;
+        if (entry.breakdown) extra += `<div class="breakdown">${escHtml(entry.breakdown)}</div>`;
+        if (entry.notes) extra += `<div class="reveal-notes">${escHtml(entry.notes)}</div>`;
+        if (entry.example) extra += `<div class="example"><div class="example-kr">${highlightWord(entry.example, entry.korean)}</div>
+          ${entry.example_en ? `<div class="example-en">${highlightWord(entry.example_en, entry.english)}</div>` : ''}</div>`;
+        const guessHtml = result.guess ? `<div class="your-guess">Your answer: <span>${escHtml(result.guess)}</span></div>` : '';
+        app.innerHTML = `${drillHeader(cat, prog)}
+          <div class="card" style="margin-bottom:8px"><div class="${isKoreanAnswer ? 'card-english' : 'card-korean'}">${escHtml(promptWord)}</div></div>
+          ${guessHtml}
+          <div class="reveal"><div class="reveal-answer">${escHtml(result.answer).replace(/\n/g,'<br>')}</div>${extra}</div>
+          ${ratingButtonsHtml(id)}`;
+      } else {
+        // Grammar reveal — may have drill exercise
+        let examplesHtml = '';
+        for (const ex of (entry.examples || [])) {
+          examplesHtml += `<div class="example"><div class="example-kr">${escHtml(ex.korean)}</div>
+            ${ex.english ? `<div class="example-en">${escHtml(ex.english)}</div>` : ''}</div>`;
+        }
+        let drillHtml = '';
+        if (entry.drill) {
+          drillHtml = `<div class="fill-prompt">Fill in the blank:</div>
+            <div class="fill-sentence">${escHtml(entry.drill.prompt)}</div>
+            <input class="answer-input" id="drill-input" autocomplete="off" placeholder="Your answer" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus>
+            <div id="drill-result" class="hidden"></div>`;
+        }
+        const guessHtml = result.guess ? `<div class="your-guess">Your answer: <span>${escHtml(result.guess)}</span></div>` : '';
+        app.innerHTML = `${drillHeader(cat, prog)}
+          ${guessHtml}
+          <div class="reveal">
+            <div class="reveal-answer">${escHtml(entry.meaning)}</div>
+            <div class="reveal-notes">${escHtml(entry.explanation)}</div>
+          </div>
+          ${examplesHtml}
+          ${drillHtml}
+          ${entry.drill ? '' : ratingButtonsHtml(id)}`;
+        if (entry.drill) {
+          const di = document.getElementById('drill-input');
+          di.focus();
+          di.onkeydown = e => {
+            if (e.key === 'Enter') {
+              const isCorrect = di.value.trim() === entry.drill.answer;
+              document.getElementById('drill-result').innerHTML = `
+                <div class="reveal ${isCorrect ? 'result-correct' : 'result-incorrect'}" style="margin-top:12px">
+                  <div class="reveal-answer">${escHtml(entry.drill.answer)}</div>
+                </div>
+                <div class="example"><div class="example-kr">${escHtml(entry.drill.full_sentence)}</div></div>
+                ${ratingButtonsHtml(id)}`;
+              document.getElementById('drill-result').classList.remove('hidden');
+              di.disabled = true;
+              engine.setupRating(id);
+            }
+            if (e.key === 'Escape') showMenu();
+          };
+          return false; // Don't call setupRating yet — wait for drill input
+        }
+      }
+    }
+  });
+}
+
+// ===== SENTENCE PRODUCTION DRILL =====
+function startSentenceProduction() {
+  const pool = [];
+  for (const [cat, entries] of Object.entries(vocabData)) {
+    for (let i = 0; i < entries.length; i++) {
+      const e = entries[i];
+      if (e.example && e.example_en) pool.push({id: `prod:${cat}:${i}`, cat, entry: e});
+    }
+  }
+  if (pool.length === 0) { showMenu(); return; }
+  const session = prioritizeCards(pool, SESSION.production);
+
+  DrillEngine({
+    session,
+    ratingDescs: {again: "couldn't produce", hard: 'major errors', good: 'close enough', easy: 'nailed it'},
+    renderCard(item, prog, onReveal) {
+      const {entry} = item;
+      app.innerHTML = `${drillHeader('Sentence Production', prog)}
+        ${timerHtml(TIMER.production)}
+        <div class="production-prompt">
+          <div class="production-english">${escHtml(entry.example_en)}</div>
+          <div class="production-context">Hint: ${escHtml(entry.english)}</div>
+        </div>
+        <div class="card-prompt">Write this in Korean:</div>
+        <input class="answer-input" autocomplete="off" placeholder="Type your Korean sentence (Enter to check)" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus>
+        <button class="show-answer-btn" id="show-answer">Show Answer</button>`;
+      setupTextInput(guess => onReveal({guess}), TIMER.production);
+    },
+    renderReveal(item, result, prog) {
+      const {entry} = item;
+      let extra = '';
+      if (entry.notes) extra += `<div class="reveal-notes" style="margin-top:8px">${escHtml(entry.notes)}</div>`;
+      const guessHtml = result.guess ? `<div class="your-guess">Your sentence: <span>${escHtml(result.guess)}</span></div>` : '';
+      app.innerHTML = `${drillHeader('Sentence Production', prog)}
+        ${guessHtml}
+        <div class="model-answer">
+          <div class="label">Model Answer</div>
+          <div class="korean">${escHtml(entry.example)}</div>
+        </div>
+        <div class="reveal">
+          <div class="reveal-answer">${escHtml(entry.korean)} — ${escHtml(entry.english)}</div>
+          ${extra}
+        </div>
+        <div class="card-prompt" style="font-size:0.85em;margin-top:10px">How close was your sentence? Rate yourself honestly.</div>
+        ${ratingButtonsHtml(item.id, {again: "couldn't produce", hard: 'major errors', good: 'close enough', easy: 'nailed it'})}`;
+    }
+  });
+}
+
+// ===== GRAMMAR IN CONTEXT DRILL =====
+function startGrammarContext() {
+  if (grammarContext.length === 0) {
+    app.innerHTML = `<button class="back-btn" onclick="showMenu()">← Back</button>
+      <div class="card"><p>Grammar context data not loaded.</p></div>`;
+    setKeyHandler(e => { if (e.key === 'Escape') showMenu(); });
+    return;
+  }
+  const pool = grammarContext.map((d, i) => ({id: `gctx:${i}`, drill: d}));
+  const session = prioritizeCards(pool, SESSION.grammarCtx);
+
+  DrillEngine({
+    session,
+    ratingDescs: {again: 'wrong', hard: 'guessed', good: 'knew it', easy: 'obvious'},
+    renderCard(item, prog, onReveal) {
+      const {drill} = item;
+      const passageHtml = escHtml(drill.passage).replace('_____', '<span class="blank">?</span>');
+      app.innerHTML = `${drillHeader('Grammar in Context', prog)}
+        ${timerHtml(TIMER.grammarCtx)}
+        <div class="context-passage">${passageHtml}</div>
+        <div class="card-prompt">Choose the correct grammar pattern:</div>
+        <div class="option-grid">
+          ${drill.options.map((opt, i) => `<button class="option-btn" data-idx="${i}">${escHtml(opt)}</button>`).join('')}
+        </div>`;
+      if (timedMode) startTimer(TIMER.grammarCtx, () => onReveal({chosen: -1}));
+      setupOptionHandlers(idx => onReveal({chosen: idx}));
+    },
+    renderReveal(item, result, prog) {
+      const {drill} = item;
+      const isCorrect = result.chosen === drill.correct;
+      const passageHtml = escHtml(drill.passage).replace('_____',
+        `<span class="blank" style="border-color:var(--green);color:var(--green)">${escHtml(drill.options[drill.correct])}</span>`);
+      const optionsHtml = drill.options.map((opt, i) => {
+        let cls = i === drill.correct ? 'correct' : (i === result.chosen && !isCorrect ? 'wrong' : '');
+        return `<button class="option-btn ${cls}" disabled>${escHtml(opt)}</button>`;
+      }).join('');
+      app.innerHTML = `${drillHeader('Grammar in Context', prog)}
+        <div class="context-passage">${passageHtml}</div>
+        <div class="option-grid">${optionsHtml}</div>
+        <div class="reveal ${isCorrect ? 'result-correct' : 'result-incorrect'}">
+          <div class="reveal-answer">${escHtml(drill.options[drill.correct])}</div>
+          <div class="reveal-notes">${escHtml(drill.explanation)}</div>
+        </div>
+        ${ratingButtonsHtml(item.id, {again: 'wrong', hard: 'guessed', good: 'knew it', easy: 'obvious'})}`;
+    }
+  });
+}
+
+// ===== READING COMPREHENSION DRILL =====
+function startReadingComprehension() {
+  if (readingDrills.length === 0) {
+    app.innerHTML = `<button class="back-btn" onclick="showMenu()">← Back</button>
+      <div class="card"><p>Reading comprehension data not loaded.</p></div>`;
+    setKeyHandler(e => { if (e.key === 'Escape') showMenu(); });
+    return;
+  }
+  const pool = readingDrills.map((d, i) => ({id: `read:${i}`, drill: d}));
+  const session = prioritizeCards(pool, SESSION.reading);
+  const descs = {again: 'struggled', hard: 'some guessing', good: 'understood', easy: 'clear'};
+
+  const engine = DrillEngine({
+    session, ratingDescs: descs,
+    renderCard(item, prog, onReveal) {
+      showPassage(item, prog, 0);
+
+      function showPassage(item, prog, qIdx) {
+        clearTimer();
+        const {id, drill} = item;
+        const q = drill.questions[qIdx];
+        app.innerHTML = `${drillHeader('Reading Comprehension', prog)}
+          <div class="counter" style="font-size:0.85em;margin-top:-8px;margin-bottom:8px;text-align:center;color:var(--dim)">Q${qIdx + 1}/${drill.questions.length}</div>
+          ${timerHtml(TIMER.reading)}
+          <div class="reading-passage">${escHtml(drill.passage)}</div>
+          <div class="question-block">
+            <div class="question-text">${escHtml(q.question)}</div>
+            <div class="option-grid">
+              ${q.options.map((opt, i) => `<button class="option-btn" data-idx="${i}">${escHtml(opt)}</button>`).join('')}
+            </div>
+          </div>`;
+        if (timedMode) startTimer(TIMER.reading, () => revealQ(item, prog, qIdx, -1));
+        setupOptionHandlers(idx => revealQ(item, prog, qIdx, idx));
+      }
+
+      function revealQ(item, prog, qIdx, chosen) {
+        const {id, drill} = item;
+        const q = drill.questions[qIdx];
+        const isCorrect = chosen === q.correct;
+        const isLastQ = qIdx >= drill.questions.length - 1;
+        const optionsHtml = q.options.map((opt, i) => {
+          let cls = i === q.correct ? 'correct' : (i === chosen && !isCorrect ? 'wrong' : '');
+          return `<button class="option-btn ${cls}" disabled>${escHtml(opt)}</button>`;
+        }).join('');
+        const nextBtnHtml = isLastQ
+          ? ratingButtonsHtml(id, descs)
+          : `<button class="btn btn-primary" id="next-btn" style="width:100%;margin-top:15px">Next Question →</button>`;
+        app.innerHTML = `${drillHeader('Reading Comprehension', prog)}
+          <div class="counter" style="font-size:0.85em;margin-top:-8px;margin-bottom:8px;text-align:center;color:var(--dim)">Q${qIdx + 1}/${drill.questions.length}</div>
+          <div class="reading-passage">${escHtml(drill.passage)}</div>
+          <div class="question-block">
+            <div class="question-text">${escHtml(q.question)}</div>
+            <div class="option-grid">${optionsHtml}</div>
+            <div class="reveal ${isCorrect ? 'result-correct' : 'result-incorrect'}" style="margin-top:12px">
+              <div class="reveal-answer">${escHtml(q.options[q.correct])}</div>
+              <div class="reveal-notes">${escHtml(q.explanation)}</div>
+            </div>
+          </div>
+          ${nextBtnHtml}`;
+        if (isLastQ) {
+          engine.setupRating(id);
+        } else {
+          const next = () => showPassage(item, prog, qIdx + 1);
+          document.getElementById('next-btn').onclick = next;
+          setKeyHandler(e => {
+            if (e.key === 'Enter' || e.key === ' ') next();
+            if (e.key === 'Escape') showMenu();
+          });
+        }
+      }
+    },
+    renderReveal() {} // handled inline by renderCard
+  });
+}
+
+// ===== REGISTER SWITCHING DRILL =====
+function startRegisterSwitching() {
+  if (registerDrills.length === 0) {
+    app.innerHTML = `<button class="back-btn" onclick="showMenu()">← Back</button>
+      <div class="card"><p>Register switching data not loaded.</p></div>`;
+    setKeyHandler(e => { if (e.key === 'Escape') showMenu(); });
+    return;
+  }
+  const pool = registerDrills.map((d, i) => ({id: `reg:${i}`, drill: d}));
+  const session = prioritizeCards(pool, SESSION.register);
+  const regBadge = r => r === '반말' ? 'banmal' : r === '해요체' ? 'haeyo' : 'gyeoksik';
+  const descs = {again: "couldn't convert", hard: 'partial', good: 'mostly right', easy: 'nailed it'};
+
+  DrillEngine({
+    session, ratingDescs: descs,
+    renderCard(item, prog, onReveal) {
+      const {drill} = item;
+      app.innerHTML = `${drillHeader('Register Switching', prog)}
+        ${timerHtml(TIMER.register)}
+        <div class="register-card">
+          <div class="register-badge ${regBadge(drill.given_register)}">${escHtml(drill.given_register)}</div>
+          <div class="register-sentence">${escHtml(drill.given)}</div>
+          <div class="register-arrow">↓</div>
+          <div class="register-badge ${regBadge(drill.target_register)}">${escHtml(drill.target_register)}</div>
+        </div>
+        <div class="card-prompt">Rewrite in ${escHtml(drill.target_register)}:</div>
+        <input class="answer-input" autocomplete="off" placeholder="Type the converted sentence (Enter to check)" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus>
+        <button class="show-answer-btn" id="show-answer">Show Answer</button>`;
+      setupTextInput(guess => onReveal({guess}), TIMER.register);
+    },
+    renderReveal(item, result, prog) {
+      const {drill} = item;
+      const isCorrect = normalizeKorean(result.guess) === normalizeKorean(drill.correct);
+      const guessHtml = result.guess ? `<div class="your-guess">Your version: <span>${escHtml(result.guess)}</span></div>` : '';
+      app.innerHTML = `${drillHeader('Register Switching', prog)}
+        ${guessHtml}
+        <div class="model-answer">
+          <div class="label">${escHtml(drill.target_register)} version</div>
+          <div class="korean">${isCorrect ? '✓ ' : ''}${escHtml(drill.correct)}</div>
+        </div>
+        <div class="reveal">
+          <div class="reveal-answer">${escHtml(drill.given_register)}: ${escHtml(drill.given)}</div>
+          <div class="reveal-notes">${escHtml(drill.explanation)}</div>
+        </div>
+        <div class="card-prompt" style="font-size:0.85em;margin-top:10px">Rate how well you converted the register:</div>
+        ${ratingButtonsHtml(item.id, descs)}`;
+    }
+  });
+}
+
+// ===== ERROR CORRECTION DRILL =====
+function startErrorCorrection() {
+  if (errorDrills.length === 0) {
+    app.innerHTML = `<button class="back-btn" onclick="showMenu()">← Back</button>
+      <div class="card"><p>Error drill data not loaded. Make sure data/error_drills.json exists.</p></div>`;
+    setKeyHandler(e => { if (e.key === 'Escape') showMenu(); });
+    return;
+  }
+  const pool = errorDrills.map((d, i) => ({id: `err:${i}`, drill: d}));
+  const session = prioritizeCards(pool, SESSION.error);
+  const descs = {again: 'missed it', hard: 'partially right', good: 'found the error', easy: 'obvious fix'};
+
+  DrillEngine({
+    session, ratingDescs: descs,
+    renderCard(item, prog, onReveal) {
+      const {drill} = item;
+      app.innerHTML = `${drillHeader('Error Correction', prog)}
+        ${timerHtml(TIMER.error)}
+        <div class="error-sentence">
+          <div class="error-type-badge">${escHtml(drill.error_type)}</div>
+          <div class="korean">${escHtml(drill.incorrect)}</div>
+        </div>
+        <div class="card-prompt">Find and fix the error:</div>
+        <input class="answer-input" autocomplete="off" placeholder="Type the corrected sentence (Enter to check)" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus>
+        <button class="show-answer-btn" id="show-answer">Show Answer</button>`;
+      setupTextInput(guess => onReveal({guess}), TIMER.error);
+    },
+    renderReveal(item, result, prog) {
+      const {drill} = item;
+      const isCorrect = normalizeKorean(result.guess) === normalizeKorean(drill.correct);
+      const guessHtml = result.guess ? `<div class="your-guess">Your correction: <span>${escHtml(result.guess)}</span></div>` : '';
+      app.innerHTML = `${drillHeader('Error Correction', prog)}
+        ${guessHtml}
+        <div class="correction-reveal">
+          <div class="correct">${isCorrect ? '✓ ' : ''}${escHtml(drill.correct)}</div>
+          <div class="explanation">${escHtml(drill.explanation)}</div>
+        </div>
+        <div class="reveal" style="border-color:var(--dim)">
+          <div class="reveal-notes" style="color:var(--red)">Original (incorrect): ${escHtml(drill.incorrect)}</div>
+        </div>
+        ${ratingButtonsHtml(item.id, descs)}`;
+    }
+  });
+}
+
+// ===== CLOZE DELETION DRILL =====
+function getDistractors(entry, cat) {
+  const candidates = [];
+  const sameCat = vocabData[cat] || [];
+  for (const e of sameCat) {
+    if (e.korean !== entry.korean && !e.korean.includes(' vs ') && e.korean.length > 1) candidates.push(e.korean);
+  }
+  if (candidates.length < 3) {
+    for (const [c, entries] of Object.entries(vocabData)) {
+      if (c === cat) continue;
+      for (const e of entries) {
+        if (e.korean !== entry.korean && !e.korean.includes(' vs ') && e.korean.length > 1) candidates.push(e.korean);
+      }
+      if (candidates.length >= 20) break;
+    }
+  }
+  return shuffle(candidates).slice(0, 3);
+}
+
+function startClozeDrill() {
+  const pool = [];
+  for (const [cat, entries] of Object.entries(vocabData)) {
+    for (let i = 0; i < entries.length; i++) {
+      const e = entries[i];
+      if (e.example && e.korean && !e.korean.includes(' vs ') && e.example.includes(e.korean))
+        pool.push({id: `cloze:${cat}:${i}`, cat, entry: e});
+    }
+  }
+  if (pool.length === 0) { showMenu(); return; }
+  const session = prioritizeCards(pool, SESSION.cloze);
+  const descs = {again: 'wrong', hard: 'guessed', good: 'knew it', easy: 'obvious'};
+
+  DrillEngine({
+    session, ratingDescs: descs,
+    renderCard(item, prog, onReveal) {
+      const {cat, entry} = item;
+      const sentenceHtml = escHtml(entry.example).split(escHtml(entry.korean)).join('<span class="cloze-blank">?</span>');
+      const options = shuffle([entry.korean, ...getDistractors(entry, cat)]);
+      app.innerHTML = `${drillHeader('Cloze Drill', prog)}
+        ${timerHtml(TIMER.cloze)}
+        <div class="cloze-sentence">${sentenceHtml}</div>
+        <div class="card-prompt">Fill in the blank:</div>
+        <div class="option-grid">
+          ${options.map((opt, i) => `<button class="option-btn" data-idx="${i}" data-val="${escHtml(opt)}">${escHtml(opt)}</button>`).join('')}
+        </div>
+        ${entry.example_en ? `<div style="color:var(--dim);font-size:0.85em;text-align:center;margin-top:8px">${escHtml(entry.example_en)}</div>` : ''}`;
+      if (timedMode) startTimer(TIMER.cloze, () => onReveal({chosenIdx: -1, options}));
+      setupOptionHandlers(idx => onReveal({chosenIdx: idx, options}));
+    },
+    renderReveal(item, result, prog) {
+      const {entry} = item;
+      const {chosenIdx, options} = result;
+      const chosen = chosenIdx >= 0 ? options[chosenIdx] : '';
+      const isCorrect = chosen === entry.korean;
+      const sentenceHtml = escHtml(entry.example).split(escHtml(entry.korean)).join(
+        `<span class="cloze-blank" style="border-color:var(--green);color:var(--green)">${escHtml(entry.korean)}</span>`);
+      const optionsHtml = options.map((opt, i) => {
+        let cls = opt === entry.korean ? 'correct' : (i === chosenIdx && !isCorrect ? 'wrong' : '');
+        return `<button class="option-btn ${cls}" disabled>${escHtml(opt)}</button>`;
+      }).join('');
+      let extra = '';
+      if (entry.notes) extra += `<div class="reveal-notes">${escHtml(entry.notes)}</div>`;
+      app.innerHTML = `${drillHeader('Cloze Drill', prog)}
+        <div class="cloze-sentence">${sentenceHtml}</div>
+        <div class="option-grid">${optionsHtml}</div>
+        <div class="reveal ${isCorrect ? 'result-correct' : 'result-incorrect'}">
+          <div class="reveal-answer">${escHtml(entry.korean)} — ${escHtml(entry.english)}</div>
+          ${extra}
+        </div>
+        ${ratingButtonsHtml(item.id, descs)}`;
+    }
+  });
+}
+
+function showProgress() {
+  const stats = srs.getStats();
+  const cards = Object.values(srs.cards);
+  const weak = [...cards].sort((a,b) => a.ease_factor - b.ease_factor).slice(0, 15);
+
+  let weakRows = '';
+  for (const c of weak) {
+    const parts = c.card_id.split(':');
+    let label = c.card_id;
+    try {
+      const type = parts[0];
+      if (type === 'err') {
+        const idx = parseInt(parts[1]);
+        if (errorDrills[idx]) label = errorDrills[idx].incorrect;
+      } else if (type === 'read') {
+        const idx = parseInt(parts[1]);
+        if (readingDrills[idx]) label = readingDrills[idx].passage.substring(0, 30) + '...';
+      } else if (type === 'dlg') {
+        const idx = parseInt(parts[1]);
+        if (dialogueDrills[idx]) label = dialogueDrills[idx].title;
+      } else if (type === 'gctx') {
+        const idx = parseInt(parts[1]);
+        if (grammarContext[idx]) label = grammarContext[idx].passage.substring(0, 30) + '...';
+      } else if (type === 'reg') {
+        const idx = parseInt(parts[1]);
+        if (registerDrills[idx]) label = registerDrills[idx].given;
+      } else {
+        const cat = parts[1], pidx = parseInt(parts[2]);
+        const data = type === 'vocab' || type === 'cloze' ? vocabData : grammarData;
+        if (data[cat] && data[cat][pidx]) {
+          label = type === 'vocab' || type === 'cloze' ? data[cat][pidx].korean : data[cat][pidx].pattern;
+        }
+      }
+    } catch(e) { console.error('Progress label lookup:', e); }
+    weakRows += `<tr><td>${escHtml(label)}</td><td>${Math.round(c.accuracy*100)}%</td><td>${c.total_reviews}</td><td>${c.ease_factor.toFixed(1)}</td></tr>`;
+  }
+
+  const streak = getStreak();
+  app.innerHTML = `
+    <button class="back-btn" onclick="showMenu()">← Back</button>
+    <h2 style="margin-bottom:20px">Progress</h2>
+    ${streak > 0 ? `<div style="text-align:center;margin-bottom:15px"><span class="streak-badge" onclick="showStreakCalendar()">\u{1F525} ${streak} day${streak > 1 ? 's' : ''} streak</span></div>` : ''}
+    <div class="summary-stats" style="margin-bottom:25px">
+      <div class="summary-stat"><div class="value" style="color:var(--cyan)">${stats.total}</div><div class="label">Cards Seen</div></div>
+      <div class="summary-stat"><div class="value" style="color:var(--yellow)">${stats.due}</div><div class="label">Due Now</div></div>
+      <div class="summary-stat"><div class="value" style="color:var(--green)">${stats.mature}</div><div class="label">Mature</div></div>
+      <div class="summary-stat"><div class="value" style="color:var(--blue)">${Math.round(stats.accuracy*100)}%</div><div class="label">Accuracy</div></div>
+    </div>
+    ${weak.length > 0 ? `
+      <h3 style="margin-bottom:10px;color:var(--dim)">Weakest Cards</h3>
+      <div style="overflow-x:auto"><table class="progress-table">
+        <tr><th>Card</th><th>Accuracy</th><th>Reviews</th><th>Ease</th></tr>
+        ${weakRows}
+      </table></div>` : '<p style="color:var(--dim)">No cards reviewed yet. Start a drill!</p>'}
+    <button class="btn" onclick="if(confirm('Reset all progress?')){localStorage.removeItem('korean_coach_srs');location.reload()}" style="margin-top:20px;color:var(--red);border-color:var(--red)">Reset Progress</button>`;
+  setKeyHandler(e => { if (e.key === 'Escape') showMenu(); });
+}
+
+// ===== DIALOGUE DRILL =====
+function startDialogueDrill() {
+  if (dialogueDrills.length === 0) {
+    app.innerHTML = `<button class="back-btn" onclick="showMenu()">← Back</button>
+      <div class="card"><p>Dialogue drill data not loaded. Make sure data/dialogue_drills.json exists.</p></div>`;
+    setKeyHandler(e => { if (e.key === 'Escape') showMenu(); });
+    return;
+  }
+  const pool = dialogueDrills.map((d, i) => ({id: `dlg:${i}`, drill: d}));
+  const session = prioritizeCards(pool, SESSION.dialogue);
+  const descs = {again: 'struggled', hard: 'some guessing', good: 'understood', easy: 'natural'};
+
+  function findNextBlank(turns, fromIdx) {
+    for (let i = fromIdx; i < turns.length; i++) { if (turns[i].options) return i; }
+    return -1;
+  }
+
+  function buildBubbles(drill, blankIdx, answered) {
+    let html = '';
+    for (let i = 0; i < drill.turns.length; i++) {
+      const t = drill.turns[i];
+      const isYou = t.speaker === 'You';
+      if (i < blankIdx || blankIdx === -1) {
+        if (isYou) {
+          const cls = answered.includes(i) ? 'chat-bubble-correct' : 'chat-bubble-right';
+          html += `<div class="chat-bubble ${cls}"><div class="speaker-label">${escHtml(t.speaker)}</div>${escHtml(t.line)}</div>`;
+        } else {
+          html += `<div class="chat-bubble chat-bubble-left"><div class="speaker-label">${escHtml(t.speaker)}</div>${escHtml(t.line)}</div>`;
+        }
+      } else if (i === blankIdx) {
+        html += `<div class="chat-bubble-blank"><div class="speaker-label">You</div>???</div>`;
+        break;
+      } else break;
+    }
+    return html;
+  }
+
+  const engine = DrillEngine({
+    session, ratingDescs: descs,
+    renderCard(item, prog, onReveal) {
+      runDialogue(item, prog, 0, []);
+
+      function runDialogue(item, prog, turnIdx, answered) {
+        const {id, drill} = item;
+        const blankIdx = findNextBlank(drill.turns, turnIdx);
+        const bubblesHtml = buildBubbles(drill, blankIdx, answered);
+
+        if (blankIdx === -1) {
+          // All blanks answered — show reveal + rating
+          app.innerHTML = `${drillHeader('Dialogue Practice', prog)}
+            <div class="dialogue-context">${escHtml(drill.title)} — ${escHtml(drill.context)}</div>
+            <div class="dialogue-area">${bubblesHtml}</div>
+            <div class="reveal"><div class="reveal-notes">${escHtml(drill.explanation)}</div></div>
+            ${ratingButtonsHtml(id, descs)}`;
+          engine.setupRating(id);
+          return;
+        }
+
+        const turn = drill.turns[blankIdx];
+        const shuffledOpts = shuffle(turn.options.map((o, i) => ({text: o, idx: i})));
+        const optionsHtml = shuffledOpts.map(o =>
+          `<button class="option-btn" data-text="${escHtml(o.text)}">${escHtml(o.text)}</button>`
+        ).join('');
+
+        app.innerHTML = `${drillHeader('Dialogue Practice', prog)}
+          <div class="dialogue-context">${escHtml(drill.title)} — ${escHtml(drill.context)}</div>
+          <div class="dialogue-area">${bubblesHtml}</div>
+          <div class="dialogue-options">${optionsHtml}</div>`;
+
+        let dlgFired = false;
+        document.querySelectorAll('.option-btn').forEach(btn => {
+          btn.onclick = () => {
+            if (btn.dataset.text === turn.line) {
+              if (dlgFired) return;
+              dlgFired = true;
+              answered.push(blankIdx);
+              runDialogue(item, prog, blankIdx + 1, answered);
+            } else {
+              btn.classList.add('wrong');
+              btn.disabled = true;
+            }
+          };
+        });
+        setKeyHandler(e => {
+          const num = parseInt(e.key);
+          if (num >= 1 && num <= shuffledOpts.length) {
+            const btns = document.querySelectorAll('.option-btn');
+            if (btns[num - 1]) btns[num - 1].click();
+          }
+          if (e.key === 'Escape') showMenu();
+        });
+      }
+    },
+    renderReveal() {} // handled inline by renderCard
+  });
+}
+
+// ===== LOAD DATA =====
+async function init() {
+  app.innerHTML = '<h1>한국어 코치</h1><div class="loading-spinner"></div>';
+  try {
+    const [vResp, gResp, eResp, gcResp, rdResp, rgResp, dlResp] = await Promise.all([
+      fetch('data/vocab.json'),
+      fetch('data/grammar.json'),
+      fetch('data/error_drills.json').catch(() => null),
+      fetch('data/grammar_context.json').catch(() => null),
+      fetch('data/reading_drills.json').catch(() => null),
+      fetch('data/register_drills.json').catch(() => null),
+      fetch('data/dialogue_drills.json').catch(() => null)
+    ]);
+    vocabData = await vResp.json();
+    grammarData = await gResp.json();
+    validateVocab(vocabData);
+    if (eResp && eResp.ok) errorDrills = await eResp.json();
+    if (gcResp && gcResp.ok) grammarContext = await gcResp.json();
+    if (rdResp && rdResp.ok) readingDrills = await rdResp.json();
+    if (rgResp && rgResp.ok) registerDrills = await rgResp.json();
+    if (dlResp && dlResp.ok) dialogueDrills = await dlResp.json();
+  } catch(e) {
+    try {
+      const [vResp, gResp, eResp, gcResp, rdResp, rgResp, dlResp] = await Promise.all([
+        fetch('../data/vocab.json'),
+        fetch('../data/grammar.json'),
+        fetch('../data/error_drills.json').catch(() => null),
+        fetch('../data/grammar_context.json').catch(() => null),
+        fetch('../data/reading_drills.json').catch(() => null),
+        fetch('../data/register_drills.json').catch(() => null),
+        fetch('../data/dialogue_drills.json').catch(() => null)
+      ]);
+      vocabData = await vResp.json();
+      grammarData = await gResp.json();
+      validateVocab(vocabData);
+      if (eResp && eResp.ok) errorDrills = await eResp.json();
+      if (gcResp && gcResp.ok) grammarContext = await gcResp.json();
+      if (rdResp && rdResp.ok) readingDrills = await rdResp.json();
+      if (rgResp && rgResp.ok) registerDrills = await rgResp.json();
+      if (dlResp && dlResp.ok) dialogueDrills = await dlResp.json();
+    } catch(e2) {
+      app.innerHTML = '<h1>Error</h1><p>Could not load data files.</p><button class="btn" onclick="location.reload()" style="margin-top:20px">Retry</button>';
+      return;
+    }
+  }
+  initTTS();
+  KoreanCore.init({
+    app,
+    srs,
+    showMenu,
+    getTimedMode: () => timedMode,
+    streakKey: 'korean_coach_streak',
+    vocabData: () => vocabData,
+    grammarData: () => grammarData,
+    toneConfig: {
+      comments: [
+        {min: 0.9, text: 'Excellent.', ring: '#4ade80'},
+        {min: 0.7, text: 'Solid, but room to sharpen.', ring: '#facc15'},
+        {min: 0.5, text: 'Getting there. Keep drilling.', ring: '#fb923c'},
+        {min: 0, text: "These need more work. They'll come back.", ring: '#f87171'}
+      ]
+    }
+  });
+  await firebaseSync.initFirebase(srs);
+  showMenu();
+}
+
+// ===== OFFLINE MODE =====
+let isOffline = !navigator.onLine;
+
+function updateOfflineBanner() {
+  const banner = document.getElementById('offline-banner');
+  if (banner) {
+    banner.classList.toggle('visible', isOffline);
+    banner.textContent = isOffline ? 'Offline — using cached data' : '';
+  }
+}
+
+window.addEventListener('online', () => { isOffline = false; updateOfflineBanner(); firebaseSync.updateSyncStatus('synced', 'Back online'); firebaseSync.pushToFirestore(); });
+window.addEventListener('offline', () => { isOffline = true; updateOfflineBanner(); firebaseSync.updateSyncStatus('offline', 'Offline'); });
+
+// Register service worker for offline support
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').catch(() => {});
+}
+
+init();
+</script>
+</body>
+</html>

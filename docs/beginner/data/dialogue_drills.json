@@ -1,0 +1,1319 @@
+[
+  {
+    "title": "Ordering food at a restaurant",
+    "context": "You enter a Korean restaurant and order a meal.",
+    "turns": [
+      {
+        "speaker": "Staff",
+        "line": "어서 오세요. 몇 분이세요?"
+      },
+      {
+        "speaker": "You",
+        "line": "두 명이요.",
+        "options": [
+          "네, 감사합니다.",
+          "잠깐만요.",
+          "아니요, 괜찮아요.",
+          "두 명이요."
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "이쪽으로 앉으세요. 메뉴 여기 있습니다."
+      },
+      {
+        "speaker": "You",
+        "line": "비빔밥 하나하고 된장찌개 하나 주세요.",
+        "options": [
+          "화장실이 어디예요?",
+          "안녕히 계세요.",
+          "비빔밥 하나하고 된장찌개 하나 주세요.",
+          "여기 앉아도 돼요?"
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "네, 알겠습니다. 음료는 필요하세요?"
+      },
+      {
+        "speaker": "You",
+        "line": "물 주세요.",
+        "options": [
+          "아직 안 정했어요.",
+          "물 주세요.",
+          "얼마예요?",
+          "맛있어요."
+        ]
+      }
+    ],
+    "explanation": "몇 분이세요 = 'How many people?' 두 명이요 = 'Two people.' ~하고 connects items when ordering: 비빔밥 하나하고 된장찌개 하나 = 'one bibimbap and one doenjang-jjigae.' 주세요 = 'please give me.'"
+  },
+  {
+    "title": "Asking for recommendations",
+    "context": "You want to try something new and ask the staff for a recommendation.",
+    "turns": [
+      {
+        "speaker": "Staff",
+        "line": "주문하시겠어요?"
+      },
+      {
+        "speaker": "You",
+        "line": "여기 뭐가 맛있어요?",
+        "options": [
+          "계산해 주세요.",
+          "화장실이 어디예요?",
+          "여기 뭐가 맛있어요?",
+          "물 좀 주세요."
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "불고기가 제일 인기 있습니다."
+      },
+      {
+        "speaker": "You",
+        "line": "그럼 불고기 주세요. 맵지 않아요?",
+        "options": [
+          "그럼 불고기 주세요. 맵지 않아요?",
+          "네, 먹었어요.",
+          "안녕히 계세요.",
+          "아니요, 싫어요."
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "안 매워요. 아이들도 잘 먹습니다."
+      },
+      {
+        "speaker": "You",
+        "line": "좋아요, 그걸로 할게요.",
+        "options": [
+          "다음에 올게요.",
+          "몇 시에 닫아요?",
+          "저는 학생이에요.",
+          "좋아요, 그걸로 할게요."
+        ]
+      }
+    ],
+    "explanation": "뭐가 맛있어요? = 'What is delicious here?' 인기 있다 = 'to be popular.' 맵지 않아요? = 'Is it not spicy?' 그걸로 할게요 = 'I'll go with that.' ~지 않다 is the negative form."
+  },
+  {
+    "title": "Paying the bill",
+    "context": "You've finished eating and want to pay.",
+    "turns": [
+      {
+        "speaker": "You",
+        "line": "저기요, 계산해 주세요.",
+        "options": [
+          "저기요, 계산해 주세요.",
+          "메뉴 주세요.",
+          "여기 앉아도 돼요?",
+          "물 주세요."
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "네, 총 이만 오천 원입니다."
+      },
+      {
+        "speaker": "You",
+        "line": "카드로 해도 돼요?",
+        "options": [
+          "맛있었어요.",
+          "내일 다시 올게요.",
+          "뭐가 제일 맛있어요?",
+          "카드로 해도 돼요?"
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "네, 카드 됩니다. 여기에 넣어 주세요."
+      },
+      {
+        "speaker": "You",
+        "line": "영수증은 괜찮아요.",
+        "options": [
+          "감사합니다. 또 올게요.",
+          "영수증은 괜찮아요.",
+          "저는 한국 사람이에요.",
+          "몇 명이에요?"
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "감사합니다. 또 오세요!"
+      },
+      {
+        "speaker": "You",
+        "line": "맛있었어요. 감사합니다!",
+        "options": [
+          "주문할게요.",
+          "어디에 있어요?",
+          "맛있었어요. 감사합니다!",
+          "아직이요."
+        ]
+      }
+    ],
+    "explanation": "계산해 주세요 = 'Please give me the bill.' 이만 오천 원 = '25,000 won.' 카드로 해도 돼요? = 'Can I pay by card?' 영수증 = 'receipt.' 괜찮아요 = 'It's okay / I don't need it.' 또 오세요 = 'Please come again.'"
+  },
+  {
+    "title": "Making a restaurant reservation",
+    "context": "You call a restaurant to make a reservation for dinner.",
+    "turns": [
+      {
+        "speaker": "Staff",
+        "line": "감사합니다. 서울식당입니다."
+      },
+      {
+        "speaker": "You",
+        "line": "예약하고 싶은데요.",
+        "options": [
+          "메뉴가 뭐예요?",
+          "지금 가고 있어요.",
+          "예약하고 싶은데요.",
+          "안녕히 계세요."
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "네, 몇 분이시고 언제 오실 건가요?"
+      },
+      {
+        "speaker": "You",
+        "line": "네 명이요. 오늘 저녁 일곱 시에요.",
+        "options": [
+          "네 명이요. 오늘 저녁 일곱 시에요.",
+          "두 시에 가도 돼요?",
+          "혼자 갈 거예요.",
+          "내일 아침이요."
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "네, 성함이 어떻게 되세요?"
+      },
+      {
+        "speaker": "You",
+        "line": "김민수요.",
+        "options": [
+          "모르겠어요.",
+          "그냥 갈게요.",
+          "전화번호요?",
+          "김민수요."
+        ]
+      }
+    ],
+    "explanation": "예약하고 싶은데요 = 'I'd like to make a reservation.' 몇 분 = 'how many people.' 네 명 = 'four people.' 성함 is the honorific form of 이름 (name). 일곱 시 = '7 o'clock.'"
+  },
+  {
+    "title": "Buying clothes",
+    "context": "You're shopping for clothes at a store.",
+    "turns": [
+      {
+        "speaker": "Staff",
+        "line": "어서 오세요. 뭐 찾으시는 거 있으세요?"
+      },
+      {
+        "speaker": "You",
+        "line": "티셔츠를 사고 싶어요.",
+        "options": [
+          "그냥 구경하고 있어요.",
+          "티셔츠를 사고 싶어요.",
+          "이거 환불해 주세요.",
+          "얼마예요?"
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "이쪽에 많이 있습니다. 어떤 색 원하세요?"
+      },
+      {
+        "speaker": "You",
+        "line": "흰색이나 검은색이요.",
+        "options": [
+          "바지도 있어요?",
+          "큰 거요.",
+          "세일하고 있어요?",
+          "흰색이나 검은색이요."
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "사이즈가 어떻게 되세요?"
+      },
+      {
+        "speaker": "You",
+        "line": "미디엄이요. 입어 봐도 돼요?",
+        "options": [
+          "미디엄이요. 입어 봐도 돼요?",
+          "라지로 주세요.",
+          "이거 얼마예요?",
+          "다른 색 있어요?"
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "네, 탈의실은 저쪽에 있습니다."
+      },
+      {
+        "speaker": "You",
+        "line": "감사합니다. 이거로 할게요.",
+        "options": [
+          "좀 더 볼게요.",
+          "감사합니다. 이거로 할게요.",
+          "너무 비싸요.",
+          "다른 가게에 갈게요."
+        ]
+      }
+    ],
+    "explanation": "~을/를 사고 싶어요 = 'I want to buy ~.' 흰색 = 'white,' 검은색 = 'black.' ~이나 = 'or.' 입어 봐도 돼요? = 'Can I try it on?' 탈의실 = 'fitting room.' 이거로 할게요 = 'I'll take this one.'"
+  },
+  {
+    "title": "Asking for size and color",
+    "context": "You found something you like but need a different size.",
+    "turns": [
+      {
+        "speaker": "You",
+        "line": "이 바지 다른 사이즈 있어요?",
+        "options": [
+          "이 바지 다른 사이즈 있어요?",
+          "이거 새 거예요?",
+          "여기 자주 와요.",
+          "화장실 어디예요?"
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "어떤 사이즈 찾으세요?"
+      },
+      {
+        "speaker": "You",
+        "line": "좀 더 큰 거 있어요?",
+        "options": [
+          "제일 작은 거요.",
+          "다른 가게에 갈게요.",
+          "이 색 좋아요.",
+          "좀 더 큰 거 있어요?"
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "이 색은 라지까지 있습니다. 파란색은 엑스라지도 있어요."
+      },
+      {
+        "speaker": "You",
+        "line": "파란색 엑스라지로 주세요.",
+        "options": [
+          "검은색 스몰로 주세요.",
+          "파란색 엑스라지로 주세요.",
+          "빨간색 없어요?",
+          "괜찮아요, 안 살게요."
+        ]
+      }
+    ],
+    "explanation": "다른 사이즈 있어요? = 'Do you have a different size?' 좀 더 큰 거 = 'something a bit bigger.' 파란색 = 'blue.' ~로 주세요 = 'please give me (in/with) ~.' ~까지 means 'up to.'"
+  },
+  {
+    "title": "Bargaining at the market",
+    "context": "You're at a traditional market trying to get a better price.",
+    "turns": [
+      {
+        "speaker": "Vendor",
+        "line": "이거 예쁘죠? 만 오천 원이에요."
+      },
+      {
+        "speaker": "You",
+        "line": "좀 비싼 것 같아요. 깎아 주세요.",
+        "options": [
+          "다른 색 보여 주세요.",
+          "네, 살게요.",
+          "뭐예요, 이거?",
+          "좀 비싼 것 같아요. 깎아 주세요."
+        ]
+      },
+      {
+        "speaker": "Vendor",
+        "line": "에이, 이게 시장에서 제일 싼 거예요. 만 이천 원에 드릴게요."
+      },
+      {
+        "speaker": "You",
+        "line": "만 원이면 살게요.",
+        "options": [
+          "이만 원이요? 비싸요.",
+          "만 원이면 살게요.",
+          "안 살 거예요.",
+          "세 개 주세요."
+        ]
+      },
+      {
+        "speaker": "Vendor",
+        "line": "그러면 두 개 사시면 만 원에 해 드릴게요."
+      },
+      {
+        "speaker": "You",
+        "line": "좋아요! 두 개 주세요.",
+        "options": [
+          "좋아요! 두 개 주세요.",
+          "아니요, 하나만요.",
+          "너무 많아요.",
+          "내일 다시 올게요."
+        ]
+      }
+    ],
+    "explanation": "깎아 주세요 = 'Please give me a discount.' 비싼 것 같아요 = 'It seems expensive.' 만 원이면 = 'If it's 10,000 won.' ~에 드릴게요 = 'I'll give it to you for ~.' Bargaining (깎다) is common at Korean traditional markets (시장)."
+  },
+  {
+    "title": "Asking for directions on foot",
+    "context": "You're lost and ask a passerby for directions.",
+    "turns": [
+      {
+        "speaker": "You",
+        "line": "저기요, 명동역이 어디에 있어요?",
+        "options": [
+          "저기요, 명동역이 어디에 있어요?",
+          "명동역이 멀어요?",
+          "버스가 몇 번이에요?",
+          "택시 타고 싶어요."
+        ]
+      },
+      {
+        "speaker": "Passerby",
+        "line": "여기서 쭉 가다가 사거리에서 왼쪽으로 가세요."
+      },
+      {
+        "speaker": "You",
+        "line": "여기서 얼마나 걸려요?",
+        "options": [
+          "감사합니다.",
+          "택시 타야 돼요?",
+          "여기서 얼마나 걸려요?",
+          "어느 쪽이에요?"
+        ]
+      },
+      {
+        "speaker": "Passerby",
+        "line": "걸어서 한 오 분 정도요."
+      },
+      {
+        "speaker": "You",
+        "line": "감사합니다. 쭉 가다가 왼쪽이요, 맞죠?",
+        "options": [
+          "오른쪽이요?",
+          "다시 한번 말해 주세요.",
+          "감사합니다. 쭉 가다가 왼쪽이요, 맞죠?",
+          "지도 있어요?"
+        ]
+      }
+    ],
+    "explanation": "어디에 있어요? = 'Where is it?' 쭉 가다가 = 'go straight and then.' 사거리 = 'four-way intersection.' 왼쪽 = 'left,' 오른쪽 = 'right.' 얼마나 걸려요? = 'How long does it take?' 걸어서 = 'on foot.'"
+  },
+  {
+    "title": "Taking a taxi",
+    "context": "You get in a taxi and tell the driver where to go.",
+    "turns": [
+      {
+        "speaker": "Driver",
+        "line": "어디로 가실 거예요?"
+      },
+      {
+        "speaker": "You",
+        "line": "서울역으로 가 주세요.",
+        "options": [
+          "여기서 세워 주세요.",
+          "빨리 가 주세요.",
+          "서울역으로 가 주세요.",
+          "얼마예요?"
+        ]
+      },
+      {
+        "speaker": "Driver",
+        "line": "네, 알겠습니다. 길이 좀 막힐 수도 있어요."
+      },
+      {
+        "speaker": "You",
+        "line": "괜찮아요. 얼마나 걸려요?",
+        "options": [
+          "괜찮아요. 얼마나 걸려요?",
+          "다른 길로 가세요.",
+          "빨리 가 주세요.",
+          "여기서 내릴게요."
+        ]
+      },
+      {
+        "speaker": "Driver",
+        "line": "한 이십 분 정도 걸릴 것 같아요."
+      },
+      {
+        "speaker": "You",
+        "line": "네, 알겠어요.",
+        "options": [
+          "너무 오래 걸려요.",
+          "더 빨리 안 돼요?",
+          "다른 택시 탈게요.",
+          "네, 알겠어요."
+        ]
+      }
+    ],
+    "explanation": "~으로 가 주세요 = 'Please go to ~.' 길이 막히다 = 'traffic is jammed.' 얼마나 걸려요? = 'How long will it take?' 이십 분 = '20 minutes.' ~ㄹ 것 같아요 = 'I think it will ~.'"
+  },
+  {
+    "title": "Using the subway",
+    "context": "You ask for help navigating the subway system.",
+    "turns": [
+      {
+        "speaker": "You",
+        "line": "강남역에 가려면 몇 호선을 타야 돼요?",
+        "options": [
+          "강남역에 가려면 몇 호선을 타야 돼요?",
+          "표가 얼마예요?",
+          "지하철이 어디 있어요?",
+          "여기가 강남이에요?"
+        ]
+      },
+      {
+        "speaker": "Passerby",
+        "line": "이호선 타시면 돼요. 여기서 바로 탈 수 있어요."
+      },
+      {
+        "speaker": "You",
+        "line": "감사합니다. 몇 정거장이에요?",
+        "options": [
+          "몇 시에 끝나요?",
+          "어디서 갈아타요?",
+          "감사합니다. 몇 정거장이에요?",
+          "표는 어디서 사요?"
+        ]
+      },
+      {
+        "speaker": "Passerby",
+        "line": "세 정거장이에요. 한 십 분 정도요."
+      },
+      {
+        "speaker": "You",
+        "line": "고맙습니다!",
+        "options": [
+          "택시 탈게요.",
+          "너무 멀어요.",
+          "고맙습니다!",
+          "몇 번 출구예요?"
+        ]
+      }
+    ],
+    "explanation": "~에 가려면 = 'If you want to go to ~.' 몇 호선 = 'which line (number).' 이호선 = 'Line 2.' ~을/를 타다 = 'to ride/take.' 정거장 = 'station/stop.' 갈아타다 = 'to transfer.'"
+  },
+  {
+    "title": "Calling a friend",
+    "context": "You call a Korean friend to make plans.",
+    "turns": [
+      {
+        "speaker": "Friend",
+        "line": "여보세요?"
+      },
+      {
+        "speaker": "You",
+        "line": "나야! 이번 주말에 시간 있어?",
+        "options": [
+          "나야! 이번 주말에 시간 있어?",
+          "누구세요?",
+          "지금 뭐 해요?",
+          "전화 잘못 걸었어요."
+        ]
+      },
+      {
+        "speaker": "Friend",
+        "line": "응, 토요일은 괜찮아. 뭐 하고 싶어?"
+      },
+      {
+        "speaker": "You",
+        "line": "같이 영화 보러 갈래?",
+        "options": [
+          "집에서 쉬고 싶어.",
+          "언제 만날까?",
+          "나 바빠.",
+          "같이 영화 보러 갈래?"
+        ]
+      },
+      {
+        "speaker": "Friend",
+        "line": "좋아! 몇 시에 만날까?"
+      },
+      {
+        "speaker": "You",
+        "line": "두 시에 홍대역에서 만나자.",
+        "options": [
+          "모르겠어.",
+          "내가 연락할게.",
+          "너 정해.",
+          "두 시에 홍대역에서 만나자."
+        ]
+      }
+    ],
+    "explanation": "여보세요 = 'Hello' (phone greeting). 나야 = 'It's me' (casual). 이번 주말 = 'this weekend.' ~(으)러 가다 = 'to go to do ~.' 갈래? = 'Shall we go? / Do you want to go?' 만나자 = 'Let's meet' (casual). Note: friends use 반말 (casual speech)."
+  },
+  {
+    "title": "Making a phone reservation",
+    "context": "You call a restaurant to reserve a table by phone.",
+    "turns": [
+      {
+        "speaker": "Staff",
+        "line": "감사합니다. 한강갈비입니다."
+      },
+      {
+        "speaker": "You",
+        "line": "안녕하세요. 예약하려고 전화했어요.",
+        "options": [
+          "배달되나요?",
+          "지금 자리 있어요?",
+          "안녕하세요. 예약하려고 전화했어요.",
+          "메뉴 좀 알려 주세요."
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "네, 언제 오실 건가요?"
+      },
+      {
+        "speaker": "You",
+        "line": "이번 금요일 저녁 여섯 시에 가려고요.",
+        "options": [
+          "오늘 점심이요.",
+          "다음 주 월요일이요.",
+          "지금 바로 갈게요.",
+          "이번 금요일 저녁 여섯 시에 가려고요."
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "몇 분이세요?"
+      },
+      {
+        "speaker": "You",
+        "line": "세 명이요. 창가 자리 가능해요?",
+        "options": [
+          "여섯 명이요.",
+          "혼자요.",
+          "세 명이요. 창가 자리 가능해요?",
+          "아무 자리나 괜찮아요."
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "네, 가능합니다. 성함하고 전화번호 부탁드립니다."
+      },
+      {
+        "speaker": "You",
+        "line": "이지은이고요, 010-1234-5678이에요.",
+        "options": [
+          "이지은이고요, 010-1234-5678이에요.",
+          "이름은 안 알려 줘도 돼요?",
+          "나중에 다시 전화할게요.",
+          "전화번호가 뭐예요?"
+        ]
+      }
+    ],
+    "explanation": "예약하려고 전화했어요 = 'I called to make a reservation.' ~(으)려고 = 'in order to.' 금요일 = 'Friday.' 창가 자리 = 'window seat.' 가능하다 = 'to be possible.' 성함 = 'name' (honorific). 부탁드립니다 = 'please (I request).'"
+  },
+  {
+    "title": "Meeting someone new",
+    "context": "You meet a Korean person at a social gathering.",
+    "turns": [
+      {
+        "speaker": "Person",
+        "line": "안녕하세요! 처음 뵙겠습니다."
+      },
+      {
+        "speaker": "You",
+        "line": "안녕하세요! 저는 마이클이에요. 만나서 반가워요.",
+        "options": [
+          "이름이 뭐예요?",
+          "네, 안녕하세요.",
+          "안녕하세요! 저는 마이클이에요. 만나서 반가워요.",
+          "어디서 왔어요?"
+        ]
+      },
+      {
+        "speaker": "Person",
+        "line": "반가워요! 저는 박지민이에요. 어느 나라에서 오셨어요?"
+      },
+      {
+        "speaker": "You",
+        "line": "미국에서 왔어요. 한국에 온 지 삼 개월 됐어요.",
+        "options": [
+          "한국 사람이에요.",
+          "미국에서 왔어요. 한국에 온 지 삼 개월 됐어요.",
+          "일본에서 왔어요.",
+          "영국에서 왔는데요."
+        ]
+      },
+      {
+        "speaker": "Person",
+        "line": "와, 한국어 잘하시네요! 뭐 하세요?"
+      },
+      {
+        "speaker": "You",
+        "line": "감사해요. 회사원이에요. 서울에서 일하고 있어요.",
+        "options": [
+          "아직 잘 못해요.",
+          "학생이에요.",
+          "감사해요. 회사원이에요. 서울에서 일하고 있어요.",
+          "한국어 공부하고 있어요."
+        ]
+      }
+    ],
+    "explanation": "처음 뵙겠습니다 = 'Nice to meet you' (formal, first meeting). 만나서 반가워요 = 'Glad to meet you.' 어느 나라 = 'which country.' ~에서 왔어요 = 'I came from ~.' 온 지 삼 개월 = 'three months since I came.' 회사원 = 'office worker.'"
+  },
+  {
+    "title": "Introducing yourself at work",
+    "context": "It's your first day at a Korean company and you introduce yourself.",
+    "turns": [
+      {
+        "speaker": "Manager",
+        "line": "여러분, 오늘부터 같이 일할 새 직원을 소개합니다."
+      },
+      {
+        "speaker": "You",
+        "line": "안녕하세요. 저는 사라예요. 잘 부탁드립니다.",
+        "options": [
+          "저는 사라예요. 뭐 해요?",
+          "안녕하세요. 저는 사라예요. 잘 부탁드립니다.",
+          "안녕! 나는 사라야.",
+          "반가워요, 여러분."
+        ]
+      },
+      {
+        "speaker": "Colleague",
+        "line": "반갑습니다! 어디 부서에서 일하세요?"
+      },
+      {
+        "speaker": "You",
+        "line": "마케팅 부서에서 일해요.",
+        "options": [
+          "마케팅 부서에서 일해요.",
+          "아직 몰라요.",
+          "여기 처음이에요.",
+          "잘 모르겠어요."
+        ]
+      },
+      {
+        "speaker": "Colleague",
+        "line": "아, 저도 마케팅이에요! 궁금한 거 있으면 편하게 물어보세요."
+      },
+      {
+        "speaker": "You",
+        "line": "감사합니다. 많이 배우고 싶어요.",
+        "options": [
+          "네, 알겠어요.",
+          "감사합니다. 많이 배우고 싶어요.",
+          "별로 궁금한 거 없어요.",
+          "점심 같이 먹을래요?"
+        ]
+      }
+    ],
+    "explanation": "잘 부탁드립니다 = 'Please take care of me' (standard greeting when joining a group). 부서 = 'department.' 마케팅 = 'marketing.' 궁금한 거 = 'things you're curious about.' 편하게 = 'comfortably / feel free.' 배우다 = 'to learn.'"
+  },
+  {
+    "title": "Visiting the doctor",
+    "context": "You feel sick and visit a clinic.",
+    "turns": [
+      {
+        "speaker": "Doctor",
+        "line": "어디가 아프세요?"
+      },
+      {
+        "speaker": "You",
+        "line": "어제부터 머리가 아프고 열이 있어요.",
+        "options": [
+          "좀 피곤해요.",
+          "배가 아파요.",
+          "어제부터 머리가 아프고 열이 있어요.",
+          "감기 걸렸어요."
+        ]
+      },
+      {
+        "speaker": "Doctor",
+        "line": "기침이나 콧물도 있으세요?"
+      },
+      {
+        "speaker": "You",
+        "line": "네, 기침이 좀 나요. 목도 아파요.",
+        "options": [
+          "아니요, 없어요.",
+          "콧물만 나요.",
+          "네, 기침이 좀 나요. 목도 아파요.",
+          "잘 모르겠어요."
+        ]
+      },
+      {
+        "speaker": "Doctor",
+        "line": "감기인 것 같습니다. 약 처방해 드릴게요. 이틀 정도 쉬세요."
+      },
+      {
+        "speaker": "You",
+        "line": "감사합니다. 약국은 어디에 있어요?",
+        "options": [
+          "얼마예요?",
+          "입원해야 돼요?",
+          "보험 있어요.",
+          "감사합니다. 약국은 어디에 있어요?"
+        ]
+      }
+    ],
+    "explanation": "어디가 아프세요? = 'Where does it hurt?' 머리가 아프다 = 'to have a headache.' 열이 있다 = 'to have a fever.' 기침 = 'cough,' 콧물 = 'runny nose,' 목 = 'throat.' 약 처방 = 'medicine prescription.' 약국 = 'pharmacy.'"
+  },
+  {
+    "title": "Buying medicine at the pharmacy",
+    "context": "You go to the pharmacy with a prescription.",
+    "turns": [
+      {
+        "speaker": "Pharmacist",
+        "line": "처방전 있으세요?"
+      },
+      {
+        "speaker": "You",
+        "line": "네, 여기요.",
+        "options": [
+          "아니요, 없어요.",
+          "네, 여기요.",
+          "어디서 받아요?",
+          "필요 없어요."
+        ]
+      },
+      {
+        "speaker": "Pharmacist",
+        "line": "잠시만요. 약 준비해 드릴게요."
+      },
+      {
+        "speaker": "You",
+        "line": "이 약은 하루에 몇 번 먹어요?",
+        "options": [
+          "약이 왜 이렇게 많아요?",
+          "빨리 주세요.",
+          "부작용 있어요?",
+          "이 약은 하루에 몇 번 먹어요?"
+        ]
+      },
+      {
+        "speaker": "Pharmacist",
+        "line": "하루에 세 번, 식후에 드세요."
+      },
+      {
+        "speaker": "You",
+        "line": "알겠어요. 감사합니다.",
+        "options": [
+          "밥 안 먹어도 돼요?",
+          "알겠어요. 감사합니다.",
+          "다른 약 없어요?",
+          "너무 비싸요."
+        ]
+      }
+    ],
+    "explanation": "처방전 = 'prescription.' 하루에 몇 번 = 'how many times a day.' 식후 = 'after meals' (食後). 세 번 = 'three times.' 드세요 = 'please take/eat' (honorific of 먹다). In Korea, pharmacies (약국) are separate from clinics."
+  },
+  {
+    "title": "Opening a bank account",
+    "context": "You visit a bank to open a new account.",
+    "turns": [
+      {
+        "speaker": "Teller",
+        "line": "어서 오세요. 어떻게 오셨어요?"
+      },
+      {
+        "speaker": "You",
+        "line": "통장을 만들고 싶어요.",
+        "options": [
+          "통장을 만들고 싶어요.",
+          "돈을 보내고 싶어요.",
+          "환전하러 왔어요.",
+          "카드를 잃어버렸어요."
+        ]
+      },
+      {
+        "speaker": "Teller",
+        "line": "신분증 가지고 오셨어요?"
+      },
+      {
+        "speaker": "You",
+        "line": "네, 여권이요. 여기 있어요.",
+        "options": [
+          "네, 여권이요. 여기 있어요.",
+          "아니요, 집에 두고 왔어요.",
+          "주민등록증이요.",
+          "외국인등록증은 안 돼요?"
+        ]
+      },
+      {
+        "speaker": "Teller",
+        "line": "감사합니다. 이 서류 작성해 주세요."
+      },
+      {
+        "speaker": "You",
+        "line": "여기에 이름하고 주소 쓰면 돼요?",
+        "options": [
+          "도와주세요.",
+          "한국어로 써야 돼요?",
+          "여기에 이름하고 주소 쓰면 돼요?",
+          "다 썼어요."
+        ]
+      },
+      {
+        "speaker": "Teller",
+        "line": "네, 그리고 전화번호도요. 체크카드도 같이 만드실 건가요?"
+      },
+      {
+        "speaker": "You",
+        "line": "네, 같이 만들어 주세요.",
+        "options": [
+          "아니요, 통장만요.",
+          "체크카드가 뭐예요?",
+          "네, 같이 만들어 주세요.",
+          "나중에 할게요."
+        ]
+      }
+    ],
+    "explanation": "통장 = 'bankbook/account.' 만들다 = 'to make.' 신분증 = 'ID.' 여권 = 'passport.' 서류 작성 = 'fill out paperwork.' 주소 = 'address.' 체크카드 = 'debit card.' In Korea, bank accounts still come with a physical bankbook (통장)."
+  },
+  {
+    "title": "Exchanging money",
+    "context": "You need to exchange foreign currency at the bank.",
+    "turns": [
+      {
+        "speaker": "Teller",
+        "line": "어서 오세요. 어떻게 도와드릴까요?"
+      },
+      {
+        "speaker": "You",
+        "line": "달러를 원으로 환전하고 싶어요.",
+        "options": [
+          "달러를 원으로 환전하고 싶어요.",
+          "통장 만들고 싶어요.",
+          "돈을 찾으러 왔어요.",
+          "카드 발급받으러 왔어요."
+        ]
+      },
+      {
+        "speaker": "Teller",
+        "line": "얼마를 환전하시겠어요?"
+      },
+      {
+        "speaker": "You",
+        "line": "삼백 달러요. 오늘 환율이 어떻게 돼요?",
+        "options": [
+          "삼백 달러요. 오늘 환율이 어떻게 돼요?",
+          "전부 다요.",
+          "만 원이요.",
+          "잘 모르겠어요."
+        ]
+      },
+      {
+        "speaker": "Teller",
+        "line": "오늘 환율은 일 달러에 천삼백이십 원입니다."
+      },
+      {
+        "speaker": "You",
+        "line": "네, 환전해 주세요.",
+        "options": [
+          "다른 은행에 갈게요.",
+          "너무 낮아요.",
+          "내일 다시 올게요.",
+          "네, 환전해 주세요."
+        ]
+      }
+    ],
+    "explanation": "환전 = 'currency exchange.' 달러 = 'dollar.' 원 = 'won' (Korean currency). 환율 = 'exchange rate.' 삼백 = '300.' 천삼백이십 = '1,320.' ~으로 = 'into/to.'"
+  },
+  {
+    "title": "Giving directions to a taxi driver",
+    "context": "You're in a taxi trying to explain where you want to go.",
+    "turns": [
+      {
+        "speaker": "Driver",
+        "line": "어디로 갈까요?"
+      },
+      {
+        "speaker": "You",
+        "line": "이태원 쪽으로 가 주세요.",
+        "options": [
+          "빨리 가 주세요.",
+          "아무 데나 가세요.",
+          "집으로 가 주세요.",
+          "이태원 쪽으로 가 주세요."
+        ]
+      },
+      {
+        "speaker": "Driver",
+        "line": "이태원 어디쪽이요? 정확한 주소 아세요?"
+      },
+      {
+        "speaker": "You",
+        "line": "정확한 주소는 모르는데, 이태원역 근처 해밀턴 호텔 앞이요.",
+        "options": [
+          "정확한 주소는 모르는데, 이태원역 근처 해밀턴 호텔 앞이요.",
+          "네비에 찍어 볼게요.",
+          "그냥 이태원역이요.",
+          "잘 모르겠어요."
+        ]
+      },
+      {
+        "speaker": "Driver",
+        "line": "아, 알겠습니다. 한 이십 분 정도 걸립니다."
+      },
+      {
+        "speaker": "You",
+        "line": "네, 괜찮아요. 저기 편의점 앞에서 세워 주세요.",
+        "options": [
+          "더 빨리 갈 수 없어요?",
+          "네, 괜찮아요. 저기 편의점 앞에서 세워 주세요.",
+          "여기서 내릴게요.",
+          "미터기 켜 주세요."
+        ]
+      }
+    ],
+    "explanation": "~쪽으로 = 'toward ~.' 정확한 주소 = 'exact address.' 근처 = 'nearby.' ~앞 = 'in front of.' 세워 주세요 = 'Please stop/pull over (the car).' 편의점 = 'convenience store.'"
+  },
+  {
+    "title": "Asking the taxi fare",
+    "context": "You arrive at your destination and pay the taxi driver.",
+    "turns": [
+      {
+        "speaker": "Driver",
+        "line": "다 왔습니다."
+      },
+      {
+        "speaker": "You",
+        "line": "감사합니다. 얼마예요?",
+        "options": [
+          "아직 안 왔어요.",
+          "감사합니다. 얼마예요?",
+          "여기 맞아요?",
+          "좀 더 가 주세요."
+        ]
+      },
+      {
+        "speaker": "Driver",
+        "line": "만 이천삼백 원입니다."
+      },
+      {
+        "speaker": "You",
+        "line": "카드로 계산할게요.",
+        "options": [
+          "현금으로 낼게요.",
+          "잔돈 있어요?",
+          "카드로 계산할게요.",
+          "영수증 주세요."
+        ]
+      },
+      {
+        "speaker": "Driver",
+        "line": "네, 여기에 대 주세요. 감사합니다."
+      },
+      {
+        "speaker": "You",
+        "line": "감사합니다. 안녕히 계세요.",
+        "options": [
+          "거스름돈 주세요.",
+          "감사합니다. 안녕히 계세요.",
+          "수고하세요.",
+          "너무 비싸요."
+        ]
+      }
+    ],
+    "explanation": "다 왔습니다 = 'We've arrived.' 얼마예요? = 'How much is it?' 만 이천삼백 원 = '12,300 won.' 카드로 계산하다 = 'to pay by card.' 대다 = 'to tap/hold against.' 안녕히 계세요 = 'Goodbye' (said by the person leaving)."
+  },
+  {
+    "title": "Checking into a hotel",
+    "context": "You arrive at a hotel and check in.",
+    "turns": [
+      {
+        "speaker": "Staff",
+        "line": "어서 오세요. 예약하셨어요?"
+      },
+      {
+        "speaker": "You",
+        "line": "네, 김민수로 예약했어요.",
+        "options": [
+          "아니요, 방 있어요?",
+          "네, 김민수로 예약했어요.",
+          "오늘 체크아웃이에요.",
+          "예약 취소하고 싶어요."
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "네, 확인됐습니다. 이틀 숙박이시죠?"
+      },
+      {
+        "speaker": "You",
+        "line": "네, 맞아요. 체크아웃이 몇 시예요?",
+        "options": [
+          "아니요, 삼일이요.",
+          "방을 바꿀 수 있어요?",
+          "네, 맞아요. 체크아웃이 몇 시예요?",
+          "조식 포함이에요?"
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "오전 열한 시입니다. 방은 오백이 호입니다. 여기 키 카드예요."
+      },
+      {
+        "speaker": "You",
+        "line": "감사합니다. 와이파이 비밀번호가 뭐예요?",
+        "options": [
+          "감사합니다. 와이파이 비밀번호가 뭐예요?",
+          "엘리베이터가 어디예요?",
+          "방이 좀 작은 것 같아요.",
+          "주차장 있어요?"
+        ]
+      }
+    ],
+    "explanation": "~로 예약했어요 = 'I reserved under (name).' 확인되다 = 'to be confirmed.' 이틀 숙박 = 'two-night stay.' 체크아웃 = 'check-out.' 오백이 호 = 'Room 502.' 와이파이 비밀번호 = 'Wi-Fi password.'"
+  },
+  {
+    "title": "Asking about hotel facilities",
+    "context": "You want to know about the hotel's amenities.",
+    "turns": [
+      {
+        "speaker": "You",
+        "line": "안녕하세요. 호텔에 수영장이 있어요?",
+        "options": [
+          "방을 바꿔 주세요.",
+          "안녕하세요. 호텔에 수영장이 있어요?",
+          "조식이 몇 시예요?",
+          "택시 불러 주세요."
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "네, 지하 일 층에 수영장이 있습니다. 오전 여섯 시부터 밤 열 시까지 이용 가능합니다."
+      },
+      {
+        "speaker": "You",
+        "line": "헬스장도 있어요?",
+        "options": [
+          "수영장이 무료예요?",
+          "사우나도 있어요?",
+          "수건 빌려 주세요.",
+          "헬스장도 있어요?"
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "네, 수영장 옆에 있습니다. 둘 다 투숙객은 무료입니다."
+      },
+      {
+        "speaker": "You",
+        "line": "좋아요! 조식은 어디서 먹어요?",
+        "options": [
+          "방에서 먹을 수 있어요?",
+          "좋아요! 조식은 어디서 먹어요?",
+          "조식이 몇 시부터예요?",
+          "조식 메뉴가 뭐예요?"
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "일 층 레스토랑에서 오전 일곱 시부터 열 시까지 제공됩니다."
+      },
+      {
+        "speaker": "You",
+        "line": "알겠어요. 감사합니다.",
+        "options": [
+          "알겠어요. 감사합니다.",
+          "너무 일찍이에요.",
+          "룸서비스도 돼요?",
+          "뷔페예요?"
+        ]
+      }
+    ],
+    "explanation": "수영장 = 'swimming pool.' 지하 일 층 = 'basement level 1.' ~부터 ~까지 = 'from ~ to ~.' 헬스장 = 'gym/fitness center.' 투숙객 = 'hotel guest.' 무료 = 'free of charge.' 조식 = 'breakfast (formal).'"
+  },
+  {
+    "title": "Ordering coffee at a cafe",
+    "context": "You order drinks at a Korean cafe.",
+    "turns": [
+      {
+        "speaker": "Staff",
+        "line": "어서 오세요. 주문하시겠어요?"
+      },
+      {
+        "speaker": "You",
+        "line": "아메리카노 한 잔 주세요.",
+        "options": [
+          "아메리카노 한 잔 주세요.",
+          "메뉴 좀 볼게요.",
+          "여기 앉아도 돼요?",
+          "와이파이 비밀번호 뭐예요?"
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "뜨거운 거로 드릴까요, 차가운 거로 드릴까요?"
+      },
+      {
+        "speaker": "You",
+        "line": "아이스로 주세요.",
+        "options": [
+          "뜨거운 걸로요.",
+          "둘 다 주세요.",
+          "아이스로 주세요.",
+          "아무거나요."
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "사이즈는요? 레귤러, 라지 있습니다."
+      },
+      {
+        "speaker": "You",
+        "line": "라지로 주세요. 얼마예요?",
+        "options": [
+          "레귤러로요.",
+          "스몰이요.",
+          "제일 큰 거요.",
+          "라지로 주세요. 얼마예요?"
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "오천 원입니다. 포인트 적립하시겠어요?"
+      },
+      {
+        "speaker": "You",
+        "line": "아니요, 괜찮아요.",
+        "options": [
+          "네, 여기요.",
+          "아니요, 괜찮아요.",
+          "카드 있어요.",
+          "포인트가 뭐예요?"
+        ]
+      }
+    ],
+    "explanation": "한 잔 = 'one cup.' 뜨거운 거 = 'hot one,' 차가운 거 = 'cold one.' 아이스 = 'iced.' 오천 원 = '5,000 won.' 포인트 적립 = 'points accumulation.' Korean cafes always ask 뜨거운/차가운 (hot/cold) and often about stamp/point cards."
+  },
+  {
+    "title": "Sending a package at the post office",
+    "context": "You need to send a package internationally at the post office.",
+    "turns": [
+      {
+        "speaker": "Staff",
+        "line": "어서 오세요. 어떻게 도와드릴까요?"
+      },
+      {
+        "speaker": "You",
+        "line": "미국으로 소포 보내고 싶어요.",
+        "options": [
+          "우표 주세요.",
+          "미국으로 소포 보내고 싶어요.",
+          "편지 보내려고요.",
+          "택배 받으러 왔어요."
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "무게를 재 볼게요. 안에 뭐가 들어 있어요?"
+      },
+      {
+        "speaker": "You",
+        "line": "옷하고 과자요.",
+        "options": [
+          "잘 모르겠어요.",
+          "옷하고 과자요.",
+          "비싼 건 없어요.",
+          "책이요."
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "삼 킬로그램이네요. 일반이랑 빠른 우편 중에 어떤 걸로 하시겠어요?"
+      },
+      {
+        "speaker": "You",
+        "line": "빠른 우편이요. 며칠 걸려요?",
+        "options": [
+          "빠른 우편이요. 며칠 걸려요?",
+          "일반으로 해 주세요.",
+          "제일 싼 거요.",
+          "언제 도착해요?"
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "보통 오 일에서 칠 일 정도 걸립니다. 이만 삼천 원입니다."
+      },
+      {
+        "speaker": "You",
+        "line": "네, 보낼게요. 카드로 할게요.",
+        "options": [
+          "너무 비싸요.",
+          "다음에 올게요.",
+          "현금으로 낼게요.",
+          "네, 보낼게요. 카드로 할게요."
+        ]
+      }
+    ],
+    "explanation": "소포 = 'package/parcel.' 보내다 = 'to send.' 무게를 재다 = 'to weigh.' ~하고 = 'and.' 일반 = 'standard,' 빠른 우편 = 'express mail.' 며칠 = 'how many days.' 킬로그램 = 'kilogram.' 이만 삼천 원 = '23,000 won.'"
+  },
+  {
+    "title": "Shopping at the convenience store",
+    "context": "You buy a few items at a convenience store.",
+    "turns": [
+      {
+        "speaker": "Staff",
+        "line": "어서 오세요!"
+      },
+      {
+        "speaker": "You",
+        "line": "충전기 있어요? 핸드폰 충전기요.",
+        "options": [
+          "택배 보내려고요.",
+          "삼각김밥 어디 있어요?",
+          "화장실 어디예요?",
+          "충전기 있어요? 핸드폰 충전기요."
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "네, 저쪽 선반에 있어요."
+      },
+      {
+        "speaker": "You",
+        "line": "감사합니다. 이것도 같이 계산해 주세요.",
+        "options": [
+          "이거 얼마예요?",
+          "교환해 주세요.",
+          "더 싼 거 없어요?",
+          "감사합니다. 이것도 같이 계산해 주세요."
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "총 팔천오백 원입니다. 봉투 필요하세요?"
+      },
+      {
+        "speaker": "You",
+        "line": "네, 봉투 하나 주세요.",
+        "options": [
+          "아니요, 괜찮아요.",
+          "가방 있어요.",
+          "네, 봉투 하나 주세요.",
+          "큰 거로 주세요."
+        ]
+      },
+      {
+        "speaker": "Staff",
+        "line": "봉투는 오십 원입니다. 총 팔천오백오십 원이요."
+      },
+      {
+        "speaker": "You",
+        "line": "카드로 할게요.",
+        "options": [
+          "현금으로 낼게요.",
+          "카드로 할게요.",
+          "잔돈 있어요.",
+          "영수증 필요 없어요."
+        ]
+      }
+    ],
+    "explanation": "충전기 = 'charger.' 핸드폰 = 'cell phone.' 선반 = 'shelf.' 같이 계산하다 = 'to ring up together.' 봉투 = 'bag/envelope.' 팔천오백 원 = '8,500 won.' In Korea, plastic bags at stores cost extra (usually 50-100 won) due to environmental policy."
+  }
+]

@@ -1,0 +1,908 @@
+[
+  {
+    "incorrect": "이 책은 정말 흥미롭다.",
+    "correct": "이 책이 정말 흥미롭다.",
+    "error_type": "Particle error: 은/는 vs 이/가",
+    "explanation": "Adjectives describing inherent qualities use 이/가 (subject marker), not 은/는 (topic marker). Here the book IS interesting (quality of subject)."
+  },
+  {
+    "incorrect": "우리는 서울에 살고 있다.",
+    "correct": "우리는 서울에서 살고 있다.",
+    "error_type": "Particle error: 에 vs 에서",
+    "explanation": "Ongoing actions take 에서 (location of action). 에 marks only destination. Living is a continuous action, requiring 에서."
+  },
+  {
+    "incorrect": "나는 커피는 좋아한다.",
+    "correct": "나는 커피를 좋아한다.",
+    "error_type": "Particle error: double topic markers",
+    "explanation": "Double topic markers (나는...커피는) create redundancy. Use 을/를 for the direct object of 좋아하다."
+  },
+  {
+    "incorrect": "이 상황은 복잡하다.",
+    "correct": "이 상황이 복잡하다.",
+    "error_type": "Particle error: 은/는 vs 이/가",
+    "explanation": "Inherent qualities of the subject require 이/가. Use 은/는 only for contrasts or opinions about known topics."
+  },
+  {
+    "incorrect": "서울로 여행 가다.",
+    "correct": "서울로 여행을 가다.",
+    "error_type": "Particle error: missing object marker",
+    "explanation": "여행 (trip) is the object and needs 을/를. You go TO Seoul (destination 로) but DO a trip (object 을/를)."
+  },
+  {
+    "incorrect": "그 일에 대해 알지 못한다.",
+    "correct": "그 일을 알지 못한다.",
+    "error_type": "Particle error: 에 vs 을/를",
+    "explanation": "With 알다 (to know), use 을/를 for direct object. 에 대해 is only for discussions/lectures about something."
+  },
+  {
+    "incorrect": "친구한테 편지를 보냈다.",
+    "correct": "친구에게 편지를 보냈다.",
+    "error_type": "Particle error: 한테 vs 에게",
+    "explanation": "Both exist but 에게 is more formal/literary. In formal/written contexts, 에게 is strongly preferred."
+  },
+  {
+    "incorrect": "나는 목표를 향에 노력한다.",
+    "correct": "나는 목표를 향해 노력한다.",
+    "error_type": "Particle error: 에 vs 해",
+    "explanation": "향해 (towards) is a set phrase needing 해, not just 에. The particle 에 alone doesn't convey directional sense."
+  },
+  {
+    "incorrect": "그 학교는 우리 집에 가깝다.",
+    "correct": "그 학교는 우리 집에서 가깝다.",
+    "error_type": "Particle error: 에 vs 에서",
+    "explanation": "For comparative location ('far from/near to'), use 에서 as reference point, not just 에."
+  },
+  {
+    "incorrect": "나는 책을 읽을 때 음악은 듣지 않는다.",
+    "correct": "나는 책을 읽을 때 음악을 듣지 않는다.",
+    "error_type": "Particle error: 은/는 in dependent clause",
+    "explanation": "Using 은/는 in dependent clause (음악은) contrasts incorrectly. Use 을/를: 음악을 듣지 않는다."
+  },
+  {
+    "incorrect": "그는 지금 밥을 먹는다.",
+    "correct": "그는 지금 밥을 먹고 있다.",
+    "error_type": "Tense/aspect: present vs continuous",
+    "explanation": "With 지금 (now), use 고 있다 for action happening right now. Simple 먹는다 is general/habitual, not immediate present."
+  },
+  {
+    "incorrect": "내가 집에 가는 적에 비가 내렸다.",
+    "correct": "내가 집에 가는 중에 비가 내렸다.",
+    "error_type": "Tense/aspect: -ㄴ적 vs -는 중",
+    "explanation": "-ㄴ적에 is archaic/rare in modern Korean. Use -는 중에 or -고 있을 때 for 'while an action was happening'."
+  },
+  {
+    "incorrect": "그 일은 한 후에 다음을 시작했다.",
+    "correct": "그 일을 한 후에 다음을 시작했다.",
+    "error_type": "Tense/aspect: particle in sequence",
+    "explanation": "In temporal sequences with -한 후에, the first action takes 을/를 (object), not 은/는 (topic)."
+  },
+  {
+    "incorrect": "그 영화를 본 적이 없었다.",
+    "correct": "그 영화를 본 적이 없다.",
+    "error_type": "Tense/aspect: experience vs past tense",
+    "explanation": "With -본 적이 없다 (never seen), don't add past tense 었다. The structure itself means 'have never experienced'."
+  },
+  {
+    "incorrect": "그는 이미 밥을 먹었으니까 배고프지 않다.",
+    "correct": "그는 이미 밥을 먹었으니까 배고프지 않아야 한다.",
+    "error_type": "Tense/aspect: logical consequence",
+    "explanation": "After -었으니까 (because he ate), add 아야/어야 한다 for logical expectation, not simple negation."
+  },
+  {
+    "incorrect": "내일 올 거다.",
+    "correct": "내일 올 것이다.",
+    "error_type": "Tense/aspect: 거 vs 것",
+    "explanation": "거 is colloquial/informal. In formal/standard writing, use 것이다. In speech, 거 is acceptable."
+  },
+  {
+    "incorrect": "어제 그 영화를 봤으니까 재미있었다.",
+    "correct": "어제 그 영화를 봤는데 재미있었다.",
+    "error_type": "Tense/aspect: connector choice",
+    "explanation": "With past tense, -는데 (connection) is more natural than -으니까 (reason). You're just adding information, not implying cause."
+  },
+  {
+    "incorrect": "그가 왔으면 시작하자.",
+    "correct": "그가 왔으니 시작하자.",
+    "error_type": "Tense/aspect: -으니 vs -으면",
+    "explanation": "-으니 (since/now that) shows consequence after past event. -으면 is conditional 'if'. Here 'he came' is past fact, needing -으니."
+  },
+  {
+    "incorrect": "일찍 일어나면서 건강해진다.",
+    "correct": "일찍 일어나면 건강해진다.",
+    "error_type": "Connector: -면서 vs -면",
+    "explanation": "-면서 shows simultaneous conditions. -면 shows conditional cause-effect. 'If early + become healthy' needs -면."
+  },
+  {
+    "incorrect": "그 일이 중요하고 시간도 없다.",
+    "correct": "그 일이 중요한데 시간도 없다.",
+    "error_type": "Connector: -고 vs -는데",
+    "explanation": "-고 lists facts equally. -는데 shows contrast/tension. 'Important but no time' shows contrast, so -는데 is better."
+  },
+  {
+    "incorrect": "날씨가 춥니까 집에 있어야 한다.",
+    "correct": "날씨가 춥으니까 집에 있어야 한다.",
+    "error_type": "Connector: -으니까 conjugation",
+    "explanation": "춥다 → 춥으니까 (add 으 before -니까 when adjective ends in consonant). 춥니까 is incorrect."
+  },
+  {
+    "incorrect": "그를 만나고서 기뻤다.",
+    "correct": "그를 만나서 기뻤다.",
+    "error_type": "Connector: -고서 vs -아/어서",
+    "explanation": "-고서 is archaic/literary. Modern -아/어서 is standard for sequence/reason. Use 만나서."
+  },
+  {
+    "incorrect": "밥을 먹는 고 나갔다.",
+    "correct": "밥을 먹고 나갔다.",
+    "error_type": "Connector: spacing/form error",
+    "explanation": "-고 must attach directly to verb stem. 먹는 고 (wrong) should be 먹고 (attached). 먹는 means 'eating', but 먹고 means 'ate and then'."
+  },
+  {
+    "incorrect": "그가 왔으면서 시작하자.",
+    "correct": "그가 왔으니 시작하자.",
+    "error_type": "Connector: -으면서 vs -으니",
+    "explanation": "-으면서 shows simultaneous conditions. -으니 shows consequence after past event. 'He came, so start' requires -으니."
+  },
+  {
+    "incorrect": "오늘은 날씨가 좋고 기분도 좋다.",
+    "correct": "오늘은 날씨가 좋은데 기분도 좋다.",
+    "error_type": "Connector: -고 vs -는데",
+    "explanation": "For smooth connection of adjectives, -는데 is more natural. 좋은데 flows better than 좋고."
+  },
+  {
+    "incorrect": "새로운 정책을 통해서 배웠다.",
+    "correct": "새로운 정책을 통해 배웠다.",
+    "error_type": "Connector: redundant -서",
+    "explanation": "통해 already means 'through'. Adding -서 is redundant. Use only 통해."
+  },
+  {
+    "incorrect": "될 수 있다.",
+    "correct": "돼야 한다.",
+    "error_type": "Spelling error: 되 vs 돼",
+    "explanation": "돼 is colloquial present tense of 되다. 되 is only infinitive/past stem. For 'must become', use 돼."
+  },
+  {
+    "incorrect": "그건 맞히다.",
+    "correct": "그건 맞다.",
+    "error_type": "Spelling error: 맞히다 vs 맞다",
+    "explanation": "맞다 = 'be correct'. 맞히다 = 'hit the mark/guess correctly' (rare). For 'that's right', use 맞다."
+  },
+  {
+    "incorrect": "그것을 맞아낸다.",
+    "correct": "그것을 맞춰낸다.",
+    "error_type": "Spelling error: 맞다 vs 맞추다",
+    "explanation": "맞추다 = 'match/adjust/guess correctly'. 맞다 = 'be correct'. For 'adjust', use 맞춰."
+  },
+  {
+    "incorrect": "뭘 했는고?",
+    "correct": "뭘 했어?",
+    "error_type": "Spelling: archaic form",
+    "explanation": "-는고 is very archaic. Modern: 뭘 했어? or 뭐 했어? The suffix -고 is nearly extinct in contemporary Korean."
+  },
+  {
+    "incorrect": "그거는 내 거다.",
+    "correct": "그거는 내 것이다.",
+    "error_type": "Spelling/register: possessive form",
+    "explanation": "거 is colloquial; 것 is standard. For formal: 그것은 내 것이다. 거 is acceptable in speech but 것 is more proper."
+  },
+  {
+    "incorrect": "나는 컴퓨터를 다운로드한다.",
+    "correct": "나는 파일을 다운로드한다.",
+    "error_type": "Expression error: wrong object",
+    "explanation": "Download files/programs, not computers. 컴퓨터 cannot be object of 다운로드. Use 파일 or 프로그램."
+  },
+  {
+    "incorrect": "그것은 비용이 드는 안 한다.",
+    "correct": "그것은 비용이 드니까 안 한다.",
+    "error_type": "Expression error: incomplete connector",
+    "explanation": "비용이 드는 안 한다 is incomplete. Should be 비용이 드니까 안 한다 (because it costs, won't do)."
+  },
+  {
+    "incorrect": "나는 그것에 관심 있다.",
+    "correct": "나는 그것에 관심이 있다.",
+    "error_type": "Expression error: missing subject marker",
+    "explanation": "Use 관심이 있다 (interest exists), not 관심 있다. The subject 관심 needs 이."
+  },
+  {
+    "incorrect": "나는 그것을 관심 있다.",
+    "correct": "나는 그것에 관심이 있다.",
+    "error_type": "Expression error: wrong particle with 관심",
+    "explanation": "관심 있다 requires 에 and full form 있다. Correct: 그것에 관심이 있다."
+  },
+  {
+    "incorrect": "나는 그 말을 들었을 때에 깜짝 놀랐다.",
+    "correct": "나는 그 말을 들었을 때 깜짝 놀랐다.",
+    "error_type": "Expression error: redundant particle",
+    "explanation": "때 already means 'time'. Adding 에 (때에) is redundant in modern Korean. Use just 때."
+  },
+  {
+    "incorrect": "그 문제를 마주하고 해결했다.",
+    "correct": "그 문제에 마주하고 해결했다.",
+    "error_type": "Expression error: wrong particle with 마주하다",
+    "explanation": "마주하다 (encounter/face) requires 에 particle, not 을/를. Should be 문제에 마주하고."
+  },
+  {
+    "incorrect": "내가 한 것이 틀린다.",
+    "correct": "내가 한 것이 틀렸다.",
+    "error_type": "Expression error: tense mismatch",
+    "explanation": "틀리다 (be wrong) in past context needs 틀렸다. Simple 틀린다 is present. 'What I did is wrong' implies past result."
+  },
+  {
+    "incorrect": "나는 별로 상관 안 한다.",
+    "correct": "나는 별로 상관 없다.",
+    "error_type": "Expression error: wrong negation",
+    "explanation": "상관 + negation = 상관없다 (doesn't matter). Use 상관없다 or 상관이 없다, not 상관 안 한다."
+  },
+  {
+    "incorrect": "그것은 나한테는 중요하지 않는다.",
+    "correct": "그것은 나한테는 중요하지 않다.",
+    "error_type": "Expression error: negation form",
+    "explanation": "Use 중요하지 않다, not 중요하지 않는다. The prefix 않 combines with 다; 않는다 is incorrect."
+  },
+  {
+    "incorrect": "그는 언제나 좋은 태도를 유지해 간다.",
+    "correct": "그는 언제나 좋은 태도를 유지한다.",
+    "error_type": "Expression error: unnecessary connector",
+    "explanation": "유지해 간다 (maintaining while going) is awkward. For 'maintains', simply use 유지한다."
+  },
+  {
+    "incorrect": "그가 가고 있던 곳에 가다.",
+    "correct": "그가 가고 있던 곳으로 가다.",
+    "error_type": "Expression error: destination particle",
+    "explanation": "For destination ('go to that place'), use 으로, not 에. 으로 is clearer for direction of travel."
+  },
+  {
+    "incorrect": "나는 계획을 따르지 않는 걸 좋아한다.",
+    "correct": "나는 계획을 따르지 않는 것을 좋아한다.",
+    "error_type": "Expression error: colloquial nominalization",
+    "explanation": "걸 is very colloquial for 것을. Formal writing requires 것을. 걸 is acceptable in speech but 것을 is standard."
+  },
+  {
+    "incorrect": "그거를 주면 고맙겠다.",
+    "correct": "그거를 주면 고맙겠어.",
+    "error_type": "Expression error: register mismatch",
+    "explanation": "Mixed register: 그거를 (colloquial) + 고맙겠다 (formal). Use 고맙겠어 (casual) or 감사하겠습니다 (formal)."
+  },
+  {
+    "incorrect": "사장님이 문을 안 열었어요.",
+    "correct": "사장님이 문을 열지 않으셨어요.",
+    "error_type": "Honorific/register: negation with honorific",
+    "explanation": "With honorifics, use 열지 않으셨어요. Negation 안 doesn't propagate the honorific suffix properly."
+  },
+  {
+    "incorrect": "할머니가 집에 계신다.",
+    "correct": "할머니가 집에 계세요.",
+    "error_type": "Honorific/register: wrong conjugation",
+    "explanation": "계신다 is archaic. Modern standard: 계세요 (polite). Update to 계세요 or 계셔."
+  },
+  {
+    "incorrect": "나는 가고 싶어요. 너도 오세요.",
+    "correct": "나는 가고 싶어요. 너도 와요.",
+    "error_type": "Honorific/register: level mismatch",
+    "explanation": "Mixing 어요 (casual polite) with 세요 (formal honorific) is jarring. Use consistent levels throughout."
+  },
+  {
+    "incorrect": "그 학생이 숙제를 안 했어요.",
+    "correct": "그 학생이 숙제를 하지 않았어요.",
+    "error_type": "Honorific/register: negation formality",
+    "explanation": "In formal/written contexts, 하지 않았어요 is preferred. 안 negation is more colloquial."
+  },
+  {
+    "incorrect": "할 수 있니?",
+    "correct": "할 수 있어?",
+    "error_type": "Honorific/register: forced ending",
+    "explanation": "할 수 있니? is awkward 반말. Use 할 수 있어? (natural) or 할 수 있나? (acceptable)."
+  },
+  {
+    "incorrect": "이거 봤어? 네, 봤어요.",
+    "correct": "이거 봤어? 네, 봤어.",
+    "error_type": "Honorific/register: consistency",
+    "explanation": "Question in 반말, answer in 어요 is inconsistent. Match levels: 봤어 or keep 어요 in both."
+  },
+  {
+    "incorrect": "그 일이 중요한 것을 모른다.",
+    "correct": "그 일이 중요하다는 것을 모른다.",
+    "error_type": "Expression error: missing connector",
+    "explanation": "중요한 것을 모른다 means 'don't know important thing'. Need 중요하다는 것을 for 'don't know that it's important'."
+  },
+  {
+    "incorrect": "나는 그 사람하고 친하다.",
+    "correct": "나는 그 사람과 친하다.",
+    "error_type": "Expression error: 하고 vs 과/와",
+    "explanation": "하고 is colloquial. 과/와 is standard/formal. 친하다 is formal, so use 과/와, not 하고."
+  },
+  {
+    "incorrect": "걔가 간 거 알아?",
+    "correct": "그 사람이 간 거 알아?",
+    "error_type": "Expression error: informal contraction",
+    "explanation": "걔 is very informal for 그 애. In formal contexts, use 그 사람 or 그 사람이."
+  },
+  {
+    "incorrect": "밥 먹었니?",
+    "correct": "밥 먹었어?",
+    "error_type": "Honorific/register: forced ending",
+    "explanation": "밥 먹었니? is forced/archaic. Natural 반말 is 밥 먹었어? or 밥 먹었나?"
+  },
+  {
+    "incorrect": "그 방법에 성공했다.",
+    "correct": "그 방법으로 성공했다.",
+    "error_type": "Particle error: 에 vs 으로",
+    "explanation": "Method/means use 으로. 에 indicates location. 'By this method' needs 으로, not 에."
+  },
+  {
+    "incorrect": "나는 영어의 문법이 어렵다.",
+    "correct": "나는 영어 문법이 어렵다.",
+    "error_type": "Expression error: unnecessary possessive",
+    "explanation": "영어의 (English's) is awkward. Use 영어 (English) as modifier: 영어 문법 (English grammar)."
+  },
+  {
+    "incorrect": "그 소식을 듣고서 놀랐다.",
+    "correct": "그 소식을 듣고 놀랐다.",
+    "error_type": "Connector: archaic -고서",
+    "explanation": "-고서 is literary/archaic. Simply use -고 for 'heard and then was surprised'."
+  },
+  {
+    "incorrect": "더운 날씨라고 해서 선글라스를 쓴다.",
+    "correct": "더운 날씨라고 해서 선글라스를 쓰는 것은 아니다.",
+    "error_type": "Expression error: incomplete concession",
+    "explanation": "-다고 해서 means 'just because...doesn't mean'. Need negative completion: 아니다/않다."
+  },
+  {
+    "incorrect": "나는 그렇게 할 수 없는 게 아니다.",
+    "correct": "나는 그렇게 할 수 없지 않다.",
+    "error_type": "Expression error: double negative",
+    "explanation": "Cannot have 수 없는 + 아니다 together (double negative). Use 수 없지 않다 or restructure."
+  },
+  {
+    "incorrect": "내일 시간이 있으면 만나자.",
+    "correct": "내일 시간이 있으면 만날까.",
+    "error_type": "Expression error: inappropriate suggestion",
+    "explanation": "In conditional + proposal, use -ㄹ까 for suggestion, not -자. 만날까 is more natural than 만나자."
+  },
+  {
+    "incorrect": "그 회의는 3시에 시작될 거예요.",
+    "correct": "그 회의는 3시에 시작할 거예요.",
+    "error_type": "Passive/causative error: 시작되다 vs 시작하다",
+    "explanation": "시작하다 (to start) is standard. 시작되다 (passive) is less common and awkward in this context. Use 시작할 거예요."
+  },
+  {
+    "incorrect": "문이 열려지고 있어요.",
+    "correct": "문이 열리고 있어요.",
+    "error_type": "Passive/causative error: double passive",
+    "explanation": "열리다 is already passive ('be opened'). Adding -지다 creates double passive (열려지다), which is incorrect. Use 열리고 있어요."
+  },
+  {
+    "incorrect": "그 책은 읽혀지고 있다.",
+    "correct": "그 책은 읽히고 있다.",
+    "error_type": "Passive/causative error: double passive",
+    "explanation": "읽히다 (be read) is passive. 읽혀지다 is double passive and ungrammatical. Use 읽히고 있다."
+  },
+  {
+    "incorrect": "그는 아이를 먹였다.",
+    "correct": "그는 아이에게 밥을 먹였다.",
+    "error_type": "Particle error with causative verb",
+    "explanation": "Causative verb 먹이다 (to feed) requires the person being fed to take 에게 (to), and the food to take 을/를 (object). Complete form: 아이에게 밥을 먹이다."
+  },
+  {
+    "incorrect": "보여지는 것처럼",
+    "correct": "보이는 것처럼",
+    "error_type": "Passive/causative error: double passive",
+    "explanation": "보이다 (appear/be seen) is passive. 보여지다 is double passive and unnatural. Use 보이는 것처럼 (as it appears)."
+  },
+  {
+    "incorrect": "그 소문이 퍼져지고 있다.",
+    "correct": "그 소문이 퍼지고 있다.",
+    "error_type": "Passive/causative error: double passive",
+    "explanation": "퍼지다 (spread) is already passive/intransitive. 퍼져지다 is redundant. Use 퍼지고 있다."
+  },
+  {
+    "incorrect": "저는 한국어를 잘못해요.",
+    "correct": "저는 한국어를 잘 못해요.",
+    "error_type": "Spacing error: 잘못하다 vs 잘 못하다",
+    "explanation": "잘못하다 (attached) = make a mistake. 잘 못하다 (spaced) = not good at. For 'not good at Korean', use 잘 못해요 (with space). 잘못해요 means 'make mistakes' which changes the meaning."
+  },
+  {
+    "incorrect": "그는 수학을 잘못해요.",
+    "correct": "그는 수학을 잘 못해요.",
+    "error_type": "Negation error: 잘못하다 vs 잘 못하다",
+    "explanation": "잘못하다 = make a mistake. 잘 못하다 = not good at. For 'not good at math', use 잘 못해요 (with space)."
+  },
+  {
+    "incorrect": "나는 그것을 하지 못 했어.",
+    "correct": "나는 그것을 하지 못했어.",
+    "error_type": "Negation error: spacing",
+    "explanation": "못했어 should be written together without space. 하지 못했어 (couldn't do) is the correct form."
+  },
+  {
+    "incorrect": "그 문제는 안 어렵다.",
+    "correct": "그 문제는 어렵지 않다.",
+    "error_type": "Negation error: 안 with adjectives",
+    "explanation": "For adjectives in formal contexts, use -지 않다 over 안. 어렵지 않다 is more formal than 안 어렵다."
+  },
+  {
+    "incorrect": "그는 못 공부해요.",
+    "correct": "그는 공부를 못해요.",
+    "error_type": "Negation error: word order",
+    "explanation": "못 should come before the verb (못해요), not before the noun. Correct: 공부를 못해요 or 공부 못해요 (casual)."
+  },
+  {
+    "incorrect": "나는 안 갈 수 있어.",
+    "correct": "나는 안 갈 수도 있어 or 가지 않을 수도 있어.",
+    "error_type": "Negation error: 안 with potential",
+    "explanation": "안 갈 수 있어 is ambiguous. Better: 안 갈 수도 있어 (might not go) or 가지 않을 수도 있어 (may not go)."
+  },
+  {
+    "incorrect": "회의에서 중요한 결정이 내려졌다.",
+    "correct": "회의에서 중요한 결정을 내렸다.",
+    "error_type": "Passive error: unnecessary passive",
+    "explanation": "In Korean, active voice is often preferred over passive. Use 결정을 내렸다 (made a decision) rather than 내려졌다 (was made)."
+  },
+  {
+    "incorrect": "그 계획은 실패되었다.",
+    "correct": "그 계획은 실패했다.",
+    "error_type": "Passive error: 실패되다 vs 실패하다",
+    "explanation": "실패하다 (to fail) is already intransitive. Don't use passive 실패되다. Use 실패했다."
+  },
+  {
+    "incorrect": "나는 어제 그를 못 만났었어.",
+    "correct": "나는 어제 그를 못 만났어.",
+    "error_type": "Tense error: double past -았었-",
+    "explanation": "Don't use -았었- for simple past. Use 못 만났어 (couldn't meet). -았었- implies past perfect or distant past."
+  },
+  {
+    "incorrect": "내일 비가 왔으면 좋겠다.",
+    "correct": "내일 비가 오면 좋겠다.",
+    "error_type": "Tense error: past tense in future context",
+    "explanation": "For future wishes/conditions, use present tense -면. 왔으면 is past conditional. Use 오면 좋겠다."
+  },
+  {
+    "incorrect": "그 사람 이름이 뭐였어?",
+    "correct": "그 사람 이름이 뭐예요? or 뭐야?",
+    "error_type": "Tense error: past tense for present fact",
+    "explanation": "When asking someone's name (present fact), use present tense: 뭐예요/뭐야. Past 뭐였어 implies the name changed."
+  },
+  {
+    "incorrect": "학생들이 시험 볼 거예요.",
+    "correct": "학생들이 시험을 볼 거예요.",
+    "error_type": "Particle omission error",
+    "explanation": "In formal contexts, object marker 을/를 should not be omitted. Use 시험을 볼 거예요."
+  },
+  {
+    "incorrect": "나는 영화 좋아해.",
+    "correct": "나는 영화를 좋아해.",
+    "error_type": "Particle omission error",
+    "explanation": "좋아하다 requires object marker 을/를. Don't omit: use 영화를 좋아해."
+  },
+  {
+    "incorrect": "그는 서울 살아요.",
+    "correct": "그는 서울에서 살아요.",
+    "error_type": "Particle omission error",
+    "explanation": "살다 (to live) requires location particle 에서. Cannot omit: use 서울에서 살아요."
+  },
+  {
+    "incorrect": "이건 나 것이야.",
+    "correct": "이건 내 것이야.",
+    "error_type": "Possessive error: 나 vs 내",
+    "explanation": "Possessive form of 나 is 내 (my), not 나. Use 내 것 (my thing), not 나 것."
+  },
+  {
+    "incorrect": "그는 한국어 잘 하는 사람이에요.",
+    "correct": "그는 한국어를 잘 하는 사람이에요.",
+    "error_type": "Particle omission in modifier clause",
+    "explanation": "Even in relative clauses, object marker 을/를 should not be omitted in formal speech. Use 한국어를 잘 하는."
+  },
+  {
+    "incorrect": "어제 본 영화 재미있었어.",
+    "correct": "어제 본 영화가 재미있었어.",
+    "error_type": "Particle omission error",
+    "explanation": "Subject marker 이/가 should not be omitted. Use 영화가 재미있었어 (the movie was fun)."
+  },
+  {
+    "incorrect": "나는 커피랑 차 좋아해요.",
+    "correct": "나는 커피랑 차를 좋아해요.",
+    "error_type": "Particle error: missing object marker after list",
+    "explanation": "When listing items with 랑/이랑, the final item still needs object marker. Use 차를 좋아해요."
+  },
+  {
+    "incorrect": "오늘 날씨 어때요?",
+    "correct": "오늘 날씨가 어때요?",
+    "error_type": "Particle omission in question",
+    "explanation": "In formal speech, don't omit subject marker in questions. Use 날씨가 어때요 (how's the weather)."
+  },
+  {
+    "incorrect": "그 사람은 키 크고 잘생겼어요.",
+    "correct": "그 사람은 키가 크고 잘생겼어요.",
+    "error_type": "Particle omission error",
+    "explanation": "키 (height) is the subject of 크다 (be tall). Don't omit: use 키가 크고."
+  },
+  {
+    "incorrect": "나의 친구는 의사예요.",
+    "correct": "내 친구는 의사예요.",
+    "error_type": "Expression error: possessive form",
+    "explanation": "나의 is overly formal/unnatural. Use contracted form 내 (my) for natural speech: 내 친구."
+  },
+  {
+    "incorrect": "그는 빨리게 달렸다.",
+    "correct": "그는 빨리 달렸다.",
+    "error_type": "Adverb error: 빨리 vs 빨리게",
+    "explanation": "빨리 (quickly) is the correct adverb form. 빨리게 doesn't exist. Use 빨리 달렸다."
+  },
+  {
+    "incorrect": "정말로 고마워요.",
+    "correct": "정말 고마워요.",
+    "error_type": "Adverb error: redundant -로",
+    "explanation": "정말 (really) doesn't need -로. 정말로 sounds unnatural. Use 정말 고마워요."
+  },
+  {
+    "incorrect": "나는 학교로 다녀요.",
+    "correct": "나는 학교에 다녀요.",
+    "error_type": "Particle error: 으로 vs 에 with 다니다",
+    "explanation": "다니다 (attend/commute) takes 에, not 으로. Use 학교에 다녀요 (attend school)."
+  },
+  {
+    "incorrect": "그 일을 하기 위한 시간이 필요해요.",
+    "correct": "그 일을 하기 위해 시간이 필요해요.",
+    "error_type": "Expression error: 위한 vs 위해",
+    "explanation": "위한 modifies nouns (위한 시간 = time for). 위해 shows purpose. Here use 하기 위해 (in order to do)."
+  },
+  {
+    "incorrect": "저는 한국말로 말해요.",
+    "correct": "저는 한국말을 해요.",
+    "error_type": "Expression error: redundant construction",
+    "explanation": "한국말로 말하다 is redundant (speak in Korean speak). Use 한국말을 하다 or 한국어로 이야기하다."
+  },
+  {
+    "incorrect": "나는 그 사람의 대해서 잘 몰라요.",
+    "correct": "나는 그 사람에 대해서 잘 몰라요.",
+    "error_type": "Expression error: 의 대해서 vs 에 대해서",
+    "explanation": "Use 에 대해서 (about), not 의 대해서. Correct: 그 사람에 대해서."
+  },
+  {
+    "incorrect": "그는 매우 열심히하게 공부해요.",
+    "correct": "그는 매우 열심히 공부해요.",
+    "error_type": "Adverb error: spacing and form",
+    "explanation": "열심히 (diligently) is already an adverb. Don't add -하게. Use 열심히 공부해요."
+  },
+  {
+    "incorrect": "나는 그 영화를 보는 것이 좋아해요.",
+    "correct": "나는 그 영화를 보는 것을 좋아해요.",
+    "error_type": "Particle error: 이 vs 을",
+    "explanation": "보는 것 is the object of 좋아하다, so it needs 을/를, not 이/가. Use 보는 것을 좋아해요."
+  },
+  {
+    "incorrect": "저는 한국에 2년동안 살았어요.",
+    "correct": "저는 한국에서 2년 동안 살았어요.",
+    "error_type": "Particle error: 에 vs 에서, spacing",
+    "explanation": "살다 requires 에서. Also, 동안 should have space: 2년 동안. Use 한국에서 2년 동안 살았어요."
+  },
+  {
+    "incorrect": "그는 나보다 더 키가 커요.",
+    "correct": "그는 나보다 키가 커요.",
+    "error_type": "Expression error: redundant 더",
+    "explanation": "보다 (than) already implies comparison. Adding 더 (more) is redundant. Use 나보다 키가 커요."
+  },
+  {
+    "incorrect": "나는 아침을 안 먹고 학교에 갔어.",
+    "correct": "나는 아침을 먹지 않고 학교에 갔어.",
+    "error_type": "Negation error: formality in connectors",
+    "explanation": "With -고 connector, use -지 않고 (more formal) rather than 안 먹고. Use 먹지 않고."
+  },
+  {
+    "incorrect": "그 가게는 매일같이 문을 연다.",
+    "correct": "그 가게는 매일 문을 연다.",
+    "error_type": "Expression error: redundant suffix",
+    "explanation": "매일 (every day) is sufficient. 매일같이 adds emphasis but is often redundant. Use 매일 문을 연다."
+  },
+  {
+    "incorrect": "그 문제는 해결되어야만 해요.",
+    "correct": "그 문제는 해결되어야 해요.",
+    "error_type": "Expression error: redundant -만",
+    "explanation": "-어야만 adds emphasis (only if/must only) but is often unnecessary. Simply use -어야 해요."
+  },
+  {
+    "incorrect": "나는 그 사람을 믿기가 어렵다.",
+    "correct": "나는 그 사람을 믿기 어렵다.",
+    "error_type": "Expression error: unnecessary -가",
+    "explanation": "With -기 어렵다, don't add -가. Use 믿기 어렵다 (hard to believe), not 믿기가 어렵다."
+  },
+  {
+    "incorrect": "그는 의사로써 환자를 정성껏 돌보았다.",
+    "correct": "그는 의사로서 환자를 정성껏 돌보았다.",
+    "error_type": "조사 오류",
+    "explanation": "'로서'는 자격이나 지위를 나타내고('의사로서' = 의사의 자격으로), '로써'는 수단이나 도구를 나타냅니다. 여기서는 의사라는 자격을 나타내므로 '로서'가 맞습니다."
+  },
+  {
+    "incorrect": "후배에게 많은 것을 배울 수 있었다.",
+    "correct": "후배에게서 많은 것을 배울 수 있었다.",
+    "error_type": "조사 오류",
+    "explanation": "'배우다'의 출처를 나타낼 때는 '에게서'를 써야 합니다. '에게'는 행위의 대상(~에게 가르치다)을 나타내고, '에게서'는 행위의 출발점(~에게서 배우다)을 나타냅니다."
+  },
+  {
+    "incorrect": "약속한 데로 이번 주 안에 서류를 보내 드리겠습니다.",
+    "correct": "약속한 대로 이번 주 안에 서류를 보내 드리겠습니다.",
+    "error_type": "조사 오류",
+    "explanation": "'대로'는 '~한 것과 같이'라는 뜻의 의존명사이고, '데로'는 '곳으로'라는 의미입니다. '약속한 것과 같이'의 의미이므로 '대로'가 올바릅니다."
+  },
+  {
+    "incorrect": "회의 결과에 따르면, 이 안건은 만장일치에 통과되었다.",
+    "correct": "회의 결과에 따르면, 이 안건은 만장일치로 통과되었다.",
+    "error_type": "조사 오류",
+    "explanation": "'만장일치'는 통과의 방식을 나타내므로 '로'가 적절합니다. '에'는 장소나 시간을 나타내는 조사이므로 방식이나 양태에는 쓸 수 없습니다."
+  },
+  {
+    "incorrect": "경제 성장하고 환경 보호는 양립할 수 있다는 주장이 제기되었다.",
+    "correct": "경제 성장과 환경 보호는 양립할 수 있다는 주장이 제기되었다.",
+    "error_type": "조사 오류",
+    "explanation": "격식체 문어에서 나열을 나타낼 때는 '과/와'를 써야 합니다. '하고'는 구어체에서 주로 사용되므로 공식적인 글에서는 '과/와'가 적합합니다."
+  },
+  {
+    "incorrect": "내가 열심히 공부하더니 성적이 올랐다.",
+    "correct": "내가 열심히 공부했더니 성적이 올랐다.",
+    "error_type": "시제 오류",
+    "explanation": "주어가 1인칭일 때 완료된 행위의 결과를 나타내려면 '-았/었더니'를 써야 합니다. '-더니'는 3인칭의 과거 상황을 관찰한 후 그 결과를 서술할 때 사용하므로 1인칭 주어와 함께 쓸 수 없습니다."
+  },
+  {
+    "incorrect": "어젯밤에 비가 오는 것 같다.",
+    "correct": "어젯밤에 비가 온 것 같다.",
+    "error_type": "시제 오류",
+    "explanation": "과거 시점('어젯밤에')의 일을 추측할 때는 과거 관형형 '-ㄴ/은'을 써서 '온 것 같다'로 표현해야 합니다. '오는 것 같다'는 현재 진행 중인 상황의 추측에 씁니다."
+  },
+  {
+    "incorrect": "그 사실을 이미 알았었는데 아무 말도 하지 않았다.",
+    "correct": "그 사실을 이미 알고 있었는데 아무 말도 하지 않았다.",
+    "error_type": "시제 오류",
+    "explanation": "'-았었-'은 과거에 그랬지만 지금은 아닌 상태(대과거/단절)를 뜻합니다. 과거에 계속 알고 있었던 상태를 나타내려면 '알고 있었다'가 적절합니다. '알았었다'를 쓰면 지금은 모르게 되었다는 뜻이 됩니다."
+  },
+  {
+    "incorrect": "내일 회의에서 그 안건이 통과하겠습니다.",
+    "correct": "내일 회의에서 그 안건이 통과될 것입니다.",
+    "error_type": "시제 오류",
+    "explanation": "'-겠-'은 화자의 의지나 주관적 추측을 나타내고, '-ㄹ 것이다'는 객관적 예측에 사용됩니다. 객관적으로 예측되는 결과에는 '-ㄹ 것이다'가 적절하며, 안건은 '통과되다'(피동)가 자연스럽습니다."
+  },
+  {
+    "incorrect": "무엇을 하던지 최선을 다해야 한다.",
+    "correct": "무엇을 하든지 최선을 다해야 한다.",
+    "error_type": "어미 오류",
+    "explanation": "'-든지'는 선택이나 양보('무엇이든 상관없이')의 의미이고, '-던지'는 과거 회상의 '-더-'에 '-ㄴ지'가 결합한 형태입니다. '무엇을 하든 상관없이'의 의미이므로 '-든지'가 올바릅니다."
+  },
+  {
+    "incorrect": "다시는 이런 실수가 발생하지 않게 조치를 취하겠습니다.",
+    "correct": "다시는 이런 실수가 발생하지 않도록 조치를 취하겠습니다.",
+    "error_type": "어미 오류",
+    "explanation": "목적이나 의도를 나타낼 때 격식체에서는 '-도록'이 '-게'보다 적합합니다. 특히 공식적인 약속이나 대책을 말할 때는 '-도록'을 쓰는 것이 자연스럽습니다."
+  },
+  {
+    "incorrect": "이렇게 계속 무리하다가 건강을 해친다.",
+    "correct": "이렇게 계속 무리하다가는 건강을 해친다.",
+    "error_type": "어미 오류",
+    "explanation": "'-다가는'은 어떤 행동을 계속하면 부정적 결과가 올 것이라는 경고의 의미입니다. '-다가'만 쓰면 단순히 행동 중 전환을 나타내므로, 경고의 의미를 전달하려면 '-다가는'이 맞습니다."
+  },
+  {
+    "incorrect": "오늘 날씨가 많이 춥나 보다.",
+    "correct": "오늘 날씨가 많이 추운가 보다.",
+    "error_type": "어미 오류",
+    "explanation": "형용사 뒤에서 추측을 나타낼 때는 '-(으)ㄴ가 보다'를 써야 합니다. '-나 보다'는 동사에 쓰이는 형태입니다. '춥다'는 형용사이므로 '추운가 보다'가 올바른 형태입니다."
+  },
+  {
+    "incorrect": "내일 비가 올 건데 우산을 가져가세요.",
+    "correct": "내일 비가 올 텐데 우산을 가져가세요.",
+    "error_type": "어미 오류",
+    "explanation": "'-ㄹ 텐데'는 추측에 기반한 우려나 걱정을 나타내고, '-ㄹ 건데'는 확정된 계획이나 의지를 나타냅니다. 날씨는 화자가 결정하는 것이 아니라 추측의 영역이므로 '-ㄹ 텐데'가 적절합니다."
+  },
+  {
+    "incorrect": "할아버지, 아버지가 곧 오실 거예요.",
+    "correct": "할아버지, 아버지가 곧 올 거예요.",
+    "error_type": "높임법 오류",
+    "explanation": "압존법에 따라, 더 높은 어른(할아버지) 앞에서 아랫사람(아버지)의 행동에는 높임 '-시-'를 쓰지 않습니다. 할아버지에게 말할 때는 '아버지가 곧 올 거예요'가 맞습니다."
+  },
+  {
+    "incorrect": "사장님, 커피가 식으셨습니다.",
+    "correct": "사장님, 커피가 식었습니다.",
+    "error_type": "높임법 오류",
+    "explanation": "'-시-' 높임은 사람의 행동이나 상태에만 적용됩니다. 커피는 사물이므로 높임 선어말어미 '-시-'를 쓸 수 없습니다. '커피가 식었습니다'가 올바른 표현입니다."
+  },
+  {
+    "incorrect": "제가 선생님에게 이 자료를 줄게요.",
+    "correct": "제가 선생님께 이 자료를 드릴게요.",
+    "error_type": "높임법 오류",
+    "explanation": "윗사람에게 무언가를 전달할 때는 '주다' 대신 '드리다'를, '에게' 대신 '께'를 써야 합니다. '선생님께 드릴게요'가 올바른 높임 표현입니다."
+  },
+  {
+    "incorrect": "교수님이 내일 시험이 있다고 말했다.",
+    "correct": "교수님이 내일 시험이 있다고 말씀하셨다.",
+    "error_type": "높임법 오류",
+    "explanation": "윗사람(교수님)의 발화 행위를 나타낼 때는 '말하다' 대신 '말씀하시다'를 써야 합니다. 주어가 높임 대상이므로 '말씀하셨다'가 올바른 표현입니다."
+  },
+  {
+    "incorrect": "할머니가 밥을 먹고 계세요.",
+    "correct": "할머니께서 진지를 드시고 계세요.",
+    "error_type": "높임법 오류",
+    "explanation": "어른에 대해 말할 때는 주격 조사 '가' 대신 '께서', '밥' 대신 '진지', '먹다' 대신 '드시다'를 써야 합니다. 전체적으로 존칭 어휘를 일관되게 사용해야 합니다."
+  },
+  {
+    "incorrect": "새로운 정책이 발표되어졌다.",
+    "correct": "새로운 정책이 발표되었다.",
+    "error_type": "피동/사동 혼동",
+    "explanation": "'발표되다'는 이미 피동형입니다. 여기에 '-어지다'를 추가하면 이중 피동이 되어 비문이 됩니다. '발표되었다'만으로 충분합니다."
+  },
+  {
+    "incorrect": "선생님이 학생들을 교실에서 나갔다.",
+    "correct": "선생님이 학생들을 교실에서 나가게 했다.",
+    "error_type": "피동/사동 혼동",
+    "explanation": "'나가다'는 자동사이므로 목적어를 취할 수 없습니다. '학생들을 나갔다'는 비문이며, 사동 표현 '나가게 했다' 또는 '내보냈다'를 써야 합니다."
+  },
+  {
+    "incorrect": "이 논문에서 여러 가지 문제점이 지적했다.",
+    "correct": "이 논문에서 여러 가지 문제점이 지적되었다.",
+    "error_type": "피동/사동 혼동",
+    "explanation": "'문제점이'가 주어이므로 능동형 '지적했다'가 아니라 피동형 '지적되었다'를 써야 합니다. 문제점은 지적하는 주체가 아니라 지적당하는 대상입니다."
+  },
+  {
+    "incorrect": "엄마가 아이를 일찍 잠을 재웠다.",
+    "correct": "엄마가 아이를 일찍 재웠다.",
+    "error_type": "피동/사동 혼동",
+    "explanation": "'재우다'는 '자다'의 사동형으로, '잠을 자게 하다'의 의미가 이미 포함되어 있습니다. '잠을 재우다'는 의미가 중복되므로 '아이를 재웠다'가 올바릅니다."
+  },
+  {
+    "incorrect": "꾸준히 운동한 바람에 건강이 좋아졌다.",
+    "correct": "꾸준히 운동한 덕분에 건강이 좋아졌다.",
+    "error_type": "접속어미 오류",
+    "explanation": "'-는 바람에'는 부정적이거나 예상치 못한 결과의 원인을 나타냅니다. 긍정적인 결과('건강이 좋아졌다')의 원인에는 '-ㄴ 덕분에'를 써야 합니다."
+  },
+  {
+    "incorrect": "시간이 없으니까 서류를 내일까지 제출해 주시기 바랍니다.",
+    "correct": "시간이 없으므로 서류를 내일까지 제출해 주시기 바랍니다.",
+    "error_type": "접속어미 오류",
+    "explanation": "격식체 문어에서 이유를 나타낼 때는 '-(으)므로'를 씁니다. '-(으)니까'는 구어체에 적합하며, '바랍니다'와 같은 격식체 종결어미와 호응하지 않습니다."
+  },
+  {
+    "incorrect": "비가 오느라고 행사가 취소되었다.",
+    "correct": "비가 오는 바람에 행사가 취소되었다.",
+    "error_type": "접속어미 오류",
+    "explanation": "'-느라고'는 주어가 의도적으로 한 행동의 이유를 나타내며, 앞뒤 절의 주어가 같아야 합니다. '비가 오다'는 의도적 행동이 아니고 주어도 다르므로 '-느라고'를 쓸 수 없습니다."
+  },
+  {
+    "incorrect": "국민의 건강을 지키려고 새로운 법안을 마련하였다.",
+    "correct": "국민의 건강을 지키고자 새로운 법안을 마련하였다.",
+    "error_type": "접속어미 오류",
+    "explanation": "격식체 문어에서 목적을 나타낼 때는 '-고자'가 적합합니다. '-려고'는 구어체에서 주로 사용되므로 '마련하였다'와 같은 격식체와 어울리지 않습니다."
+  },
+  {
+    "incorrect": "열심히 노력해서 성공할 수 있다.",
+    "correct": "열심히 노력해야 성공할 수 있다.",
+    "error_type": "접속어미 오류",
+    "explanation": "'-아/어서'는 이유나 순서를 나타내고, '-아/어야'는 필수 조건을 나타냅니다. '노력하는 것이 성공의 필수 조건'이라는 의미이므로 '-아/어야'가 맞습니다."
+  },
+  {
+    "incorrect": "어제 만났던 사람이 오늘 또 연락했다.",
+    "correct": "어제 만난 사람이 오늘 또 연락했다.",
+    "error_type": "관형형 오류",
+    "explanation": "'-던'은 과거의 미완료 또는 반복적 행위를 회상할 때 사용합니다. 단순히 어제 한 번 만난 사건에는 과거 관형형 '-ㄴ/은'을 씁니다. '만났던'은 여러 번 반복되거나 미완료된 경우에 적합합니다."
+  },
+  {
+    "incorrect": "앞으로 개선되는 점에 대해 논의하겠습니다.",
+    "correct": "앞으로 개선될 점에 대해 논의하겠습니다.",
+    "error_type": "관형형 오류",
+    "explanation": "미래에 일어날 일을 수식할 때는 미래 관형형 '-(으)ㄹ'을 써야 합니다. '개선되는'은 현재 진행을 나타내고, '개선될'은 앞으로의 변화를 나타냅니다."
+  },
+  {
+    "incorrect": "그때 내가 읽는 책이 아주 재미있었다.",
+    "correct": "그때 내가 읽던 책이 아주 재미있었다.",
+    "error_type": "관형형 오류",
+    "explanation": "과거 시점에서 진행 중이었던 행위를 회상할 때는 '-던'을 써야 합니다. '읽는'은 현재 진행이고, '읽던'은 과거 진행의 회상입니다."
+  },
+  {
+    "incorrect": "최근 발표되는 연구 결과에 따르면 이 약은 효과가 있다.",
+    "correct": "최근 발표된 연구 결과에 따르면 이 약은 효과가 있다.",
+    "error_type": "관형형 오류",
+    "explanation": "이미 완료된 행위('발표')를 수식할 때는 과거 관형형 '-(으)ㄴ'을 써야 합니다. '발표되는'은 현재 진행 중인 발표를, '발표된'은 이미 완료된 발표를 나타냅니다."
+  },
+  {
+    "incorrect": "내일 회의를 위해 자료를 미리 준비해 놓았다.",
+    "correct": "내일 회의를 위해 자료를 미리 준비해 두었다.",
+    "error_type": "보조용언 오류",
+    "explanation": "'-아/어 두다'는 미래를 위한 준비를 강조하고, '-아/어 놓다'는 행위 완료 후 상태 유지를 강조합니다. '내일 회의를 위해'라는 미래 목적이 명시되어 있으므로 '준비해 두다'가 더 적절합니다."
+  },
+  {
+    "incorrect": "문이 열고 있다.",
+    "correct": "문이 열려 있다.",
+    "error_type": "보조용언 오류",
+    "explanation": "'-고 있다'는 동작의 진행을 나타내고, '-아/어 있다'는 결과 상태의 지속을 나타냅니다. 문이 열린 상태가 유지되고 있는 것이므로 '열려 있다'가 맞습니다."
+  },
+  {
+    "incorrect": "그는 벽에 기대고 있었다.",
+    "correct": "그는 벽에 기대어 있었다.",
+    "error_type": "보조용언 오류",
+    "explanation": "동작이 완료된 후 그 자세가 유지되는 상황에서는 '-아/어 있다'를 씁니다. 벽에 기대는 동작은 이미 완료되고 그 상태가 지속되므로 '기대어 있었다'가 맞습니다."
+  },
+  {
+    "incorrect": "감사하게도 장학금을 받아 버렸습니다.",
+    "correct": "감사하게도 장학금을 받게 되었습니다.",
+    "error_type": "보조용언 오류",
+    "explanation": "'-아/어 버리다'는 완료와 함께 아쉬움이나 부담감 등 부정적 뉘앙스를 전달합니다. 긍정적인 상황('장학금 수령')에서는 '-게 되다'를 쓰는 것이 자연스럽습니다."
+  },
+  {
+    "incorrect": "저는 그 문제에 대해 의견이 좀 틀립니다.",
+    "correct": "저는 그 문제에 대해 의견이 좀 다릅니다.",
+    "error_type": "어휘 선택 오류",
+    "explanation": "'틀리다'는 '정답이 아니다/잘못되다'라는 뜻이고, '다르다'는 '같지 않다'라는 뜻입니다. 의견의 차이를 나타낼 때는 '다르다'를 써야 합니다. '틀리다'를 쓰면 상대방의 의견이 잘못되었다는 뜻이 됩니다."
+  },
+  {
+    "incorrect": "선생님이 칠판을 가르치며 설명했다.",
+    "correct": "선생님이 칠판을 가리키며 설명했다.",
+    "error_type": "어휘 선택 오류",
+    "explanation": "'가르치다'는 '교육하다/지식을 전달하다'라는 뜻이고, '가리키다'는 '손가락 등으로 방향이나 대상을 지시하다'라는 뜻입니다. 칠판의 특정 부분을 지시하는 행위이므로 '가리키다'가 맞습니다."
+  },
+  {
+    "incorrect": "좋은 결과를 바래요.",
+    "correct": "좋은 결과를 바라요.",
+    "error_type": "어휘 선택 오류",
+    "explanation": "'바라다'(원하다/희망하다)의 올바른 활용은 '바라요'입니다. '바래다'는 '색이 바래지다/퇴색하다'라는 별개의 동사이므로, '바래요'는 '희망하다'의 의미로 쓸 수 없습니다."
+  },
+  {
+    "incorrect": "봉투에 우표를 부쳤다.",
+    "correct": "봉투에 우표를 붙였다.",
+    "error_type": "어휘 선택 오류",
+    "explanation": "'부치다'는 '편지나 소포를 보내다'라는 뜻이고, '붙이다'는 '접착하다'라는 뜻입니다. 우표를 봉투에 접착하는 행위이므로 '붙이다'가 맞습니다. '편지를 부치다'는 '편지를 보내다'입니다."
+  },
+  {
+    "incorrect": "마감 기한을 넘은 보고서는 접수하지 않겠습니다.",
+    "correct": "마감 기한을 넘긴 보고서는 접수하지 않겠습니다.",
+    "error_type": "어휘 선택 오류",
+    "explanation": "'넘다'는 자동사('산을 넘다'에서 '산'은 경유지)이고, '넘기다'는 타동사('기한을 넘기다')입니다. 마감 기한을 초과하는 행위를 나타내려면 타동사 '넘기다'를 써야 합니다."
+  },
+  {
+    "incorrect": "이 문제는 충분히 해결할수 있습니다.",
+    "correct": "이 문제는 충분히 해결할 수 있습니다.",
+    "error_type": "띄어쓰기 오류",
+    "explanation": "'수'는 의존명사이므로 앞의 관형형 어미 '-(으)ㄹ'과 반드시 띄어 써야 합니다. '해결할 수 있다'가 올바른 표기입니다."
+  },
+  {
+    "incorrect": "내일 회의가 취소될것 같습니다.",
+    "correct": "내일 회의가 취소될 것 같습니다.",
+    "error_type": "띄어쓰기 오류",
+    "explanation": "'것'은 의존명사이므로 관형형 어미와 반드시 띄어 써야 합니다. '취소될 것 같다'가 올바른 표기입니다."
+  },
+  {
+    "incorrect": "그는 성실할뿐만 아니라 능력도 뛰어나다.",
+    "correct": "그는 성실할 뿐만 아니라 능력도 뛰어나다.",
+    "error_type": "띄어쓰기 오류",
+    "explanation": "'뿐'이 관형형 어미 뒤에 올 때는 의존명사이므로 띄어 써야 합니다. '성실할 뿐만 아니라'로 띄어 쓰는 것이 맞습니다."
+  },
+  {
+    "incorrect": "나 만큼 한국어를 잘하는 사람은 없다.",
+    "correct": "나만큼 한국어를 잘하는 사람은 없다.",
+    "error_type": "띄어쓰기 오류",
+    "explanation": "'만큼'이 체언(명사/대명사) 뒤에 올 때는 조사이므로 붙여 씁니다('나만큼'). 반면 관형형 뒤에 올 때('노력한 만큼')는 의존명사이므로 띄어 씁니다."
+  },
+  {
+    "incorrect": "친구가 같이 영화를 보다고 했다.",
+    "correct": "친구가 같이 영화를 보자고 했다.",
+    "error_type": "간접화법 오류",
+    "explanation": "청유나 제안을 간접 인용할 때는 '-자고'를 써야 합니다. '-다고'는 단순 진술을 인용하고, '-자고'는 '같이 ~하자'라는 제안을 인용합니다."
+  },
+  {
+    "incorrect": "그녀가 나에게 도와다고 했다.",
+    "correct": "그녀가 나에게 도와달라고 했다.",
+    "error_type": "간접화법 오류",
+    "explanation": "요청이나 부탁을 간접 인용할 때는 '-달라고'를 써야 합니다. '-다고'는 단순 진술의 인용이고, '-달라고'는 '~해 달라'라는 요청의 인용입니다."
+  },
+  {
+    "incorrect": "엄마가 내가 일찍 자라고 하셨다.",
+    "correct": "엄마가 나보고 일찍 자라고 하셨다.",
+    "error_type": "간접화법 오류",
+    "explanation": "간접 인용에서 명령의 대상은 '에게' 또는 '보고'로 표시합니다. '내가'를 쓰면 주어와 혼동되어 의미가 모호해지므로 '나에게' 또는 '나보고'로 바꿔야 합니다."
+  },
+  {
+    "incorrect": "그가 회사를 그만둔다고 하는 소식을 들었다.",
+    "correct": "그가 회사를 그만둔다는 소식을 들었다.",
+    "error_type": "간접화법 오류",
+    "explanation": "관형절에서 간접 인용을 할 때는 '-다는'('-다고 하는'의 축약형)을 쓰는 것이 자연스럽습니다. '-다고 하는'도 문법적으로 틀리지는 않지만, 명사를 수식할 때는 '-다는'이 훨씬 자연스러운 표현입니다."
+  },
+  {
+    "incorrect": "그가 내일 꼭 오다고 약속했다.",
+    "correct": "그가 내일 꼭 오겠다고 약속했다.",
+    "error_type": "간접화법 오류",
+    "explanation": "약속이나 의지를 간접 인용할 때는 원래 화자의 의지를 나타내는 '-겠다고'를 써야 합니다. '오다고'는 단순 사실 진술의 인용이고, '오겠다고'는 '꼭 오겠다'라는 의지의 인용입니다."
+  }
+]

@@ -1,0 +1,530 @@
+[
+  {
+    "passage": "안녕하세요. 저는 김민수예요. 저는 스물다섯 살이에요. 서울에서 살아요. 대학교에서 영어를 공부해요.",
+    "passage_en": "Hello. I am Kim Minsu. I am 25 years old. I live in Seoul. I study English at university.",
+    "questions": [
+      {
+        "question": "민수 씨는 어디에서 살아요?",
+        "options": ["부산", "서울", "대전", "인천"],
+        "correct": 1,
+        "explanation": "The passage says '서울에서 살아요' meaning 'I live in Seoul.' 에서 marks the location where an action takes place."
+      },
+      {
+        "question": "민수 씨는 무엇을 공부해요?",
+        "options": ["한국어", "영어", "수학", "역사"],
+        "correct": 1,
+        "explanation": "The passage states '영어를 공부해요' meaning 'I study English.' 를 is the object particle marking what is being studied."
+      }
+    ]
+  },
+  {
+    "passage": "제 이름은 박지영이에요. 저는 일본 사람이에요. 도쿄에서 왔어요. 지금 한국에서 한국어를 배워요. 한국 음식을 아주 좋아해요.",
+    "passage_en": "My name is Park Jiyoung. I am Japanese. I came from Tokyo. Now I am learning Korean in Korea. I really like Korean food.",
+    "questions": [
+      {
+        "question": "지영 씨는 어느 나라 사람이에요?",
+        "options": ["한국", "중국", "일본", "미국"],
+        "correct": 2,
+        "explanation": "The passage says '일본 사람이에요' meaning 'I am a Japanese person.' 사람 means 'person' and follows the country name."
+      },
+      {
+        "question": "지영 씨는 한국에서 무엇을 해요?",
+        "options": ["일해요", "한국어를 배워요", "영어를 가르쳐요", "요리해요"],
+        "correct": 1,
+        "explanation": "The passage states '한국에서 한국어를 배워요' meaning 'I am learning Korean in Korea.' 배워요 is the polite form of 배우다 (to learn)."
+      }
+    ]
+  },
+  {
+    "passage": "저는 이준호예요. 스물여덟 살이에요. 회사원이에요. 서울에 있는 회사에서 일해요. 주말에는 축구를 해요.",
+    "passage_en": "I am Lee Junho. I am 28 years old. I am an office worker. I work at a company in Seoul. On weekends I play soccer.",
+    "questions": [
+      {
+        "question": "준호 씨의 직업은 무엇이에요?",
+        "options": ["선생님", "의사", "회사원", "학생"],
+        "correct": 2,
+        "explanation": "The passage says '회사원이에요' meaning 'I am an office worker.' 회사원 means a company employee or office worker."
+      },
+      {
+        "question": "준호 씨는 주말에 무엇을 해요?",
+        "options": ["영화를 봐요", "축구를 해요", "책을 읽어요", "요리해요"],
+        "correct": 1,
+        "explanation": "The passage states '주말에는 축구를 해요' meaning 'On weekends I play soccer.' 주말 means weekend and 에는 marks the time."
+      }
+    ]
+  },
+  {
+    "passage": "안녕하세요. 저는 사라예요. 미국에서 왔어요. 스물한 살이에요. 취미는 그림 그리기예요. 카페에서 그림을 자주 그려요.",
+    "passage_en": "Hello. I am Sarah. I came from America. I am 21 years old. My hobby is drawing. I often draw at cafes.",
+    "questions": [
+      {
+        "question": "사라 씨는 어디에서 왔어요?",
+        "options": ["영국", "캐나다", "미국", "호주"],
+        "correct": 2,
+        "explanation": "The passage says '미국에서 왔어요' meaning 'I came from America.' 에서 marks the origin point and 왔어요 is the past tense of 오다 (to come)."
+      },
+      {
+        "question": "사라 씨는 어디에서 그림을 그려요?",
+        "options": ["집", "학교", "공원", "카페"],
+        "correct": 3,
+        "explanation": "The passage states '카페에서 그림을 자주 그려요' meaning 'I often draw at cafes.' 자주 means 'often.'"
+      }
+    ]
+  },
+  {
+    "passage": "저는 최수진이에요. 선생님이에요. 초등학교에서 아이들을 가르쳐요. 서른두 살이에요. 일이 재미있어요.",
+    "passage_en": "I am Choi Sujin. I am a teacher. I teach children at an elementary school. I am 32 years old. The work is fun.",
+    "questions": [
+      {
+        "question": "수진 씨는 어디에서 가르쳐요?",
+        "options": ["중학교", "고등학교", "초등학교", "대학교"],
+        "correct": 2,
+        "explanation": "The passage says '초등학교에서 아이들을 가르쳐요' meaning 'I teach children at an elementary school.' 초등학교 means elementary school."
+      },
+      {
+        "question": "수진 씨는 일을 어떻게 생각해요?",
+        "options": ["어려워요", "재미있어요", "힘들어요", "지루해요"],
+        "correct": 1,
+        "explanation": "The passage states '일이 재미있어요' meaning 'The work is fun.' 재미있어요 means 'it is fun/interesting.'"
+      }
+    ]
+  },
+  {
+    "passage": "저는 아침 일곱 시에 일어나요. 세수하고 옷을 입어요. 아침밥은 빵하고 우유를 먹어요. 여덟 시에 집에서 나가요. 버스를 타고 학교에 가요.",
+    "passage_en": "I wake up at 7 in the morning. I wash my face and get dressed. For breakfast I eat bread and milk. I leave the house at 8. I take the bus and go to school.",
+    "questions": [
+      {
+        "question": "이 사람은 몇 시에 일어나요?",
+        "options": ["여섯 시", "일곱 시", "여덟 시", "아홉 시"],
+        "correct": 1,
+        "explanation": "The passage says '아침 일곱 시에 일어나요' meaning 'I wake up at 7 in the morning.' 일곱 시 means 7 o'clock."
+      },
+      {
+        "question": "이 사람은 학교에 어떻게 가요?",
+        "options": ["걸어서", "지하철을 타고", "버스를 타고", "자전거를 타고"],
+        "correct": 2,
+        "explanation": "The passage states '버스를 타고 학교에 가요' meaning 'I take the bus and go to school.' 타고 means 'by riding.'"
+      }
+    ]
+  },
+  {
+    "passage": "저는 대학생이에요. 월요일부터 금요일까지 수업이 있어요. 오전 아홉 시에 수업이 시작해요. 점심에는 학교 식당에서 밥을 먹어요. 오후 네 시에 수업이 끝나요.",
+    "passage_en": "I am a college student. I have classes from Monday to Friday. Classes start at 9 a.m. At lunchtime I eat at the school cafeteria. Classes end at 4 p.m.",
+    "questions": [
+      {
+        "question": "수업이 몇 시에 시작해요?",
+        "options": ["여덟 시", "아홉 시", "열 시", "열한 시"],
+        "correct": 1,
+        "explanation": "The passage says '오전 아홉 시에 수업이 시작해요' meaning 'Classes start at 9 a.m.' 오전 means morning/a.m."
+      },
+      {
+        "question": "이 사람은 점심을 어디에서 먹어요?",
+        "options": ["집", "식당", "카페", "학교 식당"],
+        "correct": 3,
+        "explanation": "The passage states '학교 식당에서 밥을 먹어요' meaning 'I eat at the school cafeteria.' 학교 식당 specifically means the school cafeteria."
+      }
+    ]
+  },
+  {
+    "passage": "저는 매일 아침에 커피를 마셔요. 회사에서 열 시간 일해요. 저녁에 집에 와요. 피곤하지만 운동해요. 열한 시에 자요.",
+    "passage_en": "I drink coffee every morning. I work 10 hours at the company. I come home in the evening. I am tired but I exercise. I sleep at 11.",
+    "questions": [
+      {
+        "question": "이 사람은 아침에 무엇을 마셔요?",
+        "options": ["주스", "차", "커피", "물"],
+        "correct": 2,
+        "explanation": "The passage says '매일 아침에 커피를 마셔요' meaning 'I drink coffee every morning.' 마셔요 is the polite form of 마시다 (to drink)."
+      },
+      {
+        "question": "이 사람은 저녁에 무엇을 해요?",
+        "options": ["공부해요", "운동해요", "텔레비전을 봐요", "친구를 만나요"],
+        "correct": 1,
+        "explanation": "The passage states '피곤하지만 운동해요' meaning 'I am tired but I exercise.' 지만 means 'but,' showing contrast."
+      }
+    ]
+  },
+  {
+    "passage": "오늘은 토요일이에요. 저는 늦게 일어났어요. 점심에 친구하고 같이 영화를 봤어요. 영화가 재미있었어요. 저녁에 집에서 쉬었어요.",
+    "passage_en": "Today is Saturday. I woke up late. At lunch I watched a movie with my friend. The movie was fun. In the evening I rested at home.",
+    "questions": [
+      {
+        "question": "오늘은 무슨 요일이에요?",
+        "options": ["일요일", "토요일", "금요일", "월요일"],
+        "correct": 1,
+        "explanation": "The passage says '오늘은 토요일이에요' meaning 'Today is Saturday.' 토요일 means Saturday."
+      },
+      {
+        "question": "이 사람은 누구하고 영화를 봤어요?",
+        "options": ["가족", "친구", "혼자", "동생"],
+        "correct": 1,
+        "explanation": "The passage states '친구하고 같이 영화를 봤어요' meaning 'I watched a movie with my friend.' 하고 같이 means 'together with.'"
+      }
+    ]
+  },
+  {
+    "passage": "저는 오후에 도서관에서 공부해요. 세 시간 동안 한국어를 공부해요. 다섯 시에 도서관을 나와요. 그리고 편의점에서 간식을 사요. 집에 가서 저녁을 먹어요.",
+    "passage_en": "I study at the library in the afternoon. I study Korean for 3 hours. I leave the library at 5. Then I buy snacks at the convenience store. I go home and eat dinner.",
+    "questions": [
+      {
+        "question": "이 사람은 어디에서 공부해요?",
+        "options": ["카페", "집", "학교", "도서관"],
+        "correct": 3,
+        "explanation": "The passage says '도서관에서 공부해요' meaning 'I study at the library.' 도서관 means library."
+      },
+      {
+        "question": "이 사람은 얼마나 오래 공부해요?",
+        "options": ["한 시간", "두 시간", "세 시간", "네 시간"],
+        "correct": 2,
+        "explanation": "The passage states '세 시간 동안 한국어를 공부해요' meaning 'I study Korean for 3 hours.' 동안 means 'for (a duration of time).'"
+      }
+    ]
+  },
+  {
+    "passage": "저는 한국 식당에 왔어요. 메뉴를 봐요. 비빔밥하고 된장찌개를 주문했어요. 비빔밥은 팔천 원이에요. 된장찌개는 칠천 원이에요.",
+    "passage_en": "I came to a Korean restaurant. I look at the menu. I ordered bibimbap and doenjang stew. The bibimbap is 8,000 won. The doenjang stew is 7,000 won.",
+    "questions": [
+      {
+        "question": "이 사람은 무엇을 주문했어요?",
+        "options": ["김치찌개하고 비빔밥", "비빔밥하고 된장찌개", "불고기하고 냉면", "김밥하고 라면"],
+        "correct": 1,
+        "explanation": "The passage says '비빔밥하고 된장찌개를 주문했어요' meaning 'I ordered bibimbap and doenjang stew.' 하고 connects the two items."
+      },
+      {
+        "question": "음식 값은 모두 얼마예요?",
+        "options": ["만 원", "만 오천 원", "만 이천 원", "구천 원"],
+        "correct": 1,
+        "explanation": "Bibimbap is 8,000 won and doenjang stew is 7,000 won. Together that is 15,000 won (만 오천 원). This tests the ability to add the two prices mentioned in the passage."
+      }
+    ]
+  },
+  {
+    "passage": "오늘 점심에 불고기를 먹었어요. 아주 맛있었어요. 반찬도 많았어요. 김치하고 나물이 있었어요. 배가 불러요.",
+    "passage_en": "I ate bulgogi for lunch today. It was very delicious. There were many side dishes too. There were kimchi and seasoned vegetables. I am full.",
+    "questions": [
+      {
+        "question": "점심에 무엇을 먹었어요?",
+        "options": ["비빔밥", "삼겹살", "불고기", "치킨"],
+        "correct": 2,
+        "explanation": "The passage says '점심에 불고기를 먹었어요' meaning 'I ate bulgogi for lunch.' 불고기 is a Korean marinated beef dish."
+      },
+      {
+        "question": "반찬으로 무엇이 있었어요?",
+        "options": ["김치하고 두부", "김치하고 나물", "나물하고 생선", "김치하고 계란"],
+        "correct": 1,
+        "explanation": "The passage states '김치하고 나물이 있었어요' meaning 'There were kimchi and seasoned vegetables.' 나물 means seasoned vegetable side dishes."
+      }
+    ]
+  },
+  {
+    "passage": "저는 카페에 있어요. 아메리카노 한 잔하고 케이크 한 조각을 시켰어요. 아메리카노는 사천오백 원이에요. 케이크는 오천 원이에요. 카페가 조용해서 좋아요.",
+    "passage_en": "I am at a cafe. I ordered one americano and one slice of cake. The americano is 4,500 won. The cake is 5,000 won. The cafe is quiet so it is nice.",
+    "questions": [
+      {
+        "question": "카페는 어때요?",
+        "options": ["시끄러워요", "조용해요", "넓어요", "작아요"],
+        "correct": 1,
+        "explanation": "The passage says '카페가 조용해서 좋아요' meaning 'The cafe is quiet so it is nice.' 조용하다 means 'to be quiet.'"
+      },
+      {
+        "question": "이 사람은 무엇을 마셔요?",
+        "options": ["라떼", "아메리카노", "녹차", "주스"],
+        "correct": 1,
+        "explanation": "The passage states '아메리카노 한 잔' meaning 'one americano.' 잔 is the counter word for cups/glasses of drinks."
+      }
+    ]
+  },
+  {
+    "passage": "저는 냉면을 좋아해요. 여름에 자주 먹어요. 오늘은 식당에서 물냉면을 먹었어요. 면이 쫄깃하고 국물이 시원해요. 정말 맛있었어요.",
+    "passage_en": "I like naengmyeon (cold noodles). I eat it often in summer. Today I ate mul-naengmyeon at a restaurant. The noodles are chewy and the broth is refreshing. It was really delicious.",
+    "questions": [
+      {
+        "question": "이 사람은 냉면을 언제 자주 먹어요?",
+        "options": ["봄", "여름", "가을", "겨울"],
+        "correct": 1,
+        "explanation": "The passage says '여름에 자주 먹어요' meaning 'I eat it often in summer.' 여름 means summer and 자주 means often."
+      }
+    ]
+  },
+  {
+    "passage": "실례합니다. 서울역이 어디에 있어요? 이 길로 쭉 가세요. 사거리에서 왼쪽으로 가세요. 오 분쯤 걸려요. 큰 건물이 서울역이에요.",
+    "passage_en": "Excuse me. Where is Seoul Station? Go straight this way. Turn left at the intersection. It takes about 5 minutes. The big building is Seoul Station.",
+    "questions": [
+      {
+        "question": "사거리에서 어떻게 가야 해요?",
+        "options": ["오른쪽으로", "왼쪽으로", "직진으로", "뒤로"],
+        "correct": 1,
+        "explanation": "The passage says '사거리에서 왼쪽으로 가세요' meaning 'Turn left at the intersection.' 왼쪽 means left."
+      },
+      {
+        "question": "서울역까지 얼마나 걸려요?",
+        "options": ["삼 분", "오 분", "십 분", "이십 분"],
+        "correct": 1,
+        "explanation": "The passage states '오 분쯤 걸려요' meaning 'It takes about 5 minutes.' 쯤 means 'about/approximately.'"
+      }
+    ]
+  },
+  {
+    "passage": "저는 명동에 가고 싶어요. 지하철을 타요. 이 역에서 사호선을 타세요. 세 정거장 가세요. 명동역에서 내리세요. 출구는 육 번이에요.",
+    "passage_en": "I want to go to Myeongdong. I take the subway. Take line 4 from this station. Go 3 stops. Get off at Myeongdong station. The exit is number 6.",
+    "questions": [
+      {
+        "question": "몇 호선을 타야 해요?",
+        "options": ["이호선", "삼호선", "사호선", "오호선"],
+        "correct": 2,
+        "explanation": "The passage says '사호선을 타세요' meaning 'Take line 4.' 사 means 4 and 호선 means subway line number."
+      },
+      {
+        "question": "몇 정거장을 가야 해요?",
+        "options": ["두 정거장", "세 정거장", "네 정거장", "다섯 정거장"],
+        "correct": 1,
+        "explanation": "The passage states '세 정거장 가세요' meaning 'Go 3 stops.' 정거장 means station/stop."
+      }
+    ]
+  },
+  {
+    "passage": "우체국이 어디에 있어요? 여기에서 가까워요. 이 건물 뒤에 있어요. 은행 옆이에요. 걸어서 이 분 걸려요.",
+    "passage_en": "Where is the post office? It is close from here. It is behind this building. It is next to the bank. It takes 2 minutes on foot.",
+    "questions": [
+      {
+        "question": "우체국은 어디에 있어요?",
+        "options": ["은행 앞", "은행 옆", "은행 뒤", "은행 안"],
+        "correct": 1,
+        "explanation": "The passage says '은행 옆이에요' meaning 'It is next to the bank.' 옆 means 'next to/beside.'"
+      },
+      {
+        "question": "우체국은 여기에서 멀어요?",
+        "options": ["네, 멀어요", "아니요, 가까워요", "네, 삼십 분 걸려요", "아니요, 버스를 타야 해요"],
+        "correct": 1,
+        "explanation": "The passage states '여기에서 가까워요' meaning 'It is close from here.' 가까워요 means 'it is close/near.'"
+      }
+    ]
+  },
+  {
+    "passage": "저는 공원을 찾아요. 공원은 학교 앞에 있어요. 학교는 이 길 끝에 있어요. 공원에 나무가 많아요. 사람들이 운동해요.",
+    "passage_en": "I am looking for the park. The park is in front of the school. The school is at the end of this road. There are many trees in the park. People are exercising.",
+    "questions": [
+      {
+        "question": "공원은 어디에 있어요?",
+        "options": ["학교 뒤", "학교 앞", "학교 옆", "학교 안"],
+        "correct": 1,
+        "explanation": "The passage says '공원은 학교 앞에 있어요' meaning 'The park is in front of the school.' 앞 means 'in front of.'"
+      }
+    ]
+  },
+  {
+    "passage": "저는 옷 가게에 왔어요. 티셔츠를 사고 싶어요. 이 흰색 티셔츠가 예뻐요. 가격이 이만 원이에요. 좀 비싸요. 저는 검은색 티셔츠를 샀어요. 만 오천 원이에요.",
+    "passage_en": "I came to the clothing store. I want to buy a T-shirt. This white T-shirt is pretty. The price is 20,000 won. It is a bit expensive. I bought the black T-shirt. It is 15,000 won.",
+    "questions": [
+      {
+        "question": "이 사람은 무슨 색 티셔츠를 샀어요?",
+        "options": ["흰색", "파란색", "검은색", "빨간색"],
+        "correct": 2,
+        "explanation": "The passage says '검은색 티셔츠를 샀어요' meaning 'I bought the black T-shirt.' 검은색 means black color."
+      },
+      {
+        "question": "흰색 티셔츠는 왜 안 샀어요?",
+        "options": ["안 예뻐서", "너무 비싸서", "사이즈가 없어서", "색이 싫어서"],
+        "correct": 1,
+        "explanation": "The passage states the white T-shirt is 20,000 won and adds '좀 비싸요' meaning 'It is a bit expensive.' This implies the person chose the cheaper option instead."
+      }
+    ]
+  },
+  {
+    "passage": "시장에 왔어요. 과일을 사고 싶어요. 사과 한 봉지에 오천 원이에요. 딸기는 한 상자에 만 원이에요. 저는 사과하고 딸기를 샀어요.",
+    "passage_en": "I came to the market. I want to buy fruit. A bag of apples is 5,000 won. A box of strawberries is 10,000 won. I bought apples and strawberries.",
+    "questions": [
+      {
+        "question": "사과는 얼마예요?",
+        "options": ["삼천 원", "오천 원", "칠천 원", "만 원"],
+        "correct": 1,
+        "explanation": "The passage says '사과 한 봉지에 오천 원이에요' meaning 'A bag of apples is 5,000 won.' 봉지 means bag."
+      },
+      {
+        "question": "이 사람은 무엇을 샀어요?",
+        "options": ["사과만", "딸기만", "사과하고 딸기", "사과하고 바나나"],
+        "correct": 2,
+        "explanation": "The passage states '사과하고 딸기를 샀어요' meaning 'I bought apples and strawberries.' 하고 means 'and.'"
+      }
+    ]
+  },
+  {
+    "passage": "오늘 백화점에 왔어요. 신발을 보고 있어요. 이 운동화는 팔만 원이에요. 저 운동화는 육만 원이에요. 육만 원짜리가 더 편해요. 그래서 저 운동화를 샀어요.",
+    "passage_en": "I came to the department store today. I am looking at shoes. These sneakers are 80,000 won. Those sneakers are 60,000 won. The 60,000 won ones are more comfortable. So I bought those sneakers.",
+    "questions": [
+      {
+        "question": "이 사람은 왜 저 운동화를 샀어요?",
+        "options": ["더 싸서", "더 예뻐서", "더 편해서", "더 가벼워서"],
+        "correct": 2,
+        "explanation": "The passage says '육만 원짜리가 더 편해요. 그래서 저 운동화를 샀어요' meaning 'The 60,000 won ones are more comfortable. So I bought those sneakers.' 편해요 means comfortable."
+      },
+      {
+        "question": "이 사람이 산 운동화는 얼마예요?",
+        "options": ["사만 원", "육만 원", "팔만 원", "십만 원"],
+        "correct": 1,
+        "explanation": "The person bought the 60,000 won sneakers (저 운동화 = those sneakers over there, which are 육만 원)."
+      }
+    ]
+  },
+  {
+    "passage": "저는 편의점에 갔어요. 음료수하고 삼각김밥을 샀어요. 음료수는 천오백 원이에요. 삼각김밥은 천이백 원이에요. 모두 이천칠백 원이에요.",
+    "passage_en": "I went to the convenience store. I bought a drink and a triangle kimbap. The drink is 1,500 won. The triangle kimbap is 1,200 won. The total is 2,700 won.",
+    "questions": [
+      {
+        "question": "이 사람은 어디에 갔어요?",
+        "options": ["슈퍼마켓", "식당", "편의점", "카페"],
+        "correct": 2,
+        "explanation": "The passage says '편의점에 갔어요' meaning 'I went to the convenience store.' 편의점 means convenience store."
+      },
+      {
+        "question": "삼각김밥은 얼마예요?",
+        "options": ["천 원", "천이백 원", "천오백 원", "이천 원"],
+        "correct": 1,
+        "explanation": "The passage states '삼각김밥은 천이백 원이에요' meaning 'The triangle kimbap is 1,200 won.'"
+      }
+    ]
+  },
+  {
+    "passage": "오늘 날씨가 아주 더워요. 삼십오 도예요. 하늘에 구름이 없어요. 아이스크림을 먹고 싶어요. 바다에 가고 싶어요.",
+    "passage_en": "The weather is very hot today. It is 35 degrees. There are no clouds in the sky. I want to eat ice cream. I want to go to the beach.",
+    "questions": [
+      {
+        "question": "오늘 날씨가 어때요?",
+        "options": ["추워요", "더워요", "시원해요", "따뜻해요"],
+        "correct": 1,
+        "explanation": "The passage says '오늘 날씨가 아주 더워요' meaning 'The weather is very hot today.' 더워요 means hot (weather)."
+      },
+      {
+        "question": "이 사람은 어디에 가고 싶어요?",
+        "options": ["산", "바다", "공원", "수영장"],
+        "correct": 1,
+        "explanation": "The passage states '바다에 가고 싶어요' meaning 'I want to go to the beach.' 바다 means sea/beach."
+      }
+    ]
+  },
+  {
+    "passage": "지금 겨울이에요. 밖에 눈이 와요. 아주 추워요. 영하 십 도예요. 따뜻한 옷을 입어야 해요. 저는 코트하고 목도리를 입었어요.",
+    "passage_en": "It is winter now. It is snowing outside. It is very cold. It is minus 10 degrees. You need to wear warm clothes. I wore a coat and a scarf.",
+    "questions": [
+      {
+        "question": "지금 무슨 계절이에요?",
+        "options": ["봄", "여름", "가을", "겨울"],
+        "correct": 3,
+        "explanation": "The passage says '지금 겨울이에요' meaning 'It is winter now.' 겨울 means winter."
+      },
+      {
+        "question": "밖에 날씨가 어때요?",
+        "options": ["비가 와요", "눈이 와요", "바람이 불어요", "맑아요"],
+        "correct": 1,
+        "explanation": "The passage states '밖에 눈이 와요' meaning 'It is snowing outside.' 눈이 오다 means 'to snow.'"
+      }
+    ]
+  },
+  {
+    "passage": "가을이에요. 날씨가 시원해요. 나뭇잎이 빨간색하고 노란색이에요. 아주 예뻐요. 오늘은 공원에서 산책했어요.",
+    "passage_en": "It is autumn. The weather is cool. The leaves are red and yellow. It is very pretty. Today I took a walk in the park.",
+    "questions": [
+      {
+        "question": "나뭇잎은 무슨 색이에요?",
+        "options": ["초록색하고 파란색", "빨간색하고 노란색", "갈색하고 검은색", "하얀색하고 분홍색"],
+        "correct": 1,
+        "explanation": "The passage says '나뭇잎이 빨간색하고 노란색이에요' meaning 'The leaves are red and yellow.' These are typical autumn leaf colors."
+      },
+      {
+        "question": "이 사람은 오늘 무엇을 했어요?",
+        "options": ["등산했어요", "공원에서 산책했어요", "집에서 쉬었어요", "사진을 찍었어요"],
+        "correct": 1,
+        "explanation": "The passage states '공원에서 산책했어요' meaning 'I took a walk in the park.' 산책하다 means 'to take a walk.'"
+      }
+    ]
+  },
+  {
+    "passage": "우리 가족은 네 명이에요. 아버지, 어머니, 언니, 그리고 저예요. 아버지는 의사예요. 어머니는 간호사예요. 언니는 대학생이에요.",
+    "passage_en": "Our family has four members. Father, mother, older sister, and me. My father is a doctor. My mother is a nurse. My older sister is a college student.",
+    "questions": [
+      {
+        "question": "가족이 몇 명이에요?",
+        "options": ["세 명", "네 명", "다섯 명", "여섯 명"],
+        "correct": 1,
+        "explanation": "The passage says '우리 가족은 네 명이에요' meaning 'Our family has four members.' 네 명 means four people."
+      },
+      {
+        "question": "어머니의 직업은 무엇이에요?",
+        "options": ["의사", "선생님", "간호사", "회사원"],
+        "correct": 2,
+        "explanation": "The passage states '어머니는 간호사예요' meaning 'My mother is a nurse.' 간호사 means nurse."
+      }
+    ]
+  },
+  {
+    "passage": "제 친구 유진이는 키가 커요. 머리가 길어요. 안경을 써요. 성격이 밝아요. 항상 웃어요. 저는 유진이를 좋아해요.",
+    "passage_en": "My friend Yujin is tall. She has long hair. She wears glasses. Her personality is bright. She always smiles. I like Yujin.",
+    "questions": [
+      {
+        "question": "유진 씨는 어떻게 생겼어요?",
+        "options": ["키가 작고 머리가 짧아요", "키가 크고 머리가 길어요", "키가 크고 머리가 짧아요", "키가 작고 머리가 길어요"],
+        "correct": 1,
+        "explanation": "The passage says '키가 커요' (tall) and '머리가 길어요' (long hair). So Yujin is tall with long hair."
+      },
+      {
+        "question": "유진 씨의 성격은 어때요?",
+        "options": ["조용해요", "밝아요", "무서워요", "부끄러워요"],
+        "correct": 1,
+        "explanation": "The passage states '성격이 밝아요' meaning 'Her personality is bright/cheerful.' 밝다 means bright."
+      }
+    ]
+  },
+  {
+    "passage": "우리 할머니는 일흔 살이에요. 부산에 살아요. 요리를 잘해요. 할머니의 김치가 제일 맛있어요. 저는 방학에 할머니 집에 가요.",
+    "passage_en": "Our grandmother is 70 years old. She lives in Busan. She cooks well. Grandmother's kimchi is the most delicious. I go to grandmother's house during vacation.",
+    "questions": [
+      {
+        "question": "할머니는 어디에 살아요?",
+        "options": ["서울", "부산", "대구", "제주"],
+        "correct": 1,
+        "explanation": "The passage says '부산에 살아요' meaning 'She lives in Busan.' 부산 is a major city in southern South Korea."
+      },
+      {
+        "question": "이 사람은 언제 할머니 집에 가요?",
+        "options": ["주말에", "방학에", "매일", "생일에"],
+        "correct": 1,
+        "explanation": "The passage states '방학에 할머니 집에 가요' meaning 'I go to grandmother's house during vacation.' 방학 means school vacation/break."
+      }
+    ]
+  },
+  {
+    "passage": "다음 달에 제주도에 가요. 비행기를 타요. 서울에서 제주도까지 한 시간 걸려요. 제주도에서 바다를 보고 싶어요. 귤도 먹고 싶어요. 삼 일 동안 여행해요.",
+    "passage_en": "Next month I am going to Jeju Island. I am taking an airplane. It takes one hour from Seoul to Jeju Island. I want to see the sea in Jeju. I also want to eat tangerines. I will travel for 3 days.",
+    "questions": [
+      {
+        "question": "제주도에 어떻게 가요?",
+        "options": ["기차를 타고", "버스를 타고", "비행기를 타고", "배를 타고"],
+        "correct": 2,
+        "explanation": "The passage says '비행기를 타요' meaning 'I take an airplane.' 비행기 means airplane."
+      },
+      {
+        "question": "여행은 얼마나 해요?",
+        "options": ["이 일", "삼 일", "사 일", "일주일"],
+        "correct": 1,
+        "explanation": "The passage states '삼 일 동안 여행해요' meaning 'I will travel for 3 days.' 삼 일 means 3 days."
+      }
+    ]
+  },
+  {
+    "passage": "작년에 일본에 갔어요. 도쿄하고 오사카에 갔어요. 도쿄에서 스시를 먹었어요. 오사카에서 오코노미야키를 먹었어요. 일본어를 조금 했어요. 여행이 즐거웠어요.",
+    "passage_en": "Last year I went to Japan. I went to Tokyo and Osaka. In Tokyo I ate sushi. In Osaka I ate okonomiyaki. I spoke a little Japanese. The trip was enjoyable.",
+    "questions": [
+      {
+        "question": "이 사람은 일본에서 어디에 갔어요?",
+        "options": ["도쿄하고 교토", "도쿄하고 오사카", "오사카하고 교토", "도쿄만"],
+        "correct": 1,
+        "explanation": "The passage says '도쿄하고 오사카에 갔어요' meaning 'I went to Tokyo and Osaka.' 하고 connects the two cities."
+      },
+      {
+        "question": "오사카에서 무엇을 먹었어요?",
+        "options": ["스시", "라멘", "오코노미야키", "돈가스"],
+        "correct": 2,
+        "explanation": "The passage states '오사카에서 오코노미야키를 먹었어요' meaning 'In Osaka I ate okonomiyaki.'"
+      }
+    ]
+  }
+]

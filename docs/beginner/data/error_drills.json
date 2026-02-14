@@ -1,0 +1,482 @@
+[
+  {
+    "incorrect": "나는 학교 갔어요.",
+    "correct": "나는 학교에 갔어요.",
+    "error_type": "Missing particle: 에",
+    "explanation": "The particle 에 is needed after 학교 to indicate the destination. 에 marks where you go, come, or arrive."
+  },
+  {
+    "incorrect": "저는 한국어가 공부해요.",
+    "correct": "저는 한국어를 공부해요.",
+    "error_type": "Wrong particle: 가 instead of 를",
+    "explanation": "한국어 is the object of 공부하다 (to study), so it needs the object particle 를, not the subject particle 가."
+  },
+  {
+    "incorrect": "친구는 학교에서 가요.",
+    "correct": "친구는 학교에 가요.",
+    "error_type": "Wrong particle: 에서 instead of 에",
+    "explanation": "에 marks a destination (where you go). 에서 marks where an action takes place. Since 가다 is about going TO a place, use 에."
+  },
+  {
+    "incorrect": "저는 도서관에 공부해요.",
+    "correct": "저는 도서관에서 공부해요.",
+    "error_type": "Wrong particle: 에 instead of 에서",
+    "explanation": "에서 marks the location where an action happens. Since studying is an action done AT the library, use 에서, not 에."
+  },
+  {
+    "incorrect": "물이 마셔요.",
+    "correct": "물을 마셔요.",
+    "error_type": "Wrong particle: 이 instead of 을",
+    "explanation": "물 (water) is the object being drunk, so it needs the object particle 을, not the subject particle 이."
+  },
+  {
+    "incorrect": "저는 버스 타고 왔어요.",
+    "correct": "저는 버스를 타고 왔어요.",
+    "error_type": "Missing particle: 를",
+    "explanation": "버스 is the object of 타다 (to ride), so it needs the object particle 를. While particles are sometimes dropped in casual speech, beginners should practice including them."
+  },
+  {
+    "incorrect": "저는 친구를 선물을 줬어요.",
+    "correct": "저는 친구에게 선물을 줬어요.",
+    "error_type": "Wrong particle: 를 instead of 에게",
+    "explanation": "에게 (or 한테 in casual speech) marks the recipient of an action. 친구 is the person receiving the gift, so use 에게, not 를."
+  },
+  {
+    "incorrect": "선생님한테 꽃을 드렸어요.",
+    "correct": "선생님께 꽃을 드렸어요.",
+    "error_type": "Wrong particle: 한테 instead of 께",
+    "explanation": "When the recipient is someone you respect (like a teacher), use the honorific particle 께 instead of 한테 or 에게. This matches the honorific verb 드리다."
+  },
+  {
+    "incorrect": "저는 연필에 글을 써요.",
+    "correct": "저는 연필로 글을 써요.",
+    "error_type": "Wrong particle: 에 instead of 로",
+    "explanation": "로 marks a tool or means used to do something. A pencil is the tool for writing, so use 로, not 에."
+  },
+  {
+    "incorrect": "오른쪽에 가세요.",
+    "correct": "오른쪽으로 가세요.",
+    "error_type": "Wrong particle: 에 instead of 으로",
+    "explanation": "으로 marks a direction of movement. When telling someone to go toward a direction, use 으로. 에 is used for specific destinations, not general directions."
+  },
+  {
+    "incorrect": "날씨는 좋아요.",
+    "correct": "날씨가 좋아요.",
+    "error_type": "Wrong particle: 는 instead of 가",
+    "explanation": "When describing the current weather as new information (not contrasting), use the subject particle 가. 는 would imply contrast (the weather is good, but something else isn't)."
+  },
+  {
+    "incorrect": "누구는 왔어요?",
+    "correct": "누가 왔어요?",
+    "error_type": "Wrong particle: 는 instead of 가",
+    "explanation": "Question words like 누구 (who) take the subject particle 가 (contracted to 누가), not the topic particle 는. You cannot topicalize an unknown."
+  },
+  {
+    "incorrect": "저는 사과가 좋아해요.",
+    "correct": "저는 사과를 좋아해요.",
+    "error_type": "Wrong particle: 가 instead of 를",
+    "explanation": "좋아하다 (to like) is a verb that takes an object with 를. Don't confuse it with 좋다 (to be good), which uses 가: 사과가 좋아요."
+  },
+  {
+    "incorrect": "저는 서울에서 살아요. 부산에서 갈 거예요.",
+    "correct": "저는 서울에서 살아요. 부산에 갈 거예요.",
+    "error_type": "Wrong particle: 에서 instead of 에",
+    "explanation": "부산 is the destination of 가다 (to go), so use 에 (destination marker). 에서 is for where an action happens, not where you're heading."
+  },
+  {
+    "incorrect": "친구한테 전화가 왔어요.",
+    "correct": "친구한테서 전화가 왔어요.",
+    "error_type": "Missing particle: 한테서",
+    "explanation": "한테서 (or 에게서) means 'from a person.' 한테 means 'to a person.' Since the call came FROM the friend, use 한테서."
+  },
+  {
+    "incorrect": "의자에서 앉으세요.",
+    "correct": "의자에 앉으세요.",
+    "error_type": "Wrong particle: 에서 instead of 에",
+    "explanation": "앉다 (to sit) marks the location with 에, not 에서. 에 is used with verbs of position (sitting, standing, existing), while 에서 is for active actions."
+  },
+  {
+    "incorrect": "저는 친구는 만났어요.",
+    "correct": "저는 친구를 만났어요.",
+    "error_type": "Wrong particle: 는 instead of 를",
+    "explanation": "친구 is the object of 만나다 (to meet), so it takes the object particle 를, not the topic particle 는."
+  },
+  {
+    "incorrect": "고양이가 방에서 있어요.",
+    "correct": "고양이가 방에 있어요.",
+    "error_type": "Wrong particle: 에서 instead of 에",
+    "explanation": "있다 (to exist/be at) uses 에 for location, not 에서. 에서 is only for locations where active actions are performed."
+  },
+  {
+    "incorrect": "지하철에 서울역에서 내렸어요.",
+    "correct": "지하철에서 서울역에 내렸어요.",
+    "error_type": "Swapped particles: 에 and 에서",
+    "explanation": "You get off FROM the subway (지하철에서) and arrive AT the station (서울역에). 에서 marks where the action of getting off happens; 에 marks the destination."
+  },
+  {
+    "incorrect": "저는 택시에 회사에서 갔어요.",
+    "correct": "저는 택시로 회사에 갔어요.",
+    "error_type": "Wrong particle: 에 instead of 로",
+    "explanation": "로 marks the means of transportation. You go BY taxi (택시로), not AT taxi (택시에). And 회사 is the destination, so it takes 에."
+  },
+  {
+    "incorrect": "음악을 듣어요.",
+    "correct": "음악을 들어요.",
+    "error_type": "Irregular verb: ㄷ irregular (듣다)",
+    "explanation": "듣다 is a ㄷ-irregular verb. When followed by a vowel, ㄷ changes to ㄹ. So 듣 + 어요 becomes 들어요, not 듣어요."
+  },
+  {
+    "incorrect": "날씨가 더웁어요.",
+    "correct": "날씨가 더워요.",
+    "error_type": "Irregular verb: ㅂ irregular (덥다)",
+    "explanation": "덥다 is a ㅂ-irregular adjective. When followed by a vowel, ㅂ changes to 우. So 덥 + 어요 becomes 더워요, not 더웁어요."
+  },
+  {
+    "incorrect": "친구를 돕아요.",
+    "correct": "친구를 도와요.",
+    "error_type": "Irregular verb: ㅂ irregular (돕다)",
+    "explanation": "돕다 is a ㅂ-irregular verb. ㅂ changes to 우 before a vowel, and 우 + 아 contracts to 와. So 돕 + 아요 becomes 도와요."
+  },
+  {
+    "incorrect": "그렇어요.",
+    "correct": "그래요.",
+    "error_type": "Irregular verb: ㅎ irregular (그렇다)",
+    "explanation": "그렇다 is a ㅎ-irregular adjective. The ㅎ drops and combines with 아 to make 애. So 그렇 + 아요 becomes 그래요."
+  },
+  {
+    "incorrect": "서울에서 살세요?",
+    "correct": "서울에서 사세요?",
+    "error_type": "Irregular verb: ㄹ irregular (살다)",
+    "explanation": "살다 is a ㄹ-irregular verb. ㄹ is dropped before ㅅ, ㄴ, and ㅂ. So 살 + 세요 becomes 사세요, not 살세요."
+  },
+  {
+    "incorrect": "어제 영화를 봐요.",
+    "correct": "어제 영화를 봤어요.",
+    "error_type": "Wrong tense: present instead of past",
+    "explanation": "어제 (yesterday) indicates a past event, so the verb must be in past tense. 보다 in past tense is 봤어요, not the present tense 봐요."
+  },
+  {
+    "incorrect": "내일 친구를 만났어요.",
+    "correct": "내일 친구를 만날 거예요.",
+    "error_type": "Wrong tense: past instead of future",
+    "explanation": "내일 (tomorrow) indicates a future event. Use the future form 만날 거예요 (will meet), not the past tense 만났어요 (met)."
+  },
+  {
+    "incorrect": "노랗어요.",
+    "correct": "노래요.",
+    "error_type": "Irregular verb: ㅎ irregular (노랗다)",
+    "explanation": "노랗다 (to be yellow) is a ㅎ-irregular adjective. ㅎ drops and merges with the vowel: 노랗 + 아요 → 노래요."
+  },
+  {
+    "incorrect": "길을 걸러요.",
+    "correct": "길을 걸어요.",
+    "error_type": "Incorrect conjugation: ㄷ irregular (걷다)",
+    "explanation": "걷다 (to walk) is a ㄷ-irregular verb. ㄷ changes to ㄹ before a vowel: 걷 + 어요 → 걸어요. The ending is 어요, not 러요."
+  },
+  {
+    "incorrect": "이 노래를 아요?",
+    "correct": "이 노래를 알아요?",
+    "error_type": "Irregular verb: ㄹ irregular (알다)",
+    "explanation": "알다 (to know) keeps ㄹ before 아/어. The correct present tense is 알아요, not 아요. ㄹ only drops before ㅅ, ㄴ, ㅂ."
+  },
+  {
+    "incorrect": "이 음식이 맵어요.",
+    "correct": "이 음식이 매워요.",
+    "error_type": "Irregular verb: ㅂ irregular (맵다)",
+    "explanation": "맵다 (to be spicy) is ㅂ-irregular. ㅂ changes to 우 before a vowel: 맵 + 어요 → 매워요 (우 + 어 = 워)."
+  },
+  {
+    "incorrect": "지금 비가 와요. 어제도 비가 와요.",
+    "correct": "지금 비가 와요. 어제도 비가 왔어요.",
+    "error_type": "Wrong tense: present instead of past",
+    "explanation": "The second sentence uses 어제 (yesterday), so it needs past tense 왔어요, not present tense 와요."
+  },
+  {
+    "incorrect": "저는 매일 커피를 마시어요.",
+    "correct": "저는 매일 커피를 마셔요.",
+    "error_type": "Vowel contraction: 시 + 어 → 셔",
+    "explanation": "마시다 conjugates as 마셔요, not 마시어요. The vowel 이 + 어 contracts to 여, giving 마셔요."
+  },
+  {
+    "incorrect": "다음 주에 시험을 봤어요.",
+    "correct": "다음 주에 시험을 볼 거예요.",
+    "error_type": "Wrong tense: past instead of future",
+    "explanation": "다음 주 (next week) is in the future. Use the future tense 볼 거예요 (will take), not past tense 봤어요 (took)."
+  },
+  {
+    "incorrect": "큰 아주 집이에요.",
+    "correct": "아주 큰 집이에요.",
+    "error_type": "Word order: adverb placement",
+    "explanation": "Adverbs like 아주 (very) come before the adjective they modify. The correct order is 아주 큰 집 (very big house), not 큰 아주 집."
+  },
+  {
+    "incorrect": "저는 갔어요 학교에.",
+    "correct": "저는 학교에 갔어요.",
+    "error_type": "Word order: verb must be at the end",
+    "explanation": "Korean uses SOV (Subject-Object-Verb) order. The verb always comes at the end of the sentence: 학교에 갔어요, not 갔어요 학교에."
+  },
+  {
+    "incorrect": "저는 읽었어요 책을 어제.",
+    "correct": "저는 어제 책을 읽었어요.",
+    "error_type": "Word order: SOV order with time expression",
+    "explanation": "Korean order is Subject-Time-Object-Verb. Time words (어제) come before the object, and the verb is always last."
+  },
+  {
+    "incorrect": "빨리 저는 달려요.",
+    "correct": "저는 빨리 달려요.",
+    "error_type": "Word order: adverb placement",
+    "explanation": "The adverb 빨리 (quickly) should come after the subject and before the verb. Subject → adverb → verb is the natural Korean order."
+  },
+  {
+    "incorrect": "보통 아침에 저는 운동해요.",
+    "correct": "저는 보통 아침에 운동해요.",
+    "error_type": "Word order: subject should come first",
+    "explanation": "The subject (저는) typically comes first, followed by time expressions. A more natural order is: 저는 보통 아침에 운동해요."
+  },
+  {
+    "incorrect": "빵 맛있는을 먹었어요.",
+    "correct": "맛있는 빵을 먹었어요.",
+    "error_type": "Word order: adjective before noun",
+    "explanation": "In Korean, modifying adjectives come before the noun: 맛있는 빵 (delicious bread), not 빵 맛있는. The particle 을 attaches to the noun."
+  },
+  {
+    "incorrect": "학교에 매일 갔어요 저는.",
+    "correct": "저는 매일 학교에 갔어요.",
+    "error_type": "Word order: SOV structure",
+    "explanation": "Korean follows Subject-Time-Place-Verb order. The subject comes first, time and place phrases come in the middle, and the verb is always last."
+  },
+  {
+    "incorrect": "오늘에 뭐 해요?",
+    "correct": "오늘 뭐 해요?",
+    "error_type": "Unnecessary particle: 에 with time adverb",
+    "explanation": "Time words like 오늘 (today), 어제 (yesterday), 내일 (tomorrow) don't need the particle 에. They function as adverbs on their own."
+  },
+  {
+    "incorrect": "먹었어요 저는 점심을 식당에서.",
+    "correct": "저는 식당에서 점심을 먹었어요.",
+    "error_type": "Word order: verb-first (English order)",
+    "explanation": "Korean puts the verb at the end, not the beginning. The natural order is: Subject (저는) + Place (식당에서) + Object (점심을) + Verb (먹었어요)."
+  },
+  {
+    "incorrect": "예쁜 정말 옷이에요.",
+    "correct": "정말 예쁜 옷이에요.",
+    "error_type": "Word order: adverb before adjective",
+    "explanation": "The adverb 정말 (really) must come before the adjective 예쁜 (pretty) it modifies: 정말 예쁜 옷 (really pretty clothes)."
+  },
+  {
+    "incorrect": "나는 밥을 먹었습니다.",
+    "correct": "저는 밥을 먹었습니다.",
+    "error_type": "Honorific mismatch: 나 with -습니다",
+    "explanation": "나 is the casual/plain form of 'I,' while -습니다 is a formal polite ending. Use 저 (humble 'I') with formal/polite endings."
+  },
+  {
+    "incorrect": "할머니가 밥을 먹어요.",
+    "correct": "할머니가 밥을 드세요.",
+    "error_type": "Missing honorific: 먹다 for elder",
+    "explanation": "When the subject is an elder (할머니 = grandmother), use the honorific verb 드시다 instead of 먹다. 드시다 + 어요 → 드세요."
+  },
+  {
+    "incorrect": "선생님이 말했어요.",
+    "correct": "선생님이 말씀하셨어요.",
+    "error_type": "Missing honorific: 말하다 for teacher",
+    "explanation": "For a respected person like a teacher, use the honorific noun 말씀 and the honorific verb ending -하시다: 말씀하셨어요."
+  },
+  {
+    "incorrect": "사장님, 이거 봐요.",
+    "correct": "사장님, 이거 보세요.",
+    "error_type": "Missing honorific: -아/어요 instead of -세요",
+    "explanation": "When addressing someone respectfully (사장님 = boss), use the honorific request form -세요 instead of the plain polite -아/어요."
+  },
+  {
+    "incorrect": "교수님이 집에 갔어요.",
+    "correct": "교수님이 집에 가셨어요.",
+    "error_type": "Missing honorific: 갔어요 instead of 가셨어요",
+    "explanation": "When the subject is a respected person (교수님), the verb must use the honorific infix -(으)시-. 가다 → 가시다 → 가셨어요 (past)."
+  },
+  {
+    "incorrect": "아버지, 이것 먹어.",
+    "correct": "아버지, 이것 드세요.",
+    "error_type": "Honorific mismatch: 반말 to father",
+    "explanation": "In Korean, you should use polite/honorific speech to your father. Use 드세요 (honorific of 먹다 + polite ending), not the casual 먹어."
+  },
+  {
+    "incorrect": "저는 밥 먹었어. 감사합니다.",
+    "correct": "저는 밥 먹었어요. 감사합니다.",
+    "error_type": "Honorific mismatch: mixing 반말 and 존댓말",
+    "explanation": "Don't mix speech levels in the same conversation. 먹었어 is casual (반말) but 감사합니다 is formal polite. Use 먹었어요 to match the polite level."
+  },
+  {
+    "incorrect": "할아버지가 주무세요. 나는 자요.",
+    "correct": "할아버지가 주무세요. 저는 자요.",
+    "error_type": "Honorific mismatch: 나 in polite context",
+    "explanation": "When using polite speech (-요 endings) and mentioning an elder, use 저 (humble I), not 나 (casual I)."
+  },
+  {
+    "incorrect": "부장님, 앉아요.",
+    "correct": "부장님, 앉으세요.",
+    "error_type": "Missing honorific: -아요 instead of -으세요",
+    "explanation": "When asking a superior to sit, use the honorific form 앉으세요, not the plain polite 앉아요."
+  },
+  {
+    "incorrect": "어머니가 집에 있어요.",
+    "correct": "어머니가 집에 계세요.",
+    "error_type": "Missing honorific: 있다 instead of 계시다",
+    "explanation": "있다 has a special honorific form 계시다 (to be/exist honorifically). Use 계세요 when the subject is a respected person."
+  },
+  {
+    "incorrect": "선생님, 나이가 몇이에요?",
+    "correct": "선생님, 연세가 어떻게 되세요?",
+    "error_type": "Missing honorific: casual age question",
+    "explanation": "When asking a respected person's age, use the honorific word 연세 instead of 나이, and the polite form 어떻게 되세요 instead of 몇이에요."
+  },
+  {
+    "incorrect": "할머니가 아파요.",
+    "correct": "할머니가 편찮으세요.",
+    "error_type": "Missing honorific: 아프다 for elder",
+    "explanation": "When speaking about an elder being sick, use the honorific word 편찮다 (honorific of 아프다) with -(으)시-: 편찮으세요."
+  },
+  {
+    "incorrect": "어머니가 음식을 만들어요.",
+    "correct": "어머니가 음식을 만드세요.",
+    "error_type": "Missing honorific: plain form for mother",
+    "explanation": "When talking about your mother (an elder), use the honorific form. 만들다 → 만드시다 → 만드세요. The ㄹ drops before 시."
+  },
+  {
+    "incorrect": "아버지가 자요.",
+    "correct": "아버지가 주무세요.",
+    "error_type": "Missing honorific: 자다 instead of 주무시다",
+    "explanation": "자다 (to sleep) has a special honorific form 주무시다. When the subject is an elder like 아버지, use 주무세요."
+  },
+  {
+    "incorrect": "사과 삼 개 주세요.",
+    "correct": "사과 세 개 주세요.",
+    "error_type": "Counter: Sino-Korean instead of native Korean with 개",
+    "explanation": "The counter 개 (general objects) requires native Korean numbers: 하나, 둘, 셋 → 한 개, 두 개, 세 개. Never use Sino-Korean (일, 이, 삼) with 개."
+  },
+  {
+    "incorrect": "커피 하나 잔 주세요.",
+    "correct": "커피 한 잔 주세요.",
+    "error_type": "Counter: 하나 should be 한 before counter",
+    "explanation": "Before counters, 하나 shortens to 한, 둘 to 두, 셋 to 세, 넷 to 네. So it's 한 잔 (one cup), not 하나 잔."
+  },
+  {
+    "incorrect": "고양이 두 명이 있어요.",
+    "correct": "고양이 두 마리가 있어요.",
+    "error_type": "Wrong counter: 명 instead of 마리",
+    "explanation": "명 is the counter for people. For animals, use 마리. 두 마리 (two animals), not 두 명 (two people)."
+  },
+  {
+    "incorrect": "책 세 개를 읽었어요.",
+    "correct": "책 세 권을 읽었어요.",
+    "error_type": "Wrong counter: 개 instead of 권",
+    "explanation": "권 is the specific counter for books and volumes. While 개 is a general counter, use 권 for books: 세 권 (three books)."
+  },
+  {
+    "incorrect": "저는 이십다섯 살이에요.",
+    "correct": "저는 스물다섯 살이에요.",
+    "error_type": "Counter: Sino-Korean numbers for age",
+    "explanation": "Age in Korean uses native Korean numbers with 살: 스물다섯 살 (25 years old). 이십 is Sino-Korean and not used with 살."
+  },
+  {
+    "incorrect": "맥주 두 개 주세요.",
+    "correct": "맥주 두 잔 주세요.",
+    "error_type": "Wrong counter: 개 instead of 잔",
+    "explanation": "잔 is the counter for cups/glasses of drinks. When ordering beverages, use 잔: 두 잔 (two glasses), not 두 개."
+  },
+  {
+    "incorrect": "종이 다섯 개를 샀어요.",
+    "correct": "종이 다섯 장을 샀어요.",
+    "error_type": "Wrong counter: 개 instead of 장",
+    "explanation": "장 is the counter for flat objects like paper, tickets, and photos. Use 다섯 장 (five sheets), not 다섯 개."
+  },
+  {
+    "incorrect": "저는 삼십한 살이에요.",
+    "correct": "저는 서른한 살이에요.",
+    "error_type": "Counter: Sino-Korean for age (tens digit)",
+    "explanation": "Age uses native Korean numbers with 살. 31 years old is 서른한 살, not 삼십한 살. Native Korean tens: 열, 스물, 서른, 마흔, 쉰."
+  },
+  {
+    "incorrect": "학생 일 명이 왔어요.",
+    "correct": "학생 한 명이 왔어요.",
+    "error_type": "Counter: Sino-Korean instead of native Korean with 명",
+    "explanation": "The counter 명 (people) uses native Korean numbers: 한 명, 두 명, 세 명. Don't use Sino-Korean numbers (일, 이, 삼) with 명."
+  },
+  {
+    "incorrect": "칠 시 이십 분이에요.",
+    "correct": "일곱 시 이십 분이에요.",
+    "error_type": "Counter: hours use native Korean numbers",
+    "explanation": "Hours use native Korean numbers (일곱 시 = 7 o'clock) while minutes use Sino-Korean (이십 분 = 20 minutes). Never say 칠 시 for 7 o'clock."
+  },
+  {
+    "incorrect": "집에 사람이 없어요. 아무도 있어요.",
+    "correct": "집에 사람이 없어요. 아무도 없어요.",
+    "error_type": "Negative: 아무도 requires negative verb",
+    "explanation": "아무도 (nobody/anyone) must be paired with a negative verb. Use 아무도 없어요 (nobody exists), not 아무도 있어요."
+  },
+  {
+    "incorrect": "저는 학생 아니에요.",
+    "correct": "저는 학생이 아니에요.",
+    "error_type": "Missing particle: 이 before 아니다",
+    "explanation": "아니다 (to not be) requires the subject particle 이/가 on the noun it negates. After a consonant-ending noun: 학생이 아니에요."
+  },
+  {
+    "incorrect": "저는 커피를 안 마시지 않아요.",
+    "correct": "저는 커피를 안 마셔요.",
+    "error_type": "Double negative: 안 + -지 않다",
+    "explanation": "안 and -지 않다 are two ways to negate a verb. Use one or the other, not both. Either 안 마셔요 or 마시지 않아요."
+  },
+  {
+    "incorrect": "저는 시간만 없어요.",
+    "correct": "저는 시간도 없어요.",
+    "error_type": "Wrong particle: 만 instead of 도",
+    "explanation": "만 means 'only' while 도 means 'also/too.' To say 'I don't have time either,' use 도: 시간도 없어요. 만 would mean 'only time is missing.'"
+  },
+  {
+    "incorrect": "물밖에 마셔요.",
+    "correct": "물밖에 안 마셔요.",
+    "error_type": "Missing negative: 밖에 requires negative verb",
+    "explanation": "밖에 (nothing but/only) must be used with a negative verb. 물밖에 안 마셔요 means 'I drink nothing but water.' The negative is required."
+  },
+  {
+    "incorrect": "저는 한국 사람이다.",
+    "correct": "저는 한국 사람이에요.",
+    "error_type": "Wrong speech level: 이다 (plain) instead of 이에요 (polite)",
+    "explanation": "이다 is the dictionary/plain form. In polite conversation, use 이에요 (after consonant) or 예요 (after vowel). 사람이에요 is polite."
+  },
+  {
+    "incorrect": "이것은 책이에요. 저것은 책 아니에요.",
+    "correct": "이것은 책이에요. 저것은 책이 아니에요.",
+    "error_type": "Missing particle: 이 before 아니에요",
+    "explanation": "아니다 requires the particle 이 (after consonant) or 가 (after vowel) on the preceding noun. 책이 아니에요, not 책 아니에요."
+  },
+  {
+    "incorrect": "저는 안 공부해요.",
+    "correct": "저는 공부 안 해요.",
+    "error_type": "Negative placement: 안 with 하다 verbs",
+    "explanation": "For 하다 compound verbs, 안 goes between the noun and 하다: 공부 안 해요. Or use -지 않다: 공부하지 않아요."
+  },
+  {
+    "incorrect": "저는 수영 못해요.",
+    "correct": "저는 수영을 못 해요.",
+    "error_type": "Negative placement: 못 with 하다 verbs",
+    "explanation": "Like 안, 못 (cannot) separates the noun from 하다: 수영을 못 해요. Adding the object particle 을 also makes it grammatically complete."
+  },
+  {
+    "incorrect": "저는 케이크를 만들었어요. 아주 맛있는이었어요.",
+    "correct": "저는 케이크를 만들었어요. 아주 맛있었어요.",
+    "error_type": "Conjugation: adjective + 이다 error",
+    "explanation": "Korean adjectives conjugate directly without 이다. 맛있다 in past tense is 맛있었어요, not 맛있는이었어요. Only nouns use 이다."
+  },
+  {
+    "incorrect": "냉장고에 우유가 있어요. 주스는 있어요.",
+    "correct": "냉장고에 우유가 있어요. 주스도 있어요.",
+    "error_type": "Wrong particle: 는 instead of 도",
+    "explanation": "To say juice ALSO exists (in addition to milk), use 도 (also): 주스도 있어요. Using 는 here would oddly imply contrast."
+  },
+  {
+    "incorrect": "저는 아무것도 먹었어요.",
+    "correct": "저는 아무것도 안 먹었어요.",
+    "error_type": "Missing negative: 아무것도 requires negative",
+    "explanation": "아무것도 (anything/nothing) must be paired with a negative. 아무것도 안 먹었어요 means 'I didn't eat anything.' Without 안, the sentence is contradictory."
+  }
+]

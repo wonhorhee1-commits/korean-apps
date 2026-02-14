@@ -1,0 +1,2038 @@
+{
+  "Intermediate Connectors": [
+    {
+      "pattern": "~(으)ㄴ/는 셈이다",
+      "meaning": "It amounts to; you could say that",
+      "explanation": "Used to express that something is approximately or effectively the case. Often used when the literal situation isn't exactly X, but practically speaking it is.",
+      "examples": [
+        {
+          "korean": "거의 매일 운동하니까 건강한 셈이다.",
+          "english": "I exercise almost every day, so you could say I'm healthy."
+        },
+        {
+          "korean": "10년 살았으니 한국 사람인 셈이다.",
+          "english": "I've lived here 10 years, so I basically count as Korean."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 공짜로 받았으니 ___ 셈이다. (lucky)",
+        "answer": "운이 좋은",
+        "full_sentence": "공짜로 받았으니 운이 좋은 셈이다."
+      }
+    },
+    {
+      "pattern": "~더니",
+      "meaning": "And then (observed change); as expected from what I saw",
+      "explanation": "Connects a past observation (something the speaker witnessed) to its consequence or result. First clause must be something the speaker directly observed.",
+      "examples": [
+        {
+          "korean": "열심히 공부하더니 1등을 했다.",
+          "english": "He was studying hard, and then (as expected) he got first place."
+        },
+        {
+          "korean": "비가 오더니 갑자기 그쳤다.",
+          "english": "It was raining, but then it suddenly stopped."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 어제까지 아프_____ 오늘은 괜찮아 보인다.",
+        "answer": "더니",
+        "full_sentence": "어제까지 아프더니 오늘은 괜찮아 보인다."
+      }
+    },
+    {
+      "pattern": "~는 바람에",
+      "meaning": "Because of (unexpected/unplanned cause, usually negative)",
+      "explanation": "Expresses that something happened because of an unexpected event, typically with a negative result. Different from ~아/어서 in that it emphasizes the cause was unplanned.",
+      "examples": [
+        {
+          "korean": "갑자기 비가 오는 바람에 옷이 다 젖었다.",
+          "english": "Because it suddenly rained, my clothes got all wet."
+        },
+        {
+          "korean": "알람이 안 울리는 바람에 늦었다.",
+          "english": "Because the alarm didn't go off, I was late."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 차가 갑자기 고장 나___ 약속에 못 갔다.",
+        "answer": "는 바람에",
+        "full_sentence": "차가 갑자기 고장 나는 바람에 약속에 못 갔다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄹ 뿐만 아니라",
+      "meaning": "Not only... but also",
+      "explanation": "Adds information on top of what was already stated. More formal than ~도 and emphasizes both elements.",
+      "examples": [
+        {
+          "korean": "그는 똑똒할 뿐만 아니라 성격도 좋다.",
+          "english": "He's not only smart but also has a good personality."
+        },
+        {
+          "korean": "가격이 비쌀 뿐만 아니라 품질도 나쁘다.",
+          "english": "Not only is the price high, but the quality is also bad."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 이 앱은 무료___ 아니라 광고도 없다.",
+        "answer": "일 뿐만",
+        "full_sentence": "이 앱은 무료일 뿐만 아니라 광고도 없다."
+      }
+    },
+    {
+      "pattern": "~게 마련이다",
+      "meaning": "It's bound to; it's only natural that",
+      "explanation": "Expresses that something is an inevitable or natural outcome. Used for general truths or expected results.",
+      "examples": [
+        {
+          "korean": "노력하면 결과가 나오게 마련이다.",
+          "english": "If you put in effort, results are bound to come."
+        },
+        {
+          "korean": "세월이 지나면 잊히게 마련이다.",
+          "english": "With time, things are bound to be forgotten."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 열심히 하면 실력이 늘___ 마련이다.",
+        "answer": "게",
+        "full_sentence": "열심히 하면 실력이 늘게 마련이다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄴ/는 만큼",
+      "meaning": "To the extent that; as much as; since",
+      "explanation": "Proportional relationship — 'to the degree that A, B follows.' Can also mean 'since/given that.'",
+      "examples": [
+        {
+          "korean": "노력한 만큼 보상을 받는다.",
+          "english": "You get rewarded as much as you put in effort."
+        },
+        {
+          "korean": "제가 맡은 만큼 책임지겠습니다.",
+          "english": "Since I took it on, I'll take responsibility."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 기대가 큰 ___ 실망도 크다.",
+        "answer": "만큼",
+        "full_sentence": "기대가 큰 만큼 실망도 크다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄹ 리가 없다",
+      "meaning": "There's no way that...; it can't be that...",
+      "explanation": "Strong denial of possibility. Expresses the speaker's firm belief that something is impossible.",
+      "examples": [
+        {
+          "korean": "그가 거짓말을 할 리가 없다.",
+          "english": "There's no way he would lie."
+        },
+        {
+          "korean": "그렇게 쉬울 리가 없다.",
+          "english": "There's no way it's that easy."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 아무 이유 없이 화를 낼 ___ 없다.",
+        "answer": "리가",
+        "full_sentence": "아무 이유 없이 화를 낼 리가 없다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄹ수록",
+      "meaning": "The more... the more...",
+      "explanation": "Expresses proportional increase. Often paired with another clause showing the corresponding result.",
+      "examples": [
+        {
+          "korean": "생각할수록 화가 난다.",
+          "english": "The more I think about it, the angrier I get."
+        },
+        {
+          "korean": "배우면 배울수록 모르는 게 많다.",
+          "english": "The more you learn, the more you realize you don't know."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 한국어는 공부하면 ___수록 재미있다.",
+        "answer": "할",
+        "full_sentence": "한국어는 공부하면 할수록 재미있다."
+      }
+    }
+  ],
+  "Advanced Endings & Expressions": [
+    {
+      "pattern": "~(으)ㄴ/는 법이다",
+      "meaning": "It's the way things are; that's how it goes",
+      "explanation": "States a general truth or principle about how things typically work. Similar to ~게 마련이다 but more about established norms.",
+      "examples": [
+        {
+          "korean": "좋은 일 뒤에는 나쁜 일이 오는 법이다.",
+          "english": "Bad things follow good things — that's just how it goes."
+        },
+        {
+          "korean": "사람은 실수하는 법이다.",
+          "english": "People make mistakes — it's only natural."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 시간은 빨리 가___ 법이다.",
+        "answer": "는",
+        "full_sentence": "시간은 빨리 가는 법이다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄹ 따름이다",
+      "meaning": "Can only; merely; nothing but",
+      "explanation": "Expresses that the speaker can do nothing other than X. Conveys a sense of limitation or resignation.",
+      "examples": [
+        {
+          "korean": "결과를 기다릴 따름이다.",
+          "english": "All I can do is wait for the results."
+        },
+        {
+          "korean": "감사할 따름입니다.",
+          "english": "I can only be grateful."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 놀라울 ___이다.",
+        "answer": "따름",
+        "full_sentence": "놀라울 따름이다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄹ 겸 ~(으)ㄹ 겸",
+      "meaning": "Partly to... and partly to... (dual purpose)",
+      "explanation": "Expresses doing something for two purposes simultaneously.",
+      "examples": [
+        {
+          "korean": "운동할 겸 산책할 겸 밖에 나갔다.",
+          "english": "I went out partly to exercise and partly to take a walk."
+        },
+        {
+          "korean": "인사할 겸 선물 줄 겸 들렀다.",
+          "english": "I stopped by partly to say hello and partly to give a gift."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 구경___ 겸 쇼핑할 겸 명동에 갔다.",
+        "answer": "할",
+        "full_sentence": "구경할 겸 쇼핑할 겸 명동에 갔다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄴ/는 탓에",
+      "meaning": "Because of (blame); due to (negative cause)",
+      "explanation": "Like ~때문에 but specifically assigns blame. Always implies the cause led to a bad outcome.",
+      "examples": [
+        {
+          "korean": "준비를 안 한 탓에 발표를 망쳤다.",
+          "english": "Because I didn't prepare, I messed up the presentation."
+        },
+        {
+          "korean": "날씨가 추운 탓에 손님이 없다.",
+          "english": "Because of the cold weather, there are no customers."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 잠을 못 ___ 탓에 집중이 안 된다.",
+        "answer": "잔",
+        "full_sentence": "잠을 못 잔 탓에 집중이 안 된다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄹ 지경이다",
+      "meaning": "To the point of; on the verge of",
+      "explanation": "Expresses an extreme situation where something is almost happening (usually negative or dramatic).",
+      "examples": [
+        {
+          "korean": "너무 바빠서 쓰러질 지경이다.",
+          "english": "I'm so busy I'm on the verge of collapsing."
+        },
+        {
+          "korean": "웃겨서 죽을 지경이다.",
+          "english": "It's so funny I'm about to die laughing."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 배가 고파서 쓰러___ 지경이다.",
+        "answer": "질",
+        "full_sentence": "배가 고파서 쓰러질 지경이다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄴ/는 이상",
+      "meaning": "As long as; now that; since (committed)",
+      "explanation": "Once a condition is met or a decision made, the consequence follows. Implies commitment or inevitability.",
+      "examples": [
+        {
+          "korean": "약속한 이상 지켜야 한다.",
+          "english": "Now that you've promised, you have to keep it."
+        },
+        {
+          "korean": "시작한 이상 끝까지 해야지.",
+          "english": "Since we've started, we should see it through."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 맡___ 이상 책임지겠습니다.",
+        "answer": "은",
+        "full_sentence": "맡은 이상 책임지겠습니다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄹ 뻔하다",
+      "meaning": "Almost did; nearly happened",
+      "explanation": "Expresses that something almost happened but didn't. Can convey relief or regret.",
+      "examples": [
+        {
+          "korean": "넘어질 뻔했다.",
+          "english": "I almost fell."
+        },
+        {
+          "korean": "비행기를 놓칠 뻔했다.",
+          "english": "I almost missed the flight."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 깜빡 잊어버___ 뻔했다.",
+        "answer": "릴",
+        "full_sentence": "깜빡 잊어버릴 뻔했다."
+      }
+    },
+    {
+      "pattern": "~는 둥 마는 둥",
+      "meaning": "Half-heartedly; barely doing something",
+      "explanation": "Doing something so carelessly or minimally that it barely counts as doing it.",
+      "examples": [
+        {
+          "korean": "밥을 먹는 둥 마는 둥 나갔다.",
+          "english": "He barely ate and left."
+        },
+        {
+          "korean": "공부를 하는 둥 마는 둥 했다.",
+          "english": "He studied half-heartedly."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 인사를 ___ 둥 마는 둥 지나갔다.",
+        "answer": "하는",
+        "full_sentence": "인사를 하는 둥 마는 둥 지나갔다."
+      }
+    }
+  ],
+  "Advanced Connectors": [
+    {
+      "pattern": "~(으)ㄴ/는 반면(에)",
+      "meaning": "On the other hand; whereas; while",
+      "explanation": "Used to contrast two opposing facts or situations. The first clause presents one aspect and the second clause presents the contrasting aspect. Attaches to adjectives and past verbs as ~(으)ㄴ 반면에, and to present-tense action verbs as ~는 반면에. Unlike ~지만 which is a simple 'but,' this pattern highlights a balanced contrast between two equally weighted facts.",
+      "examples": [
+        {
+          "korean": "서울은 교통이 편리한 반면에 집값이 비싸다.",
+          "english": "Seoul has convenient transportation, but on the other hand, housing prices are expensive."
+        },
+        {
+          "korean": "형은 외향적인 반면에 동생은 내성적이다.",
+          "english": "The older brother is extroverted, whereas the younger brother is introverted."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 이 가게는 가격이 싼 ___ 품질이 별로다.",
+        "answer": "반면에",
+        "full_sentence": "이 가게는 가격이 싼 반면에 품질이 별로다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄴ 나머지",
+      "meaning": "To such an extent that; as a result of excessive",
+      "explanation": "Expresses that an action or state was so extreme that it led to an (often unintended) result. The first clause describes the excessive cause, and the second clause gives the resulting consequence. Typically used with past tense or adjective forms before 나머지. The result is usually something the speaker did not plan or control.",
+      "examples": [
+        {
+          "korean": "너무 긴장한 나머지 할 말을 잊어버렸다.",
+          "english": "I was so nervous that I forgot what I was going to say."
+        },
+        {
+          "korean": "기쁜 나머지 눈물이 났다.",
+          "english": "I was so happy that tears came out."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 너무 놀란 ___ 소리를 질렀다.",
+        "answer": "나머지",
+        "full_sentence": "너무 놀란 나머지 소리를 질렀다."
+      }
+    },
+    {
+      "pattern": "~고서야",
+      "meaning": "Only after doing X (can one do Y)",
+      "explanation": "Emphasizes that Y can only happen after X is completed first. Implies that without doing X, Y is impossible or would not occur. Often paired with 비로소 (only then) in the second clause. Stronger than simple ~고 나서 because it stresses the prerequisite nature of the first action.",
+      "examples": [
+        {
+          "korean": "직접 경험하고서야 그 어려움을 알았다.",
+          "english": "Only after experiencing it firsthand did I understand the difficulty."
+        },
+        {
+          "korean": "실패하고서야 비로소 준비의 중요성을 깨달았다.",
+          "english": "Only after failing did I finally realize the importance of preparation."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 아이를 키워 보___야 부모님의 마음을 안다.",
+        "answer": "고서",
+        "full_sentence": "아이를 키워 보고서야 부모님의 마음을 안다."
+      }
+    },
+    {
+      "pattern": "~는 통에",
+      "meaning": "Because of (a disruptive situation); due to the commotion of",
+      "explanation": "Similar to ~는 바람에, it expresses a cause leading to a negative result, but ~는 통에 specifically emphasizes a chaotic, noisy, or disruptive situation as the cause. Always used with action verbs in present tense form (~는). The result is always negative or undesirable. More colloquial and vivid than ~는 바람에.",
+      "examples": [
+        {
+          "korean": "옆집에서 공사하는 통에 잠을 못 잤다.",
+          "english": "I couldn't sleep because of the construction next door."
+        },
+        {
+          "korean": "아이들이 떠드는 통에 집중할 수가 없었다.",
+          "english": "I couldn't concentrate because of the kids making noise."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 전화벨이 계속 울리는 ___ 일에 집중할 수 없었다.",
+        "answer": "통에",
+        "full_sentence": "전화벨이 계속 울리는 통에 일에 집중할 수 없었다."
+      }
+    },
+    {
+      "pattern": "~(으)ㅁ에도 불구하고",
+      "meaning": "Despite; notwithstanding; in spite of",
+      "explanation": "A formal and emphatic way to express 'despite.' Stronger and more literary than ~지만 or ~(으)ㄴ/는데도. Commonly used in formal writing, news articles, and speeches. The verb or adjective stem is nominalized with ~(으)ㅁ before attaching 에도 불구하고. This pattern carries significant rhetorical weight.",
+      "examples": [
+        {
+          "korean": "여러 번 실패함에도 불구하고 포기하지 않았다.",
+          "english": "Despite failing multiple times, he did not give up."
+        },
+        {
+          "korean": "비가 옴에도 불구하고 행사는 예정대로 진행되었다.",
+          "english": "Despite the rain, the event proceeded as planned."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 여러 차례 경고했음에도 ___ 그는 행동을 바꾸지 않았다.",
+        "answer": "불구하고",
+        "full_sentence": "여러 차례 경고했음에도 불구하고 그는 행동을 바꾸지 않았다."
+      }
+    },
+    {
+      "pattern": "~는가 하면",
+      "meaning": "While on one hand... on the other; some... while others",
+      "explanation": "Used to present contrasting or varying situations side by side. Often used to show that different cases or people have different outcomes or behaviors. The structure is typically 'A하는가 하면 B도 한다' meaning 'while some do A, others do B.' Effective for balanced, objective descriptions.",
+      "examples": [
+        {
+          "korean": "찬성하는 사람이 있는가 하면 반대하는 사람도 있다.",
+          "english": "While there are people who agree, there are also people who disagree."
+        },
+        {
+          "korean": "밤새 공부하는가 하면 하루 종일 자기도 한다.",
+          "english": "Sometimes he studies all night, and other times he sleeps all day."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 웃는 사람이 있는가 ___ 우는 사람도 있다.",
+        "answer": "하면",
+        "full_sentence": "웃는 사람이 있는가 하면 우는 사람도 있다."
+      }
+    },
+    {
+      "pattern": "~다 보니(까)",
+      "meaning": "After continuously doing X, came to realize/find that",
+      "explanation": "Expresses that through repeated or continued action, the speaker naturally arrived at a new state, realization, or result. The second clause describes what was discovered or what happened as a natural consequence of the ongoing action. Different from ~다가 which simply indicates interruption; ~다 보니 implies gradual, cumulative change.",
+      "examples": [
+        {
+          "korean": "한국에서 오래 살다 보니 한국 음식에 익숙해졌다.",
+          "english": "After living in Korea for a long time, I got used to Korean food."
+        },
+        {
+          "korean": "매일 연습하다 보니까 실력이 많이 늘었다.",
+          "english": "After practicing every day, my skills improved a lot."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 한국 드라마를 자주 보___ 보니 한국어가 늘었다.",
+        "answer": "다",
+        "full_sentence": "한국 드라마를 자주 보다 보니 한국어가 늘었다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄴ/는 마당에",
+      "meaning": "Given the situation where; in a situation where (already)",
+      "explanation": "Expresses that since the situation has already reached a certain point, a particular action or attitude follows naturally. Often implies 'things have already gone this far, so there is no turning back.' Used when the situation is already serious, irreversible, or extreme. The second clause often contains expressions of resolve or resignation.",
+      "examples": [
+        {
+          "korean": "이미 시작한 마당에 중간에 그만둘 수는 없다.",
+          "english": "Given that we've already started, we can't quit in the middle."
+        },
+        {
+          "korean": "모든 것을 잃은 마당에 뭐가 더 두렵겠어?",
+          "english": "Given that I've lost everything, what else is there to fear?"
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 여기까지 온 ___ 포기할 수 없다.",
+        "answer": "마당에",
+        "full_sentence": "여기까지 온 마당에 포기할 수 없다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄴ/는 데다가",
+      "meaning": "On top of; in addition to; not only... but also",
+      "explanation": "Used to add a second fact on top of a first one, creating a cumulative effect. Both facts typically lean in the same direction — both positive or both negative. More colloquial and natural in speech than ~(으)ㄹ 뿐만 아니라. Attaches to adjectives and past verbs as ~(으)ㄴ 데다가, and to present action verbs as ~는 데다가.",
+      "examples": [
+        {
+          "korean": "비가 오는 데다가 바람까지 불어서 외출할 수 없었다.",
+          "english": "On top of it raining, the wind was blowing too, so I couldn't go out."
+        },
+        {
+          "korean": "음식이 맛있는 데다가 양도 많아서 만족스러웠다.",
+          "english": "The food was delicious, and on top of that the portions were large, so I was satisfied."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 길이 막히는 ___가 사고까지 나서 한 시간이나 늦었다.",
+        "answer": "데다",
+        "full_sentence": "길이 막히는 데다가 사고까지 나서 한 시간이나 늦었다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄴ/는 한",
+      "meaning": "As long as; so long as",
+      "explanation": "Sets a condition: 'as long as this condition holds, the result follows.' Similar to ~(으)ㄴ/는 이상 but more neutral — it simply states the condition without implying commitment or moral obligation. Attaches to adjectives as ~(으)ㄴ 한, to present action verbs as ~는 한, and to future/volitional forms as ~(으)ㄹ 한 is not used — instead ~는 한 covers ongoing conditions.",
+      "examples": [
+        {
+          "korean": "건강한 한 계속 일하고 싶다.",
+          "english": "As long as I'm healthy, I want to keep working."
+        },
+        {
+          "korean": "내가 살아 있는 한 너를 지켜줄게.",
+          "english": "As long as I'm alive, I'll protect you."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 포기하지 않는 ___ 기회는 있다.",
+        "answer": "한",
+        "full_sentence": "포기하지 않는 한 기회는 있다."
+      }
+    }
+  ],
+  "Written/Formal Endings": [
+    {
+      "pattern": "~(으)ㄹ 텐데",
+      "meaning": "I expect/suppose that; it would be the case that (with concern or anticipation)",
+      "explanation": "Expresses the speaker's supposition or expectation about a situation, often with undertones of worry, sympathy, or anticipation. Combines the future/supposition marker ~(으)ㄹ 터 with the background-setting ending ~(으)ㄴ데. Commonly used to show concern for someone else's situation or to set up a suggestion. More speculative than a plain statement.",
+      "examples": [
+        {
+          "korean": "혼자서 힘들 텐데 도와줄까?",
+          "english": "It must be hard on your own — shall I help?"
+        },
+        {
+          "korean": "지금쯤 도착했을 텐데 연락이 없네.",
+          "english": "They should have arrived by now, but there's no word from them."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 피곤할 ___ 좀 쉬어.",
+        "answer": "텐데",
+        "full_sentence": "피곤할 텐데 좀 쉬어."
+      }
+    },
+    {
+      "pattern": "~다시피",
+      "meaning": "As you know/saw/experienced",
+      "explanation": "Used to reference shared knowledge or something the listener has already witnessed. Attaches directly to verb stems. Most commonly appears in set phrases: 알다시피 (as you know), 보다시피 (as you can see), 듣다시피 (as you heard). Primarily used in formal or semi-formal speech to establish common ground before making a point.",
+      "examples": [
+        {
+          "korean": "알다시피 요즘 경제 상황이 좋지 않다.",
+          "english": "As you know, the economic situation is not good these days."
+        },
+        {
+          "korean": "보다시피 아직 공사 중입니다.",
+          "english": "As you can see, it's still under construction."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 보___피 아직 준비가 덜 되었습니다.",
+        "answer": "다시",
+        "full_sentence": "보다시피 아직 준비가 덜 되었습니다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄹ 터이니",
+      "meaning": "Since it will be the case that; given that it will",
+      "explanation": "A formal, literary expression combining the future/intention marker ~(으)ㄹ 터 with the causal particle 이니. Used in formal writing or speech to state that since something will be the case, a follow-up action or expectation is warranted. More formal and stiff than the colloquial ~(으)ㄹ 테니까. Common in official announcements, written notices, and formal instructions.",
+      "examples": [
+        {
+          "korean": "곧 결과가 나올 터이니 조금만 기다려 주십시오.",
+          "english": "Since the results will be out soon, please wait a moment."
+        },
+        {
+          "korean": "제가 처리할 터이니 걱정하지 마십시오.",
+          "english": "Since I will handle it, please don't worry."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 내일 회의에서 설명할 ___이니 미리 자료를 준비해 주세요.",
+        "answer": "터",
+        "full_sentence": "내일 회의에서 설명할 터이니 미리 자료를 준비해 주세요."
+      }
+    },
+    {
+      "pattern": "~(으)ㄹ진대",
+      "meaning": "If it is the case that; since (literary/archaic)",
+      "explanation": "An archaic and literary conditional or causal connector found in classical writing, proverbs, and very formal rhetoric. Rarely used in modern casual speech but appears in literature, formal essays, traditional proverbs, and older Korean texts. Equivalent to modern ~(으)ㄴ다면 or ~(으)ㄹ 것인데. Gives a lofty, elegant tone to the sentence.",
+      "examples": [
+        {
+          "korean": "하늘이 무너질진대 솟아날 구멍이 있다.",
+          "english": "Even if the sky falls, there will be a way out. (Proverb)"
+        },
+        {
+          "korean": "뜻이 있을진대 길이 열리리라.",
+          "english": "If there is a will, a way shall open. (Literary)"
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 노력할___대 반드시 결실을 맺으리라.",
+        "answer": "진",
+        "full_sentence": "노력할진대 반드시 결실을 맺으리라."
+      }
+    },
+    {
+      "pattern": "~(으)ㅁ은 물론",
+      "meaning": "Not to mention; of course; let alone",
+      "explanation": "Emphasizes that something is obvious or already taken for granted, then adds an additional fact that extends beyond it. Structure: A은/는 물론 B도. The first part (A) states what is expected, and the second part (B) adds the surprising or additional element. Common in both formal writing and spoken Korean. Can also appear as noun + 은/는 물론 without the nominalizer.",
+      "examples": [
+        {
+          "korean": "그녀는 한국어는 물론 일본어도 유창하게 한다.",
+          "english": "She speaks Korean, of course, and is also fluent in Japanese."
+        },
+        {
+          "korean": "건강함은 물론 정신적인 안정도 중요하다.",
+          "english": "Not to mention physical health, mental stability is also important."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 영어는 ___ 중국어까지 할 줄 안다.",
+        "answer": "물론",
+        "full_sentence": "영어는 물론 중국어까지 할 줄 안다."
+      }
+    },
+    {
+      "pattern": "~기로서니",
+      "meaning": "Even if it's true that..., still (one shouldn't); granting that..., but still",
+      "explanation": "Concedes a point but argues that it still does not justify the action in the following clause. Carries a tone of reproach, criticism, or disbelief. Often used when scolding or expressing disapproval. The speaker acknowledges a reason but says it is not a good enough excuse. Frequently preceded by 아무리 (no matter how much).",
+      "examples": [
+        {
+          "korean": "아무리 바쁘기로서니 밥은 먹어야지.",
+          "english": "Even if you're busy, you still need to eat."
+        },
+        {
+          "korean": "화가 나기로서니 그렇게 소리를 지르면 되겠니?",
+          "english": "Even granting that you're angry, should you really yell like that?"
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 아무리 급하___로서니 신호는 지켜야지.",
+        "answer": "기",
+        "full_sentence": "아무리 급하기로서니 신호는 지켜야지."
+      }
+    },
+    {
+      "pattern": "~(으)ㄴ/는 양",
+      "meaning": "As if; pretending that; with the manner of",
+      "explanation": "Describes someone acting as if something were the case, often when it is not. Used to portray outward appearances, pretenses, or mannerisms. More literary and descriptive than ~(으)ㄴ/는 척 (which is more colloquial). Commonly seen in written narratives, novels, and formal descriptions. Attaches to adjectives as ~(으)ㄴ 양 and to action verbs as ~는 양.",
+      "examples": [
+        {
+          "korean": "그는 아무것도 모르는 양 시치미를 뗐다.",
+          "english": "He played dumb as if he didn't know anything."
+        },
+        {
+          "korean": "아이가 잠든 양 눈을 감고 있었다.",
+          "english": "The child had their eyes closed as if asleep."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 그는 아무것도 모르는 ___ 시치미를 뗐다.",
+        "answer": "양",
+        "full_sentence": "그는 아무것도 모르는 양 시치미를 뗐다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄹ 바에야",
+      "meaning": "If it's going to be like that, then rather; if one must",
+      "explanation": "Expresses that if a certain undesirable situation is going to happen anyway, then the speaker would rather choose an alternative. Almost always followed by 차라리 (rather/instead) in the second clause. Both options are seen as less than ideal, but the speaker picks what they consider the lesser of two problems. Common in both spoken and written Korean.",
+      "examples": [
+        {
+          "korean": "이렇게 고생할 바에야 차라리 안 하는 게 낫다.",
+          "english": "If I'm going to suffer like this, I'd rather not do it at all."
+        },
+        {
+          "korean": "거짓말할 바에야 차라리 솔직하게 말해라.",
+          "english": "If you're going to lie, you might as well just tell the truth."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 대충 할 ___에야 차라리 시작하지 마라.",
+        "answer": "바",
+        "full_sentence": "대충 할 바에야 차라리 시작하지 마라."
+      }
+    }
+  ],
+  "Conversational Advanced": [
+    {
+      "pattern": "~(으)ㄹ 성싶다",
+      "meaning": "It seems like; I have a feeling that",
+      "explanation": "Expresses the speaker's vague intuition or feeling about something. Less certain and more subjective than ~것 같다. Used when the speaker senses something but is not sure. More commonly heard among older or more traditional Korean speakers, and in regional dialects, but understood by all. Adds a native, natural flavor when used appropriately.",
+      "examples": [
+        {
+          "korean": "비가 올 성싶다.",
+          "english": "I have a feeling it's going to rain."
+        },
+        {
+          "korean": "이 일은 쉽지 않을 성싶다.",
+          "english": "I have a feeling this task won't be easy."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 오늘 회의가 길어질 ___.",
+        "answer": "성싶다",
+        "full_sentence": "오늘 회의가 길어질 성싶다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄹ 법하다",
+      "meaning": "It's plausible that; could well be; it's reasonable that",
+      "explanation": "Indicates that something is reasonable, plausible, or understandable given the circumstances. Used when saying 'it makes sense that X would happen' or 'X could easily happen.' Different from ~것 같다 in that it emphasizes the reasonableness or justifiability of the situation rather than mere possibility. Often used with ~도 as in ~(으)ㄹ 법도 하다 for extra emphasis.",
+      "examples": [
+        {
+          "korean": "그렇게 노력했으니 성공할 법하다.",
+          "english": "Given that much effort, it's quite plausible they'd succeed."
+        },
+        {
+          "korean": "그 정도면 화가 날 법도 하다.",
+          "english": "To that extent, it's understandable that one would be angry."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 10년이나 살았으면 한국어를 잘할 ___하다.",
+        "answer": "법",
+        "full_sentence": "10년이나 살았으면 한국어를 잘할 법하다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄹ락 말락 하다",
+      "meaning": "On the verge of; about to but not quite; almost but not",
+      "explanation": "Describes a state of hovering at the boundary — something is just about to happen but keeps not quite happening. Can describe weather (rain about to fall), emotions (about to cry), physical states (about to spill), or actions. Creates a vivid image of suspense or indecision. The verb stem appears twice: once with ~(으)ㄹ락 and once implied before 말락.",
+      "examples": [
+        {
+          "korean": "비가 올락 말락 하더니 결국 안 왔다.",
+          "english": "The rain seemed like it was about to fall but ended up not coming."
+        },
+        {
+          "korean": "아이가 울락 말락 하는 표정을 짓고 있다.",
+          "english": "The child has an expression like they're about to cry but not quite."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 비가 ___ 말락 하는 날씨다.",
+        "answer": "올락",
+        "full_sentence": "비가 올락 말락 하는 날씨다."
+      }
+    },
+    {
+      "pattern": "~느니",
+      "meaning": "Rather than doing X (I'd prefer Y)",
+      "explanation": "Expresses a strong preference for one option over another by rejecting the first option. The implication is that the first option (before ~느니) is so undesirable that Y is preferable, even if Y is also not ideal. Stronger and more emphatic than ~는 것보다. The preferred alternative appears in the second clause, often with 차라리 (rather) or 낫다 (to be better).",
+      "examples": [
+        {
+          "korean": "택시를 타느니 차라리 걸어가겠다.",
+          "english": "Rather than taking a taxi, I'd rather just walk."
+        },
+        {
+          "korean": "그 사람한테 부탁하느니 직접 하는 게 낫다.",
+          "english": "Rather than asking that person, it's better to do it myself."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 버스를 기다리___ 걸어가는 게 빠르겠다.",
+        "answer": "느니",
+        "full_sentence": "버스를 기다리느니 걸어가는 게 빠르겠다."
+      }
+    },
+    {
+      "pattern": "~아/어 봤자",
+      "meaning": "Even if you try; no use in; it's pointless to",
+      "explanation": "Expresses that even if one attempts to do something, it will be futile or make no difference. Conveys pessimism, resignation, or a realistic assessment about the outcome. The result clause almost always contains a negative expression such as 소용없다, 안 되다, or a dismissive statement. More blunt and colloquial than ~(으)ㄹ지라도.",
+      "examples": [
+        {
+          "korean": "말해 봤자 소용없다.",
+          "english": "Even if you say something, it's no use."
+        },
+        {
+          "korean": "지금 출발해 봤자 이미 늦었다.",
+          "english": "Even if we leave now, it's already too late."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 후회해 ___자 이미 지나간 일이다.",
+        "answer": "봤",
+        "full_sentence": "후회해 봤자 이미 지나간 일이다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄹ 나위 없다",
+      "meaning": "There's no need to even (say/discuss); goes without saying; couldn't be more",
+      "explanation": "Expresses that something is so obviously true or so extreme in quality that there is no need to even mention it. Most commonly appears in fixed phrases: 더할 나위 없다 (couldn't be better/more), 말할 나위 없다 (goes without saying). Very emphatic and slightly formal. 나위 is an archaic noun meaning 'further degree' that survives almost exclusively in this pattern.",
+      "examples": [
+        {
+          "korean": "오늘 날씨는 더할 나위 없이 좋다.",
+          "english": "Today's weather couldn't be better."
+        },
+        {
+          "korean": "건강의 중요성은 말할 나위 없다.",
+          "english": "The importance of health goes without saying."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 그의 실력은 말할 ___ 없이 뛰어나다.",
+        "answer": "나위",
+        "full_sentence": "그의 실력은 말할 나위 없이 뛰어나다."
+      }
+    },
+    {
+      "pattern": "~기 일쑤이다",
+      "meaning": "It's common to; tends to happen (usually negative)",
+      "explanation": "Indicates that something undesirable happens frequently or habitually. Always carries a negative connotation — the thing that keeps happening is something unwanted or problematic. Similar to 'keeps doing X' or 'X happens all the time, unfortunately.' Used to describe bad habits, recurring problems, or chronic tendencies. Not used for positive habits.",
+      "examples": [
+        {
+          "korean": "약속 시간에 늦기 일쑤이다.",
+          "english": "He's always late to appointments."
+        },
+        {
+          "korean": "아침을 거르기 일쑤인 사람들이 많다.",
+          "english": "There are many people who habitually skip breakfast."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 우산을 안 가져와서 비를 맞___ 일쑤이다.",
+        "answer": "기",
+        "full_sentence": "우산을 안 가져와서 비를 맞기 일쑤이다."
+      }
+    }
+  ],
+  "Advanced Connectors II": [
+    {
+      "pattern": "~거든",
+      "meaning": "If (indeed); given that (speaker expects it may be true)",
+      "explanation": "A spoken-register conditional used when the speaker believes the condition is plausible or likely. Unlike the neutral ~(으)면, ~거든 implies the speaker already suspects the condition might hold. The second clause typically contains advice, a request, or an instruction.",
+      "examples": [
+        {
+          "korean": "배가 고프거든 냉장고에 있는 거 먹어.",
+          "english": "If you're hungry, eat what's in the fridge."
+        },
+        {
+          "korean": "시간이 나거든 한번 들러.",
+          "english": "If you have time, stop by sometime."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 심심하___ 이 책이라도 읽어 봐.",
+        "answer": "거든",
+        "full_sentence": "심심하거든 이 책이라도 읽어 봐."
+      }
+    },
+    {
+      "pattern": "~(으)ㄹ라치면",
+      "meaning": "Every time one tries to; whenever one is about to",
+      "explanation": "Expresses that every time the speaker attempts or is about to do something, an interruption or obstacle occurs. Conveys frustration at repeated interference. The second clause always describes what goes wrong or gets in the way.",
+      "examples": [
+        {
+          "korean": "공부를 하려고 할라치면 전화가 온다.",
+          "english": "Every time I try to study, I get a phone call."
+        },
+        {
+          "korean": "외출할라치면 비가 온다.",
+          "english": "Whenever I'm about to go out, it rains."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 잠을 자___치면 옆집에서 소리가 난다.",
+        "answer": "ㄹ라",
+        "full_sentence": "잠을 잘라치면 옆집에서 소리가 난다."
+      }
+    },
+    {
+      "pattern": "~지 않고서는",
+      "meaning": "Without doing X; unless one does X",
+      "explanation": "Expresses that without performing a certain action, the desired result is impossible. Emphasizes that X is an absolute prerequisite. The second clause typically contains a negative expression or an expression of impossibility. More emphatic than ~지 않으면.",
+      "examples": [
+        {
+          "korean": "직접 경험하지 않고서는 이해할 수 없다.",
+          "english": "Without experiencing it firsthand, you can't understand."
+        },
+        {
+          "korean": "꾸준히 노력하지 않고서는 실력이 늘지 않는다.",
+          "english": "Unless you put in consistent effort, your skills won't improve."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 포기하지 ___ 이길 수 없는 싸움은 없다.",
+        "answer": "않고서는",
+        "full_sentence": "포기하지 않고서는 이길 수 없는 싸움은 없다."
+      }
+    },
+    {
+      "pattern": "~다가는",
+      "meaning": "If one keeps doing X (warning of bad consequence)",
+      "explanation": "Warns that continuing the current action will lead to a negative outcome. Always implies the speaker is cautioning against the behavior. The result clause describes the inevitable bad consequence. Colloquial and commonly used in everyday speech.",
+      "examples": [
+        {
+          "korean": "이렇게 먹다가는 살이 찔 거야.",
+          "english": "If you keep eating like this, you're going to gain weight."
+        },
+        {
+          "korean": "이렇게 늦게 자다가는 건강을 해칠 거야.",
+          "english": "If you keep staying up this late, you'll ruin your health."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 매일 술을 마시___는 큰일 난다.",
+        "answer": "다가",
+        "full_sentence": "매일 술을 마시다가는 큰일 난다."
+      }
+    },
+    {
+      "pattern": "~(으)려거든",
+      "meaning": "If you're going to (do X), then (do Y)",
+      "explanation": "Combines the intention marker ~(으)려 with the conditional ~거든 to express: 'if you intend to do X, then you should do Y.' Used to give advice or instructions contingent on someone's plans. The second clause contains the recommended action.",
+      "examples": [
+        {
+          "korean": "한국어를 배우려거든 매일 연습해야 한다.",
+          "english": "If you're going to learn Korean, you need to practice every day."
+        },
+        {
+          "korean": "사업을 시작하려거든 먼저 시장 조사를 해라.",
+          "english": "If you're going to start a business, do market research first."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 건강해지___거든 운동을 꾸준히 해라.",
+        "answer": "려",
+        "full_sentence": "건강해지려거든 운동을 꾸준히 해라."
+      }
+    },
+    {
+      "pattern": "~(으)ㄴ들",
+      "meaning": "Even if (rhetorical, implying futility)",
+      "explanation": "A literary and rhetorical concessive meaning 'even if X, it wouldn't matter.' Implies that the condition, even if fulfilled, would not change the outcome. Often appears in rhetorical questions. More emphatic and resigned than ~(으)ㄹ지라도. Carries a tone of futility or inevitability.",
+      "examples": [
+        {
+          "korean": "지금 후회한들 무슨 소용이 있겠는가.",
+          "english": "Even if you regret it now, what good would it do?"
+        },
+        {
+          "korean": "변명한들 결과가 달라지겠어?",
+          "english": "Even if you make excuses, would the result change?"
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 아무리 울___들 돌아오지 않는다.",
+        "answer": "은",
+        "full_sentence": "아무리 운들 돌아오지 않는다."
+      }
+    },
+    {
+      "pattern": "~건만",
+      "meaning": "But; however (literary, with disappointment or frustration)",
+      "explanation": "A literary and somewhat formal contrastive connector expressing disappointment. The first clause states a fact or expectation, and the second clause reveals the disappointing reality. Carries more emotional weight than ~지만, implying the speaker's frustration that things did not turn out as expected.",
+      "examples": [
+        {
+          "korean": "열심히 했건만 결과가 좋지 않았다.",
+          "english": "I worked hard, but the results were not good."
+        },
+        {
+          "korean": "여러 번 부탁했건만 들어주지 않았다.",
+          "english": "I asked multiple times, but they wouldn't listen."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 오랫동안 기다렸___만 연락이 없었다.",
+        "answer": "건",
+        "full_sentence": "오랫동안 기다렸건만 연락이 없었다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄹ지언정",
+      "meaning": "Would rather X; even if X, certainly not Y",
+      "explanation": "Expresses a strong resolve: the speaker would accept one (possibly bad) outcome but absolutely refuses another. The first clause (before ~ㄹ지언정) states what the speaker is willing to endure, and the second clause states what they refuse to do. Conveys strong principles or stubbornness. More emphatic and formal than ~(으)ㄹ지라도.",
+      "examples": [
+        {
+          "korean": "굶을지언정 남에게 손 벌리지 않겠다.",
+          "english": "I'd rather starve than beg from others."
+        },
+        {
+          "korean": "실패할지언정 비겁하게 도망치지는 않겠다.",
+          "english": "I may fail, but I certainly won't run away like a coward."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 느릴___언정 정확하게 하겠다.",
+        "answer": "지",
+        "full_sentence": "느릴지언정 정확하게 하겠다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄹ지라도",
+      "meaning": "Even if; even though (hypothetical concession)",
+      "explanation": "A formal concessive pattern granting a hypothetical condition while asserting that the main point remains unchanged. More elevated than ~아/어도 and used in both written and formal spoken Korean. The second clause states what will happen regardless of the condition.",
+      "examples": [
+        {
+          "korean": "아무리 어려울지라도 끝까지 해내겠다.",
+          "english": "Even if it's extremely difficult, I'll see it through to the end."
+        },
+        {
+          "korean": "비가 올지라도 경기는 취소되지 않는다.",
+          "english": "Even if it rains, the game won't be canceled."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 실패할___라도 후회는 없을 것이다.",
+        "answer": "지",
+        "full_sentence": "실패할지라도 후회는 없을 것이다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄴ/는 대신(에)",
+      "meaning": "Instead of; in exchange for; but on the other hand",
+      "explanation": "Has two uses: (1) 'instead of doing X, do Y' as a substitution, and (2) 'X is true, but in exchange Y is also true' as a compensating contrast. In the compensation sense, it implies a trade-off where one advantage balances out a disadvantage.",
+      "examples": [
+        {
+          "korean": "이 식당은 가격이 비싼 대신에 맛이 좋다.",
+          "english": "This restaurant is expensive, but in exchange the food is delicious."
+        },
+        {
+          "korean": "직접 가는 대신에 택배로 보냈다.",
+          "english": "Instead of going in person, I sent it by delivery."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 월급이 적은 ___ 근무 시간이 짧다.",
+        "answer": "대신에",
+        "full_sentence": "월급이 적은 대신에 근무 시간이 짧다."
+      }
+    },
+    {
+      "pattern": "~길래",
+      "meaning": "Because (I discovered/noticed that); so (in response)",
+      "explanation": "Expresses that the speaker observed or discovered something and took action in response. The first clause is the observed cause, the second is the speaker's reaction. Only used for first-person responses to discovered situations. More colloquial than ~기에, which serves the same function in formal contexts.",
+      "examples": [
+        {
+          "korean": "맛있어 보이길래 하나 사 봤다.",
+          "english": "It looked delicious, so I bought one."
+        },
+        {
+          "korean": "할인하길래 두 개나 샀다.",
+          "english": "It was on sale, so I bought two."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 날씨가 좋___래 산책을 나갔다.",
+        "answer": "길",
+        "full_sentence": "날씨가 좋길래 산책을 나갔다."
+      }
+    },
+    {
+      "pattern": "~느라(고)",
+      "meaning": "Because of doing X (couldn't do Y); busy doing X",
+      "explanation": "Expresses that the speaker was occupied with one action, which caused them to be unable to do something else. The first clause is always the speaker's own action, and the result is always negative — something else suffered or didn't get done. Cannot be used with adjectives or passive verbs.",
+      "examples": [
+        {
+          "korean": "이사 준비하느라고 연락을 못 했다.",
+          "english": "I was busy preparing to move, so I couldn't get in touch."
+        },
+        {
+          "korean": "보고서 쓰느라 밥도 못 먹었다.",
+          "english": "I was busy writing a report, so I couldn't even eat."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 시험 준비하___라고 잠을 못 잤어.",
+        "answer": "느",
+        "full_sentence": "시험 준비하느라고 잠을 못 잤어."
+      }
+    },
+    {
+      "pattern": "~(으)ㄴ/는 까닭에",
+      "meaning": "Due to the fact that; because of (literary/formal reason)",
+      "explanation": "A formal and slightly literary way to express a reason or cause. More elevated than ~때문에 and used in writing, formal speech, and news articles. 까닭 means 'reason/cause' and functions similarly to 이유 but carries a more traditional, literary nuance.",
+      "examples": [
+        {
+          "korean": "갑작스러운 폭우가 내린 까닭에 행사가 취소되었다.",
+          "english": "Due to the sudden heavy rain, the event was canceled."
+        },
+        {
+          "korean": "인구가 줄어드는 까닭에 지방 도시들이 위기에 처해 있다.",
+          "english": "Due to the declining population, regional cities are in crisis."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 예산이 부족한 ___ 프로젝트가 중단되었다.",
+        "answer": "까닭에",
+        "full_sentence": "예산이 부족한 까닭에 프로젝트가 중단되었다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄹ세라",
+      "meaning": "For fear that; lest; worried that",
+      "explanation": "Expresses that the speaker does something out of concern that an undesirable event might occur. The first clause names the feared outcome, and the second clause describes the precautionary action taken. Always implies anxiety or worry driving the action.",
+      "examples": [
+        {
+          "korean": "아이가 다칠세라 뒤를 따라갔다.",
+          "english": "Worried that the child might get hurt, I followed behind."
+        },
+        {
+          "korean": "남들이 알까 봐 들킬세라 조심했다.",
+          "english": "Afraid of being found out by others, I was careful."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 늦을___ 택시를 탔다.",
+        "answer": "세라",
+        "full_sentence": "늦을세라 택시를 탔다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄴ/는 덕분에",
+      "meaning": "Thanks to; owing to (positive cause)",
+      "explanation": "Attributes a positive outcome to a specific cause. The opposite of ~(으)ㄴ/는 탓에 which assigns blame for negative results. Always used when the speaker is grateful for or pleased with the outcome. Can be used with nouns directly as 덕분에 or with verb/adjective modifiers.",
+      "examples": [
+        {
+          "korean": "선생님이 잘 가르쳐 주신 덕분에 시험에 합격했다.",
+          "english": "Thanks to the teacher teaching me well, I passed the exam."
+        },
+        {
+          "korean": "일찍 출발한 덕분에 교통 체증을 피할 수 있었다.",
+          "english": "Thanks to leaving early, I was able to avoid the traffic jam."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 꾸준히 운동한 ___ 건강해졌다.",
+        "answer": "덕분에",
+        "full_sentence": "꾸준히 운동한 덕분에 건강해졌다."
+      }
+    },
+    {
+      "pattern": "~다 못해",
+      "meaning": "Unable to endure any longer; to the point of giving up restraint",
+      "explanation": "Expresses that someone endured or continued doing something for so long that they finally reached a breaking point and took a different action. The second clause describes what happened once patience or endurance ran out. Conveys a buildup of pressure before the breaking point.",
+      "examples": [
+        {
+          "korean": "참다 못해 한마디 했다.",
+          "english": "Unable to hold back any longer, I said something."
+        },
+        {
+          "korean": "기다리다 못해 먼저 출발했다.",
+          "english": "Unable to wait any longer, I left first."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 듣다 ___ 끼어들었다.",
+        "answer": "못해",
+        "full_sentence": "듣다 못해 끼어들었다."
+      }
+    },
+    {
+      "pattern": "~고 말다",
+      "meaning": "End up doing (regrettable or inevitable result)",
+      "explanation": "Indicates that something eventually happened despite efforts to prevent it or despite the outcome being undesirable. Conveys finality and often regret. The action in the first clause is something the speaker did not want to happen or tried to avoid. Used to mark an irreversible endpoint.",
+      "examples": [
+        {
+          "korean": "결국 비밀을 말하고 말았다.",
+          "english": "I ended up telling the secret after all."
+        },
+        {
+          "korean": "참으려고 했는데 울고 말았다.",
+          "english": "I tried to hold it in, but I ended up crying."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 다이어트 중이었는데 케이크를 먹___ 말았다.",
+        "answer": "고",
+        "full_sentence": "다이어트 중이었는데 케이크를 먹고 말았다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄹ 정도(로)",
+      "meaning": "To the extent/degree that",
+      "explanation": "Describes the degree or extent of something by providing a vivid comparison or consequence. The clause before ~(으)ㄹ 정도로 describes an extreme benchmark, and the main clause describes what is being measured. Used to emphasize how extreme a situation is through hyperbole or concrete illustration.",
+      "examples": [
+        {
+          "korean": "눈물이 날 정도로 감동적이었다.",
+          "english": "It was so moving that it brought tears to my eyes."
+        },
+        {
+          "korean": "한 발짝도 못 움직일 정도로 사람이 많았다.",
+          "english": "It was so crowded that I couldn't move a single step."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 귀가 아플 ___ 잔소리를 들었다.",
+        "answer": "정도로",
+        "full_sentence": "귀가 아플 정도로 잔소리를 들었다."
+      }
+    },
+    {
+      "pattern": "~기에 이르다",
+      "meaning": "To reach the point of; to come to the stage where",
+      "explanation": "A formal expression indicating that a situation has progressed or escalated to a significant point. Used to mark the culmination of a process, often in news, academic writing, or formal narratives. Implies a gradual progression that has reached a critical or noteworthy stage.",
+      "examples": [
+        {
+          "korean": "갈등이 심해져 결국 소송을 제기하기에 이르렀다.",
+          "english": "The conflict intensified until it reached the point of filing a lawsuit."
+        },
+        {
+          "korean": "오랜 협상 끝에 합의에 도달하기에 이르렀다.",
+          "english": "After long negotiations, they finally reached an agreement."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 상황이 악화되어 공장을 폐쇄하___ 이르렀다.",
+        "answer": "기에",
+        "full_sentence": "상황이 악화되어 공장을 폐쇄하기에 이르렀다."
+      }
+    },
+    {
+      "pattern": "~게끔",
+      "meaning": "So that; in such a way that; to ensure that",
+      "explanation": "Expresses purpose or result, meaning 'in order to make sure that.' Slightly more emphatic and deliberate than ~도록, emphasizing the speaker's intention to bring about the stated outcome. Used in both spoken and written Korean. The second clause describes the action taken to ensure the result.",
+      "examples": [
+        {
+          "korean": "아이들이 안전하게끔 울타리를 설치했다.",
+          "english": "We installed a fence so that the children would be safe."
+        },
+        {
+          "korean": "모두가 이해할 수 있게끔 쉽게 설명했다.",
+          "english": "I explained it simply so that everyone could understand."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 다시는 같은 실수를 하지 않___끔 철저히 준비했다.",
+        "answer": "게",
+        "full_sentence": "다시는 같은 실수를 하지 않게끔 철저히 준비했다."
+      }
+    }
+  ],
+  "Formal & Written Patterns": [
+    {
+      "pattern": "~(으)ㄴ/는 바",
+      "meaning": "The fact that; what was (stated/done)",
+      "explanation": "A formal nominalizer used in official documents, news reports, and legal writing. Nominalizes the preceding clause to refer to its content as a known or stated fact. Often followed by particles like ~와 같이, ~에 의하면, or ~있다. Much more formal than ~것.",
+      "examples": [
+        {
+          "korean": "앞서 언급한 바와 같이 이번 정책은 내년부터 시행된다.",
+          "english": "As mentioned earlier, this policy will take effect starting next year."
+        },
+        {
+          "korean": "조사 결과 밝혀진 바에 따르면 원인은 관리 부실이었다.",
+          "english": "According to what was revealed by the investigation, the cause was poor management."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 위에서 설명한 ___와 같이 절차를 따라 주시기 바랍니다.",
+        "answer": "바",
+        "full_sentence": "위에서 설명한 바와 같이 절차를 따라 주시기 바랍니다."
+      }
+    },
+    {
+      "pattern": "~(으)ㅁ에 따라",
+      "meaning": "In accordance with; as (something happens)",
+      "explanation": "Formal expression combining the nominalizer ~(으)ㅁ with the particle 에 따라 (following/according to). Used in regulations, news, and academic writing to indicate that one thing changes or proceeds in response to another. Can express either 'in proportion to' or 'in compliance with.'",
+      "examples": [
+        {
+          "korean": "시간이 흐름에 따라 상황이 달라졌다.",
+          "english": "As time passed, the situation changed."
+        },
+        {
+          "korean": "법이 개정됨에 따라 새로운 규정이 적용된다.",
+          "english": "In accordance with the law being revised, new regulations will apply."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 기술이 발전___에 따라 생활 방식도 변하고 있다.",
+        "answer": "함",
+        "full_sentence": "기술이 발전함에 따라 생활 방식도 변하고 있다."
+      }
+    },
+    {
+      "pattern": "~기에 이르다",
+      "meaning": "To come to the point of; to reach the stage where",
+      "explanation": "A formal narrative expression indicating that a situation has escalated or progressed to a significant point. Emphasizes the culmination of a process. Common in formal writing, journalism, and historical accounts. Carries a sense of gravity — the result is typically noteworthy or dramatic.",
+      "examples": [
+        {
+          "korean": "양측의 갈등이 깊어져 결국 전쟁이 발발하기에 이르렀다.",
+          "english": "The conflict between the two sides deepened, ultimately reaching the point of war breaking out."
+        },
+        {
+          "korean": "오랜 연구 끝에 마침내 신약을 개발하기에 이르렀다.",
+          "english": "After long research, they finally reached the point of developing a new drug."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 시민들의 불만이 커져 대규모 시위가 벌어지___에 이르렀다.",
+        "answer": "기",
+        "full_sentence": "시민들의 불만이 커져 대규모 시위가 벌어지기에 이르렀다."
+      }
+    },
+    {
+      "pattern": "~(으)ㅁ에 있어(서)",
+      "meaning": "In (the matter of); when it comes to; in terms of",
+      "explanation": "A formal expression used to specify the domain or scope of a discussion. Combines the nominalizer ~(으)ㅁ with 에 있어서. Frequently appears in academic papers, formal speeches, and official reports. Equivalent to a more formal version of ~는 데 있어서.",
+      "examples": [
+        {
+          "korean": "교육 정책을 수립함에 있어서 현장의 목소리를 반영해야 한다.",
+          "english": "In establishing education policy, the voices from the field must be reflected."
+        },
+        {
+          "korean": "이 문제를 해결함에 있어 국제적 협력이 필수적이다.",
+          "english": "When it comes to solving this problem, international cooperation is essential."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 연구를 수행___에 있어 윤리적 기준을 준수해야 한다.",
+        "answer": "함",
+        "full_sentence": "연구를 수행함에 있어 윤리적 기준을 준수해야 한다."
+      }
+    },
+    {
+      "pattern": "~다는 점에서",
+      "meaning": "In that; in the sense that; from the standpoint that",
+      "explanation": "Used in formal argumentation and analysis to highlight a specific aspect or reason. Frames the preceding clause as the relevant point for the argument that follows. Common in essays, editorials, and academic discussions. Effective for building logical arguments by isolating one particular dimension of a topic.",
+      "examples": [
+        {
+          "korean": "누구나 참여할 수 있다는 점에서 이 프로그램은 의미가 크다.",
+          "english": "In that anyone can participate, this program is highly meaningful."
+        },
+        {
+          "korean": "기존 방식과 근본적으로 다르다는 점에서 주목할 만하다.",
+          "english": "It is noteworthy in that it is fundamentally different from existing methods."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 비용이 들지 않는다는 ___ 이 방법이 더 효율적이다.",
+        "answer": "점에서",
+        "full_sentence": "비용이 들지 않는다는 점에서 이 방법이 더 효율적이다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄴ/는 것으로 나타나다",
+      "meaning": "It was found/revealed that; it turned out that",
+      "explanation": "A standard reporting pattern in academic papers, news articles, and official reports. Used to present findings from research, surveys, or investigations. Implies objective evidence rather than personal opinion. The verb 나타나다 can be replaced with 드러나다, 밝혀지다, or 확인되다 in similar constructions.",
+      "examples": [
+        {
+          "korean": "조사 결과 응답자의 70%가 찬성하는 것으로 나타났다.",
+          "english": "The survey results revealed that 70% of respondents were in favor."
+        },
+        {
+          "korean": "이 물질이 건강에 해로운 것으로 나타났다.",
+          "english": "It was found that this substance is harmful to health."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 연구에 따르면 수면 부족이 학습 능력을 저하시키는 것으로 ___.",
+        "answer": "나타났다",
+        "full_sentence": "연구에 따르면 수면 부족이 학습 능력을 저하시키는 것으로 나타났다."
+      }
+    },
+    {
+      "pattern": "~(이)라 할 수 없다",
+      "meaning": "One cannot say that; it cannot be called",
+      "explanation": "A formal refutation pattern used in argumentative and analytical writing. Asserts that a label, claim, or characterization is not valid. More measured and intellectual than a blunt denial. Common in editorials, critiques, and academic debates. Often preceded by ~(이)라고만 or used with 반드시, 꼭 to soften the refutation.",
+      "examples": [
+        {
+          "korean": "이번 결과를 성공이라 할 수 없다.",
+          "english": "One cannot call this result a success."
+        },
+        {
+          "korean": "단순히 경제 성장만으로 국민이 행복하다라 할 수 없다.",
+          "english": "One cannot say the people are happy based solely on economic growth."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 한 번의 실험으로 이 이론이 증명되었다___ 할 수 없다.",
+        "answer": "라",
+        "full_sentence": "한 번의 실험으로 이 이론이 증명되었다라 할 수 없다."
+      }
+    },
+    {
+      "pattern": "~다고 전해지다",
+      "meaning": "It is said/reported that; it has been passed down that",
+      "explanation": "Used to relay information from secondary sources, oral tradition, or historical accounts. Indicates that the speaker is not the original source of the information. Common in historical writing, cultural descriptions, and news reporting. Conveys an appropriate distance from unverified claims. Can also appear as ~(으)ㄴ/는 것으로 전해지다.",
+      "examples": [
+        {
+          "korean": "이 절은 신라 시대에 세워졌다고 전해진다.",
+          "english": "It is said that this temple was built during the Silla dynasty."
+        },
+        {
+          "korean": "그 장군은 전투에서 한 번도 진 적이 없다고 전해진다.",
+          "english": "It is reported that the general never lost a single battle."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 이 마을에는 오래전부터 용이 살았다고 ___.",
+        "answer": "전해진다",
+        "full_sentence": "이 마을에는 오래전부터 용이 살았다고 전해진다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄴ/는 바이다",
+      "meaning": "It is the case that (I hereby state); (we) note that",
+      "explanation": "An extremely formal declarative ending used in official announcements, press statements, and legal documents. Functions as a heavy, authoritative statement of fact or position. Often seen in government notices and corporate announcements. Carries institutional weight and is never used in casual speech.",
+      "examples": [
+        {
+          "korean": "이에 본 위원회는 다음과 같이 결정한 바이다.",
+          "english": "Hereby, this committee has decided as follows."
+        },
+        {
+          "korean": "해당 사항은 이미 검토가 완료된 바이다.",
+          "english": "The matter in question has already been reviewed."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 관련 법률은 지난달에 개정된 ___이다.",
+        "answer": "바",
+        "full_sentence": "관련 법률은 지난달에 개정된 바이다."
+      }
+    },
+    {
+      "pattern": "~(으)리라",
+      "meaning": "Shall; will (certainly); it is expected that",
+      "explanation": "A literary and formal future tense ending expressing strong determination, prediction, or expectation. Found in literature, poetry, formal speeches, and proverbs. More elevated and emphatic than ~(으)ㄹ 것이다. Conveys either the speaker's firm resolve or a confident prediction. Gives a solemn, dignified tone.",
+      "examples": [
+        {
+          "korean": "진실은 반드시 밝혀지리라.",
+          "english": "The truth shall certainly be revealed."
+        },
+        {
+          "korean": "우리의 노력이 헛되지 않으리라 믿는다.",
+          "english": "I believe that our efforts will not be in vain."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 이 땅에 평화가 찾아오___라.",
+        "answer": "리",
+        "full_sentence": "이 땅에 평화가 찾아오리라."
+      }
+    },
+    {
+      "pattern": "~고자 하다",
+      "meaning": "To intend to; to wish to; to aim to",
+      "explanation": "A formal expression of intention or purpose. More formal and deliberate than ~(으)려고 하다. Common in speeches, presentations, proposals, and official statements. Conveys that the intention is considered and purposeful rather than spontaneous. Often used when addressing an audience or stating organizational goals.",
+      "examples": [
+        {
+          "korean": "오늘 이 자리에서 몇 가지 제안을 드리고자 합니다.",
+          "english": "I would like to make a few proposals here today."
+        },
+        {
+          "korean": "본 연구는 이러한 문제를 분석하고자 한다.",
+          "english": "This study aims to analyze these issues."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 간단하게 경과를 보고___자 합니다.",
+        "answer": "하고",
+        "full_sentence": "간단하게 경과를 보고하고자 합니다."
+      }
+    },
+    {
+      "pattern": "~노라(고)",
+      "meaning": "Claiming/asserting that one (does); in the act of doing",
+      "explanation": "A literary first-person assertive form used to describe one's own ongoing action or effort, often with self-reflective or ironic nuance. In modern usage, most commonly appears as ~노라고 to mean 'thinking I was doing X' or 'claiming to do X,' followed by a contrasting or resulting outcome. Also survives in traditional poetry and songs as a standalone ending.",
+      "examples": [
+        {
+          "korean": "열심히 하노라고 했는데 결과가 좋지 않았다.",
+          "english": "I thought I was working hard, but the results weren't good."
+        },
+        {
+          "korean": "도와주노라고 한 것이 오히려 방해가 되었다.",
+          "english": "What I did thinking I was helping actually got in the way."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 절약하___라고 했는데 오히려 더 많이 썼다.",
+        "answer": "노",
+        "full_sentence": "절약하노라고 했는데 오히려 더 많이 썼다."
+      }
+    },
+    {
+      "pattern": "~(으)련마는",
+      "meaning": "Although it would/should be; even though one would expect",
+      "explanation": "A literary concessive ending expressing an expectation or assumption that is contrasted by reality. More elegant and archaic than ~(으)ㄹ 텐데 or ~겠지만. Found in literary prose, essays, and formal rhetoric. Conveys a sense of wistfulness or resigned acknowledgment that things are not as one would hope or expect.",
+      "examples": [
+        {
+          "korean": "세월이 지나면 잊히련마는 아직도 그 기억이 생생하다.",
+          "english": "One would think it would fade with time, yet the memory is still vivid."
+        },
+        {
+          "korean": "쉽게 포기할 수 있으련마는 그는 끝까지 버텼다.",
+          "english": "He could easily have given up, yet he endured to the end."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 누구나 알 수 있으___마는 아무도 말하지 않았다.",
+        "answer": "련",
+        "full_sentence": "누구나 알 수 있으련마는 아무도 말하지 않았다."
+      }
+    },
+    {
+      "pattern": "~거니와",
+      "meaning": "Not only... but also; and furthermore; as well as",
+      "explanation": "A literary and formal additive connector that acknowledges the first clause and then adds a second point that reinforces or extends it. More elevated in register than ~(으)ㄹ 뿐만 아니라 or ~는 데다가. Used in formal essays, editorials, and speeches. The two clauses typically point in the same direction (both positive or both negative).",
+      "examples": [
+        {
+          "korean": "그는 학문에 뛰어나거니와 인품 또한 훌륭하다.",
+          "english": "He is not only outstanding in scholarship but also excellent in character."
+        },
+        {
+          "korean": "비용이 많이 들거니와 시간도 오래 걸린다.",
+          "english": "Not only does it cost a lot, but it also takes a long time."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 건강에 좋___니와 맛도 뛰어나다.",
+        "answer": "거",
+        "full_sentence": "건강에 좋거니와 맛도 뛰어나다."
+      }
+    },
+    {
+      "pattern": "~건대",
+      "meaning": "If I may say; in my opinion; speaking (humbly)",
+      "explanation": "A formal and humble opinion marker used when the speaker wishes to state a personal view, typically prefaced by a verb of cognition like 생각하다, 바라다, or 말하다. Almost always appears as 생각건대 (in my opinion), 바라건대 (if I may wish), or 말하건대 (if I may say). Literary in tone and used in formal writing and speeches.",
+      "examples": [
+        {
+          "korean": "생각건대 이번 결정은 재고할 필요가 있다.",
+          "english": "In my opinion, this decision needs to be reconsidered."
+        },
+        {
+          "korean": "바라건대 모든 국민이 이 사실을 알았으면 한다.",
+          "english": "If I may wish, I hope all citizens will know this fact."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 생각___대 이 문제는 장기적인 관점에서 접근해야 한다.",
+        "answer": "건",
+        "full_sentence": "생각건대 이 문제는 장기적인 관점에서 접근해야 한다."
+      }
+    },
+    {
+      "pattern": "~(으)리만큼",
+      "meaning": "To such an extent that (one would); so much that",
+      "explanation": "A literary degree expression indicating that something has reached such an extreme level that a certain reaction would be warranted. Combines the literary future/conjecture suffix ~(으)리 with 만큼 (to the extent). More formal and expressive than ~(으)ㄹ 만큼. Used in descriptive and narrative writing to intensify a quality or situation.",
+      "examples": [
+        {
+          "korean": "눈이 부시리만큼 하얀 설원이 펼쳐져 있었다.",
+          "english": "A snow field so white it was dazzling stretched out before us."
+        },
+        {
+          "korean": "감동적이리만큼 헌신적인 노력을 보여주었다.",
+          "english": "They showed such devoted effort that it was deeply moving."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 놀라___리만큼 빠른 속도로 성장하고 있다.",
+        "answer": "우",
+        "full_sentence": "놀라우리만큼 빠른 속도로 성장하고 있다."
+      }
+    },
+    {
+      "pattern": "~에 기인하다",
+      "meaning": "To be attributable to; to originate from; to stem from",
+      "explanation": "A formal Sino-Korean expression (基因) used in academic writing and formal analysis to identify root causes. Indicates that a result or phenomenon can be traced back to a specific cause. More precise and scholarly than ~때문이다. Common in research papers, editorials, and policy analysis.",
+      "examples": [
+        {
+          "korean": "이러한 현상은 급격한 도시화에 기인한다.",
+          "english": "This phenomenon is attributable to rapid urbanization."
+        },
+        {
+          "korean": "실패의 원인은 준비 부족에 기인한 것이다.",
+          "english": "The cause of the failure stems from insufficient preparation."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 이번 사고는 안전 관리 소홀에 ___한다.",
+        "answer": "기인",
+        "full_sentence": "이번 사고는 안전 관리 소홀에 기인한다."
+      }
+    },
+    {
+      "pattern": "~을/를 비롯하여",
+      "meaning": "Including; starting with; and others such as",
+      "explanation": "A formal listing expression used to introduce a representative example before extending to a broader group. The item before 비롯하여 is the most prominent or important example. Common in formal writing, news articles, and official documents. Can also appear as ~을/를 비롯해(서) in slightly less formal contexts.",
+      "examples": [
+        {
+          "korean": "한국을 비롯하여 여러 아시아 국가들이 참가했다.",
+          "english": "Several Asian countries participated, including Korea."
+        },
+        {
+          "korean": "대통령을 비롯한 정부 관계자들이 현장을 방문했다.",
+          "english": "Government officials, starting with the president, visited the site."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 서울을 ___하여 전국 주요 도시에서 행사가 열렸다.",
+        "answer": "비롯",
+        "full_sentence": "서울을 비롯하여 전국 주요 도시에서 행사가 열렸다."
+      }
+    },
+    {
+      "pattern": "~에 불과하다",
+      "meaning": "To be merely; to be nothing more than; only",
+      "explanation": "A formal expression used to minimize or downplay the significance of something. Indicates that something is less important, smaller, or more limited than it might appear. Common in academic writing, journalism, and persuasive essays. Carries a dismissive or deflating tone, pointing out that reality falls short of expectations.",
+      "examples": [
+        {
+          "korean": "참가자 수는 전체의 10%에 불과했다.",
+          "english": "The number of participants was merely 10% of the total."
+        },
+        {
+          "korean": "이것은 빙산의 일각에 불과하다.",
+          "english": "This is nothing more than the tip of the iceberg."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 현재까지의 성과는 시작에 ___하다.",
+        "answer": "불과",
+        "full_sentence": "현재까지의 성과는 시작에 불과하다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄴ/는 데(에) 있다",
+      "meaning": "Lies in; consists in; the point is that",
+      "explanation": "An academic pattern used to identify the core, essence, or key point of something. Commonly used in thesis statements, arguments, and explanations. The structure is typically 'A의 핵심/의의/문제점은 ~는 데 있다.' Effective for making focused, precise analytical statements in formal writing.",
+      "examples": [
+        {
+          "korean": "이 연구의 의의는 새로운 분석 방법을 제시한 데에 있다.",
+          "english": "The significance of this study lies in presenting a new analytical method."
+        },
+        {
+          "korean": "문제는 제도 자체가 아니라 운영 방식에 있다.",
+          "english": "The problem lies not in the system itself but in how it is operated."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 이 정책의 핵심은 불평등을 줄이는 ___ 있다.",
+        "answer": "데에",
+        "full_sentence": "이 정책의 핵심은 불평등을 줄이는 데에 있다."
+      }
+    }
+  ],
+  "Spoken & Nuance Patterns": [
+    {
+      "pattern": "~다니",
+      "meaning": "I can't believe that; how surprising that",
+      "explanation": "Expresses the speaker's surprise, disbelief, or emotional reaction upon hearing or realizing something. Attaches to statement-form verbs/adjectives. Often used as an exclamation on its own or followed by a comment about the surprising fact.",
+      "examples": [
+        {
+          "korean": "이렇게 비싸다니 말도 안 돼.",
+          "english": "I can't believe it's this expensive — that's absurd."
+        },
+        {
+          "korean": "벌써 10년이 지났다니 시간 참 빠르다.",
+          "english": "I can't believe 10 years have already passed — time flies."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 그 사람이 회사를 그만뒀_____ 놀랍다.",
+        "answer": "다니",
+        "full_sentence": "그 사람이 회사를 그만뒀다니 놀랍다."
+      }
+    },
+    {
+      "pattern": "~기는(요)",
+      "meaning": "What do you mean...?; As if!; Not really",
+      "explanation": "Used to humbly deny a compliment or dismissively reject a claim. In spoken Korean, the verb or adjective stem is repeated or echoed with ~기는(요) to deflect. Very common in everyday conversation for modesty or gentle pushback.",
+      "examples": [
+        {
+          "korean": "A: 한국어 잘하시네요! B: 잘하기는요, 아직 멀었어요.",
+          "english": "A: Your Korean is great! B: What do you mean 'great' — I still have a long way to go."
+        },
+        {
+          "korean": "A: 요리 진짜 맛있다! B: 맛있기는, 대충 만든 건데.",
+          "english": "A: This food is really delicious! B: As if — I just threw it together."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: A: 오늘 예쁘다! B: 예쁘___요, 화장도 안 했는데.",
+        "answer": "기는",
+        "full_sentence": "예쁘기는요, 화장도 안 했는데."
+      }
+    },
+    {
+      "pattern": "~(으)ㄹ 줄이야",
+      "meaning": "Who would have thought that; I never expected that",
+      "explanation": "Expresses that the speaker is shocked or caught off guard by an outcome they never anticipated. Conveys a mix of surprise and sometimes admiration or dismay. Often preceded by 설마 or 이렇게 for emphasis. More emotional than ~다니.",
+      "examples": [
+        {
+          "korean": "설마 네가 1등을 할 줄이야.",
+          "english": "Who would have thought you'd get first place."
+        },
+        {
+          "korean": "이렇게 일이 꼬일 줄이야, 상상도 못 했다.",
+          "english": "I never expected things to go this wrong — I couldn't have imagined it."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 그렇게 조용하던 사람이 노래를 저렇게 잘 부를 _____.",
+        "answer": "줄이야",
+        "full_sentence": "그렇게 조용하던 사람이 노래를 저렇게 잘 부를 줄이야."
+      }
+    },
+    {
+      "pattern": "~다 못해",
+      "meaning": "Unable to bear any longer, so...; to the point of not being able to stand it",
+      "explanation": "Indicates that the subject endured something for a long time but finally reached a breaking point and took action or changed state. The clause after ~다 못해 describes what resulted from reaching the limit. Emphasizes escalation from endurance to breaking point.",
+      "examples": [
+        {
+          "korean": "참다 못해 결국 한마디 했다.",
+          "english": "Unable to hold back any longer, I finally spoke up."
+        },
+        {
+          "korean": "기다리다 못해 먼저 출발했다.",
+          "english": "Unable to wait any longer, I left first."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 배가 고프___ 못해 라면이라도 끓여 먹었다.",
+        "answer": "다",
+        "full_sentence": "배가 고프다 못해 라면이라도 끓여 먹었다."
+      }
+    },
+    {
+      "pattern": "~나 보다 / ~(으)ㄴ가 보다",
+      "meaning": "It seems like; it looks like (judging from evidence)",
+      "explanation": "The speaker infers something based on indirect evidence or observation. ~나 보다 attaches to action verbs and 있다/없다; ~(으)ㄴ가 보다 attaches to descriptive verbs (adjectives). Different from ~것 같다 in that it specifically implies the speaker is drawing a conclusion from observable clues rather than just guessing.",
+      "examples": [
+        {
+          "korean": "밖에 사람이 많은 걸 보니 오늘 축제가 있나 보다.",
+          "english": "Seeing all the people outside, it looks like there's a festival today."
+        },
+        {
+          "korean": "표정이 안 좋은 걸 보니 무슨 일이 있었나 보다.",
+          "english": "Judging by the look on their face, something must have happened."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 불이 꺼져 있는 걸 보니 아직 안 왔___ 보다.",
+        "answer": "나",
+        "full_sentence": "불이 꺼져 있는 걸 보니 아직 안 왔나 보다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄹ까 싶다",
+      "meaning": "I'm wondering whether; I'm thinking maybe",
+      "explanation": "Expresses the speaker's tentative thought or consideration about doing something or about a possibility. Softer and more hesitant than a direct statement. Used when mulling over a decision or gently floating an idea. Also used to express mild worry about whether something might happen.",
+      "examples": [
+        {
+          "korean": "이번 주말에 부산에 갈까 싶어.",
+          "english": "I'm thinking maybe I'll go to Busan this weekend."
+        },
+        {
+          "korean": "혹시 내가 실수한 건 아닐까 싶어서 다시 확인했다.",
+          "english": "Wondering if maybe I'd made a mistake, I checked again."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 올해는 자격증 시험을 볼___ 싶어서 공부를 시작했다.",
+        "answer": "까",
+        "full_sentence": "올해는 자격증 시험을 볼까 싶어서 공부를 시작했다."
+      }
+    },
+    {
+      "pattern": "~지 않나 싶다",
+      "meaning": "I kind of think that; I wonder if perhaps",
+      "explanation": "A very soft, hedged way of stating one's opinion. By framing the thought as a negative question ('isn't it the case that...'), the speaker sounds humble and non-assertive. Extremely common in spoken Korean when people want to express their view without sounding too direct or forceful.",
+      "examples": [
+        {
+          "korean": "이건 좀 무리가 아닌가 싶다.",
+          "english": "I kind of think this might be a bit too much."
+        },
+        {
+          "korean": "그 방법이 제일 낫지 않나 싶어요.",
+          "english": "I think maybe that method might be the best, don't you think?"
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 지금이 적기가 아닌___ 싶은데요.",
+        "answer": "가",
+        "full_sentence": "지금이 적기가 아닌가 싶은데요."
+      }
+    },
+    {
+      "pattern": "~(으)ㄹ 턱이 없다",
+      "meaning": "There's absolutely no way; not a chance that",
+      "explanation": "An emphatic denial of possibility, stronger than ~(으)ㄹ 리가 없다. 턱 here is an archaic word meaning 'reason' or 'grounds.' Conveys that there is zero basis or justification for something to be the case. Slightly more colloquial and emotionally charged than ~리가 없다.",
+      "examples": [
+        {
+          "korean": "준비도 안 했는데 시험에 붙을 턱이 없다.",
+          "english": "I didn't even prepare — there's absolutely no way I'd pass the exam."
+        },
+        {
+          "korean": "그렇게 적게 먹으면서 살이 빠질 턱이 없지.",
+          "english": "Eating that little, there's no chance of losing weight."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 연습도 안 하고 실력이 늘___ 턱이 없다.",
+        "answer": "을",
+        "full_sentence": "연습도 안 하고 실력이 늘을 턱이 없다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄹ걸 (그랬다)",
+      "meaning": "I should have; I wish I had (but didn't)",
+      "explanation": "Expresses regret about a past action not taken, or wishing one had done something differently. When used alone (~(으)ㄹ걸), it's a concise expression of regret. When followed by 그랬다, it becomes more explicit: 'I should have done that.' Very natural in spoken Korean for minor and major regrets alike.",
+      "examples": [
+        {
+          "korean": "우산 가져올걸. 비가 이렇게 올 줄 몰랐네.",
+          "english": "I should have brought an umbrella. I didn't know it would rain this much."
+        },
+        {
+          "korean": "그때 고백할걸 그랬다.",
+          "english": "I should have confessed back then."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 미리 예약할___ 자리가 없네.",
+        "answer": "걸",
+        "full_sentence": "미리 예약할걸, 자리가 없네."
+      }
+    },
+    {
+      "pattern": "~았/었더라면",
+      "meaning": "If (I/someone) had done...; had it been the case that",
+      "explanation": "A counterfactual conditional expressing what would have happened if things had gone differently in the past. Always refers to something that did NOT actually happen. The second clause typically contains ~(으)ㄹ 텐데 or ~았/었을 것이다 to describe the imagined result. Central to expressing 'what if' scenarios and regret.",
+      "examples": [
+        {
+          "korean": "그때 포기하지 않았더라면 지금쯤 성공했을 텐데.",
+          "english": "If I hadn't given up back then, I would have succeeded by now."
+        },
+        {
+          "korean": "5분만 더 일찍 나왔더라면 버스를 탔을 거야.",
+          "english": "If I had left just 5 minutes earlier, I would have caught the bus."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 그 말을 듣지 않았___면 큰일 날 뻔했다.",
+        "answer": "더라",
+        "full_sentence": "그 말을 듣지 않았더라면 큰일 날 뻔했다."
+      }
+    },
+    {
+      "pattern": "~(으)ㄹ 것을",
+      "meaning": "If only (I) had; I could/should have (but didn't)",
+      "explanation": "Expresses regret or lament that a better alternative was available but not chosen. The speaker looks back and wishes they had taken a different course of action. Can end a sentence on its own as a trailing lament, or be followed by a clause describing the missed benefit. More literary and wistful than ~(으)ㄹ걸.",
+      "examples": [
+        {
+          "korean": "진작 말할 것을 왜 이제야 얘기해?",
+          "english": "You could have said something earlier — why are you only telling me now?"
+        },
+        {
+          "korean": "좀 더 생각해 볼 것을 급하게 결정해 버렸다.",
+          "english": "I should have thought about it more, but I made a hasty decision."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 미리 확인할 ___ 그냥 넘어가 버렸다.",
+        "answer": "것을",
+        "full_sentence": "미리 확인할 것을 그냥 넘어가 버렸다."
+      }
+    },
+    {
+      "pattern": "~고 말다",
+      "meaning": "End up doing (unfortunately); finally did (with finality/regret)",
+      "explanation": "Indicates that despite efforts to prevent it or after a long process, something ultimately happened. Often carries a sense of regret, inevitability, or dramatic finality. The outcome is usually negative or at least bittersweet. Used for events the speaker views as unfortunate or irreversible.",
+      "examples": [
+        {
+          "korean": "비밀을 지키려 했는데 결국 말하고 말았다.",
+          "english": "I tried to keep the secret, but I ended up telling."
+        },
+        {
+          "korean": "열심히 버텼는데 결국 울고 말았다.",
+          "english": "I held on as hard as I could, but I ended up crying."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 다이어트 중이었는데 케이크를 먹___ 말았다.",
+        "answer": "고",
+        "full_sentence": "다이어트 중이었는데 케이크를 먹고 말았다."
+      }
+    },
+    {
+      "pattern": "~곤 하다",
+      "meaning": "Used to (do); would habitually (do)",
+      "explanation": "Describes a habitual or repeated action, either in the past or present. When used with past tense, it means 'used to do regularly.' When used with present tense, it means 'sometimes does / tends to do from time to time.' Conveys a sense of nostalgia or familiar routine when referring to the past.",
+      "examples": [
+        {
+          "korean": "학생 때는 밤새 게임을 하곤 했다.",
+          "english": "When I was a student, I used to play games all night."
+        },
+        {
+          "korean": "스트레스 받으면 혼자 산책을 하곤 해요.",
+          "english": "When I'm stressed, I sometimes go for a walk alone."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 어릴 때는 할머니 댁에 자주 놀러 가___ 했다.",
+        "answer": "곤",
+        "full_sentence": "어릴 때는 할머니 댁에 자주 놀러 가곤 했다."
+      }
+    },
+    {
+      "pattern": "~기 십상이다",
+      "meaning": "Very likely to; easy to end up (negative)",
+      "explanation": "Warns that a negative outcome is highly probable given the circumstances. Similar to ~기 일쑤이다 but focuses on potential risk rather than established habit. Used as a caution or warning: 'if you're not careful, X will easily happen.' Always carries negative connotation.",
+      "examples": [
+        {
+          "korean": "이런 날씨에 나가면 감기 걸리기 십상이다.",
+          "english": "If you go out in this weather, you'll easily catch a cold."
+        },
+        {
+          "korean": "준비 없이 시작하면 실패하기 십상이다.",
+          "english": "If you start without preparation, you're very likely to fail."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 무리하면 다치___ 십상이다.",
+        "answer": "기",
+        "full_sentence": "무리하면 다치기 십상이다."
+      }
+    },
+    {
+      "pattern": "~아/어 대다",
+      "meaning": "Keep doing (intensely/annoyingly); do repeatedly without stopping",
+      "explanation": "Emphasizes that an action is being done repeatedly, excessively, or intensely — often to the annoyance of the speaker or others. Adds a sense of persistence or overdoing it. Commonly used with verbs like 먹다, 울다, 웃다, 떠들다 to show the action is happening too much or too loudly.",
+      "examples": [
+        {
+          "korean": "아이가 과자를 먹어 대서 저녁을 안 먹었다.",
+          "english": "The kid kept eating snacks nonstop, so they didn't eat dinner."
+        },
+        {
+          "korean": "옆자리에서 떠들어 대는 바람에 집중이 안 됐다.",
+          "english": "The people next to me kept chattering away, so I couldn't concentrate."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 강아지가 밤새 짖어 ___서 한숨도 못 잤다.",
+        "answer": "대",
+        "full_sentence": "강아지가 밤새 짖어 대서 한숨도 못 잤다."
+      }
+    },
+    {
+      "pattern": "~(으)려고 들다",
+      "meaning": "Insist on trying to; be determined to; keep trying to",
+      "explanation": "Describes someone stubbornly or persistently attempting to do something, often when others wish they wouldn't. Carries a nuance of pushiness or unwelcome persistence. Can be used for oneself (with self-aware tone) or to describe others (with mild criticism).",
+      "examples": [
+        {
+          "korean": "자기 말이 맞다고 우기려고 들면 대화가 안 돼.",
+          "english": "If someone insists they're right, there's no having a conversation."
+        },
+        {
+          "korean": "아이가 자꾸 혼자 하려고 들어서 걱정이다.",
+          "english": "The kid keeps insisting on doing it alone, which worries me."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 자기 방식대로 하___고 들면 충돌이 생기기 마련이다.",
+        "answer": "려",
+        "full_sentence": "자기 방식대로 하려고 들면 충돌이 생기기 마련이다."
+      }
+    },
+    {
+      "pattern": "~기는커녕",
+      "meaning": "Far from; let alone; not to mention",
+      "explanation": "Emphatically denies the first (higher) expectation and says even a lesser thing didn't happen. Structure: A기는커녕 B도 못/안 하다. 'Forget about A — couldn't even do B.' Used to express frustration, disappointment, or to strongly contrast expectation vs. reality.",
+      "examples": [
+        {
+          "korean": "여행은커녕 주말에 쉬지도 못했다.",
+          "english": "Forget about traveling — I couldn't even rest on the weekend."
+        },
+        {
+          "korean": "도움이 되기는커녕 오히려 방해만 됐다.",
+          "english": "Far from being helpful, they actually just got in the way."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 칭찬은___녕 혼만 났다.",
+        "answer": "커",
+        "full_sentence": "칭찬은커녕 혼만 났다."
+      }
+    },
+    {
+      "pattern": "~다니까(요)",
+      "meaning": "I'm telling you (that)!; I already said!",
+      "explanation": "Used when the speaker is repeating or insisting on something they already said, often with mild exasperation or emphasis. Implies 'I already told you this — why aren't you getting it?' Very common in casual spoken Korean when someone feels their point isn't being heard or accepted.",
+      "examples": [
+        {
+          "korean": "괜찮다니까 걱정하지 마.",
+          "english": "I'm telling you I'm fine — stop worrying."
+        },
+        {
+          "korean": "진짜 모른다니까요! 저한테 왜 자꾸 물어봐요?",
+          "english": "I keep telling you I really don't know! Why do you keep asking me?"
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 안 간___까 그만 물어봐.",
+        "answer": "다니",
+        "full_sentence": "안 간다니까 그만 물어봐."
+      }
+    },
+    {
+      "pattern": "~(으)ㄹ 망정이지",
+      "meaning": "It's a good thing that; luckily; had it not been for",
+      "explanation": "Expresses relief that a certain condition held true, because otherwise the outcome would have been bad. The first clause states the fortunate condition, and the second clause (often with 아니었으면 or implied) describes the disaster that was avoided. Conveys 'thank goodness X, otherwise Y would have happened.'",
+      "examples": [
+        {
+          "korean": "내가 참을성이 있을 망정이지, 다른 사람이었으면 난리 났을 거야.",
+          "english": "It's a good thing I'm patient — if it were someone else, there would have been chaos."
+        },
+        {
+          "korean": "날씨가 좋을 망정이지 비가 왔으면 행사를 못 했을 거다.",
+          "english": "Luckily the weather was nice — if it had rained, we couldn't have held the event."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 크게 다치지 않았을 ___이지, 하마터면 큰일 날 뻔했다.",
+        "answer": "망정",
+        "full_sentence": "크게 다치지 않았을 망정이지, 하마터면 큰일 날 뻔했다."
+      }
+    },
+    {
+      "pattern": "~아/어 죽겠다",
+      "meaning": "So (adjective) I could die; unbearably; extremely",
+      "explanation": "A vivid spoken expression that exaggerates a feeling or state to an extreme degree. Literally means 'I could die from being so X.' Used for both negative states (더워 죽겠다 — dying of heat) and sometimes positive intensity (좋아 죽겠다 — so happy I could die). Extremely natural and frequent in casual spoken Korean.",
+      "examples": [
+        {
+          "korean": "배고파 죽겠다. 빨리 밥 먹자.",
+          "english": "I'm starving to death. Let's eat quickly."
+        },
+        {
+          "korean": "요즘 일이 많아서 바빠 죽겠어.",
+          "english": "I've got so much work these days — I'm insanely busy."
+        }
+      ],
+      "drill": {
+        "prompt": "Complete: 오늘 너무 더워 ___ 에어컨 좀 틀어.",
+        "answer": "죽겠다.",
+        "full_sentence": "오늘 너무 더워 죽겠다. 에어컨 좀 틀어."
+      }
+    }
+  ]
+}

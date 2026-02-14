@@ -1,0 +1,1950 @@
+{
+  "기본 문장 (Basic Sentences)": [
+    {
+      "pattern": "이에요/예요",
+      "meaning": "is / am / are (polite copula)",
+      "explanation": "This is the polite way to say 'is' in Korean. Attach 이에요 after a noun ending in a consonant, and 예요 after a noun ending in a vowel. It is used to identify or describe what something is.",
+      "examples": [
+        {
+          "korean": "저는 학생이에요.",
+          "english": "I am a student."
+        },
+        {
+          "korean": "이것은 사과예요.",
+          "english": "This is an apple."
+        },
+        {
+          "korean": "오늘은 월요일이에요.",
+          "english": "Today is Monday."
+        }
+      ],
+      "drill": {
+        "prompt": "저는 한국 사람_____.",
+        "answer": "이에요",
+        "full_sentence": "저는 한국 사람이에요.",
+        "full_sentence_en": "I am a Korean person.",
+        "options": [
+          "이에요",
+          "예요",
+          "있어요",
+          "해요"
+        ]
+      },
+      "notes": "Common mistake: using 예요 after a consonant. Remember — 학생이에요 (consonant ending), 의사예요 (vowel ending). This form is 해요체 (polite informal), which is the most commonly used speech level in everyday Korean."
+    },
+    {
+      "pattern": "이/가 아니에요",
+      "meaning": "is not",
+      "explanation": "This is the negative form of the copula. Use 이 아니에요 after a consonant-ending noun and 가 아니에요 after a vowel-ending noun. It means 'is not' or 'am not'.",
+      "examples": [
+        {
+          "korean": "저는 의사가 아니에요.",
+          "english": "I am not a doctor."
+        },
+        {
+          "korean": "이것은 커피가 아니에요.",
+          "english": "This is not coffee."
+        },
+        {
+          "korean": "오늘은 금요일이 아니에요.",
+          "english": "Today is not Friday."
+        }
+      ],
+      "drill": {
+        "prompt": "저는 선생님_____ 아니에요.",
+        "answer": "이",
+        "full_sentence": "저는 선생님이 아니에요.",
+        "full_sentence_en": "I am not a teacher.",
+        "options": [
+          "이",
+          "가",
+          "은",
+          "를"
+        ]
+      },
+      "notes": "The particle 이/가 is required before 아니에요 — don't drop it. This is different from English where you just say 'is not'. Also note: 아니에요 never changes form; only the particle before it changes based on the noun."
+    },
+    {
+      "pattern": "있어요/없어요",
+      "meaning": "there is / there isn't; have / don't have",
+      "explanation": "있어요 means 'there is' or 'I have', while 없어요 is its negative, meaning 'there isn't' or 'I don't have'. These are among the most frequently used words in Korean.",
+      "examples": [
+        {
+          "korean": "시간이 있어요.",
+          "english": "I have time."
+        },
+        {
+          "korean": "여기에 화장실이 있어요.",
+          "english": "There is a restroom here."
+        },
+        {
+          "korean": "돈이 없어요.",
+          "english": "I don't have money."
+        }
+      ],
+      "drill": {
+        "prompt": "냉장고에 우유가 _____.",
+        "answer": "있어요",
+        "full_sentence": "냉장고에 우유가 있어요.",
+        "full_sentence_en": "There is milk in the refrigerator.",
+        "options": [
+          "있어요",
+          "없어요",
+          "이에요",
+          "해요"
+        ]
+      },
+      "notes": "있어요/없어요 use the subject particle 이/가, not the topic particle 은/는. A common beginner mistake is saying 있어요 when you mean the copula 이에요. 'I am a student' is 학생이에요 (not 학생이 있어요)."
+    },
+    {
+      "pattern": "-아/어요",
+      "meaning": "present tense polite ending",
+      "explanation": "This is the standard polite present tense ending in Korean. If the last vowel of the verb stem is ㅏ or ㅗ, add -아요. For all other vowels, add -어요. 하다 verbs become 해요.",
+      "examples": [
+        {
+          "korean": "저는 밥을 먹어요.",
+          "english": "I eat rice."
+        },
+        {
+          "korean": "친구를 만나요.",
+          "english": "I meet a friend."
+        },
+        {
+          "korean": "한국어를 공부해요.",
+          "english": "I study Korean."
+        }
+      ],
+      "drill": {
+        "prompt": "저는 매일 운동_____.",
+        "answer": "해요",
+        "full_sentence": "저는 매일 운동해요.",
+        "full_sentence_en": "I exercise every day.",
+        "options": [
+          "해요",
+          "하어요",
+          "아요",
+          "어요"
+        ]
+      },
+      "notes": "The biggest challenge is vowel contraction. 가다 becomes 가요 (not 가아요), 마시다 becomes 마셔요 (시+어=셔). Memorize 하다→해요 as a special case. When in doubt, practice the most common verbs first until the pattern feels natural."
+    },
+    {
+      "pattern": "-아/어요?",
+      "meaning": "yes/no question (polite form)",
+      "explanation": "In Korean, you form a yes/no question simply by raising intonation at the end of a statement. The verb ending stays the same as the statement form. In writing, just add a question mark.",
+      "examples": [
+        {
+          "korean": "한국어를 공부해요?",
+          "english": "Do you study Korean?"
+        },
+        {
+          "korean": "커피를 좋아해요?",
+          "english": "Do you like coffee?"
+        },
+        {
+          "korean": "내일 시간이 있어요?",
+          "english": "Do you have time tomorrow?"
+        }
+      ],
+      "drill": {
+        "prompt": "이 음식을 _____?",
+        "answer": "좋아해요",
+        "full_sentence": "이 음식을 좋아해요?",
+        "full_sentence_en": "Do you like this food?",
+        "options": [
+          "좋아해요",
+          "좋아하다",
+          "좋아합니다",
+          "좋아하고"
+        ]
+      },
+      "notes": "Unlike English, Korean does NOT rearrange word order for questions — you don't need a 'do' or 'does'. The sentence structure is identical to a statement; only the intonation (spoken) or question mark (written) changes. Answers use 네 (yes) or 아니요 (no)."
+    }
+  ],
+  "조사 (Particles)": [
+    {
+      "pattern": "은/는",
+      "meaning": "topic marker",
+      "explanation": "은/는 marks the topic of the sentence — what you are talking about. Use 은 after a consonant and 는 after a vowel. It often translates loosely as 'as for...' and is used to introduce a topic or contrast two things.",
+      "examples": [
+        {
+          "korean": "저는 학생이에요.",
+          "english": "I am a student."
+        },
+        {
+          "korean": "날씨는 좋아요.",
+          "english": "The weather is good."
+        },
+        {
+          "korean": "고기는 안 먹어요.",
+          "english": "As for meat, I don't eat it."
+        }
+      ],
+      "drill": {
+        "prompt": "오늘_____ 날씨가 좋아요.",
+        "answer": "은",
+        "full_sentence": "오늘은 날씨가 좋아요.",
+        "full_sentence_en": "Today, the weather is good.",
+        "options": [
+          "은",
+          "는",
+          "이",
+          "을"
+        ]
+      },
+      "notes": "은/는 vs 이/가 is one of the hardest distinctions for beginners. As a rule of thumb: 은/는 is for known or contrasted information ('As for me...'), while 이/가 introduces new information or answers 'who/what'. Don't overthink it at first — exposure will build intuition."
+    },
+    {
+      "pattern": "이/가",
+      "meaning": "subject marker",
+      "explanation": "이/가 marks the grammatical subject of a sentence. Use 이 after a consonant and 가 after a vowel. It is used when introducing new information, emphasizing the subject, or in descriptive/existence sentences.",
+      "examples": [
+        {
+          "korean": "비가 와요.",
+          "english": "It is raining. (Rain comes.)"
+        },
+        {
+          "korean": "누가 왔어요?",
+          "english": "Who came?"
+        },
+        {
+          "korean": "이 책이 재미있어요.",
+          "english": "This book is interesting."
+        }
+      ],
+      "drill": {
+        "prompt": "물_____ 필요해요.",
+        "answer": "이",
+        "full_sentence": "물이 필요해요.",
+        "full_sentence_en": "I need water.",
+        "options": [
+          "이",
+          "가",
+          "을",
+          "는"
+        ]
+      },
+      "notes": "이/가 is commonly used with 있어요/없어요 and adjective sentences. After question words like 누구 (who) and 뭐 (what), always use 가: 누가 했어요? (Who did it?). Remember: 이 after consonant (물이), 가 after vowel (커피가)."
+    },
+    {
+      "pattern": "을/를",
+      "meaning": "object marker",
+      "explanation": "을/를 marks the direct object of a verb — the thing being acted upon. Use 을 after a consonant and 를 after a vowel. It answers the question 'what?' in relation to the verb.",
+      "examples": [
+        {
+          "korean": "밥을 먹어요.",
+          "english": "I eat rice."
+        },
+        {
+          "korean": "음악을 들어요.",
+          "english": "I listen to music."
+        },
+        {
+          "korean": "커피를 마셔요.",
+          "english": "I drink coffee."
+        }
+      ],
+      "drill": {
+        "prompt": "저는 영화_____ 봐요.",
+        "answer": "를",
+        "full_sentence": "저는 영화를 봐요.",
+        "full_sentence_en": "I watch a movie.",
+        "options": [
+          "를",
+          "을",
+          "가",
+          "는"
+        ]
+      },
+      "notes": "In casual speech, 을/를 is often dropped: 밥 먹어요 instead of 밥을 먹어요. However, for beginners, practicing with the particle helps you internalize correct sentence structure. Use 을 after consonant (밥을), 를 after vowel (커피를)."
+    },
+    {
+      "pattern": "에",
+      "meaning": "at / in / on / to (location or time)",
+      "explanation": "에 marks a location where something exists or a destination you are going to. It is also used with time expressions. It does NOT change based on the preceding syllable.",
+      "examples": [
+        {
+          "korean": "학교에 가요.",
+          "english": "I go to school."
+        },
+        {
+          "korean": "집에 있어요.",
+          "english": "I am at home."
+        },
+        {
+          "korean": "세 시에 만나요.",
+          "english": "Let's meet at three o'clock."
+        }
+      ],
+      "drill": {
+        "prompt": "도서관_____ 책이 많아요.",
+        "answer": "에",
+        "full_sentence": "도서관에 책이 많아요.",
+        "full_sentence_en": "There are many books in the library.",
+        "options": [
+          "에",
+          "에서",
+          "를",
+          "은"
+        ]
+      },
+      "notes": "에 vs 에서 is a key distinction. Use 에 for static location (existence) and destination (going to): 집에 있어요, 학교에 가요. Use 에서 for where an action takes place. Also, 에 is used for time: 아침에 (in the morning), 월요일에 (on Monday)."
+    },
+    {
+      "pattern": "에서",
+      "meaning": "at / in (action location); from",
+      "explanation": "에서 marks the location where an action takes place. Unlike 에 (static location/destination), 에서 is used when someone is actively doing something at that place. It can also mean 'from' a place.",
+      "examples": [
+        {
+          "korean": "도서관에서 공부해요.",
+          "english": "I study at the library."
+        },
+        {
+          "korean": "식당에서 밥을 먹어요.",
+          "english": "I eat at a restaurant."
+        },
+        {
+          "korean": "한국에서 왔어요.",
+          "english": "I came from Korea."
+        }
+      ],
+      "drill": {
+        "prompt": "카페_____ 커피를 마셔요.",
+        "answer": "에서",
+        "full_sentence": "카페에서 커피를 마셔요.",
+        "full_sentence_en": "I drink coffee at the cafe.",
+        "options": [
+          "에서",
+          "에",
+          "을",
+          "로"
+        ]
+      },
+      "notes": "Remember this pair: 집에 있어요 (I am at home — existence uses 에) vs 집에서 일해요 (I work at home — action uses 에서). If the verb involves doing something, use 에서. If it's about being somewhere or going somewhere, use 에."
+    },
+    {
+      "pattern": "도",
+      "meaning": "also / too",
+      "explanation": "도 means 'also' or 'too' and replaces the particles 은/는, 이/가, or 을/를 — it does not stack on top of them. Simply attach 도 directly to the noun.",
+      "examples": [
+        {
+          "korean": "저도 학생이에요.",
+          "english": "I am also a student."
+        },
+        {
+          "korean": "커피도 좋아해요.",
+          "english": "I like coffee too."
+        },
+        {
+          "korean": "여기도 예뻐요.",
+          "english": "Here is pretty too."
+        }
+      ],
+      "drill": {
+        "prompt": "저_____ 한국어를 공부해요.",
+        "answer": "도",
+        "full_sentence": "저도 한국어를 공부해요.",
+        "full_sentence_en": "I also study Korean.",
+        "options": [
+          "도",
+          "는",
+          "가",
+          "를"
+        ]
+      },
+      "notes": "A very common mistake is stacking particles: 저는도 (wrong) — it should be 저도. 도 replaces subject/topic/object markers entirely. Think of it as a substitute, not an addition."
+    },
+    {
+      "pattern": "의",
+      "meaning": "possessive 'of'",
+      "explanation": "의 shows possession, similar to 's or 'of' in English. It connects two nouns where the first noun owns or is related to the second. It is pronounced as 에 in casual speech.",
+      "examples": [
+        {
+          "korean": "저의 이름은 민수예요.",
+          "english": "My name is Minsu."
+        },
+        {
+          "korean": "한국의 음식은 맛있어요.",
+          "english": "Korean food is delicious."
+        },
+        {
+          "korean": "친구의 집에 가요.",
+          "english": "I go to my friend's house."
+        }
+      ],
+      "drill": {
+        "prompt": "이것은 누구_____ 가방이에요?",
+        "answer": "의",
+        "full_sentence": "이것은 누구의 가방이에요?",
+        "full_sentence_en": "Whose bag is this?",
+        "options": [
+          "의",
+          "에",
+          "가",
+          "와"
+        ]
+      },
+      "notes": "In everyday speech, 의 is often dropped, especially with pronouns: 내 (나의 shortened), 제 (저의 shortened). So 저의 가방 and 제 가방 both mean 'my bag'. You'll hear the pronunciation 에 more often than 의 in spoken Korean."
+    },
+    {
+      "pattern": "와/과, (이)랑, 하고",
+      "meaning": "and / with",
+      "explanation": "These all mean 'and' or 'with' when connecting nouns. 와 (after vowel) / 과 (after consonant) is more formal. 하고 is standard. (이)랑 is casual. They are largely interchangeable in meaning.",
+      "examples": [
+        {
+          "korean": "빵과 우유를 먹어요.",
+          "english": "I eat bread and milk."
+        },
+        {
+          "korean": "친구하고 같이 가요.",
+          "english": "I go together with a friend."
+        },
+        {
+          "korean": "사과랑 바나나를 샀어요.",
+          "english": "I bought apples and bananas."
+        }
+      ],
+      "drill": {
+        "prompt": "저는 친구_____ 영화를 봐요.",
+        "answer": "하고",
+        "full_sentence": "저는 친구하고 영화를 봐요.",
+        "full_sentence_en": "I watch a movie with a friend.",
+        "options": [
+          "하고",
+          "하지",
+          "에서",
+          "으로"
+        ]
+      },
+      "notes": "For beginners, 하고 is the safest choice because it doesn't change based on the preceding syllable. (이)랑 is very casual and common in spoken Korean. 와/과 appears more in writing and formal speech. All three are grammatically correct in most situations."
+    }
+  ],
+  "동사 시제 (Verb Tenses)": [
+    {
+      "pattern": "-았/었어요",
+      "meaning": "past tense (polite)",
+      "explanation": "To make past tense, add -았어요 if the last vowel of the stem is ㅏ or ㅗ, and -었어요 for all other vowels. 하다 verbs become 했어요. The same vowel harmony rules as present tense apply.",
+      "examples": [
+        {
+          "korean": "어제 영화를 봤어요.",
+          "english": "I watched a movie yesterday."
+        },
+        {
+          "korean": "아침을 먹었어요.",
+          "english": "I ate breakfast."
+        },
+        {
+          "korean": "한국어를 공부했어요.",
+          "english": "I studied Korean."
+        }
+      ],
+      "drill": {
+        "prompt": "어제 친구를 _____.",
+        "answer": "만났어요",
+        "full_sentence": "어제 친구를 만났어요.",
+        "full_sentence_en": "I met a friend yesterday.",
+        "options": [
+          "만났어요",
+          "만나요",
+          "만날 거예요",
+          "만나고"
+        ]
+      },
+      "notes": "The vowel contraction rules are the same as present tense: 가다→갔어요, 오다→왔어요, 마시다→마셨어요. Common time words used with past tense: 어제 (yesterday), 지난주 (last week), 아까 (earlier). Don't forget: 하다→했어요 is irregular and must be memorized."
+    },
+    {
+      "pattern": "-을/ㄹ 거예요",
+      "meaning": "will / going to (future tense)",
+      "explanation": "This expresses future plans or intentions. Add -을 거예요 after a consonant-ending stem and -ㄹ 거예요 after a vowel-ending stem. It is the most common way to talk about the future in casual polite speech.",
+      "examples": [
+        {
+          "korean": "내일 학교에 갈 거예요.",
+          "english": "I will go to school tomorrow."
+        },
+        {
+          "korean": "주말에 쉴 거예요.",
+          "english": "I will rest on the weekend."
+        },
+        {
+          "korean": "저녁에 친구를 만날 거예요.",
+          "english": "I will meet a friend in the evening."
+        }
+      ],
+      "drill": {
+        "prompt": "주말에 뭐 _____?",
+        "answer": "할 거예요",
+        "full_sentence": "주말에 뭐 할 거예요?",
+        "full_sentence_en": "What will you do on the weekend?",
+        "options": [
+          "할 거예요",
+          "했어요",
+          "해요",
+          "하고 있어요"
+        ]
+      },
+      "notes": "A common mistake is forgetting the space: it's 갈 거예요 (three parts: stem+ㄹ, 거, 예요). Don't confuse this with -(으)ㄹ게요, which is a promise/commitment ('I will do it for you'). -을/ㄹ 거예요 is a neutral statement about a future plan."
+    },
+    {
+      "pattern": "-고 있어요",
+      "meaning": "is doing (present progressive)",
+      "explanation": "This form expresses an action that is currently in progress, similar to English '-ing'. Attach -고 있어요 directly to the verb stem. It works with all verbs without any stem changes.",
+      "examples": [
+        {
+          "korean": "지금 밥을 먹고 있어요.",
+          "english": "I am eating now."
+        },
+        {
+          "korean": "음악을 듣고 있어요.",
+          "english": "I am listening to music."
+        },
+        {
+          "korean": "친구를 기다리고 있어요.",
+          "english": "I am waiting for a friend."
+        }
+      ],
+      "drill": {
+        "prompt": "지금 책을 _____.",
+        "answer": "읽고 있어요",
+        "full_sentence": "지금 책을 읽고 있어요.",
+        "full_sentence_en": "I am reading a book now.",
+        "options": [
+          "읽고 있어요",
+          "읽었어요",
+          "읽을 거예요",
+          "읽어요"
+        ]
+      },
+      "notes": "Unlike English, Korean doesn't require the progressive form as often. 지금 공부해요 and 지금 공부하고 있어요 are both natural for 'I'm studying now'. The progressive form emphasizes that the action is happening right at this moment. This pattern is easy because there are no stem changes — just add -고 있어요."
+    },
+    {
+      "pattern": "-고 싶어요",
+      "meaning": "want to",
+      "explanation": "Attach -고 싶어요 to a verb stem to express a desire to do something. It means 'I want to (verb)'. It is only used for your own desires; for third person, use -고 싶어해요.",
+      "examples": [
+        {
+          "korean": "한국에 가고 싶어요.",
+          "english": "I want to go to Korea."
+        },
+        {
+          "korean": "물을 마시고 싶어요.",
+          "english": "I want to drink water."
+        },
+        {
+          "korean": "한국어를 배우고 싶어요.",
+          "english": "I want to learn Korean."
+        }
+      ],
+      "drill": {
+        "prompt": "맛있는 음식을 _____.",
+        "answer": "먹고 싶어요",
+        "full_sentence": "맛있는 음식을 먹고 싶어요.",
+        "full_sentence_en": "I want to eat delicious food.",
+        "options": [
+          "먹고 싶어요",
+          "먹고 있어요",
+          "먹었어요",
+          "먹을 거예요"
+        ]
+      },
+      "notes": "For past desire ('wanted to'), say -고 싶었어요. For questions, just raise intonation: 뭐 먹고 싶어요? (What do you want to eat?). Remember: -고 싶어요 is only for 'I want to'. For 'he/she wants to', use -고 싶어해요."
+    },
+    {
+      "pattern": "-지 마세요",
+      "meaning": "please don't",
+      "explanation": "This is a polite way to tell someone not to do something. Attach -지 마세요 directly to the verb stem. It is the negative imperative in polite form.",
+      "examples": [
+        {
+          "korean": "여기서 사진을 찍지 마세요.",
+          "english": "Please don't take pictures here."
+        },
+        {
+          "korean": "걱정하지 마세요.",
+          "english": "Please don't worry."
+        },
+        {
+          "korean": "늦지 마세요.",
+          "english": "Please don't be late."
+        }
+      ],
+      "drill": {
+        "prompt": "여기서 담배를 피우지 _____.",
+        "answer": "마세요",
+        "full_sentence": "여기서 담배를 피우지 마세요.",
+        "full_sentence_en": "Please don't smoke here.",
+        "options": [
+          "마세요",
+          "않아요",
+          "못해요",
+          "싶어요"
+        ]
+      },
+      "notes": "걱정하지 마세요 (Don't worry) is one of the most common expressions in Korean. Don't confuse this with -지 않아요 (negative statement) — 마세요 is a command/request not to do something, while 않아요 is describing that something doesn't happen."
+    }
+  ],
+  "연결 (Connectors)": [
+    {
+      "pattern": "-고",
+      "meaning": "and (connecting actions/states)",
+      "explanation": "Use -고 to connect two actions or descriptions in sequence, meaning 'and' or 'and then'. Attach it directly to the verb stem. There is no stem change needed, making it one of the easiest connectors.",
+      "examples": [
+        {
+          "korean": "아침을 먹고 학교에 가요.",
+          "english": "I eat breakfast and go to school."
+        },
+        {
+          "korean": "이 방은 크고 밝아요.",
+          "english": "This room is big and bright."
+        },
+        {
+          "korean": "샤워하고 잤어요.",
+          "english": "I showered and slept."
+        }
+      ],
+      "drill": {
+        "prompt": "커피를 마시_____ 일해요.",
+        "answer": "고",
+        "full_sentence": "커피를 마시고 일해요.",
+        "full_sentence_en": "I drink coffee and work.",
+        "options": [
+          "고",
+          "지만",
+          "서",
+          "면"
+        ]
+      },
+      "notes": "-고 simply lists or sequences actions without implying cause/effect. For 'because', use -아/어서 or -(으)니까 instead. The tense is only marked on the final verb: 먹고 갔어요 (ate and went), not 먹었고 갔어요."
+    },
+    {
+      "pattern": "-지만",
+      "meaning": "but / however",
+      "explanation": "Use -지만 to contrast two clauses, meaning 'but' or 'however'. Attach it directly to the verb or adjective stem. No stem changes are needed.",
+      "examples": [
+        {
+          "korean": "비싸지만 맛있어요.",
+          "english": "It's expensive but delicious."
+        },
+        {
+          "korean": "피곤하지만 공부해야 해요.",
+          "english": "I'm tired but I have to study."
+        },
+        {
+          "korean": "한국어는 어렵지만 재미있어요.",
+          "english": "Korean is difficult but interesting."
+        }
+      ],
+      "drill": {
+        "prompt": "날씨가 춥_____ 산책할 거예요.",
+        "answer": "지만",
+        "full_sentence": "날씨가 춥지만 산책할 거예요.",
+        "full_sentence_en": "The weather is cold but I will take a walk.",
+        "options": [
+          "지만",
+          "고",
+          "아서",
+          "으면"
+        ]
+      },
+      "notes": "-지만 is the simplest way to say 'but' in Korean and is always safe to use. There is a more formal version, -(으)나, and a spoken version, -는데, but -지만 is the best starting point for beginners."
+    },
+    {
+      "pattern": "-아/어서",
+      "meaning": "because / so; and then",
+      "explanation": "This connector has two uses: expressing a reason ('because') or a sequential action ('and then'). The same vowel harmony rules apply: -아서 after ㅏ/ㅗ stems, -어서 after others, 하다 becomes 해서.",
+      "examples": [
+        {
+          "korean": "배가 아파서 병원에 갔어요.",
+          "english": "Because my stomach hurt, I went to the hospital."
+        },
+        {
+          "korean": "만나서 반갑습니다.",
+          "english": "Nice to meet you. (Having met you, I'm glad.)"
+        },
+        {
+          "korean": "비가 와서 우산을 가져갔어요.",
+          "english": "Because it rained, I took an umbrella."
+        }
+      ],
+      "drill": {
+        "prompt": "피곤_____ 일찍 잤어요.",
+        "answer": "해서",
+        "full_sentence": "피곤해서 일찍 잤어요.",
+        "full_sentence_en": "Because I was tired, I slept early.",
+        "options": [
+          "해서",
+          "하고",
+          "하지만",
+          "하면"
+        ]
+      },
+      "notes": "Important rule: you cannot use past tense (-았/었-) in the -아/어서 clause. Say 배가 아파서 (not 배가 아팠어서). The tense is only marked on the final verb. Also, -아/어서 cannot be used with imperative or suggestive endings — use -(으)니까 instead."
+    },
+    {
+      "pattern": "-(으)니까",
+      "meaning": "because / since (reason)",
+      "explanation": "This also means 'because' but is stronger and more subjective than -아/어서. Use -으니까 after a consonant stem and -니까 after a vowel stem. Unlike -아/어서, it CAN be used with commands and suggestions.",
+      "examples": [
+        {
+          "korean": "시간이 없으니까 빨리 가세요.",
+          "english": "Because there's no time, please go quickly."
+        },
+        {
+          "korean": "맛있으니까 많이 드세요.",
+          "english": "It's delicious, so please eat a lot."
+        },
+        {
+          "korean": "비가 오니까 우산을 가져가세요.",
+          "english": "Because it's raining, please take an umbrella."
+        }
+      ],
+      "drill": {
+        "prompt": "날씨가 좋_____ 산책해요.",
+        "answer": "으니까",
+        "full_sentence": "날씨가 좋으니까 산책해요.",
+        "full_sentence_en": "Because the weather is nice, let's take a walk.",
+        "options": [
+          "으니까",
+          "아서",
+          "지만",
+          "으면"
+        ]
+      },
+      "notes": "Key difference: -아/어서 states an objective reason, while -(으)니까 gives a personal or subjective reason and can be used with commands (-세요) and suggestions (-(으)ㄹ까요?). If the sentence ends with 'please do X', use -(으)니까 for the reason."
+    },
+    {
+      "pattern": "-(으)면",
+      "meaning": "if / when",
+      "explanation": "This expresses a condition ('if') or a general timing ('when'). Use -으면 after a consonant-ending stem and -면 after a vowel-ending stem. It is one of the most useful grammar patterns in Korean.",
+      "examples": [
+        {
+          "korean": "시간이 있으면 같이 가요.",
+          "english": "If you have time, let's go together."
+        },
+        {
+          "korean": "비가 오면 집에 있을 거예요.",
+          "english": "If it rains, I will stay home."
+        },
+        {
+          "korean": "한국에 가면 뭐 하고 싶어요?",
+          "english": "If you go to Korea, what do you want to do?"
+        }
+      ],
+      "drill": {
+        "prompt": "배가 고프_____ 이거 드세요.",
+        "answer": "면",
+        "full_sentence": "배가 고프면 이거 드세요.",
+        "full_sentence_en": "If you are hungry, please eat this.",
+        "options": [
+          "면",
+          "으면",
+          "니까",
+          "지만"
+        ]
+      },
+      "notes": "-(으)면 is neutral and versatile. For hypothetical situations, you can add 만약 at the start: 만약 시간이 있으면... (If by chance you have time...). A common fixed expression: 괜찮으면 (if it's okay). Note: 고프다 ends in a vowel stem, so it's 고프면 (not 고프으면)."
+    }
+  ],
+  "수량 & 지시 (Quantity & Demonstratives)": [
+    {
+      "pattern": "이/그/저",
+      "meaning": "this / that / that over there",
+      "explanation": "These are demonstrative words placed before nouns. 이 means 'this' (near the speaker), 그 means 'that' (near the listener or previously mentioned), and 저 means 'that over there' (far from both). They are always followed by a noun.",
+      "examples": [
+        {
+          "korean": "이 책은 재미있어요.",
+          "english": "This book is interesting."
+        },
+        {
+          "korean": "그 사람은 누구예요?",
+          "english": "Who is that person?"
+        },
+        {
+          "korean": "저 건물이 학교예요.",
+          "english": "That building over there is the school."
+        }
+      ],
+      "drill": {
+        "prompt": "_____ 가방은 제 거예요.",
+        "answer": "이",
+        "full_sentence": "이 가방은 제 거예요.",
+        "full_sentence_en": "This bag is mine.",
+        "options": [
+          "이",
+          "그",
+          "저",
+          "어느"
+        ]
+      },
+      "notes": "Don't confuse 이/그/저 (before nouns) with 이것/그것/저것 (standalone pronouns meaning 'this thing/that thing'). 그 is also used for things previously mentioned in conversation, similar to 'the' in English. You'll hear 이거/그거/저거 as casual short forms of 이것/그것/저것."
+    },
+    {
+      "pattern": "숫자 + counter",
+      "meaning": "number + counter (counting system)",
+      "explanation": "Korean has two number systems: native Korean (하나, 둘, 셋...) and Sino-Korean (일, 이, 삼...). Counters are special words attached to numbers to count specific things. Native Korean numbers are used with most counters for everyday objects.",
+      "examples": [
+        {
+          "korean": "커피 두 잔 주세요.",
+          "english": "Please give me two cups of coffee."
+        },
+        {
+          "korean": "사과 세 개 샀어요.",
+          "english": "I bought three apples."
+        },
+        {
+          "korean": "학생이 다섯 명 있어요.",
+          "english": "There are five students."
+        }
+      ],
+      "drill": {
+        "prompt": "물 _____ 주세요.",
+        "answer": "한 잔",
+        "full_sentence": "물 한 잔 주세요.",
+        "full_sentence_en": "Please give me one glass of water.",
+        "options": [
+          "한 잔",
+          "일 잔",
+          "하나 잔",
+          "한 개"
+        ]
+      },
+      "notes": "Key counters to memorize: 개 (general objects), 명/사람 (people), 잔 (cups/glasses), 마리 (animals), 권 (books), 벌 (clothing). Native Korean numbers 1-4 change form before counters: 하나→한, 둘→두, 셋→세, 넷→네. Sino-Korean numbers are used for dates, money, phone numbers, and minutes."
+    },
+    {
+      "pattern": "안 + verb",
+      "meaning": "not / don't (negation)",
+      "explanation": "Place 안 directly before the verb to negate it, meaning 'not' or 'don't'. This is the simplest way to make negative sentences in Korean. For 하다 compound verbs, 안 goes between the noun and 하다.",
+      "examples": [
+        {
+          "korean": "오늘은 안 바빠요.",
+          "english": "I'm not busy today."
+        },
+        {
+          "korean": "커피를 안 마셔요.",
+          "english": "I don't drink coffee."
+        },
+        {
+          "korean": "운동을 안 해요.",
+          "english": "I don't exercise."
+        }
+      ],
+      "drill": {
+        "prompt": "저는 아침을 _____ 먹어요.",
+        "answer": "안",
+        "full_sentence": "저는 아침을 안 먹어요.",
+        "full_sentence_en": "I don't eat breakfast.",
+        "options": [
+          "안",
+          "못",
+          "없",
+          "지"
+        ]
+      },
+      "notes": "For 하다 verbs, 안 goes before 하다, not before the whole word: 공부 안 해요 (not 안 공부해요). 안 expresses a choice not to do something, while 못 expresses inability. There is also a longer form -지 않아요 which has the same meaning."
+    },
+    {
+      "pattern": "못 + verb",
+      "meaning": "cannot / unable to",
+      "explanation": "Place 못 before a verb to express inability or impossibility. It means 'cannot' or 'is unable to'. Like 안, for 하다 compound verbs, 못 goes between the noun and 하다.",
+      "examples": [
+        {
+          "korean": "한국어를 못 읽어요.",
+          "english": "I can't read Korean."
+        },
+        {
+          "korean": "어제 못 잤어요.",
+          "english": "I couldn't sleep yesterday."
+        },
+        {
+          "korean": "요리를 못 해요.",
+          "english": "I can't cook."
+        }
+      ],
+      "drill": {
+        "prompt": "매운 음식을 _____ 먹어요.",
+        "answer": "못",
+        "full_sentence": "매운 음식을 못 먹어요.",
+        "full_sentence_en": "I can't eat spicy food.",
+        "options": [
+          "못",
+          "안",
+          "잘",
+          "많이"
+        ]
+      },
+      "notes": "못 implies inability (can't because of circumstances or lack of skill), while 안 implies choice (don't/won't). Compare: 안 가요 (I'm choosing not to go) vs 못 가요 (I can't go). 못 is not used with adjectives — you can't say 못 예뻐요; use 안 예뻐요 instead."
+    },
+    {
+      "pattern": "-지 않아요",
+      "meaning": "don't / doesn't (negative ending)",
+      "explanation": "This is the long-form negation, equivalent to 안 + verb. Attach -지 않아요 to the verb stem. It sounds slightly more formal or emphatic than the short form 안.",
+      "examples": [
+        {
+          "korean": "오늘은 춥지 않아요.",
+          "english": "It's not cold today."
+        },
+        {
+          "korean": "그 영화는 재미있지 않아요.",
+          "english": "That movie is not interesting."
+        },
+        {
+          "korean": "주말에 일하지 않아요.",
+          "english": "I don't work on weekends."
+        }
+      ],
+      "drill": {
+        "prompt": "이 음식은 맵지 _____.",
+        "answer": "않아요",
+        "full_sentence": "이 음식은 맵지 않아요.",
+        "full_sentence_en": "This food is not spicy.",
+        "options": [
+          "않아요",
+          "없어요",
+          "마세요",
+          "몰라요"
+        ]
+      },
+      "notes": "안 먹어요 and 먹지 않아요 mean the same thing. The -지 않아요 form is preferred in writing and can sound more deliberate. For past tense, change 않아요 to 않았어요: 가지 않았어요 (didn't go). This form is also easier with long 하다 compound verbs: 운동하지 않아요 (clearer than 운동을 안 해요)."
+    }
+  ],
+  "요청 & 제안 (Requests & Suggestions)": [
+    {
+      "pattern": "-아/어 주세요",
+      "meaning": "please do (for me)",
+      "explanation": "This is used to politely ask someone to do something for you. Attach the -아/어 form of the verb followed by 주세요. It adds a nuance of doing the action as a favor or service.",
+      "examples": [
+        {
+          "korean": "사진을 찍어 주세요.",
+          "english": "Please take a photo (for me)."
+        },
+        {
+          "korean": "천천히 말해 주세요.",
+          "english": "Please speak slowly."
+        },
+        {
+          "korean": "이름을 써 주세요.",
+          "english": "Please write your name."
+        }
+      ],
+      "drill": {
+        "prompt": "문을 열어 _____.",
+        "answer": "주세요",
+        "full_sentence": "문을 열어 주세요.",
+        "full_sentence_en": "Please open the door (for me).",
+        "options": [
+          "주세요",
+          "보세요",
+          "마세요",
+          "있어요"
+        ]
+      },
+      "notes": "This is different from a plain command (-(으)세요). 열어 주세요 implies 'open it for me', while 여세요 is simply 'open it'. Use -아/어 주세요 when asking for a favor — it sounds softer and more polite. Very useful in restaurants, shops, and daily requests."
+    },
+    {
+      "pattern": "-(으)세요",
+      "meaning": "please do / honorific polite imperative",
+      "explanation": "This ending is used for polite commands and instructions, and also as an honorific present tense for someone you respect. Use -으세요 after consonant stems and -세요 after vowel stems.",
+      "examples": [
+        {
+          "korean": "여기 앉으세요.",
+          "english": "Please sit here."
+        },
+        {
+          "korean": "안녕히 가세요.",
+          "english": "Goodbye. (Please go well.)"
+        },
+        {
+          "korean": "어머니가 요리하세요.",
+          "english": "My mother cooks. (honorific)"
+        }
+      ],
+      "drill": {
+        "prompt": "천천히 드_____.",
+        "answer": "세요",
+        "full_sentence": "천천히 드세요.",
+        "full_sentence_en": "Please eat slowly. (polite/honorific)",
+        "options": [
+          "세요",
+          "어요",
+          "었어요",
+          "을까요"
+        ]
+      },
+      "notes": "-(으)세요 has two uses: giving polite instructions (앉으세요 = please sit) and talking about someone you respect (선생님이 오세요 = the teacher comes). Some verbs have special honorific forms: 먹다→드시다 (드세요), 자다→주무시다 (주무세요), 있다→계시다 (계세요)."
+    },
+    {
+      "pattern": "-아/어도 돼요?",
+      "meaning": "May I? / Is it okay to?",
+      "explanation": "Use this to ask or give permission. Attach -아/어도 돼요 to the verb stem. As a question it means 'May I?' or 'Is it okay if I?'. As a statement, 돼요 confirms permission and 안 돼요 denies it.",
+      "examples": [
+        {
+          "korean": "여기 앉아도 돼요?",
+          "english": "May I sit here?"
+        },
+        {
+          "korean": "사진을 찍어도 돼요?",
+          "english": "May I take a photo?"
+        },
+        {
+          "korean": "내일 가도 돼요.",
+          "english": "It's okay to go tomorrow."
+        }
+      ],
+      "drill": {
+        "prompt": "이거 먹어도 _____?",
+        "answer": "돼요",
+        "full_sentence": "이거 먹어도 돼요?",
+        "full_sentence_en": "May I eat this?",
+        "options": [
+          "돼요",
+          "줘요",
+          "해요",
+          "봐요"
+        ]
+      },
+      "notes": "To say 'you can't / you may not', use -아/어도 안 돼요 or -(으)면 안 돼요: 여기서 담배를 피우면 안 돼요 (You can't smoke here). Note the spelling: 돼요 (O), not 되요 (X). This is one of the most common spelling mistakes even native Korean speakers make."
+    },
+    {
+      "pattern": "-(으)ㄹ 수 있어요/없어요",
+      "meaning": "can / can't (ability/possibility)",
+      "explanation": "This expresses ability or possibility. Use -을 수 있어요 after a consonant-ending stem and -ㄹ 수 있어요 after a vowel-ending stem. Replace 있어요 with 없어요 for 'cannot'.",
+      "examples": [
+        {
+          "korean": "한국어를 할 수 있어요.",
+          "english": "I can speak Korean."
+        },
+        {
+          "korean": "여기서 수영할 수 있어요?",
+          "english": "Can I swim here?"
+        },
+        {
+          "korean": "오늘은 갈 수 없어요.",
+          "english": "I can't go today."
+        }
+      ],
+      "drill": {
+        "prompt": "저는 피아노를 칠 수 _____.",
+        "answer": "있어요",
+        "full_sentence": "저는 피아노를 칠 수 있어요.",
+        "full_sentence_en": "I can play the piano.",
+        "options": [
+          "있어요",
+          "없어요",
+          "해요",
+          "돼요"
+        ]
+      },
+      "notes": "This is more formal than 못: 못 해요 and 할 수 없어요 both mean 'can't do it', but the latter sounds more polished. The 수 in this pattern is a bound noun meaning 'way/means', so literally it means 'the way to do it exists/doesn't exist'. Always keep a space: 할 수 있어요 (not 할수있어요)."
+    },
+    {
+      "pattern": "-아/어야 해요",
+      "meaning": "must / have to",
+      "explanation": "This expresses obligation or necessity. Attach -아/어야 해요 to the verb stem using the standard vowel harmony rules. It translates as 'must', 'have to', or 'should'.",
+      "examples": [
+        {
+          "korean": "내일 일찍 일어나야 해요.",
+          "english": "I have to wake up early tomorrow."
+        },
+        {
+          "korean": "숙제를 해야 해요.",
+          "english": "I have to do homework."
+        },
+        {
+          "korean": "약을 먹어야 해요.",
+          "english": "I have to take medicine."
+        }
+      ],
+      "drill": {
+        "prompt": "지금 출발_____ 해요.",
+        "answer": "해야",
+        "full_sentence": "지금 출발해야 해요.",
+        "full_sentence_en": "I have to depart now.",
+        "options": [
+          "해야",
+          "하고",
+          "해서",
+          "하면"
+        ]
+      },
+      "notes": "For 'don't have to', use -지 않아도 돼요: 가지 않아도 돼요 (You don't have to go). Note this is different from -지 마세요 (don't do it — a prohibition). 해야 해요 has two 해's in a row, which feels odd at first but is correct: 숙제를 해야 해요 (I have to do homework)."
+    }
+  ],
+  "묘사 (Description)": [
+    {
+      "pattern": "-(으)ㄴ/는 + noun",
+      "meaning": "modifying nouns with adjectives/verbs",
+      "explanation": "Korean uses verb/adjective endings to modify nouns directly (like relative clauses). For adjectives: add -(으)ㄴ. For present-tense verbs: add -는. For past-tense verbs: add -(으)ㄴ. This is how Korean says 'the book I read' or 'a big house'.",
+      "examples": [
+        {
+          "korean": "예쁜 꽃을 샀어요.",
+          "english": "I bought a pretty flower."
+        },
+        {
+          "korean": "지금 읽는 책이 재미있어요.",
+          "english": "The book I'm reading now is interesting."
+        },
+        {
+          "korean": "어제 만난 사람이 선생님이에요.",
+          "english": "The person I met yesterday is a teacher."
+        }
+      ],
+      "drill": {
+        "prompt": "맛있_____ 음식을 먹고 싶어요.",
+        "answer": "는",
+        "full_sentence": "맛있는 음식을 먹고 싶어요.",
+        "full_sentence_en": "I want to eat delicious food.",
+        "options": [
+          "는",
+          "은",
+          "을",
+          "이"
+        ]
+      },
+      "notes": "This is one of the trickier grammar points for beginners. The key rule: adjectives use -(으)ㄴ (큰 집 = big house, 작은 가방 = small bag), action verbs use -는 for present (먹는 사람 = person who eats). Note: 있다/없다 use -는 (맛있는, 재미없는), not -(으)ㄴ."
+    },
+    {
+      "pattern": "-보다",
+      "meaning": "more than (comparison)",
+      "explanation": "Attach 보다 after a noun to create a comparison, meaning 'more than'. The thing being compared to gets 보다, and the sentence often includes 더 (more) before the adjective, though 더 is optional.",
+      "examples": [
+        {
+          "korean": "여름보다 겨울이 좋아요.",
+          "english": "I like winter more than summer."
+        },
+        {
+          "korean": "커피가 차보다 더 비싸요.",
+          "english": "Coffee is more expensive than tea."
+        },
+        {
+          "korean": "한국어가 영어보다 어려워요.",
+          "english": "Korean is harder than English."
+        }
+      ],
+      "drill": {
+        "prompt": "오늘이 어제_____ 더 추워요.",
+        "answer": "보다",
+        "full_sentence": "오늘이 어제보다 더 추워요.",
+        "full_sentence_en": "Today is colder than yesterday.",
+        "options": [
+          "보다",
+          "처럼",
+          "같이",
+          "까지"
+        ]
+      },
+      "notes": "Word order is flexible. Both 여름보다 겨울이 좋아요 and 겨울이 여름보다 좋아요 are correct and natural. 더 (more) is often included but not required — Korean speakers frequently drop it since 보다 already implies comparison. Don't add 더 with 제일/가장 (superlative)."
+    },
+    {
+      "pattern": "제일/가장",
+      "meaning": "the most (superlative)",
+      "explanation": "Place 제일 or 가장 before an adjective or verb to express the superlative ('the most'). 제일 is slightly more casual and common in speech, while 가장 is more neutral. They are interchangeable.",
+      "examples": [
+        {
+          "korean": "한국 음식 중에서 비빔밥이 제일 좋아요.",
+          "english": "Among Korean food, I like bibimbap the most."
+        },
+        {
+          "korean": "이 가방이 가장 비싸요.",
+          "english": "This bag is the most expensive."
+        },
+        {
+          "korean": "제일 좋아하는 색깔이 뭐예요?",
+          "english": "What is your favorite color?"
+        }
+      ],
+      "drill": {
+        "prompt": "우리 반에서 민수가 _____ 키가 커요.",
+        "answer": "제일",
+        "full_sentence": "우리 반에서 민수가 제일 키가 커요.",
+        "full_sentence_en": "In our class, Minsu is the tallest.",
+        "options": [
+          "제일",
+          "보다",
+          "더",
+          "많이"
+        ]
+      },
+      "notes": "A very useful expression: 제일 좋아하는 _____ (favorite _____). For example: 제일 좋아하는 음식 (favorite food). Don't use 더 (more) with 제일/가장 — it would be redundant. Use 중에서 (among) to specify the group: 친구 중에서 (among friends)."
+    },
+    {
+      "pattern": "-처럼/-같이",
+      "meaning": "like / similar to",
+      "explanation": "Attach 처럼 or 같이 after a noun to say 'like' or 'similar to'. Both are largely interchangeable, though 처럼 is more common in writing and 같이 is more common in casual speech.",
+      "examples": [
+        {
+          "korean": "배우처럼 예뻐요.",
+          "english": "She is pretty like an actress."
+        },
+        {
+          "korean": "아이같이 웃어요.",
+          "english": "He laughs like a child."
+        },
+        {
+          "korean": "오늘은 여름처럼 더워요.",
+          "english": "Today is hot like summer."
+        }
+      ],
+      "drill": {
+        "prompt": "그 사람은 천사_____ 착해요.",
+        "answer": "처럼",
+        "full_sentence": "그 사람은 천사처럼 착해요.",
+        "full_sentence_en": "That person is kind like an angel.",
+        "options": [
+          "처럼",
+          "보다",
+          "까지",
+          "부터"
+        ]
+      },
+      "notes": "같이 has two meanings: 'like/similar to' (noun + 같이) and 'together' (같이 가요 = let's go together). Context makes the meaning clear. 처럼 only means 'like/similar to', so it's unambiguous. A common expression: 나처럼 해 봐요 (Try doing it like me)."
+    }
+  ],
+  "유용한 표현 (Useful Expressions)": [
+    {
+      "pattern": "-(으)ㄹ까요?",
+      "meaning": "Shall we? / Shall I?",
+      "explanation": "Use this to make suggestions or ask someone's opinion about doing something together. Add -을까요 after a consonant-ending stem and -ㄹ까요 after a vowel-ending stem. It can mean 'shall we?' or 'shall I?'.",
+      "examples": [
+        {
+          "korean": "같이 점심을 먹을까요?",
+          "english": "Shall we eat lunch together?"
+        },
+        {
+          "korean": "창문을 열까요?",
+          "english": "Shall I open the window?"
+        },
+        {
+          "korean": "내일 만날까요?",
+          "english": "Shall we meet tomorrow?"
+        }
+      ],
+      "drill": {
+        "prompt": "커피를 마실_____?",
+        "answer": "까요",
+        "full_sentence": "커피를 마실까요?",
+        "full_sentence_en": "Shall we drink coffee?",
+        "options": [
+          "까요",
+          "거예요",
+          "수 있어요",
+          "고 싶어요"
+        ]
+      },
+      "notes": "This is softer and more polite than a direct suggestion. It invites the other person's input. For responding: 네, 좋아요! (Yes, sounds good!) or 아니요, 괜찮아요 (No, it's okay). Don't confuse this with -(으)ㄹ 거예요 (future tense statement) — -(으)ㄹ까요 is always a question."
+    },
+    {
+      "pattern": "-(으)러 가다/오다",
+      "meaning": "go/come in order to",
+      "explanation": "This expresses purpose of movement — going or coming somewhere to do something. Use -으러 after consonant stems and -러 after vowel stems, followed by 가다 (go) or 오다 (come).",
+      "examples": [
+        {
+          "korean": "밥을 먹으러 식당에 가요.",
+          "english": "I go to a restaurant to eat."
+        },
+        {
+          "korean": "한국어를 배우러 한국에 왔어요.",
+          "english": "I came to Korea to learn Korean."
+        },
+        {
+          "korean": "친구를 만나러 카페에 가요.",
+          "english": "I go to a cafe to meet a friend."
+        }
+      ],
+      "drill": {
+        "prompt": "운동하_____ 공원에 가요.",
+        "answer": "러",
+        "full_sentence": "운동하러 공원에 가요.",
+        "full_sentence_en": "I go to the park to exercise.",
+        "options": [
+          "러",
+          "으러",
+          "고",
+          "면"
+        ]
+      },
+      "notes": "This pattern can ONLY be used with movement verbs (가다, 오다, 다니다, etc.). You cannot say 먹으러 공부해요 (X) — the second verb must be about going or coming. For general purpose without movement, use -(으)려고: 건강하려고 운동해요 (I exercise in order to be healthy)."
+    },
+    {
+      "pattern": "-아/어 보다",
+      "meaning": "try doing",
+      "explanation": "This expresses trying or experiencing something. Attach the -아/어 form of the verb followed by 보다 (to see). It literally means 'do and see', conveying the idea of trying something out.",
+      "examples": [
+        {
+          "korean": "한번 먹어 보세요.",
+          "english": "Please try eating it."
+        },
+        {
+          "korean": "이 옷을 입어 봐도 돼요?",
+          "english": "May I try on these clothes?"
+        },
+        {
+          "korean": "한국 드라마를 봐 봤어요.",
+          "english": "I tried watching a Korean drama."
+        }
+      ],
+      "drill": {
+        "prompt": "이 케이크를 먹어 _____.",
+        "answer": "보세요",
+        "full_sentence": "이 케이크를 먹어 보세요.",
+        "full_sentence_en": "Please try this cake.",
+        "options": [
+          "보세요",
+          "주세요",
+          "봐요",
+          "볼까요"
+        ]
+      },
+      "notes": "한번 (once) is often added for emphasis: 한번 해 보세요 (Give it a try). For past tense ('I have tried'), use -아/어 봤어요: 한국에 가 봤어요 (I have been to Korea / I tried going to Korea). This pattern is very common and natural in everyday Korean — use it freely when suggesting someone try something."
+    }
+  ],
+  "시간 표현 (Time Expressions)": [
+    {
+      "pattern": "-기 전에",
+      "meaning": "before doing",
+      "explanation": "Attach -기 전에 to a verb stem to express 'before doing' something. The verb before 전에 is always in its base stem form (no tense marking). 전에 literally means 'before', and -기 turns the verb into a noun clause.",
+      "examples": [
+        {
+          "korean": "자기 전에 이를 닦아요.",
+          "english": "I brush my teeth before sleeping."
+        },
+        {
+          "korean": "밥을 먹기 전에 손을 씻어요.",
+          "english": "I wash my hands before eating."
+        },
+        {
+          "korean": "수업이 시작하기 전에 도착했어요.",
+          "english": "I arrived before class started."
+        }
+      ],
+      "drill": {
+        "prompt": "출발하_____ 전에 확인하세요.",
+        "answer": "기",
+        "full_sentence": "출발하기 전에 확인하세요.",
+        "full_sentence_en": "Please check before departing.",
+        "options": [
+          "기",
+          "는",
+          "은",
+          "고"
+        ]
+      },
+      "notes": "Never conjugate the verb before -기 전에. It is always verb stem + 기 전에, regardless of tense. The tense of the whole sentence is shown on the final verb only. Compare: 먹기 전에 (before eating) vs 먹은 후에 (after eating)."
+    },
+    {
+      "pattern": "-(으)ㄴ 후에 / -고 나서",
+      "meaning": "after doing",
+      "explanation": "These two patterns both express 'after doing' something. -(으)ㄴ 후에 attaches the past modifier to 후에 ('after'), while -고 나서 uses the connector -고 plus 나서 ('after coming out of'). Both are interchangeable in most situations.",
+      "examples": [
+        {
+          "korean": "점심을 먹은 후에 산책해요.",
+          "english": "I take a walk after eating lunch."
+        },
+        {
+          "korean": "운동하고 나서 샤워해요.",
+          "english": "I shower after exercising."
+        },
+        {
+          "korean": "졸업한 후에 취직했어요.",
+          "english": "I got a job after graduating."
+        }
+      ],
+      "drill": {
+        "prompt": "숙제를 _____ 후에 놀아요.",
+        "answer": "한",
+        "full_sentence": "숙제를 한 후에 놀아요.",
+        "full_sentence_en": "I play after doing homework.",
+        "options": [
+          "한",
+          "하고",
+          "하기",
+          "하는"
+        ]
+      },
+      "notes": "With -(으)ㄴ 후에, the verb takes the past modifier form: 먹다→먹은, 하다→한, 가다→간. With -고 나서, simply attach to the verb stem: 먹고 나서, 하고 나서. -고 나서 can be shortened to just -고 나면 when the meaning is clear from context."
+    },
+    {
+      "pattern": "-동안",
+      "meaning": "during / for (a duration of time)",
+      "explanation": "동안 means 'during' or 'for a period of'. It can follow a noun (방학 동안 — during vacation) or a verb clause in the -는 form (기다리는 동안 — while waiting). It emphasizes the duration of the time span.",
+      "examples": [
+        {
+          "korean": "여름 방학 동안 여행했어요.",
+          "english": "I traveled during summer vacation."
+        },
+        {
+          "korean": "두 시간 동안 공부했어요.",
+          "english": "I studied for two hours."
+        },
+        {
+          "korean": "기다리는 동안 책을 읽었어요.",
+          "english": "I read a book while waiting."
+        }
+      ],
+      "drill": {
+        "prompt": "세 시간 _____ 운동했어요.",
+        "answer": "동안",
+        "full_sentence": "세 시간 동안 운동했어요.",
+        "full_sentence_en": "I exercised for three hours.",
+        "options": [
+          "동안",
+          "전에",
+          "후에",
+          "때"
+        ]
+      },
+      "notes": "When used with a verb, the verb takes the present tense modifier -는: 먹는 동안 (while eating), 자는 동안 (while sleeping). With a noun expressing a time period, just add 동안 directly: 일주일 동안 (for one week), 한 달 동안 (for one month)."
+    },
+    {
+      "pattern": "-때",
+      "meaning": "when / at the time of",
+      "explanation": "때 means 'time' or 'when'. It can follow a noun (어릴 때 — when young) or a verb in modifier form. For present/habitual actions use -(으)ㄹ 때, and for past situations use the appropriate modifier. It marks the time context of an action.",
+      "examples": [
+        {
+          "korean": "어릴 때 한국에 살았어요.",
+          "english": "When I was young, I lived in Korea."
+        },
+        {
+          "korean": "시간이 있을 때 연락하세요.",
+          "english": "Contact me when you have time."
+        },
+        {
+          "korean": "밥을 먹을 때 전화가 왔어요.",
+          "english": "A phone call came when I was eating."
+        }
+      ],
+      "drill": {
+        "prompt": "슬_____ 때 음악을 들어요.",
+        "answer": "플",
+        "full_sentence": "슬플 때 음악을 들어요.",
+        "full_sentence_en": "I listen to music when I'm sad.",
+        "options": [
+          "플",
+          "픈",
+          "프는",
+          "프고"
+        ]
+      },
+      "notes": "The modifier form before 때 depends on the word type: adjectives use -(으)ㄹ 때 for general situations (바쁠 때 — when busy), verbs use -(으)ㄹ 때 for uncompleted or habitual actions (갈 때 — when going). Nouns use 때 directly: 학생 때 (when I was a student)."
+    }
+  ],
+  "이유 & 목적 (Reasons & Purpose)": [
+    {
+      "pattern": "-기 때문에",
+      "meaning": "because (noun clause reason)",
+      "explanation": "This pattern gives a reason or cause. -기 turns the verb into a noun clause, and 때문에 means 'because of'. It is more formal and explicit than -아/어서 or -(으)니까. Nouns can directly attach to 때문에 without -기.",
+      "examples": [
+        {
+          "korean": "비가 오기 때문에 우산을 가져왔어요.",
+          "english": "I brought an umbrella because it is raining."
+        },
+        {
+          "korean": "시험이 있기 때문에 열심히 공부해요.",
+          "english": "I study hard because there is an exam."
+        },
+        {
+          "korean": "날씨 때문에 집에 있었어요.",
+          "english": "I stayed home because of the weather."
+        }
+      ],
+      "drill": {
+        "prompt": "바쁘_____ 때문에 못 갔어요.",
+        "answer": "기",
+        "full_sentence": "바쁘기 때문에 못 갔어요.",
+        "full_sentence_en": "I couldn't go because I was busy.",
+        "options": [
+          "기",
+          "는",
+          "니까",
+          "어서"
+        ]
+      },
+      "notes": "Compare the three 'because' patterns: -아/어서 (natural cause, no imperative after), -(으)니까 (subjective reason, can use imperative/suggestion after), -기 때문에 (formal/explicit, works anywhere). With nouns, drop -기: 날씨 때문에 (because of the weather), 일 때문에 (because of work)."
+    },
+    {
+      "pattern": "-(으)려고",
+      "meaning": "in order to / intending to",
+      "explanation": "Attach -(으)려고 to a verb stem to express intention or purpose — 'in order to do' something. Use -려고 after vowel-ending stems and -으려고 after consonant-ending stems. The subject of both clauses must be the same person.",
+      "examples": [
+        {
+          "korean": "한국어를 배우려고 한국에 왔어요.",
+          "english": "I came to Korea to learn Korean."
+        },
+        {
+          "korean": "선물을 사려고 백화점에 갔어요.",
+          "english": "I went to the department store to buy a gift."
+        },
+        {
+          "korean": "건강해지려고 매일 운동해요.",
+          "english": "I exercise every day to become healthy."
+        }
+      ],
+      "drill": {
+        "prompt": "친구를 만나_____ 카페에 갔어요.",
+        "answer": "려고",
+        "full_sentence": "친구를 만나려고 카페에 갔어요.",
+        "full_sentence_en": "I went to the cafe to meet a friend.",
+        "options": [
+          "려고",
+          "으려고",
+          "기 위해",
+          "러"
+        ]
+      },
+      "notes": "Both -(으)려고 and -(으)러 express purpose, but -(으)러 can only be used with movement verbs like 가다/오다 (가다→배우러 가다). -(으)려고 is more versatile and works with any verb in the second clause. Also note: -(으)려고 하다 means 'to be planning/intending to'."
+    },
+    {
+      "pattern": "-기 위해(서)",
+      "meaning": "for the purpose of / in order to",
+      "explanation": "This pattern expresses purpose more formally than -(으)려고. -기 turns the verb into a noun, and 위해(서) means 'for the sake of'. It is commonly used in writing, speeches, and formal situations. 서 is optional.",
+      "examples": [
+        {
+          "korean": "건강을 위해서 운동해요.",
+          "english": "I exercise for my health."
+        },
+        {
+          "korean": "시험에 합격하기 위해 열심히 공부했어요.",
+          "english": "I studied hard in order to pass the exam."
+        },
+        {
+          "korean": "돈을 모으기 위해서 아르바이트를 해요.",
+          "english": "I work part-time in order to save money."
+        }
+      ],
+      "drill": {
+        "prompt": "한국어를 잘하_____ 위해 매일 연습해요.",
+        "answer": "기",
+        "full_sentence": "한국어를 잘하기 위해 매일 연습해요.",
+        "full_sentence_en": "I practice every day in order to be good at Korean.",
+        "options": [
+          "기",
+          "는",
+          "려고",
+          "고"
+        ]
+      },
+      "notes": "위해(서) can also follow nouns directly without -기: 가족을 위해서 (for the family), 미래를 위해서 (for the future). Compared to -(으)려고, -기 위해(서) sounds more deliberate and formal. In casual speech, -(으)려고 is more natural."
+    }
+  ],
+  "존댓말 & 높임말 (Honorifics)": [
+    {
+      "pattern": "-(으)시-",
+      "meaning": "honorific infix (to show respect for the subject)",
+      "explanation": "Insert -(으)시- into a verb to show respect toward the person performing the action. Use -시- after vowel-ending stems and -으시- after consonant-ending stems. This is essential in Korean when talking about or to someone you respect.",
+      "examples": [
+        {
+          "korean": "선생님이 오셨어요.",
+          "english": "The teacher came. (respectful)"
+        },
+        {
+          "korean": "어머니가 요리하세요.",
+          "english": "My mother is cooking. (respectful)"
+        },
+        {
+          "korean": "할아버지가 주무세요.",
+          "english": "Grandfather is sleeping. (respectful)"
+        }
+      ],
+      "drill": {
+        "prompt": "사장님이 회의실에 가_____.",
+        "answer": "셨어요",
+        "full_sentence": "사장님이 회의실에 가셨어요.",
+        "full_sentence_en": "The boss went to the meeting room.",
+        "options": [
+          "셨어요",
+          "았어요",
+          "겠어요",
+          "고 있어요"
+        ]
+      },
+      "notes": "Some verbs have special honorific forms that replace the verb entirely: 먹다→드시다, 자다→주무시다, 있다→계시다, 말하다→말씀하시다. Never use -(으)시- about yourself — it is only for people you are elevating. Using 저는 가셨어요 about yourself would be a social error."
+    },
+    {
+      "pattern": "드리다 / 주시다",
+      "meaning": "to give (to a respected person) / to receive from a respected person",
+      "explanation": "드리다 is the humble form of 주다, used when you give something to a respected person. 주시다 adds the honorific -(으)시- to 주다, used when a respected person gives something. These replace 주다 in polite contexts.",
+      "examples": [
+        {
+          "korean": "선생님께 선물을 드렸어요.",
+          "english": "I gave a gift to the teacher."
+        },
+        {
+          "korean": "할머니가 용돈을 주셨어요.",
+          "english": "Grandmother gave me allowance."
+        },
+        {
+          "korean": "부모님께 편지를 드리고 싶어요.",
+          "english": "I want to give my parents a letter."
+        }
+      ],
+      "drill": {
+        "prompt": "어머니께 꽃을 _____.",
+        "answer": "드렸어요",
+        "full_sentence": "어머니께 꽃을 드렸어요.",
+        "full_sentence_en": "I gave flowers to my mother.",
+        "options": [
+          "드렸어요",
+          "줬어요",
+          "주셨어요",
+          "받았어요"
+        ]
+      },
+      "notes": "Use 께 instead of 에게 when the recipient is a respected person: 선생님께 (to the teacher), 부모님께 (to the parents). The pattern -아/어 드리다 means 'to do something for a respected person': 도와 드리다 (to help someone respected), 만들어 드리다 (to make for someone respected)."
+    },
+    {
+      "pattern": "말씀 / 진지 / 댁",
+      "meaning": "honorific nouns (speech / meal / home)",
+      "explanation": "Korean has special honorific nouns used when referring to things belonging to or associated with respected people. 말씀 replaces 말 (words/speech), 진지 replaces 밥 (meal/rice), and 댁 replaces 집 (house/home). Using these shows proper respect.",
+      "examples": [
+        {
+          "korean": "선생님 말씀을 잘 들으세요.",
+          "english": "Listen well to the teacher's words."
+        },
+        {
+          "korean": "할아버지, 진지 드세요.",
+          "english": "Grandfather, please eat your meal."
+        },
+        {
+          "korean": "사장님 댁이 어디세요?",
+          "english": "Where is the boss's home?"
+        }
+      ],
+      "drill": {
+        "prompt": "할머니, _____ 드세요.",
+        "answer": "진지",
+        "full_sentence": "할머니, 진지 드세요.",
+        "full_sentence_en": "Grandmother, please eat your meal.",
+        "options": [
+          "진지",
+          "밥",
+          "음식",
+          "식사"
+        ]
+      },
+      "notes": "Other important honorific noun pairs: 나이→연세 (age), 이름→성함 (name), 생일→생신 (birthday), 아프다→편찮으시다 (to be sick). 말씀하다 is used both as humble ('I humbly say') and honorific ('the respected person says') depending on context. These pairs are essential for polite Korean."
+    }
+  ],
+  "추측 & 의견 (Guessing & Opinion)": [
+    {
+      "pattern": "-(으)ㄹ 것 같아요",
+      "meaning": "I think / it seems like (future/guess)",
+      "explanation": "This pattern expresses a guess or soft prediction about the future. -(으)ㄹ is the future modifier, 것 means 'thing', and 같아요 means 'seems like'. It softens statements and makes them sound less certain, which is very common in Korean conversation.",
+      "examples": [
+        {
+          "korean": "내일 비가 올 것 같아요.",
+          "english": "I think it will rain tomorrow."
+        },
+        {
+          "korean": "이 영화가 재미있을 것 같아요.",
+          "english": "I think this movie will be fun."
+        },
+        {
+          "korean": "시간이 좀 걸릴 것 같아요.",
+          "english": "I think it will take some time."
+        }
+      ],
+      "drill": {
+        "prompt": "주말에 눈이 _____ 것 같아요.",
+        "answer": "올",
+        "full_sentence": "주말에 눈이 올 것 같아요.",
+        "full_sentence_en": "I think it will snow on the weekend.",
+        "options": [
+          "올",
+          "오는",
+          "온",
+          "오고"
+        ]
+      },
+      "notes": "This is one of the most useful patterns in Korean for softening statements. Koreans often prefer indirect expressions, so instead of 'it will rain', saying '비가 올 것 같아요' (it seems like it will rain) sounds more natural and polite. Use it freely when expressing opinions or predictions."
+    },
+    {
+      "pattern": "-겠-",
+      "meaning": "will / would (intention or conjecture)",
+      "explanation": "The infix -겠- expresses either the speaker's intention ('I will do') or a conjecture about a situation ('it would be / it must be'). When used in first person, it shows determination. When used about others or situations, it shows inference or supposition.",
+      "examples": [
+        {
+          "korean": "제가 하겠어요.",
+          "english": "I will do it. (determination)"
+        },
+        {
+          "korean": "맛있겠어요!",
+          "english": "That must be delicious! / That looks delicious!"
+        },
+        {
+          "korean": "내일은 춥겠어요.",
+          "english": "It will probably be cold tomorrow."
+        }
+      ],
+      "drill": {
+        "prompt": "이 케이크 정말 맛있_____!",
+        "answer": "겠어요",
+        "full_sentence": "이 케이크 정말 맛있겠어요!",
+        "full_sentence_en": "This cake must be really delicious!",
+        "options": [
+          "겠어요",
+          "을 거예요",
+          "었어요",
+          "어요"
+        ]
+      },
+      "notes": "Compare -겠- and -(으)ㄹ 거예요: both can express future, but -겠- sounds more formal and decisive for intention (제가 하겠습니다 — 'I shall do it'), while -(으)ㄹ 거예요 is more casual and plan-based. For conjecture, 맛있겠다 is a reaction to something you see, while 맛있을 거예요 is a general prediction."
+    },
+    {
+      "pattern": "-(으)ㄴ/는 것 같아요",
+      "meaning": "it seems like (present/past observation)",
+      "explanation": "This pattern expresses a guess or impression about present or past situations. For verbs, use -는 것 같아요 (present) or -(으)ㄴ 것 같아요 (past). For adjectives, use -(으)ㄴ 것 같아요 (present). It is softer than stating something as fact.",
+      "examples": [
+        {
+          "korean": "지금 밖에 비가 오는 것 같아요.",
+          "english": "It seems like it's raining outside now."
+        },
+        {
+          "korean": "그 사람이 한국 사람인 것 같아요.",
+          "english": "That person seems to be Korean."
+        },
+        {
+          "korean": "벌써 도착한 것 같아요.",
+          "english": "It seems like they already arrived."
+        }
+      ],
+      "drill": {
+        "prompt": "민수 씨가 지금 자_____ 것 같아요.",
+        "answer": "는",
+        "full_sentence": "민수 씨가 지금 자는 것 같아요.",
+        "full_sentence_en": "It seems like Minsu is sleeping now.",
+        "options": [
+          "는",
+          "ㄴ",
+          "을",
+          "기"
+        ]
+      },
+      "notes": "The modifier form changes the time reference: -는 것 같아요 = seems like (now), -(으)ㄴ 것 같아요 = seems like (already happened), -(으)ㄹ 것 같아요 = seems like (will happen). This three-way distinction is one of the most important grammar concepts for intermediate Korean."
+    }
+  ],
+  "경험 & 빈도 (Experience & Frequency)": [
+    {
+      "pattern": "-(으)ㄴ 적이 있다/없다",
+      "meaning": "have done / have never done (experience)",
+      "explanation": "This pattern expresses whether someone has or has not experienced something. -(으)ㄴ is the past modifier, 적 means 'occasion/instance', and 있다/없다 indicates existence or lack of that experience. It is equivalent to 'have you ever...' in English.",
+      "examples": [
+        {
+          "korean": "한국에 간 적이 있어요.",
+          "english": "I have been to Korea before."
+        },
+        {
+          "korean": "스시를 만든 적이 없어요.",
+          "english": "I have never made sushi."
+        },
+        {
+          "korean": "번지점프를 한 적이 있어요?",
+          "english": "Have you ever bungee jumped?"
+        }
+      ],
+      "drill": {
+        "prompt": "김치를 만_____ 적이 있어요?",
+        "answer": "든",
+        "full_sentence": "김치를 만든 적이 있어요?",
+        "full_sentence_en": "Have you ever made kimchi?",
+        "options": [
+          "든",
+          "드는",
+          "들",
+          "들은"
+        ]
+      },
+      "notes": "The verb before 적 always takes the past modifier form -(으)ㄴ because you are describing a completed experience: 먹다→먹은 적, 가다→간 적, 보다→본 적. A common mistake is using the present modifier -는: 먹는 적 is incorrect. To answer: 네, 있어요 (yes, I have) / 아니요, 없어요 (no, I haven't)."
+    },
+    {
+      "pattern": "-마다",
+      "meaning": "every / each",
+      "explanation": "Attach -마다 to a noun to mean 'every' or 'each'. It indicates that something applies to all instances without exception. It can follow time nouns (날마다 — every day), place nouns (나라마다 — every country), or people (사람마다 — every person).",
+      "examples": [
+        {
+          "korean": "아침마다 커피를 마셔요.",
+          "english": "I drink coffee every morning."
+        },
+        {
+          "korean": "나라마다 문화가 달라요.",
+          "english": "Every country has a different culture."
+        },
+        {
+          "korean": "주말마다 등산을 해요.",
+          "english": "I go hiking every weekend."
+        }
+      ],
+      "drill": {
+        "prompt": "저녁_____  가족과 같이 먹어요.",
+        "answer": "마다",
+        "full_sentence": "저녁마다 가족과 같이 먹어요.",
+        "full_sentence_en": "I eat with family every evening.",
+        "options": [
+          "마다",
+          "동안",
+          "때",
+          "에"
+        ]
+      },
+      "notes": "마다 and 매- are similar: 날마다 = 매일 (every day), but 마다 is more versatile because it attaches to any noun. You cannot say 매사람 but you can say 사람마다. 마다 emphasizes 'each and every one', while 매- is limited to time-related words like 매주 (every week), 매달 (every month), 매년 (every year)."
+    },
+    {
+      "pattern": "-(으)ㄹ 때마다",
+      "meaning": "every time / whenever",
+      "explanation": "This combines the time expression 때 with 마다 to mean 'every time' or 'whenever' something happens. The verb takes the future/general modifier -(으)ㄹ before 때마다. It expresses a habitual or repeated connection between two events.",
+      "examples": [
+        {
+          "korean": "한국 노래를 들을 때마다 기분이 좋아요.",
+          "english": "Every time I listen to Korean songs, I feel good."
+        },
+        {
+          "korean": "비가 올 때마다 집에 있고 싶어요.",
+          "english": "Whenever it rains, I want to stay home."
+        },
+        {
+          "korean": "이 사진을 볼 때마다 웃어요.",
+          "english": "I smile every time I see this photo."
+        }
+      ],
+      "drill": {
+        "prompt": "운동_____ 때마다 음악을 들어요.",
+        "answer": "할",
+        "full_sentence": "운동할 때마다 음악을 들어요.",
+        "full_sentence_en": "Every time I exercise, I listen to music.",
+        "options": [
+          "할",
+          "하는",
+          "한",
+          "하고"
+        ]
+      },
+      "notes": "The modifier before 때마다 is -(으)ㄹ, the same future/general form used with 때 alone. This pattern emphasizes repetition — every single time without exception. For a softer, less absolute feel, you can use -(으)ㄹ 때 without 마다: 비가 올 때 (when it rains) vs 비가 올 때마다 (every single time it rains)."
+    }
+  ],
+  "변화 & 결과 (Change & Result)": [
+    {
+      "pattern": "-아/어지다",
+      "meaning": "to become / to get (change of state)",
+      "explanation": "Attach -아/어지다 to an adjective stem to express a change of state — 'to become' that quality. The same vowel harmony rules as -아/어요 apply: ㅏ/ㅗ take -아지다, others take -어지다. This is how Korean expresses gradual or resulting changes.",
+      "examples": [
+        {
+          "korean": "날씨가 따뜻해졌어요.",
+          "english": "The weather became warm."
+        },
+        {
+          "korean": "한국어가 점점 좋아져요.",
+          "english": "Korean is gradually getting better."
+        },
+        {
+          "korean": "요즘 바빠졌어요.",
+          "english": "I've become busy lately."
+        }
+      ],
+      "drill": {
+        "prompt": "날이 점점 추워_____.",
+        "answer": "져요",
+        "full_sentence": "날이 점점 추워져요.",
+        "full_sentence_en": "The days are getting colder.",
+        "options": [
+          "져요",
+          "해요",
+          "세요",
+          "네요"
+        ]
+      },
+      "notes": "This pattern primarily attaches to adjectives, not action verbs. For action verbs, use passive forms or -게 되다 instead. Common examples: 예쁘다→예뻐지다 (become pretty), 크다→커지다 (become big), 좋다→좋아지다 (become good). The change can be gradual (점점 — gradually) or sudden."
+    },
+    {
+      "pattern": "-게 되다",
+      "meaning": "to come to / to end up (unplanned result)",
+      "explanation": "Attach -게 to a verb or adjective stem, then add 되다 to express an unplanned or natural result — 'to come to do' or 'to end up doing'. It suggests the change happened due to circumstances rather than the speaker's deliberate choice.",
+      "examples": [
+        {
+          "korean": "한국 회사에서 일하게 되었어요.",
+          "english": "I ended up working at a Korean company."
+        },
+        {
+          "korean": "한국어를 좋아하게 되었어요.",
+          "english": "I came to like Korean."
+        },
+        {
+          "korean": "드디어 알게 되었어요.",
+          "english": "I finally came to know / found out."
+        }
+      ],
+      "drill": {
+        "prompt": "서울에서 살_____ 되었어요.",
+        "answer": "게",
+        "full_sentence": "서울에서 살게 되었어요.",
+        "full_sentence_en": "I ended up living in Seoul.",
+        "options": [
+          "게",
+          "기",
+          "고",
+          "어"
+        ]
+      },
+      "notes": "Compare -게 되다 with -아/어지다: both express change, but -게 되다 works with action verbs and emphasizes circumstantial change (I ended up doing X), while -아/어지다 works with adjectives and emphasizes the resulting state (it became X). 알게 되다 (come to know) is one of the most common uses of this pattern."
+    },
+    {
+      "pattern": "-(으)ㄴ 지 + time",
+      "meaning": "it has been (time) since",
+      "explanation": "This pattern expresses how much time has passed since an event. Use the past modifier -(으)ㄴ + 지, then a time duration, followed by 되다 or 지나다 (to pass). It is the Korean equivalent of 'it has been X since...'.",
+      "examples": [
+        {
+          "korean": "한국에 온 지 일 년 됐어요.",
+          "english": "It has been one year since I came to Korea."
+        },
+        {
+          "korean": "한국어를 배운 지 삼 개월 됐어요.",
+          "english": "It has been three months since I started learning Korean."
+        },
+        {
+          "korean": "밥을 먹은 지 세 시간 지났어요.",
+          "english": "It has been three hours since I ate."
+        }
+      ],
+      "drill": {
+        "prompt": "이 회사에서 일한 _____ 오 년 됐어요.",
+        "answer": "지",
+        "full_sentence": "이 회사에서 일한 지 오 년 됐어요.",
+        "full_sentence_en": "It has been five years since I started working at this company.",
+        "options": [
+          "지",
+          "때",
+          "동안",
+          "후에"
+        ]
+      },
+      "notes": "The verb before 지 always takes the past modifier -(으)ㄴ: 오다→온 지, 먹다→먹은 지, 시작하다→시작한 지. The time duration comes between 지 and 되다: 온 지 2년 됐어요. A common mistake is confusing this with -동안, which marks duration of an ongoing action, not elapsed time since an event."
+    },
+    {
+      "pattern": "-기로 하다",
+      "meaning": "to decide to",
+      "explanation": "This pattern expresses a decision or agreement to do something. -기 turns the verb into a noun clause, -로 indicates the direction of the decision, and 하다 means 'to do'. It is commonly used for both personal decisions and group agreements.",
+      "examples": [
+        {
+          "korean": "내년에 한국에 가기로 했어요.",
+          "english": "I decided to go to Korea next year."
+        },
+        {
+          "korean": "매일 운동하기로 했어요.",
+          "english": "I decided to exercise every day."
+        },
+        {
+          "korean": "친구와 같이 여행하기로 했어요.",
+          "english": "My friend and I decided to travel together."
+        }
+      ],
+      "drill": {
+        "prompt": "다이어트를 하_____ 했어요.",
+        "answer": "기로",
+        "full_sentence": "다이어트를 하기로 했어요.",
+        "full_sentence_en": "I decided to go on a diet.",
+        "options": [
+          "기로",
+          "려고",
+          "기 위해",
+          "게"
+        ]
+      },
+      "notes": "This pattern almost always appears in the past tense (하기로 했어요) because you are reporting a decision already made. For promises or agreements with others, it implies a commitment: 만나기로 했어요 (we agreed to meet). Breaking such a decision is 약속을 어기다 (to break a promise). Compare with -(으)려고 하다 (intending to) which is softer and less committed."
+    }
+  ]
+}

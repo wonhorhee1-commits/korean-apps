@@ -1,0 +1,331 @@
+[
+  {
+    "title": "Job Interview: Self-Introduction",
+    "context": "Interviewing for a marketing position at a Korean company",
+    "turns": [
+      {"speaker": "Interviewer", "line": "자기소개를 해 주시겠습니까?"},
+      {"speaker": "You", "line": "안녕하세요. 마케팅 분야에서 3년간 경험을 쌓아 온 김지수라고 합니다.", "options": ["네, 저는 학생이에요.", "안녕하세요. 마케팅 분야에서 3년간 경험을 쌓아 온 김지수라고 합니다.", "마케팅을 좋아해요.", "회사에서 일하고 싶어요."]},
+      {"speaker": "Interviewer", "line": "우리 회사에 지원하게 된 동기가 무엇인가요?"},
+      {"speaker": "You", "line": "귀사의 혁신적인 브랜드 전략에 깊은 인상을 받았으며, 제 역량을 발휘할 수 있는 환경이라고 판단했습니다.", "options": ["돈을 많이 벌고 싶어서요.", "귀사의 혁신적인 브랜드 전략에 깊은 인상을 받았으며, 제 역량을 발휘할 수 있는 환경이라고 판단했습니다.", "친구가 추천했어요.", "집에서 가까워서 지원했습니다."]},
+      {"speaker": "Interviewer", "line": "본인의 강점과 약점에 대해 말씀해 주십시오."},
+      {"speaker": "You", "line": "저의 강점은 데이터 기반의 분석력이며, 약점이라면 완벽주의적 성향으로 인해 업무 속도가 다소 느릴 때가 있다는 점입니다.", "options": ["저는 잘하는 게 많아요.", "저의 강점은 데이터 기반의 분석력이며, 약점이라면 완벽주의적 성향으로 인해 업무 속도가 다소 느릴 때가 있다는 점입니다.", "약점은 없는 것 같아요.", "강점은 성격이 좋은 거예요."]}
+    ],
+    "explanation": "자기소개 = self-introduction. 지원 동기 = motivation for applying. 귀사 = your company (formal/humble). 역량을 발휘하다 = to demonstrate one's capabilities. 데이터 기반 = data-driven. 완벽주의적 성향 = perfectionist tendency."
+  },
+  {
+    "title": "Job Interview: Discussing Experience",
+    "context": "Second-round interview discussing previous work experience at a tech company",
+    "turns": [
+      {"speaker": "Interviewer", "line": "이전 직장에서 맡으셨던 주요 업무에 대해 설명해 주시겠습니까?"},
+      {"speaker": "You", "line": "전 직장에서는 프로젝트 매니저로서 10명 규모의 팀을 이끌며 신규 서비스 런칭을 총괄했습니다.", "options": ["전 직장에서는 프로젝트 매니저로서 10명 규모의 팀을 이끌며 신규 서비스 런칭을 총괄했습니다.", "그냥 일했어요.", "이것저것 많이 했는데 기억이 잘 안 나요.", "회사에서 시키는 대로 했습니다."]},
+      {"speaker": "Interviewer", "line": "가장 어려웠던 프로젝트와 그것을 어떻게 극복하셨는지 말씀해 주십시오."},
+      {"speaker": "You", "line": "출시 일정이 촉박한 상황에서 핵심 기능의 우선순위를 재조정하고, 부서 간 협업 체계를 강화하여 기한 내에 성공적으로 마무리한 경험이 있습니다.", "options": ["힘든 일이 별로 없었어요.", "출시 일정이 촉박한 상황에서 핵심 기능의 우선순위를 재조정하고, 부서 간 협업 체계를 강화하여 기한 내에 성공적으로 마무리한 경험이 있습니다.", "어려우면 포기하는 편이에요.", "상사한테 도움을 요청했어요."]},
+      {"speaker": "Interviewer", "line": "그 경험을 통해 무엇을 배우셨습니까?"},
+      {"speaker": "You", "line": "위기 상황에서의 의사결정 능력과 이해관계자 간 소통의 중요성을 깊이 체감했으며, 이후 업무에 큰 자산이 되었습니다.", "options": ["위기 상황에서의 의사결정 능력과 이해관계자 간 소통의 중요성을 깊이 체감했으며, 이후 업무에 큰 자산이 되었습니다.", "별로 배운 건 없어요.", "열심히 해야 한다는 걸 배웠어요.", "힘들었지만 재미있었어요."]},
+      {"speaker": "Interviewer", "line": "마지막으로 질문이 있으시면 말씀해 주십시오."},
+      {"speaker": "You", "line": "입사 후 초기 3개월간의 온보딩 과정과 팀 내 역할 배분 체계에 대해 여쭤봐도 되겠습니까?", "options": ["입사 후 초기 3개월간의 온보딩 과정과 팀 내 역할 배분 체계에 대해 여쭤봐도 되겠습니까?", "없어요.", "연봉이 얼마예요?", "언제부터 출근하면 돼요?"]}
+    ],
+    "explanation": "총괄하다 = to oversee/manage overall. 촉박하다 = to be tight (schedule). 우선순위를 재조정하다 = to reprioritize. 부서 간 협업 = inter-departmental collaboration. 이해관계자 = stakeholders. 여쭤보다 = to ask (humble form of 묻다)."
+  },
+  {
+    "title": "Job Interview: Salary Negotiation",
+    "context": "Final stage of hiring process, discussing compensation and benefits",
+    "turns": [
+      {"speaker": "HR Manager", "line": "저희가 제안드리는 연봉은 5,500만 원이며, 성과급은 별도입니다. 어떻게 생각하십니까?"},
+      {"speaker": "You", "line": "제안해 주신 조건에 감사드립니다. 다만, 저의 경력과 업계 평균을 고려하면 6,000만 원 정도가 적정하다고 판단됩니다.", "options": ["제안해 주신 조건에 감사드립니다. 다만, 저의 경력과 업계 평균을 고려하면 6,000만 원 정도가 적정하다고 판단됩니다.", "너무 적은데요, 더 주세요.", "그냥 그 정도면 괜찮아요.", "돈은 상관없어요."]},
+      {"speaker": "HR Manager", "line": "근거를 좀 더 구체적으로 말씀해 주시겠습니까?"},
+      {"speaker": "You", "line": "동종 업계의 유사 직급 평균 연봉이 5,800만 원에서 6,200만 원 사이이며, 저는 관련 자격증과 3년 이상의 실무 경험을 보유하고 있으므로 이 범위 내에서 협의가 가능하리라 생각합니다.", "options": ["잘 모르겠는데 그냥 더 받고 싶어요.", "인터넷에서 봤어요.", "동종 업계의 유사 직급 평균 연봉이 5,800만 원에서 6,200만 원 사이이며, 저는 관련 자격증과 3년 이상의 실무 경험을 보유하고 있으므로 이 범위 내에서 협의가 가능하리라 생각합니다.", "친구가 그 정도 받는다고 했어요."]},
+      {"speaker": "HR Manager", "line": "복리후생 부분도 함께 고려해 주시면 감사하겠습니다."},
+      {"speaker": "You", "line": "물론입니다. 연봉 외에 자기개발비 지원이나 유연근무제 도입 여부도 함께 검토해 주시면 전향적으로 고려하겠습니다.", "options": ["물론입니다. 연봉 외에 자기개발비 지원이나 유연근무제 도입 여부도 함께 검토해 주시면 전향적으로 고려하겠습니다.", "복리후생은 별로 관심 없어요.", "다 좋아요, 빨리 결정해 주세요.", "어떤 복리후생이 있어요?"]}
+    ],
+    "explanation": "성과급 = performance bonus. 업계 평균 = industry average. 동종 업계 = same industry. 보유하다 = to possess/hold. 협의 = negotiation/consultation. 복리후생 = employee benefits. 전향적으로 고려하다 = to consider positively/proactively. 유연근무제 = flexible work schedule."
+  },
+  {
+    "title": "Academic: Research Discussion with Professor",
+    "context": "Graduate student meeting with their thesis advisor to discuss research progress",
+    "turns": [
+      {"speaker": "Professor", "line": "논문 진행 상황을 보고해 주시겠어요?"},
+      {"speaker": "You", "line": "현재 문헌 조사를 마무리한 단계이며, 선행 연구와의 차별점을 중심으로 연구 가설을 수립하고 있습니다.", "options": ["현재 문헌 조사를 마무리한 단계이며, 선행 연구와의 차별점을 중심으로 연구 가설을 수립하고 있습니다.", "아직 별로 한 게 없어요.", "논문 쓰기 어려워요.", "열심히 하고 있어요."]},
+      {"speaker": "Professor", "line": "연구 방법론은 어떤 방향으로 설정하셨나요?"},
+      {"speaker": "You", "line": "혼합 연구 방법론을 채택하여 정량적 데이터와 정성적 인터뷰를 병행할 계획입니다. 표본 크기는 300명 이상을 목표로 하고 있습니다.", "options": ["설문조사를 할 거예요.", "혼합 연구 방법론을 채택하여 정량적 데이터와 정성적 인터뷰를 병행할 계획입니다. 표본 크기는 300명 이상을 목표로 하고 있습니다.", "아직 정하지 못했어요.", "인터넷에서 자료를 찾을 거예요."]},
+      {"speaker": "Professor", "line": "IRB 승인 절차는 확인하셨습니까?"},
+      {"speaker": "You", "line": "네, 이미 연구윤리위원회에 심의 신청서를 제출했으며, 2주 내로 승인이 날 것으로 예상됩니다.", "options": ["IRB가 뭐예요?", "네, 이미 연구윤리위원회에 심의 신청서를 제출했으며, 2주 내로 승인이 날 것으로 예상됩니다.", "아직 안 했는데 곧 할게요.", "그건 나중에 해도 되지 않나요?"]},
+      {"speaker": "Professor", "line": "다음 미팅까지 초안을 준비해 오세요."},
+      {"speaker": "You", "line": "알겠습니다. 서론과 연구 방법론 부분까지 초안을 작성하여 다음 주 화요일까지 이메일로 송부하겠습니다.", "options": ["알겠습니다. 서론과 연구 방법론 부분까지 초안을 작성하여 다음 주 화요일까지 이메일로 송부하겠습니다.", "네, 알겠어요.", "최대한 노력해 볼게요.", "시간이 좀 부족할 수도 있어요."]}
+    ],
+    "explanation": "문헌 조사 = literature review. 선행 연구 = prior research. 연구 가설을 수립하다 = to establish research hypotheses. 혼합 연구 방법론 = mixed methods research. 정량적/정성적 = quantitative/qualitative. 표본 크기 = sample size. 연구윤리위원회 (IRB) = Institutional Review Board. 심의 = deliberation/review. 송부하다 = to send (formal)."
+  },
+  {
+    "title": "Academic: Seminar Presentation Q&A",
+    "context": "Presenting research findings at a graduate seminar and fielding questions",
+    "turns": [
+      {"speaker": "Audience Member", "line": "발표 잘 들었습니다. 연구 결과의 일반화 가능성에 대해 어떻게 생각하십니까?"},
+      {"speaker": "You", "line": "좋은 질문 감사합니다. 본 연구의 표본이 특정 지역에 한정된 만큼 일반화에는 한계가 있으나, 후속 연구를 통해 범위를 확대할 계획입니다.", "options": ["좋은 질문 감사합니다. 본 연구의 표본이 특정 지역에 한정된 만큼 일반화에는 한계가 있으나, 후속 연구를 통해 범위를 확대할 계획입니다.", "일반화할 수 있다고 생각해요.", "그건 잘 모르겠어요.", "다른 연구를 참고해 주세요."]},
+      {"speaker": "Professor", "line": "통계적 유의성은 어떻게 검증하셨습니까?"},
+      {"speaker": "You", "line": "회귀 분석과 분산 분석을 실시하였으며, p값이 0.05 미만인 변수만을 유의미한 결과로 채택하였습니다.", "options": ["회귀 분석과 분산 분석을 실시하였으며, p값이 0.05 미만인 변수만을 유의미한 결과로 채택하였습니다.", "통계 프로그램으로 돌렸어요.", "유의성 검증은 하지 않았습니다.", "p값이 좋게 나왔어요."]},
+      {"speaker": "Audience Member", "line": "이 연구가 실무에 어떤 시사점을 줄 수 있다고 보십니까?"},
+      {"speaker": "You", "line": "본 연구의 결과는 정책 입안자들이 청년 고용 문제를 해결하는 데 있어 실증적 근거를 제공할 수 있을 것으로 기대됩니다.", "options": ["잘 모르겠어요, 좀 더 연구해 봐야 할 것 같아요.", "본 연구의 결과는 정책 입안자들이 청년 고용 문제를 해결하는 데 있어 실증적 근거를 제공할 수 있을 것으로 기대됩니다.", "현실에서는 적용하기 어려울 거예요.", "많은 시사점이 있다고 봐요."]}
+    ],
+    "explanation": "일반화 가능성 = generalizability. 후속 연구 = follow-up study. 통계적 유의성 = statistical significance. 회귀 분석 = regression analysis. 분산 분석 = ANOVA. p값 = p-value. 시사점 = implications. 정책 입안자 = policymaker. 실증적 근거 = empirical evidence."
+  },
+  {
+    "title": "Academic: Group Project Meeting",
+    "context": "University group project meeting to divide tasks and set deadlines",
+    "turns": [
+      {"speaker": "Team Leader", "line": "이번 주까지 중간 보고서를 완성해야 하는데, 각자 진행 상황을 공유해 주세요."},
+      {"speaker": "You", "line": "제가 맡은 데이터 수집 부분은 80% 완료되었으며, 나머지는 이틀 내로 마무리할 수 있을 것 같습니다.", "options": ["아직 시작도 못 했어요.", "제가 맡은 데이터 수집 부분은 80% 완료되었으며, 나머지는 이틀 내로 마무리할 수 있을 것 같습니다.", "거의 다 했어요.", "다른 사람이 도와주면 빨리 끝낼 수 있어요."]},
+      {"speaker": "Team Member", "line": "분석 부분에서 예상보다 시간이 걸리고 있어서 도움이 필요할 것 같아요."},
+      {"speaker": "You", "line": "제 파트가 이틀 내로 마감되니까, 그 이후에 분석 쪽을 함께 검토하면서 보완하는 건 어떨까요?", "options": ["그건 본인이 알아서 해야지요.", "저도 바빠서 도와줄 수 없어요.", "제 파트가 이틀 내로 마감되니까, 그 이후에 분석 쪽을 함께 검토하면서 보완하는 건 어떨까요?", "교수님께 기한 연장을 요청해 봐요."]},
+      {"speaker": "Team Leader", "line": "보고서 형식과 참고 문헌 정리는 누가 맡을 건가요?"},
+      {"speaker": "You", "line": "참고 문헌 정리는 제가 담당하겠습니다. APA 양식에 맞춰 일괄적으로 정리해 놓을 테니, 최종 취합 시 바로 반영하면 될 것 같습니다.", "options": ["참고 문헌 정리는 제가 담당하겠습니다. APA 양식에 맞춰 일괄적으로 정리해 놓을 테니, 최종 취합 시 바로 반영하면 될 것 같습니다.", "아무나 하면 되지 않나요?", "그건 마지막에 하면 되죠.", "저는 다른 거 할게요."]}
+    ],
+    "explanation": "진행 상황을 공유하다 = to share progress. 마무리하다 = to wrap up/finalize. 검토하다 = to review. 보완하다 = to supplement/complement. 참고 문헌 = references/bibliography. APA 양식 = APA format. 일괄적으로 = uniformly/in batch. 취합 = compilation/consolidation."
+  },
+  {
+    "title": "Workplace: Team Meeting",
+    "context": "Weekly team meeting at a software company discussing project progress",
+    "turns": [
+      {"speaker": "Team Lead", "line": "이번 스프린트 목표 대비 진척률이 어떻게 됩니까?"},
+      {"speaker": "You", "line": "현재 전체 태스크의 70%를 완료한 상태이며, 잔여 작업은 금주 내로 처리할 수 있을 것으로 보입니다.", "options": ["현재 전체 태스크의 70%를 완료한 상태이며, 잔여 작업은 금주 내로 처리할 수 있을 것으로 보입니다.", "열심히 하고 있어요.", "좀 늦어지고 있어요.", "거의 다 했어요."]},
+      {"speaker": "Team Lead", "line": "지난주 발생한 기술적 이슈는 해결되었습니까?"},
+      {"speaker": "You", "line": "서버 응답 지연 문제는 캐싱 구조를 개선하여 해결했으며, 성능이 기존 대비 40% 향상된 것을 확인했습니다.", "options": ["서버 응답 지연 문제는 캐싱 구조를 개선하여 해결했으며, 성능이 기존 대비 40% 향상된 것을 확인했습니다.", "네, 해결했어요.", "아직 확인 중이에요.", "다른 팀에서 해결해 줬어요."]},
+      {"speaker": "Colleague", "line": "QA 팀에서 새로운 버그가 3건 보고되었는데, 우선순위를 어떻게 잡으면 좋을까요?"},
+      {"speaker": "You", "line": "사용자 경험에 직접적인 영향을 미치는 결제 모듈 관련 건을 최우선으로 처리하고, 나머지는 다음 스프린트에 반영하는 것을 제안드립니다.", "options": ["다 같이 빨리 고쳐야죠.", "사용자 경험에 직접적인 영향을 미치는 결제 모듈 관련 건을 최우선으로 처리하고, 나머지는 다음 스프린트에 반영하는 것을 제안드립니다.", "QA 팀이 알아서 정하면 되지 않나요?", "버그가 왜 이렇게 많은 거예요?"]}
+    ],
+    "explanation": "진척률 = progress rate. 잔여 작업 = remaining tasks. 금주 내로 = within this week. 캐싱 구조 = caching architecture. 기존 대비 = compared to existing/previous. QA = Quality Assurance. 최우선으로 처리하다 = to handle with top priority. 반영하다 = to reflect/incorporate."
+  },
+  {
+    "title": "Workplace: Reporting to a Boss",
+    "context": "Monthly report to the department head about team performance",
+    "turns": [
+      {"speaker": "Department Head", "line": "이번 달 실적에 대해 보고해 주세요."},
+      {"speaker": "You", "line": "이번 달 매출은 전월 대비 15% 증가한 3억 2천만 원을 기록했으며, 신규 고객 유치 건수도 목표치를 초과 달성했습니다.", "options": ["잘했어요, 매출이 올랐어요.", "이번 달 매출은 전월 대비 15% 증가한 3억 2천만 원을 기록했으며, 신규 고객 유치 건수도 목표치를 초과 달성했습니다.", "나쁘지 않았어요.", "숫자는 정확히 기억이 안 나는데 괜찮았어요."]},
+      {"speaker": "Department Head", "line": "목표 미달 항목은 없습니까?"},
+      {"speaker": "You", "line": "고객 이탈률이 목표보다 2% 포인트 높게 나타났는데, 이는 경쟁사의 공격적인 프로모션에 기인한 바가 크며, 대응 전략을 수립 중에 있습니다.", "options": ["고객 이탈률이 목표보다 2% 포인트 높게 나타났는데, 이는 경쟁사의 공격적인 프로모션에 기인한 바가 크며, 대응 전략을 수립 중에 있습니다.", "없어요, 다 잘했어요.", "좀 있긴 한데 큰 문제는 아니에요.", "고객이 좀 떠났어요."]},
+      {"speaker": "Department Head", "line": "다음 분기 전략 방향은 어떻게 설정하실 겁니까?"},
+      {"speaker": "You", "line": "기존 고객 유지율 제고를 위한 로열티 프로그램 강화와 더불어, 신규 시장 진출을 위한 파일럿 프로젝트를 병행 추진할 계획입니다.", "options": ["기존 고객 유지율 제고를 위한 로열티 프로그램 강화와 더불어, 신규 시장 진출을 위한 파일럿 프로젝트를 병행 추진할 계획입니다.", "열심히 하겠습니다.", "아직 구체적인 계획은 없어요.", "지금처럼 하면 되지 않을까요?"]}
+    ],
+    "explanation": "전월 대비 = compared to previous month. 신규 고객 유치 = new customer acquisition. 초과 달성하다 = to exceed targets. 고객 이탈률 = customer churn rate. -에 기인한 바가 크다 = largely attributable to. 유지율 제고 = improving retention rate. 병행 추진하다 = to pursue simultaneously."
+  },
+  {
+    "title": "Workplace: Handling a Client Complaint",
+    "context": "A client calls about a delayed delivery and demands explanation",
+    "turns": [
+      {"speaker": "Client", "line": "납품 기한이 이미 일주일이나 지났는데, 도대체 어떻게 된 겁니까?"},
+      {"speaker": "You", "line": "먼저 납품 지연에 대해 진심으로 사과드립니다. 원자재 수급 차질로 인해 불가피하게 일정이 지연된 점 양해 부탁드립니다.", "options": ["먼저 납품 지연에 대해 진심으로 사과드립니다. 원자재 수급 차질로 인해 불가피하게 일정이 지연된 점 양해 부탁드립니다.", "죄송해요, 좀 늦어지고 있어요.", "그건 저희 잘못이 아니에요.", "원래 시간이 좀 걸려요."]},
+      {"speaker": "Client", "line": "사과만으로는 부족합니다. 구체적인 대안을 제시해 주십시오."},
+      {"speaker": "You", "line": "금주 금요일까지 1차분을 우선 납품하고, 잔여분은 차주 수요일까지 완납하겠습니다. 또한 지연에 따른 손해 보전 차원에서 5%의 할인을 적용해 드리겠습니다.", "options": ["빨리 보내 드릴게요.", "금주 금요일까지 1차분을 우선 납품하고, 잔여분은 차주 수요일까지 완납하겠습니다. 또한 지연에 따른 손해 보전 차원에서 5%의 할인을 적용해 드리겠습니다.", "조금만 더 기다려 주세요.", "저희도 어려운 상황이니 이해해 주세요."]},
+      {"speaker": "Client", "line": "향후 이런 일이 재발하지 않도록 보장할 수 있습니까?"},
+      {"speaker": "You", "line": "재발 방지를 위해 이중 공급망 체계를 구축하고, 납품 일정 관리 프로세스를 전면 개편하겠습니다. 진행 상황은 주간 단위로 보고드리겠습니다.", "options": ["재발 방지를 위해 이중 공급망 체계를 구축하고, 납품 일정 관리 프로세스를 전면 개편하겠습니다. 진행 상황은 주간 단위로 보고드리겠습니다.", "앞으로 잘하겠습니다.", "다시는 이런 일 없을 거예요.", "최선을 다하겠습니다."]}
+    ],
+    "explanation": "납품 기한 = delivery deadline. 원자재 수급 차질 = raw material supply disruption. 불가피하게 = unavoidably. 양해 부탁드리다 = to ask for understanding (formal). 완납하다 = to deliver in full. 손해 보전 = loss compensation. 재발 방지 = prevention of recurrence. 이중 공급망 = dual supply chain. 전면 개편하다 = to overhaul completely."
+  },
+  {
+    "title": "Debate: Social Issues",
+    "context": "Panel discussion about the aging population and low birth rate in Korea",
+    "turns": [
+      {"speaker": "Moderator", "line": "저출산 고령화 문제의 근본적인 원인이 무엇이라고 보십니까?"},
+      {"speaker": "You", "line": "주거비와 교육비 부담이 가중되는 가운데 일과 가정의 양립이 어려운 사회 구조가 근본적인 원인이라 할 수 있습니다.", "options": ["아이를 안 낳으려는 사람이 많아서요.", "주거비와 교육비 부담이 가중되는 가운데 일과 가정의 양립이 어려운 사회 구조가 근본적인 원인이라 할 수 있습니다.", "경제가 안 좋아서 그래요.", "요즘 젊은 사람들이 이기적이라서요."]},
+      {"speaker": "Panelist", "line": "출산 장려금 정책이 실효성이 있다고 보십니까?"},
+      {"speaker": "You", "line": "단기적 현금 지원만으로는 한계가 있으며, 보육 인프라 확충과 근로 환경 개선 등 구조적 대책이 병행되어야 실질적인 효과를 기대할 수 있습니다.", "options": ["돈을 더 주면 효과가 있을 거예요.", "단기적 현금 지원만으로는 한계가 있으며, 보육 인프라 확충과 근로 환경 개선 등 구조적 대책이 병행되어야 실질적인 효과를 기대할 수 있습니다.", "효과가 전혀 없다고 생각해요.", "잘 모르겠어요."]},
+      {"speaker": "Moderator", "line": "이민 정책을 통한 해결은 어떻게 평가하십니까?"},
+      {"speaker": "You", "line": "이민 정책은 노동력 부족 문제를 완화할 수 있는 하나의 방안이나, 사회 통합 비용과 문화적 갈등을 최소화하기 위한 체계적인 지원 정책이 전제되어야 합니다.", "options": ["이민을 받으면 문제가 해결돼요.", "이민 정책은 노동력 부족 문제를 완화할 수 있는 하나의 방안이나, 사회 통합 비용과 문화적 갈등을 최소화하기 위한 체계적인 지원 정책이 전제되어야 합니다.", "이민은 반대합니다.", "외국인이 많아지면 좋지 않아요."]}
+    ],
+    "explanation": "저출산 고령화 = low birth rate and aging population. 가중되다 = to be aggravated/intensified. 일과 가정의 양립 = work-life balance. 출산 장려금 = childbirth incentive. 실효성 = effectiveness. 보육 인프라 확충 = expansion of childcare infrastructure. 사회 통합 = social integration. 전제되다 = to be prerequisite."
+  },
+  {
+    "title": "Debate: Environmental Policy",
+    "context": "University debate competition on carbon neutrality and renewable energy",
+    "turns": [
+      {"speaker": "Opponent", "line": "탄소 중립 정책이 경제 성장을 저해할 수 있다는 점에 대해 어떻게 반박하시겠습니까?"},
+      {"speaker": "You", "line": "환경 규제가 단기적으로 비용을 수반하는 것은 사실이나, 장기적으로는 녹색 산업 육성과 새로운 일자리 창출을 통해 오히려 경제 성장의 동력이 될 수 있습니다.", "options": ["환경이 경제보다 중요해요.", "환경 규제가 단기적으로 비용을 수반하는 것은 사실이나, 장기적으로는 녹색 산업 육성과 새로운 일자리 창출을 통해 오히려 경제 성장의 동력이 될 수 있습니다.", "경제 성장을 저해하지 않아요.", "그건 잘못된 주장이에요."]},
+      {"speaker": "Opponent", "line": "재생에너지의 간헐성 문제는 어떻게 해결할 수 있습니까?"},
+      {"speaker": "You", "line": "에너지 저장 기술의 발전과 스마트 그리드 도입을 통해 간헐성 문제를 상당 부분 해소할 수 있으며, 이는 이미 유럽 선진국에서 실증된 바 있습니다.", "options": ["에너지 저장 기술의 발전과 스마트 그리드 도입을 통해 간헐성 문제를 상당 부분 해소할 수 있으며, 이는 이미 유럽 선진국에서 실증된 바 있습니다.", "기술이 발전하면 해결될 거예요.", "원자력 발전을 쓰면 돼요.", "간헐성은 큰 문제가 아니에요."]},
+      {"speaker": "Moderator", "line": "마무리 발언을 부탁드립니다."},
+      {"speaker": "You", "line": "기후 위기는 미래 세대의 생존권과 직결되는 문제인 만큼, 경제적 비용을 감수하더라도 탄소 중립은 선택이 아닌 필수라는 점을 강조하며 마치겠습니다.", "options": ["환경을 보호합시다.", "기후 위기는 미래 세대의 생존권과 직결되는 문제인 만큼, 경제적 비용을 감수하더라도 탄소 중립은 선택이 아닌 필수라는 점을 강조하며 마치겠습니다.", "저희 팀이 이겼다고 생각합니다.", "감사합니다, 이상으로 마치겠습니다."]}
+    ],
+    "explanation": "탄소 중립 = carbon neutrality. 저해하다 = to hinder/impede. 반박하다 = to refute. 녹색 산업 육성 = fostering green industry. 간헐성 = intermittency. 스마트 그리드 = smart grid. 실증되다 = to be empirically proven. -ㄴ 바 있다 = there has been a case of. 생존권 = right to survival. 감수하다 = to endure/bear."
+  },
+  {
+    "title": "Debate: Technology Impact",
+    "context": "Roundtable discussion on AI's impact on employment and society",
+    "turns": [
+      {"speaker": "Moderator", "line": "인공지능이 고용 시장에 미치는 영향에 대해 견해를 밝혀 주십시오."},
+      {"speaker": "You", "line": "인공지능의 발전은 단순 반복 업무를 대체하는 한편, 데이터 분석이나 AI 윤리 등 새로운 직종을 창출할 것으로 전망됩니다. 따라서 파괴적 영향보다는 고용 구조의 전환으로 바라보는 것이 적절합니다.", "options": ["AI가 모든 일자리를 없앨 거예요.", "인공지능의 발전은 단순 반복 업무를 대체하는 한편, 데이터 분석이나 AI 윤리 등 새로운 직종을 창출할 것으로 전망됩니다. 따라서 파괴적 영향보다는 고용 구조의 전환으로 바라보는 것이 적절합니다.", "걱정할 필요 없어요.", "AI는 아직 멀었어요."]},
+      {"speaker": "Panelist", "line": "그렇다면 교육 체계는 어떻게 변화해야 한다고 보십니까?"},
+      {"speaker": "You", "line": "암기 위주의 교육에서 탈피하여 비판적 사고력과 창의성을 함양하는 방향으로 전환되어야 하며, 평생 학습 체계의 구축이 불가결합니다.", "options": ["코딩을 가르치면 돼요.", "교육은 바꿀 필요 없어요.", "암기 위주의 교육에서 탈피하여 비판적 사고력과 창의성을 함양하는 방향으로 전환되어야 하며, 평생 학습 체계의 구축이 불가결합니다.", "대학에서 AI를 가르쳐야 해요."]},
+      {"speaker": "Moderator", "line": "AI 규제에 대해서는 어떤 입장이십니까?"},
+      {"speaker": "You", "line": "기술 발전을 저해하지 않는 선에서 개인정보 보호와 알고리즘 투명성을 확보하기 위한 최소한의 규제 틀은 마련되어야 한다고 봅니다.", "options": ["규제를 많이 해야 해요.", "규제가 필요 없어요.", "기술 발전을 저해하지 않는 선에서 개인정보 보호와 알고리즘 투명성을 확보하기 위한 최소한의 규제 틀은 마련되어야 한다고 봅니다.", "다른 나라를 따라 하면 돼요."]}
+    ],
+    "explanation": "고용 시장 = job market. 견해를 밝히다 = to express one's views. 대체하다 = to replace. 직종을 창출하다 = to create new occupations. 고용 구조의 전환 = transformation of employment structure. 탈피하다 = to break away from. 함양하다 = to cultivate/foster. 불가결하다 = indispensable. 알고리즘 투명성 = algorithmic transparency."
+  },
+  {
+    "title": "Formal Meeting: Business Negotiation",
+    "context": "Negotiating a partnership deal between two companies",
+    "turns": [
+      {"speaker": "Partner Company Rep", "line": "양사 간 협력 방안에 대해 논의하고자 합니다. 귀사에서 제안하신 조건을 설명해 주시겠습니까?"},
+      {"speaker": "You", "line": "저희는 기술 라이선스를 제공하는 대신 매출의 8%를 로열티로 수취하는 구조를 제안드립니다. 아울러 공동 마케팅 비용은 5대 5로 분담하는 것을 전제로 합니다.", "options": ["저희는 기술 라이선스를 제공하는 대신 매출의 8%를 로열티로 수취하는 구조를 제안드립니다. 아울러 공동 마케팅 비용은 5대 5로 분담하는 것을 전제로 합니다.", "좋은 조건으로 해 드릴게요.", "기술을 주는 대가로 돈을 좀 받으려고요.", "서로 윈윈할 수 있어요."]},
+      {"speaker": "Partner Company Rep", "line": "로열티 비율이 다소 높다고 판단되는데, 조정의 여지는 있습니까?"},
+      {"speaker": "You", "line": "협상의 여지는 충분히 있습니다. 다만, 초기 기술 이전에 소요되는 비용을 감안하면 최소 6% 이상은 유지되어야 사업 타당성이 확보된다고 봅니다.", "options": ["8%가 적당해요, 깎아 드릴 수 없어요.", "협상의 여지는 충분히 있습니다. 다만, 초기 기술 이전에 소요되는 비용을 감안하면 최소 6% 이상은 유지되어야 사업 타당성이 확보된다고 봅니다.", "얼마가 좋겠어요?", "좀 깎아 줄게요."]},
+      {"speaker": "Partner Company Rep", "line": "계약 기간과 독점권에 대해서도 논의가 필요합니다."},
+      {"speaker": "You", "line": "초기 계약 기간은 3년으로 설정하되, 성과 평가를 기반으로 연장 여부를 결정하는 것이 합리적이라 사료됩니다. 독점권은 특정 지역에 한정하여 부여하는 방안을 검토 중입니다.", "options": ["초기 계약 기간은 3년으로 설정하되, 성과 평가를 기반으로 연장 여부를 결정하는 것이 합리적이라 사료됩니다. 독점권은 특정 지역에 한정하여 부여하는 방안을 검토 중입니다.", "5년으로 하면 안 될까요?", "독점권은 드리기 어려워요.", "계약은 길수록 좋죠."]}
+    ],
+    "explanation": "양사 = both companies. 기술 라이선스 = technology license. 수취하다 = to collect/receive (formal). 아울러 = furthermore/in addition. 분담하다 = to share costs. 사업 타당성 = business feasibility. 사료되다 = to be considered (very formal). 독점권을 부여하다 = to grant exclusive rights."
+  },
+  {
+    "title": "Formal Meeting: Contract Discussion",
+    "context": "Reviewing contract terms with legal teams from both sides",
+    "turns": [
+      {"speaker": "Legal Counsel", "line": "계약서 초안의 제7조 손해배상 조항에 대해 의견이 있으시면 말씀해 주십시오."},
+      {"speaker": "You", "line": "손해배상 한도를 계약 금액의 100%로 설정하신 부분은 저희 입장에서 과도하다고 판단되며, 50%를 상한선으로 조정할 것을 요청드립니다.", "options": ["손해배상 한도를 계약 금액의 100%로 설정하신 부분은 저희 입장에서 과도하다고 판단되며, 50%를 상한선으로 조정할 것을 요청드립니다.", "그 조항은 좀 바꿔 주세요.", "손해배상이 너무 많아요.", "괜찮은 것 같아요."]},
+      {"speaker": "Legal Counsel", "line": "불가항력 조항은 어떤 범위까지 인정하실 의향이 있으십니까?"},
+      {"speaker": "You", "line": "천재지변, 전쟁, 전염병에 더하여 정부 규제 변경으로 인한 이행 불능도 불가항력 사유에 포함시킬 것을 제안드립니다.", "options": ["천재지변만 포함시키면 돼요.", "천재지변, 전쟁, 전염병에 더하여 정부 규제 변경으로 인한 이행 불능도 불가항력 사유에 포함시킬 것을 제안드립니다.", "넓게 잡으면 좋겠어요.", "불가항력이 뭔지 잘 모르겠어요."]},
+      {"speaker": "Legal Counsel", "line": "분쟁 해결 방식은 중재로 하시겠습니까, 소송으로 하시겠습니까?"},
+      {"speaker": "You", "line": "분쟁 발생 시 대한상사중재원의 중재 규칙에 따른 중재로 최종 해결하는 것이 양측 모두에게 시간적, 비용적으로 효율적이라 판단됩니다.", "options": ["소송이 낫지 않을까요?", "아무거나 괜찮아요.", "분쟁 발생 시 대한상사중재원의 중재 규칙에 따른 중재로 최종 해결하는 것이 양측 모두에게 시간적, 비용적으로 효율적이라 판단됩니다.", "변호사한테 물어볼게요."]}
+    ],
+    "explanation": "손해배상 조항 = damages/indemnity clause. 상한선 = upper limit/cap. 불가항력 = force majeure. 천재지변 = natural disaster. 이행 불능 = inability to perform. 대한상사중재원 = Korean Commercial Arbitration Board. 중재 = arbitration. 소송 = litigation."
+  },
+  {
+    "title": "News Discussion: Current Events",
+    "context": "Colleagues discussing a recent policy change during lunch",
+    "turns": [
+      {"speaker": "Colleague", "line": "이번에 발표된 부동산 규제 완화 정책에 대해 어떻게 생각하세요?"},
+      {"speaker": "You", "line": "단기적으로는 거래 활성화에 기여할 수 있겠으나, 투기 수요를 자극하여 서민 주거 안정을 저해할 우려가 있다고 봅니다.", "options": ["좋은 정책인 것 같아요.", "잘 모르겠어요.", "단기적으로는 거래 활성화에 기여할 수 있겠으나, 투기 수요를 자극하여 서민 주거 안정을 저해할 우려가 있다고 봅니다.", "부동산 정책에는 관심이 없어요."]},
+      {"speaker": "Colleague", "line": "그러면 주거 문제 해결을 위한 대안은 뭐가 있을까요?"},
+      {"speaker": "You", "line": "공공 임대 주택의 공급 확대와 함께 청년 및 신혼부부를 대상으로 한 맞춤형 주거 지원 정책이 강화되어야 한다고 생각합니다.", "options": ["공공 임대 주택의 공급 확대와 함께 청년 및 신혼부부를 대상으로 한 맞춤형 주거 지원 정책이 강화되어야 한다고 생각합니다.", "집값을 내리면 돼요.", "정부가 알아서 하겠죠.", "모두 다 집을 사면 되죠."]},
+      {"speaker": "Colleague", "line": "인구 감소 추세를 감안하면 장기적으로 집값이 하락하지 않을까요?"},
+      {"speaker": "You", "line": "수도권 집중 현상이 지속되는 한 수도권 부동산의 하방 경직성은 유지될 가능성이 높으며, 지방과의 양극화는 더욱 심화될 것으로 예상됩니다.", "options": ["네, 집값이 떨어질 거예요.", "잘 모르겠어요, 경제학자가 아니라서요.", "수도권 집중 현상이 지속되는 한 수도권 부동산의 하방 경직성은 유지될 가능성이 높으며, 지방과의 양극화는 더욱 심화될 것으로 예상됩니다.", "집값은 항상 오르기만 해요."]}
+    ],
+    "explanation": "규제 완화 = deregulation. 거래 활성화 = transaction vitalization. 투기 수요 = speculative demand. 서민 주거 안정 = housing stability for ordinary citizens. 공공 임대 주택 = public rental housing. 맞춤형 = customized/tailored. 하방 경직성 = downward rigidity. 양극화 = polarization."
+  },
+  {
+    "title": "News Discussion: Economic Trends",
+    "context": "Discussion panel analyzing Korea's economic outlook",
+    "turns": [
+      {"speaker": "Host", "line": "최근 원/달러 환율 급등의 배경과 전망에 대해 분석해 주시겠습니까?"},
+      {"speaker": "You", "line": "미국 연방준비제도의 긴축 기조 유지와 한미 간 금리 차이 확대가 환율 상승의 주된 요인이며, 당분간 고환율 기조가 지속될 것으로 전망됩니다.", "options": ["미국 연방준비제도의 긴축 기조 유지와 한미 간 금리 차이 확대가 환율 상승의 주된 요인이며, 당분간 고환율 기조가 지속될 것으로 전망됩니다.", "환율이 올랐어요.", "미국 때문이에요.", "곧 내려갈 거예요."]},
+      {"speaker": "Host", "line": "수출 기업과 내수 기업에 미치는 영향은 각각 어떻습니까?"},
+      {"speaker": "You", "line": "수출 기업은 환율 상승으로 인한 가격 경쟁력 제고 효과를 누릴 수 있는 반면, 원자재 수입 비용 증가로 내수 기업의 수익성은 악화될 개연성이 높습니다.", "options": ["수출은 좋고 수입은 안 좋아요.", "수출 기업은 환율 상승으로 인한 가격 경쟁력 제고 효과를 누릴 수 있는 반면, 원자재 수입 비용 증가로 내수 기업의 수익성은 악화될 개연성이 높습니다.", "모든 기업에 안 좋아요.", "잘 모르겠어요, 복잡한 문제예요."]},
+      {"speaker": "Host", "line": "개인 투자자에게 해 주실 조언이 있으시다면요?"},
+      {"speaker": "You", "line": "환율 변동성이 높은 시기에는 환헤지 상품을 활용하거나, 달러 자산과 원화 자산의 비중을 적절히 분산하는 전략이 바람직합니다.", "options": ["달러를 많이 사세요.", "환율 변동성이 높은 시기에는 환헤지 상품을 활용하거나, 달러 자산과 원화 자산의 비중을 적절히 분산하는 전략이 바람직합니다.", "투자하지 마세요.", "전문가한테 물어보세요."]}
+    ],
+    "explanation": "환율 급등 = sharp rise in exchange rate. 연방준비제도 = Federal Reserve. 긴축 기조 = tightening stance. 금리 차이 = interest rate differential. 가격 경쟁력 제고 = enhancement of price competitiveness. 개연성 = probability/likelihood. 환헤지 = currency hedging. 분산하다 = to diversify."
+  },
+  {
+    "title": "Medical Consultation: Symptom Description",
+    "context": "Visiting an internal medicine doctor to describe persistent symptoms",
+    "turns": [
+      {"speaker": "Doctor", "line": "어디가 불편하셔서 오셨습니까?"},
+      {"speaker": "You", "line": "약 2주 전부터 식후에 상복부에 지속적인 통증이 있으며, 간헐적으로 속이 메스꺼운 증상이 동반됩니다.", "options": ["약 2주 전부터 식후에 상복부에 지속적인 통증이 있으며, 간헐적으로 속이 메스꺼운 증상이 동반됩니다.", "배가 아파요.", "좀 안 좋아요.", "여기저기 아파요."]},
+      {"speaker": "Doctor", "line": "통증의 양상을 좀 더 구체적으로 설명해 주시겠어요?"},
+      {"speaker": "You", "line": "둔한 압박감이 지속되다가 식사 직후에는 칼로 찌르는 듯한 예리한 통증으로 변하는 양상을 보입니다. 야간에 특히 심해지는 경향이 있습니다.", "options": ["그냥 아파요.", "둔한 압박감이 지속되다가 식사 직후에는 칼로 찌르는 듯한 예리한 통증으로 변하는 양상을 보입니다. 야간에 특히 심해지는 경향이 있습니다.", "많이 아플 때도 있고 안 아플 때도 있어요.", "참을 수 없을 정도로 아파요."]},
+      {"speaker": "Doctor", "line": "기저 질환이나 복용 중인 약이 있습니까?"},
+      {"speaker": "You", "line": "고혈압으로 아침마다 혈압 강하제를 복용하고 있으며, 최근 두통으로 인해 진통제를 수시로 복용한 이력이 있습니다.", "options": ["약은 안 먹어요.", "고혈압으로 아침마다 혈압 강하제를 복용하고 있으며, 최근 두통으로 인해 진통제를 수시로 복용한 이력이 있습니다.", "혈압 약을 먹고 있어요.", "건강한 편이에요."]}
+    ],
+    "explanation": "상복부 = upper abdomen (epigastric area). 간헐적으로 = intermittently. 동반되다 = to accompany. 통증의 양상 = pain pattern. 둔한 압박감 = dull pressure. 예리한 통증 = sharp pain. 기저 질환 = underlying condition. 혈압 강하제 = antihypertensive medication. 복용하다 = to take (medicine, formal)."
+  },
+  {
+    "title": "Medical Consultation: Treatment Options",
+    "context": "Doctor explaining diagnosis and discussing treatment plans",
+    "turns": [
+      {"speaker": "Doctor", "line": "검사 결과 위염 소견이 확인되었으며, 헬리코박터 감염도 양성으로 나왔습니다. 치료 방침에 대해 설명드리겠습니다."},
+      {"speaker": "You", "line": "헬리코박터 제균 치료가 필요하다는 말씀이신가요? 치료 기간과 부작용에 대해 구체적으로 알고 싶습니다.", "options": ["헬리코박터 제균 치료가 필요하다는 말씀이신가요? 치료 기간과 부작용에 대해 구체적으로 알고 싶습니다.", "알겠어요, 약 주세요.", "심각한 건가요?", "병원 안 오고 낫는 방법은 없나요?"]},
+      {"speaker": "Doctor", "line": "2주간 항생제와 위산 분비 억제제를 병용 투여하게 됩니다. 일부 환자에서 설사나 미각 이상이 나타날 수 있습니다."},
+      {"speaker": "You", "line": "부작용이 심할 경우 약제를 변경하는 것이 가능합니까? 또한 치료 중 식이 요법이나 생활 습관에서 특별히 유의해야 할 사항이 있는지 여쭤보고 싶습니다.", "options": ["부작용이 심할 경우 약제를 변경하는 것이 가능합니까? 또한 치료 중 식이 요법이나 생활 습관에서 특별히 유의해야 할 사항이 있는지 여쭤보고 싶습니다.", "알겠어요.", "부작용이 무서운데 꼭 먹어야 하나요?", "인터넷에서 찾아볼게요."]},
+      {"speaker": "Doctor", "line": "치료 종료 후 4주 뒤에 제균 여부를 확인하는 추적 검사를 실시하겠습니다."},
+      {"speaker": "You", "line": "알겠습니다. 추적 검사 시 내시경을 다시 해야 합니까, 아니면 호기 검사만으로 확인이 가능합니까?", "options": ["네, 알겠어요.", "알겠습니다. 추적 검사 시 내시경을 다시 해야 합니까, 아니면 호기 검사만으로 확인이 가능합니까?", "검사를 또 해야 해요?", "꼭 와야 하나요?"]}
+    ],
+    "explanation": "위염 소견 = gastritis findings. 헬리코박터 제균 치료 = H. pylori eradication therapy. 위산 분비 억제제 = proton pump inhibitor (acid suppressor). 병용 투여 = combination administration. 미각 이상 = taste disturbance. 약제를 변경하다 = to change medication. 식이 요법 = dietary therapy. 추적 검사 = follow-up examination. 호기 검사 = urea breath test."
+  },
+  {
+    "title": "Real Estate: Apartment Viewing",
+    "context": "Viewing a prospective apartment with a real estate agent in Seoul",
+    "turns": [
+      {"speaker": "Agent", "line": "이 매물은 전용 면적 84제곱미터, 남향이고 올해 입주 5년 차입니다. 관리비는 월 25만 원 정도 나옵니다."},
+      {"speaker": "You", "line": "채광과 환기 상태는 양호한 편인가요? 그리고 층간 소음 문제에 대한 이전 거주자의 피드백이 있었는지 궁금합니다.", "options": ["채광과 환기 상태는 양호한 편인가요? 그리고 층간 소음 문제에 대한 이전 거주자의 피드백이 있었는지 궁금합니다.", "깨끗하네요.", "넓은 편이에요?", "마음에 들어요."]},
+      {"speaker": "Agent", "line": "남향이라 채광은 좋은 편이고, 층간 소음 민원은 접수된 적이 없다고 합니다."},
+      {"speaker": "You", "line": "단지 내 주차 공간은 세대당 몇 대 기준이며, 커뮤니티 시설의 이용 현황은 어떻습니까?", "options": ["주차할 곳이 있어요?", "단지 내 주차 공간은 세대당 몇 대 기준이며, 커뮤니티 시설의 이용 현황은 어떻습니까?", "주차장은 어디에 있어요?", "운동시설이 있나요?"]},
+      {"speaker": "Agent", "line": "세대당 1.5대 기준이고, 피트니스 센터와 독서실이 있습니다. 가격은 전세 6억, 매매 9억 5천입니다."},
+      {"speaker": "You", "line": "인근 실거래가 추이와 비교했을 때 적정한 가격인지, 그리고 향후 재건축이나 리모델링 관련 추진 계획이 있는지 확인 부탁드립니다.", "options": ["인근 실거래가 추이와 비교했을 때 적정한 가격인지, 그리고 향후 재건축이나 리모델링 관련 추진 계획이 있는지 확인 부탁드립니다.", "좀 비싼 것 같은데 깎아 주세요.", "한번 생각해 볼게요.", "괜찮은 것 같아요."]}
+    ],
+    "explanation": "전용 면적 = exclusive area (net floor area). 채광 = natural lighting. 환기 = ventilation. 층간 소음 = inter-floor noise. 세대당 = per household unit. 전세 = jeonse (lump-sum deposit lease). 매매 = sale/purchase. 실거래가 = actual transaction price. 재건축 = reconstruction. 리모델링 = remodeling."
+  },
+  {
+    "title": "Real Estate: Lease Negotiation",
+    "context": "Negotiating jeonse (deposit lease) terms with a landlord through an agent",
+    "turns": [
+      {"speaker": "Agent", "line": "집주인께서 전세 보증금 5억 5천만 원을 요구하고 계십니다."},
+      {"speaker": "You", "line": "인근 유사 매물의 전세 시세가 5억 원 내외인 점을 감안하면 다소 높은 편이라 판단됩니다. 5억 원으로 조정이 가능한지 여쭤봐 주시겠습니까?", "options": ["너무 비싸요, 깎아 주세요.", "인근 유사 매물의 전세 시세가 5억 원 내외인 점을 감안하면 다소 높은 편이라 판단됩니다. 5억 원으로 조정이 가능한지 여쭤봐 주시겠습니까?", "5억에 해 주세요.", "좀 비싼데 어떻게 안 될까요?"]},
+      {"speaker": "Agent", "line": "집주인께서 5억 2천까지는 가능하다고 하셨습니다. 계약 기간은 2년입니다."},
+      {"speaker": "You", "line": "5억 2천에 동의하되, 전세권 설정 등기와 전세보증금 반환보증 보험 가입을 계약 조건에 명시해 주실 것을 요청드립니다.", "options": ["그 정도면 괜찮아요.", "5억 2천에 동의하되, 전세권 설정 등기와 전세보증금 반환보증 보험 가입을 계약 조건에 명시해 주실 것을 요청드립니다.", "계약합시다.", "보증금 돌려받을 수 있는 거죠?"]},
+      {"speaker": "Agent", "line": "특약 사항으로 추가할 내용이 있으십니까?"},
+      {"speaker": "You", "line": "입주 전 도배와 장판 교체를 임대인 부담으로 시행할 것과, 계약 기간 중 전세금 인상이 없음을 특약으로 명기해 주시기 바랍니다.", "options": ["없어요.", "입주 전 도배와 장판 교체를 임대인 부담으로 시행할 것과, 계약 기간 중 전세금 인상이 없음을 특약으로 명기해 주시기 바랍니다.", "깨끗하게 해 주세요.", "특별히 없는데, 잘 부탁드려요."]}
+    ],
+    "explanation": "전세 보증금 = jeonse deposit. 시세 = market price. 전세권 설정 등기 = jeonse lien registration. 전세보증금 반환보증 보험 = deposit return guarantee insurance. 명시하다 = to specify/stipulate. 특약 사항 = special terms/conditions. 임대인 = landlord/lessor. 명기하다 = to clearly state in writing."
+  },
+  {
+    "title": "Legal/Government: Filing a Complaint",
+    "context": "Filing a consumer complaint at the Korea Consumer Agency",
+    "turns": [
+      {"speaker": "Officer", "line": "어떤 사안으로 민원을 접수하시려는 건지 말씀해 주십시오."},
+      {"speaker": "You", "line": "온라인 쇼핑몰에서 구매한 전자제품이 배송 당시부터 하자가 있었음에도 불구하고, 판매자가 교환 및 환불을 거부하고 있어 신고하고자 합니다.", "options": ["물건이 고장 났는데 바꿔 주질 않아요.", "온라인 쇼핑몰에서 구매한 전자제품이 배송 당시부터 하자가 있었음에도 불구하고, 판매자가 교환 및 환불을 거부하고 있어 신고하고자 합니다.", "환불해 주세요.", "사기당한 것 같아요."]},
+      {"speaker": "Officer", "line": "구매 일자와 판매자 정보, 그리고 관련 증빙 자료를 가지고 계십니까?"},
+      {"speaker": "You", "line": "구매 확인서, 결제 내역서, 그리고 하자 발생을 입증하는 사진 자료를 모두 준비했습니다. 또한 판매자와 주고받은 대화 기록도 보존하고 있습니다.", "options": ["구매 확인서, 결제 내역서, 그리고 하자 발생을 입증하는 사진 자료를 모두 준비했습니다. 또한 판매자와 주고받은 대화 기록도 보존하고 있습니다.", "영수증은 있어요.", "자료가 좀 부족한데 괜찮나요?", "카톡 캡처한 거 있어요."]},
+      {"speaker": "Officer", "line": "전자상거래법에 따라 조정 절차를 진행하게 됩니다. 소요 기간은 약 30일입니다."},
+      {"speaker": "You", "line": "조정 절차에서 합의에 이르지 못할 경우, 소비자분쟁해결기준에 의거하여 소액 재판을 진행하는 것도 가능합니까?", "options": ["빨리 해결해 주세요.", "조정 절차에서 합의에 이르지 못할 경우, 소비자분쟁해결기준에 의거하여 소액 재판을 진행하는 것도 가능합니까?", "30일이나 걸려요?", "알겠어요, 기다릴게요."]}
+    ],
+    "explanation": "민원을 접수하다 = to file a complaint. 하자 = defect. 교환 및 환불 = exchange and refund. 증빙 자료 = supporting documents/evidence. 입증하다 = to prove/substantiate. 전자상거래법 = E-Commerce Act. 조정 절차 = mediation process. 소비자분쟁해결기준 = Consumer Dispute Resolution Standards. 소액 재판 = small claims court."
+  },
+  {
+    "title": "Legal/Government: Visa Consultation",
+    "context": "Consulting at an immigration office about changing visa status",
+    "turns": [
+      {"speaker": "Immigration Officer", "line": "체류 자격 변경에 관한 상담이시라고요. 현재 비자 종류와 체류 기간을 말씀해 주십시오."},
+      {"speaker": "You", "line": "현재 D-10 구직 비자로 체류 중이며, 체류 기간 만료일은 다음 달 15일입니다. 최근 취업이 확정되어 E-7 특정활동 비자로 변경하고자 합니다.", "options": ["현재 D-10 구직 비자로 체류 중이며, 체류 기간 만료일은 다음 달 15일입니다. 최근 취업이 확정되어 E-7 특정활동 비자로 변경하고자 합니다.", "비자를 바꾸고 싶어요.", "취직했는데 비자가 곧 끝나요.", "일할 수 있는 비자로 바꿔 주세요."]},
+      {"speaker": "Immigration Officer", "line": "E-7 비자 변경에 필요한 서류를 안내해 드리겠습니다. 고용 계약서, 사업자등록증 사본, 학력 증명서가 기본 서류입니다."},
+      {"speaker": "You", "line": "고용 계약서와 학력 증명서는 이미 구비했으나, 학력 인증을 위해 아포스티유 확인이 추가로 필요한지 확인 부탁드립니다.", "options": ["다 준비했어요.", "고용 계약서와 학력 증명서는 이미 구비했으나, 학력 인증을 위해 아포스티유 확인이 추가로 필요한지 확인 부탁드립니다.", "서류가 좀 부족해요.", "어떤 서류가 필요해요?"]},
+      {"speaker": "Immigration Officer", "line": "아포스티유 또는 영사 확인이 필요하며, 처리 기간은 약 2주입니다."},
+      {"speaker": "You", "line": "비자 변경 심사 기간 동안 현 비자가 만료될 경우를 대비하여, 체류 기간 연장 신청을 선행하는 것이 바람직합니까?", "options": ["비자 변경 심사 기간 동안 현 비자가 만료될 경우를 대비하여, 체류 기간 연장 신청을 선행하는 것이 바람직합니까?", "그러면 불법 체류가 되나요?", "빨리 해 주세요.", "괜찮겠죠?"]}
+    ],
+    "explanation": "체류 자격 변경 = change of status of stay. D-10 구직 비자 = job-seeking visa. E-7 특정활동 비자 = specific activities visa. 구비하다 = to prepare/furnish. 아포스티유 = apostille. 영사 확인 = consular legalization. 선행하다 = to precede/do beforehand. 바람직하다 = desirable/advisable."
+  },
+  {
+    "title": "Cultural Discussion: Korean Literature",
+    "context": "Book club discussing modern Korean literature and its themes",
+    "turns": [
+      {"speaker": "Book Club Leader", "line": "이번 달 선정 도서인 한강 작가의 '채식주의자'에 대해 이야기해 볼까요? 인상 깊었던 부분이 있으셨나요?"},
+      {"speaker": "You", "line": "사회적 규범에 대한 개인의 저항을 식물적 변신이라는 은유를 통해 표현한 점이 인상적이었으며, 한국 사회의 가부장적 구조에 대한 날카로운 비판이 담겨 있다고 느꼈습니다.", "options": ["재미있었어요.", "사회적 규범에 대한 개인의 저항을 식물적 변신이라는 은유를 통해 표현한 점이 인상적이었으며, 한국 사회의 가부장적 구조에 대한 날카로운 비판이 담겨 있다고 느꼈습니다.", "좀 이상한 소설이었어요.", "왜 고기를 안 먹는지 이해가 안 됐어요."]},
+      {"speaker": "Book Club Member", "line": "영혜의 행동을 저항으로 볼 수 있을까요, 아니면 정신적 질환의 발현으로 봐야 할까요?"},
+      {"speaker": "You", "line": "양자가 상호 배타적이지 않다고 봅니다. 사회적 억압이 극한에 달했을 때 저항의 형태가 자기 파괴적으로 나타날 수 있다는 점에서, 이는 곧 사회 구조의 폭력성을 반영하는 것이 아닐까요?", "options": ["저항이라고 생각해요.", "양자가 상호 배타적이지 않다고 봅니다. 사회적 억압이 극한에 달했을 때 저항의 형태가 자기 파괴적으로 나타날 수 있다는 점에서, 이는 곧 사회 구조의 폭력성을 반영하는 것이 아닐까요?", "정신 질환이에요.", "잘 모르겠어요."]},
+      {"speaker": "Book Club Leader", "line": "한국 문학에서 이런 주제 의식이 어떤 흐름 속에 있다고 보십니까?"},
+      {"speaker": "You", "line": "1990년대 이후 한국 문학이 거대 서사에서 개인의 내면과 정체성 탐구로 전환된 흐름의 연장선상에 있으며, 특히 여성 작가들의 목소리가 부각되면서 기존의 문학적 담론을 확장시킨 의의가 있다고 생각합니다.", "options": ["한국 문학이 많이 발전했어요.", "1990년대 이후 한국 문학이 거대 서사에서 개인의 내면과 정체성 탐구로 전환된 흐름의 연장선상에 있으며, 특히 여성 작가들의 목소리가 부각되면서 기존의 문학적 담론을 확장시킨 의의가 있다고 생각합니다.", "다른 작가의 책도 읽어 봐야 해요.", "한강 작가가 노벨상을 받아서 유명해졌죠."]}
+    ],
+    "explanation": "은유 = metaphor. 가부장적 구조 = patriarchal structure. 상호 배타적 = mutually exclusive. 자기 파괴적 = self-destructive. 폭력성을 반영하다 = to reflect violence/brutality. 거대 서사 = grand narrative. 정체성 탐구 = identity exploration. 문학적 담론 = literary discourse. 의의 = significance."
+  },
+  {
+    "title": "Cultural Discussion: Comparing Cultural Differences",
+    "context": "International exchange event discussing cultural differences between Korea and other countries",
+    "turns": [
+      {"speaker": "Moderator", "line": "한국의 직장 문화에서 외국인들이 가장 적응하기 어려워하는 점은 무엇이라고 생각하십니까?"},
+      {"speaker": "You", "line": "위계 질서에 기반한 의사소통 방식과 회식 문화가 대표적일 것입니다. 서양 문화권에서는 수평적 소통을 지향하는 반면, 한국에서는 상하 관계에 따른 경어 사용과 예절이 중시되기 때문입니다.", "options": ["야근이 많아서요.", "위계 질서에 기반한 의사소통 방식과 회식 문화가 대표적일 것입니다. 서양 문화권에서는 수평적 소통을 지향하는 반면, 한국에서는 상하 관계에 따른 경어 사용과 예절이 중시되기 때문입니다.", "한국 문화가 어려워요.", "존댓말을 쓰는 게 힘들다고 해요."]},
+      {"speaker": "Participant", "line": "그런 문화적 차이를 극복하기 위한 방법이 있을까요?"},
+      {"speaker": "You", "line": "상호 이해를 위한 다문화 교육 프로그램의 활성화와 더불어, 세대 간 인식 차이를 좁히기 위한 열린 대화의 장이 마련되어야 한다고 봅니다. 문화적 다양성을 존중하되 공통의 업무 규범을 확립하는 것이 핵심입니다.", "options": ["시간이 지나면 적응돼요.", "상호 이해를 위한 다문화 교육 프로그램의 활성화와 더불어, 세대 간 인식 차이를 좁히기 위한 열린 대화의 장이 마련되어야 한다고 봅니다. 문화적 다양성을 존중하되 공통의 업무 규범을 확립하는 것이 핵심입니다.", "한국 문화를 배우면 돼요.", "외국인한테 맞춰 줘야죠."]},
+      {"speaker": "Moderator", "line": "한국 문화가 세계화되면서 변화하고 있는 부분이 있다면 무엇이라고 보십니까?"},
+      {"speaker": "You", "line": "한류를 매개로 한 문화 교류가 확대되면서 한국 사회 내에서도 다양성에 대한 수용도가 높아지고 있으며, 전통적 집단주의에서 개인의 자율성을 중시하는 방향으로 가치관이 변화하고 있다고 관찰됩니다.", "options": ["한류 덕분에 많이 변했어요.", "K-pop이 인기가 많아요.", "별로 변하지 않았어요.", "한류를 매개로 한 문화 교류가 확대되면서 한국 사회 내에서도 다양성에 대한 수용도가 높아지고 있으며, 전통적 집단주의에서 개인의 자율성을 중시하는 방향으로 가치관이 변화하고 있다고 관찰됩니다."]}
+    ],
+    "explanation": "위계 질서 = hierarchical order. 수평적 소통 = horizontal communication. 경어 = honorific language. 다문화 교육 = multicultural education. 인식 차이를 좁히다 = to narrow the perception gap. 업무 규범을 확립하다 = to establish work norms. 한류를 매개로 = through the medium of Hallyu. 집단주의 = collectivism. 자율성 = autonomy."
+  },
+  {
+    "title": "Complaint Resolution: Product Defect Escalation",
+    "context": "Escalating a product defect complaint after initial customer service failed to resolve it",
+    "turns": [
+      {"speaker": "Customer Service Manager", "line": "이전에 접수하신 민원이 해결되지 않아 불편을 드린 점 사과드립니다. 어떤 부분이 미흡했는지 말씀해 주십시오."},
+      {"speaker": "You", "line": "구매 후 일주일 만에 제품에 결함이 발생하여 교환을 요청했으나, 담당자가 사용자 과실로 판정하여 무상 수리를 거부했습니다. 그러나 제조 결함임을 입증하는 외부 검수 보고서를 확보한 상태입니다.", "options": ["물건이 고장 났는데 안 바꿔 줬어요.", "구매 후 일주일 만에 제품에 결함이 발생하여 교환을 요청했으나, 담당자가 사용자 과실로 판정하여 무상 수리를 거부했습니다. 그러나 제조 결함임을 입증하는 외부 검수 보고서를 확보한 상태입니다.", "직원이 너무 불친절했어요.", "환불해 주세요."]},
+      {"speaker": "Customer Service Manager", "line": "외부 검수 보고서를 확인한 후 재검토하겠습니다. 원하시는 해결 방안은 무엇입니까?"},
+      {"speaker": "You", "line": "제품 결함이 확인된 만큼, 동일 제품으로의 교환이 아닌 전액 환불을 요청드립니다. 아울러 수차례 방문에 따른 시간적 손실에 대한 보상도 함께 검토해 주시기 바랍니다.", "options": ["그냥 바꿔 주세요.", "제품 결함이 확인된 만큼, 동일 제품으로의 교환이 아닌 전액 환불을 요청드립니다. 아울러 수차례 방문에 따른 시간적 손실에 대한 보상도 함께 검토해 주시기 바랍니다.", "돈 돌려주세요.", "사과만 해 주시면 돼요."]},
+      {"speaker": "Customer Service Manager", "line": "내부 검토 후 연락드리겠습니다. 통상 3영업일 이내에 결과를 안내해 드립니다."},
+      {"speaker": "You", "line": "3영업일 이내에 회신이 없을 경우 한국소비자원에 정식으로 분쟁 조정을 신청할 예정이오니, 기한 내 처리를 부탁드립니다. 담당자 성함과 직통 연락처를 알려 주시겠습니까?", "options": ["알겠어요, 기다릴게요.", "3영업일 이내에 회신이 없을 경우 한국소비자원에 정식으로 분쟁 조정을 신청할 예정이오니, 기한 내 처리를 부탁드립니다. 담당자 성함과 직통 연락처를 알려 주시겠습니까?", "빨리 해 주세요.", "소비자 보호원에 신고할 거예요."]}
+    ],
+    "explanation": "민원 = complaint/civil petition. 사용자 과실 = user fault. 무상 수리 = free repair. 제조 결함 = manufacturing defect. 외부 검수 보고서 = external inspection report. 전액 환불 = full refund. 시간적 손실 = time loss. 한국소비자원 = Korea Consumer Agency. 분쟁 조정 = dispute mediation. -이오니 = formal connective ending (since/as)."
+  }
+]
