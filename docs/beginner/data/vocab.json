@@ -159,14 +159,14 @@
       "english": "happy birthday",
       "example": "생일 축하해요! 선물 준비했어요.",
       "example_en": "Happy birthday! I prepared a gift.",
-      "notes": "생일(生日 birth day). 생(生 life) appears in 생활(life), 학생(student). 일(日 day) appears in 매일(every day). Happy birthday song: ♪생일 축하합니다♪"
+      "notes": ""
     },
     {
       "korean": "새해 복 많이 받으세요",
       "english": "happy new year",
       "example": "새해 복 많이 받으세요! 올해도 건강하세요.",
       "example_en": "Happy New Year! Stay healthy this year too.",
-      "notes": "새해(new year) + 복(福 blessing) + 많이(a lot). Lunar New Year (설날) greeting. 복(福) appears in 행복(happiness), 복권(lottery)."
+      "notes": ""
     },
     {
       "korean": "잘 먹겠습니다",
@@ -285,7 +285,7 @@
       "english": "if it's okay with you / if you don't mind",
       "example": "괜찮으시면, 제가 도와드릴까요?",
       "example_en": "If it's okay with you, shall I help?",
-      "notes": "Native Korean + honorific ending. 'If it's okay with you/if you don't mind.' Polite request. Often starts question: 괜찮으시면 도와드릴까요?"
+      "notes": ""
     },
     {
       "korean": "부탁합니다",
@@ -434,7 +434,7 @@
       "english": "country",
       "example": "어느 나라에서 왔어요?",
       "example_en": "Which country are you from?",
-      "notes": "Native Korean word. Country. Question: 어느 나라 사람이에요?(What country are you from?). Response: 한국 사람이에요(I'm Korean)."
+      "notes": ""
     },
     {
       "korean": "한국",
@@ -588,7 +588,7 @@
       "english": "dream",
       "example": "제 꿈은 한국어 선생님이 되는 거예요.",
       "example_en": "My dream is to become a Korean language teacher.",
-      "notes": "Native Korean word. Dream (both sleep & life aspiration). Related: 꿈을 꾸다(to dream), 꿈을 이루다(to achieve a dream)."
+      "notes": ""
     },
     {
       "korean": "성격",
@@ -863,7 +863,7 @@
       "english": "ten thousand (10,000) — Sino-Korean",
       "example": "이 옷은 오만 원이에요.",
       "example_en": "These clothes are 50,000 won.",
-      "notes": "Ten thousand (10,000). Sino-Korean 萬. Korean groups by 만 not 1,000. Trickiest for English speakers. 만 원(10,000 won), 십만(100,000)."
+      "notes": "만(萬 ten thousand). Appears in 만 가지(ten thousand kinds), 만나다(meet). Pure sino-korean number."
     },
     {
       "korean": "하나",
@@ -968,28 +968,28 @@
       "english": "general counter (things)",
       "example": "사과 세 개 주세요.",
       "example_en": "Please give me three apples.",
-      "notes": "General counter for items/things. Use native numbers: 한 개, 두 개, 세 개. Most versatile counter. When unsure, use 개."
+      "notes": "Native Korean counter. 한 개(one item), 두 개(two items). Most common general counter for objects."
     },
     {
       "korean": "명",
       "english": "counter for people",
       "example": "네 명이서 같이 먹어요.",
       "example_en": "The four of us eat together.",
-      "notes": "Counter for people (polite). 명(名 name/person) appears in 이름(name), 유명(famous). Use native numbers: 한 명, 두 명. More polite than 사람."
+      "notes": "명(名 name). Counter for people. 한 명(one person), 세 명(three people)."
     },
     {
       "korean": "잔",
       "english": "counter for cups/glasses",
       "example": "커피 한 잔 마실래요?",
       "example_en": "Do you want to drink a cup of coffee?",
-      "notes": "Counter for cups/glasses. 잔(盞). Use native numbers: 한 잔, 두 잔. 커피 한 잔(a cup of coffee), 한 잔 하다(have a drink, idiom)."
+      "notes": "Counter for cups/glasses. 커피 한 잔(one cup of coffee). Native Korean."
     },
     {
       "korean": "마리",
       "english": "counter for animals",
       "example": "고양이 두 마리를 키워요.",
       "example_en": "I raise two cats.",
-      "notes": "Counter for animals. Use native numbers: 한 마리, 두 마리. 고양이 두 마리(two cats), 개 한 마리(one dog). Not for people!"
+      "notes": "Counter for animals. 고양이 한 마리(one cat). Native Korean."
     },
     {
       "korean": "장",
@@ -1003,28 +1003,28 @@
       "english": "counter for books",
       "example": "이번 달에 책 세 권을 읽었어요.",
       "example_en": "I read three books this month.",
-      "notes": "Counter for books. 권(卷 volume) appears in 권리(right), 권위(authority). 책 한 권(one book), 잡지 두 권(two magazines). Use native numbers."
+      "notes": "권(卷 volume/roll). Counter for books. 책 한 권(one book)."
     },
     {
       "korean": "병",
       "english": "counter for bottles",
       "example": "물 한 병 사 왔어요.",
       "example_en": "I bought a bottle of water.",
-      "notes": "Counter for bottles. 병(甁/瓶). 물 한 병(one bottle of water), 맥주 두 병(two beers). Use native numbers. Also 병(病 disease)."
+      "notes": "Counter for bottles. 우유 한 병(one bottle of milk). Native Korean."
     },
     {
       "korean": "대",
       "english": "counter for vehicles/machines",
       "example": "차가 두 대 있어요.",
       "example_en": "There are two cars.",
-      "notes": "Counter for vehicles/machines. 대(臺 platform) appears in 대통령(president), 무대(stage). 차 두 대(two cars), 휴대폰 한 대(one phone). Use native numbers."
+      "notes": "대(臺 stand/platform). Counter for vehicles/machines. 자동차 한 대(one car)."
     },
     {
       "korean": "벌",
       "english": "counter for sets of clothing",
       "example": "옷 한 벌 새로 샀어요.",
       "example_en": "I bought a new set of clothes.",
-      "notes": "Counter for sets of clothing. Native Korean. 옷 한 벌(one outfit/suit), 양복 한 벌(one suit). Refers to complete matching sets."
+      "notes": "Counter for pairs/sets of clothing. 옷 한 벌(one outfit). Native Korean."
     },
     {
       "korean": "살",
@@ -1038,14 +1038,14 @@
       "english": "counter for times/occurrences",
       "example": "한 번 더 해 보세요.",
       "example_en": "Try one more time.",
-      "notes": "Counter for times/occurrences. 번(番 number) appears in 번호(number), 번역(translation). 한 번(once), 두 번(twice), 세 번(three times). Use native numbers."
+      "notes": "번(番 turn/number). Counter for occurrences. 한 번(one time), 두 번(twice)."
     },
     {
       "korean": "층",
       "english": "counter for floors/stories",
       "example": "삼 층에서 내리세요.",
       "example_en": "Get off at the third floor.",
-      "notes": "Counter for floors. 층(層 layer) appears in 지층(geological layer). Sino numbers: 일 층(1st floor), 삼 층(3rd floor), 지하 일 층(B1)."
+      "notes": "층(層 layer/floor). Counter for floors. 3층(third floor). Building context."
     },
     {
       "korean": "원",
@@ -1059,28 +1059,28 @@
       "english": "sixty (native Korean)",
       "example": "우리 할머니는 올해 예순 살이에요.",
       "example_en": "My grandmother is sixty years old this year.",
-      "notes": "Sixty (native Korean). Mainly for age: 예순 살(60 years old). Less common than Sino-Korean 육십 in other contexts."
+      "notes": "Native Korean number 60. Combination: 예(sixty) + 순(native numeral). 예순 살(sixty years old)."
     },
     {
       "korean": "일흔",
       "english": "seventy (native Korean)",
       "example": "이 마을에 일흔 명이 살아요.",
       "example_en": "Seventy people live in this village.",
-      "notes": "Seventy (native Korean). Mainly for age: 일흔 살(70 years old). Less common than Sino-Korean 칠십 in other contexts."
+      "notes": "Native Korean number 70. 일흔 살(seventy years old). Related: 일(seven)."
     },
     {
       "korean": "여든",
       "english": "eighty (native Korean)",
       "example": "할아버지가 여든이 넘으셨어요.",
       "example_en": "My grandfather is over eighty.",
-      "notes": "Eighty (native Korean). Mainly for age: 여든 살(80 years old). Less common than Sino-Korean 팔십 in other contexts."
+      "notes": "Native Korean number 80. 여든 살(eighty years old). Traditional Korean numeral."
     },
     {
       "korean": "아흔",
       "english": "ninety (native Korean)",
       "example": "아흔아홉 번째 도전이에요.",
       "example_en": "It's the ninety-ninth attempt.",
-      "notes": "Ninety (native Korean). Mainly for age: 아흔 살(90 years old). 아흔아홉(99). Less common than Sino-Korean 구십."
+      "notes": "Native Korean number 90. 아흔 살(ninety years old). Related: 아(nine) in native numbers."
     },
     {
       "korean": "첫째",
@@ -1115,7 +1115,7 @@
       "english": "half",
       "example": "사과를 반으로 잘라 주세요.",
       "example_en": "Please cut the apple in half.",
-      "notes": "Half. 반(半). Also in time: 두 시 반(2:30, half past two). 반으로 자르다(cut in half). Also means 'class/group.'"
+      "notes": "Half. 반(half). Appears in 반값(half price), 반쯤(halfway). Used for time: 1시 반(1:30)."
     },
     {
       "korean": "쯤",
@@ -1215,42 +1215,42 @@
       "english": "dad",
       "example": "아빠가 저녁을 만들어 주셨어요.",
       "example_en": "Dad made dinner for us.",
-      "notes": "Native Korean. Casual/affectionate for 'dad.' Formal: 아버지, most respectful: 아버님. Baby-talk origin. Common phrase: 아빠가 만든 음식(food dad made)."
+      "notes": "Native Korean casual form of father. Formal: 아버지. With verb: 아빠 좋아(I like dad)."
     },
     {
       "korean": "엄마",
       "english": "mom",
       "example": "엄마, 오늘 뭐 해요?",
       "example_en": "Mom, what are you doing today?",
-      "notes": "Native Korean. Casual/affectionate for 'mom.' Formal: 어머니, most respectful: 어머님. Baby-talk origin. 밥 먹었어요? 엄마가 물어봐요(Did you eat? Mom asks)."
+      "notes": "Native Korean casual form of mother. Formal: 어머니. With verb: 엄마 사랑해(I love mom)."
     },
     {
       "korean": "형",
       "english": "older brother (used by males)",
       "example": "형이 대학교에 다녀요.",
       "example_en": "My older brother goes to university.",
-      "notes": "형(兄 older brother) appears in 형님(respectful brother), 형제(brothers/siblings). Used by males only to address older brother or older male friend."
+      "notes": "Older brother (male speaker). Native Korean. Female uses 오빠. Plural: 형들."
     },
     {
       "korean": "누나",
       "english": "older sister (used by males)",
       "example": "누나가 요리를 잘해요.",
       "example_en": "My older sister is good at cooking.",
-      "notes": "Native Korean. Used by males only to address older sister or older female friend. Also used for any older female acquaintance. Cannot be used by females."
+      "notes": "Older sister (male speaker). Native Korean. Female uses 언니. Plural: 누나들."
     },
     {
       "korean": "오빠",
       "english": "older brother (used by females)",
       "example": "오빠, 같이 영화 보러 가요.",
       "example_en": "Oppa, let's go watch a movie together.",
-      "notes": "Native Korean. Used by females only to address older brother or older male friend/boyfriend. Very common in Korean culture. Cannot be used by males."
+      "notes": "Older brother (female speaker). Native Korean. Male uses 형. Can mean boyfriend too."
     },
     {
       "korean": "언니",
       "english": "older sister (used by females)",
       "example": "언니가 새 옷을 사 줬어요.",
       "example_en": "My older sister bought me new clothes.",
-      "notes": "Native Korean. Used by females only to address older sister or older female friend. Essential in female relationships. Cannot be used by males."
+      "notes": "Older sister (female speaker). Native Korean. Male uses 누나. Plural: 언니들."
     },
     {
       "korean": "남동생",
@@ -1320,7 +1320,7 @@
       "english": "baby",
       "example": "아기가 지금 자고 있어요.",
       "example_en": "The baby is sleeping right now.",
-      "notes": "Native Korean. Baby specifically, younger than 아이. Related: 갓난아기(newborn), 신생아(newborn Sino-Korean). Common: 아기 울음소리(baby crying sound), 아기자기하다(cute/adorable)."
+      "notes": "Baby. Native Korean. Related: 아이(child), 유아(infant). Adjective: 아기 같아요(so cute/baby-like)."
     },
     {
       "korean": "조카",
@@ -1341,7 +1341,7 @@
       "english": "aunt (mother's side)",
       "example": "이모가 맛있는 음식을 많이 해 주세요.",
       "example_en": "My maternal aunt makes a lot of delicious food.",
-      "notes": "이(姨 aunt maternal side) + 모(母 mother) appears in 모성(motherhood), 모국(motherland). Mother's sister. Related: 외할머니(maternal grandmother), 이모부(aunt's husband). Common: 이모네 집(aunt's house)."
+      "notes": "이모(伯母 aunt mothers side). Compare: 고모(paternal aunt). Extended family term."
     },
     {
       "korean": "고모",
@@ -1397,14 +1397,14 @@
       "english": "sisters",
       "example": "저는 자매가 둘이에요.",
       "example_en": "I have two sisters.",
-      "notes": "자(姉 older sister) appears in 자형(sister's husband). 매(妹 younger sister) appears in 매력(charm). Sisters only. Related: 형제(brothers/siblings), 자매애(sisterly love). Common: 자매처럼(like sisters)."
+      "notes": "자(子 child) + 매(妹 sister). Sisters. Related: 형제(brothers), 형제자매(siblings)."
     },
     {
       "korean": "형수",
       "english": "older brother's wife (male speaker)",
       "example": "형수님이 요리를 정말 잘해요.",
       "example_en": "My sister-in-law (brother's wife) cooks really well.",
-      "notes": "형(兄 older brother) appears in 형제(brothers). 수(媤 brother's wife). Used by males only to address older brother's wife. Must use respectfully: 형수님. Related: 올케(female speaker version)."
+      "notes": "형(兄 older brother) + 수(嫂 brothers wife). Male speaker. Female: 올케."
     },
     {
       "korean": "올케",
@@ -1418,7 +1418,7 @@
       "english": "older sister's husband (male speaker)",
       "example": "매형이 저를 공항에 데려다줬어요.",
       "example_en": "My brother-in-law drove me to the airport.",
-      "notes": "매(妹 sister) appears in 자매(sisters). 형(兄 older brother) appears in 형제(siblings). Used by males only for older sister's husband. Related: 제부(another term), 형부(older sister's husband). Respectful: 매형님."
+      "notes": "매(妹 sister) + 형(兄 brother-in-law). Husband of wifes sister."
     },
     {
       "korean": "처남",
@@ -1446,7 +1446,7 @@
       "english": "daughter-in-law",
       "example": "며느리가 아주 착해요.",
       "example_en": "My daughter-in-law is very kind.",
-      "notes": "Native Korean. Son's wife/daughter-in-law. Traditionally very specific role in Korean family. Related: 사위(son-in-law), 시어머니(mother-in-law from bride's view). Common: 며느리감(potential daughter-in-law candidate)."
+      "notes": "Daughter-in-law. Formal family term. Related: 사위(son-in-law)."
     },
     {
       "korean": "사위",
@@ -1481,7 +1481,7 @@
       "english": "only child",
       "example": "저는 외동이라서 형제가 없어요.",
       "example_en": "I'm an only child so I don't have siblings.",
-      "notes": "외(外 alone/only) appears in 외롭다(lonely). Native 동 (child/sibling) from 동생. Only child. Related: 외동딸(only daughter), 외동아들(only son). Increasingly common in modern Korea. Say: 저는 외동이에요(I'm an only child)."
+      "notes": "외(外 outside) + 동(獨 alone). Only child. 외동아들(only son), 외동딸(only daughter)."
     },
     {
       "korean": "막내",
@@ -1502,14 +1502,14 @@
       "english": "big family / extended family",
       "example": "옛날에는 대가족이 함께 살았어요.",
       "example_en": "In the past, extended families lived together.",
-      "notes": "대(大 big/large) appears in 대학교(university), 대통령(president). 가족(family). Extended family living together. Traditional Korean household structure. Now rare. Related: 핵가족(nuclear family). Cultural: 대가족 제도(extended family system)."
+      "notes": "대(大 big) + 가족(family). Extended/big family. Opposite: 핵가족(nuclear family)."
     },
     {
       "korean": "핵가족",
       "english": "nuclear family",
       "example": "요즘은 핵가족이 많아요.",
       "example_en": "These days nuclear families are common.",
-      "notes": "핵(核 core/nuclear) appears in 핵심(core/essence), 원자핵(atomic nucleus). 가족(family). Nuclear family (parents + children only). Modern standard in Korea. Related: 대가족(extended family). Most Korean households now 핵가족."
+      "notes": "핵(核 nucleus) + 가족(family). Nuclear family: parents + children."
     },
     {
       "korean": "양어머니",
@@ -1530,21 +1530,21 @@
       "english": "husband's sister",
       "example": "시누이가 우리 집에 놀러 왔어요.",
       "example_en": "My husband's sister came to visit us.",
-      "notes": "시(媤 husband's family) + 누이(sister). Husband's sister. Important family relationship. Related: 시어머니(mother-in-law), 시아버지(father-in-law), 시댁(husband's family home). Complex traditional dynamics."
+      "notes": "시(媤 husbands sister). Family term (female speaker). Related: 동서(siblings spouses)."
     },
     {
       "korean": "처형",
       "english": "wife's older sister",
       "example": "처형이 명절에 선물을 보내 줬어요.",
       "example_en": "My wife's older sister sent us a gift on the holiday.",
-      "notes": "처(妻 wife) + 형(姊 older sister). Wife's older sister. Related: 처제(wife's younger sister), 처남(wife's brother), 처가(wife's family home). Must show respect. Respectful: 처형님."
+      "notes": "처(妻 wife) + 형(兄 older brother). Wifes older brother."
     },
     {
       "korean": "돌보다",
       "english": "to take care of; to look after",
       "example": "할머니를 잘 돌봐 드려야 해요.",
       "example_en": "We need to take good care of grandmother.",
-      "notes": "Native Korean 돌(around) + 보다(to see/watch). To take care of, look after. Common: 아이를 돌보다(care for child), 환자를 돌보다(care for patient). Important family duty. Noun: 돌봄(care)."
+      "notes": "To care for. 아기를 돌보다(care for baby). Related: 돌봄(care), 간호(nursing)."
     },
     {
       "korean": "키우다",
@@ -1565,7 +1565,7 @@
       "english": "siblings' spouses to each other",
       "example": "동서와 함께 시장에 갔어요.",
       "example_en": "I went to the market with my co-sister-in-law.",
-      "notes": "동(同 same) + 서(壻 son-in-law/婿). Relationship between siblings' spouses. Brothers' wives call each other 동서. Complex but important family term. Respectful: 동서 사이(co-in-law relationship)."
+      "notes": "동(同 same) + 서(嫂 sister-in-law). Siblings spouses. Network term."
     },
     {
       "korean": "상속",
@@ -1593,7 +1593,7 @@
       "english": "husband's family; marrying into husband's family",
       "example": "시집을 잘 가야 행복해요.",
       "example_en": "You should marry into a good family to be happy.",
-      "notes": "시(媤 husband's family) + 집(house/family). Husband's family, bride's new family. Traditional concept. Verb: 시집가다(for woman to marry). Related: 시댁(husband's family home), 시집살이(living with in-laws)."
+      "notes": "시(媤 in-law) + 집(house). Husbands family or marrying in. Related: 시어머니(mother-in-law)."
     },
     {
       "korean": "같이",
@@ -1637,14 +1637,14 @@
       "english": "noodles",
       "example": "여름에는 차가운 국수가 맛있어요.",
       "example_en": "Cold noodles are delicious in summer.",
-      "notes": "Native Korean (though has hanja 麵). General noodle term. Related: 잔치국수(banquet noodles, simple soup noodles for celebrations), 국수를 삶다(boil noodles), 소면(thin wheat noodles). Cultural: 국수 먹다(attend wedding, literally 'eat noodles')."
+      "notes": ""
     },
     {
       "korean": "고기",
       "english": "meat",
       "example": "고기를 구워서 먹어요.",
       "example_en": "We grill the meat and eat it.",
-      "notes": "Native Korean. General meat term. Related: 고깃집(Korean BBQ restaurant), 고기 굽다(grill meat). Korean BBQ culture centers around grilling 고기 at table. Specify type: 소고기(beef), 돼지고기(pork), 닭고기(chicken)."
+      "notes": ""
     },
     {
       "korean": "소고기",
@@ -1665,7 +1665,7 @@
       "english": "chicken (meat)",
       "example": "닭고기로 치킨을 만들어요.",
       "example_en": "We make fried chicken with chicken meat.",
-      "notes": "Native Korean 닭(chicken) + 고기(meat). Chicken meat. Note ㄺ final consonant cluster. Related: 치킨(fried chicken), 닭갈비(spicy chicken), 닭다리(chicken leg), 통닭(whole chicken). Korean fried chicken world-famous."
+      "notes": ""
     },
     {
       "korean": "생선",
@@ -1686,7 +1686,7 @@
       "english": "fruit",
       "example": "식후에 과일을 먹어요.",
       "example_en": "I eat fruit after meals.",
-      "notes": "과(果 fruit) appears in 사과(apple), 과자(snacks). 일(實 fruit/substance). General fruit term. Related: 과일 가게(fruit shop), 과일 시장(fruit market). In Korea, fruit often expensive, given as gifts."
+      "notes": ""
     },
     {
       "korean": "사과",
@@ -1707,7 +1707,7 @@
       "english": "strawberry",
       "example": "딸기가 정말 달아요.",
       "example_en": "The strawberries are really sweet.",
-      "notes": "Native Korean. Strawberry. Korean strawberries famous for large size, sweetness. Related: 딸기우유(strawberry milk), 딸기잼(strawberry jam), 딸기 따러 가다(go strawberry picking). Peak season: winter/spring."
+      "notes": ""
     },
     {
       "korean": "수박",
@@ -1798,21 +1798,21 @@
       "english": "fried chicken",
       "example": "치킨에 맥주가 잘 어울려요.",
       "example_en": "Beer goes well with fried chicken.",
-      "notes": "From English 'chicken.' Loanword. Korean-style fried chicken, distinct from American. Related: 치맥(fried chicken + beer combo), 양념치킨(sauced chicken), 순살치킨(boneless). Major food delivery category. Cultural phenomenon."
+      "notes": ""
     },
     {
       "korean": "만두",
       "english": "dumplings",
       "example": "설날에 만두를 만들어요.",
       "example_en": "We make dumplings on Lunar New Year.",
-      "notes": "만(滿 full) appears in 만족(satisfaction), 충만(fullness). 두(頭 head) appears in 두통(headache), 선두(lead). Dumplings. Related: 찐만두(steamed), 군만두(fried), 만두국(dumpling soup), 만두를 빚다(make dumplings by hand)."
+      "notes": ""
     },
     {
       "korean": "떡",
       "english": "rice cake",
       "example": "명절에 떡을 먹어요.",
       "example_en": "We eat rice cake on holidays.",
-      "notes": "Native Korean. Rice cake made from pounded rice. Hundreds of varieties. Related: 떡국(rice cake soup eaten on New Year's), 가래떡(long cylinder rice cakes), 떡 썰다(slice rice cakes). Important ceremonial food."
+      "notes": ""
     },
     {
       "korean": "달걀",
@@ -1833,56 +1833,56 @@
       "english": "rice (uncooked grain)",
       "example": "쌀을 씻어서 밥을 해요.",
       "example_en": "I wash the rice and cook it.",
-      "notes": "Native Korean. Uncooked rice grains. Rice is staple of Korean diet. Related: 밥(cooked rice), 쌀밥(white rice), 쌀값(rice price, economic indicator), 현미(brown rice). Wash before cooking: 쌀을 씻다."
+      "notes": ""
     },
     {
       "korean": "소금",
       "english": "salt",
       "example": "소금을 조금만 넣어 주세요.",
       "example_en": "Please put in just a little salt.",
-      "notes": "Native Korean. Salt, essential seasoning. Related: 천일염(sea salt), 꽃소금(fine salt), 소금기(saltiness), 소금을 뿌리다(sprinkle salt). Cultural: throwing salt to ward off evil spirits after funeral."
+      "notes": ""
     },
     {
       "korean": "설탕",
       "english": "sugar",
       "example": "커피에 설탕을 넣어요?",
       "example_en": "Do you put sugar in your coffee?",
-      "notes": "설(雪 snow) appears in 눈(snow, native reading), 설경(snowy scenery). 탕(糖 sugar) appears in 당뇨(diabetes), 사탕(candy). Sugar (white like snow). Related: 백설탕(white sugar), 흑설탕(brown sugar), 각설탕(sugar cubes)."
+      "notes": ""
     },
     {
       "korean": "간장",
       "english": "soy sauce",
       "example": "간장에 찍어서 먹어요.",
       "example_en": "I dip it in soy sauce and eat it.",
-      "notes": "간(肝 fermentation, different from liver) + 장(醬 sauce) appears in 고추장(red pepper paste), 된장(soybean paste). Soy sauce, foundational seasoning. Related: 국간장(light soy sauce for soup), 진간장(dark soy sauce), 양조간장(brewed soy sauce)."
+      "notes": ""
     },
     {
       "korean": "고추장",
       "english": "red pepper paste",
       "example": "비빔밥에 고추장을 넣어요.",
       "example_en": "I put red pepper paste in bibimbap.",
-      "notes": "Native Korean 고추(chili pepper) + 장(醬 sauce/paste) appears in 간장(soy sauce), 된장(soybean paste). Red pepper paste. Essential condiment, sweet-spicy-fermented. Related: 고추장을 풀다(dilute gochujang), 찹쌀고추장(glutinous rice gochujang). Defines Korean cuisine's spicy character."
+      "notes": ""
     },
     {
       "korean": "된장",
       "english": "soybean paste",
       "example": "된장으로 찌개를 만들어요.",
       "example_en": "I make stew with soybean paste.",
-      "notes": "Native Korean 된(fermented/thick) + 장(醬 paste) appears in 간장(soy sauce), 고추장(red pepper paste). Soybean paste (fermented). One of Korea's essential seasonings. Related: 된장찌개(soybean stew), 된장을 풀다(dissolve paste in broth)."
+      "notes": ""
     },
     {
       "korean": "참기름",
       "english": "sesame oil",
       "example": "나물에 참기름을 넣으면 맛있어요.",
       "example_en": "Adding sesame oil to namul makes it delicious.",
-      "notes": "Native Korean 참(sesame/true) + 기름(oil). Sesame oil with nutty aroma, essential in Korean cooking. Related: 들기름(perilla oil), 참기름 향(sesame aroma). Used as finishing oil, in namul (seasoned vegetables). Do not use for frying (burns easily)."
+      "notes": ""
     },
     {
       "korean": "물",
       "english": "water",
       "example": "물 한 잔 주세요.",
       "example_en": "Please give me a glass of water.",
-      "notes": "Native Korean. Water. In Korean restaurants, water is free and unlimited. Related: 물을 마시다(drink water), 물론(of course, literally 'water wheel'), 물고기(fish), 냉수(cold water). Essential hospitality: immediately serve water to guests."
+      "notes": ""
     },
     {
       "korean": "우유",
@@ -1896,14 +1896,14 @@
       "english": "juice",
       "example": "오렌지 주스를 마실래요.",
       "example_en": "I'd like to drink orange juice.",
-      "notes": "From English 'juice.' Loanword. Korea has many unique juice flavors. Related: 오렌지주스(orange juice), 포도주스(grape juice), 100% 주스(100% juice vs. concentrate). Convenience stores have huge juice sections."
+      "notes": ""
     },
     {
       "korean": "커피",
       "english": "coffee",
       "example": "한국 사람들은 커피를 정말 많이 마셔요.",
       "example_en": "Korean people drink a lot of coffee.",
-      "notes": "From Portuguese 'café' via English 'coffee.' Loanword. Korea has highest coffee consumption per capita in Asia. Related: 아메리카노(americano, most popular), 카페(café), 커피 한 잔(a cup of coffee). Café culture massive."
+      "notes": ""
     },
     {
       "korean": "차",
@@ -1938,14 +1938,14 @@
       "english": "ice cream",
       "example": "아이스크림 먹으러 가요.",
       "example_en": "Let's go eat ice cream.",
-      "notes": "From English 'ice cream.' Loanword. Korea has unique flavors like 녹차(green tea), 붕어빵(fish-bread). Related: 아이스크림 가게(ice cream shop), 소프트콘(soft-serve cone), 빙수(shaved ice dessert). Convenience stores have huge ice cream sections."
+      "notes": ""
     },
     {
       "korean": "케이크",
       "english": "cake",
       "example": "생일에 케이크를 먹어요.",
       "example_en": "We eat cake on birthdays.",
-      "notes": "From English 'cake.' Loanword. Korean cakes lighter, less sweet, cream-based rather than frosting. Related: 생일 케이크(birthday cake), 초콜릿 케이크(chocolate cake), 케이크를 자르다(cut cake). Cake shops everywhere, beautiful designs."
+      "notes": ""
     },
     {
       "korean": "과자",
@@ -1959,7 +1959,7 @@
       "english": "potato",
       "example": "감자를 삶아서 먹어요.",
       "example_en": "I boil potatoes and eat them.",
-      "notes": "Native Korean. Potato. 감자탕(pork bone and potato stew) is famous Korean dish. Related: 감자튀김(French fries), 감자칩(potato chips), 감자를 삶다(boil potatoes). Very common vegetable."
+      "notes": ""
     },
     {
       "korean": "당근",
@@ -1980,7 +1980,7 @@
       "english": "garlic",
       "example": "한국 음식에는 마늘이 많이 들어가요.",
       "example_en": "Korean food uses a lot of garlic.",
-      "notes": "Native Korean. Garlic. Korea is world's top garlic consumer per capita. Related: 마늘쫑(garlic scapes), 마늘을 까다(peel garlic), 마늘 향(garlic aroma), 까만 마늘(black aged garlic). Essential in almost all Korean cooking."
+      "notes": ""
     },
     {
       "korean": "고추",
@@ -1994,14 +1994,14 @@
       "english": "lettuce",
       "example": "삼겹살을 상추에 싸서 먹어요.",
       "example_en": "We wrap samgyeopsal in lettuce and eat it.",
-      "notes": "Native Korean. Lettuce. Essential for 쌈(wrapping meat/rice in leaves), key Korean eating custom. Related: 상추 쌈(lettuce wrap), 적상추(red leaf lettuce), 상추에 싸서 먹다(eat wrapped in lettuce with ssam sauce)."
+      "notes": ""
     },
     {
       "korean": "오이",
       "english": "cucumber",
       "example": "오이를 얇게 썰어서 샐러드를 만들어요.",
       "example_en": "I slice cucumbers thinly and make a salad.",
-      "notes": "Native Korean. Cucumber. Related: 오이소박이(stuffed cucumber kimchi, popular in summer), 오이무침(seasoned cucumber side dish), 오이냉국(chilled cucumber soup). Very common in Korean side dishes."
+      "notes": ""
     },
     {
       "korean": "토마토",
@@ -2015,7 +2015,7 @@
       "english": "napa cabbage",
       "example": "배추로 김치를 담가요.",
       "example_en": "We make kimchi with napa cabbage.",
-      "notes": "Native Korean. Napa cabbage. Main ingredient in 배추김치 (most common kimchi type). Related: 배추를 절이다(salt napa cabbage for kimchi-making), 배추 가격(napa cabbage price, seasonal fluctuation affects kimchi costs). Essential vegetable in Korean cuisine."
+      "notes": ""
     },
     {
       "korean": "버섯",
@@ -2029,56 +2029,56 @@
       "english": "chopsticks",
       "example": "한국 젓가락은 금속이에요.",
       "example_en": "Korean chopsticks are metal.",
-      "notes": "Native Korean. Chopsticks. Korean chopsticks uniquely flat and metal (vs. round wooden in China/Japan). Related: 젓가락질(chopstick technique), 젓가락으로 집다(pick up with chopsticks). Harder to use than wooden chopsticks."
+      "notes": ""
     },
     {
       "korean": "숟가락",
       "english": "spoon",
       "example": "국은 숟가락으로 먹어요.",
       "example_en": "You eat soup with a spoon.",
-      "notes": "Native Korean. Spoon. In Korea, rice is eaten with spoon (not chopsticks like in China/Japan). Related: 숟가락으로 뜨다(scoop with spoon), 밥 먹을 때 숟가락(use spoon when eating rice). Soup also eaten with spoon."
+      "notes": ""
     },
     {
       "korean": "볶음밥",
       "english": "fried rice",
       "example": "남은 밥으로 볶음밥을 만들어요. 간단하고 맛있어요.",
       "example_en": "I make fried rice with leftover rice. It's simple and delicious.",
-      "notes": "Native Korean 볶음(stir-fry) + 밥(rice). Fried rice. Popular way to use leftover rice. Related: 볶다(to stir-fry), 김치볶음밥(kimchi fried rice), 새우볶음밥(shrimp fried rice). Simple, quick meal."
+      "notes": ""
     },
     {
       "korean": "잡채",
       "english": "japchae / stir-fried glass noodles",
       "example": "명절에는 항상 잡채를 만들어요.",
       "example_en": "We always make japchae on holidays.",
-      "notes": "잡(雜 mixed) appears in 잡지(magazine). 채(菜 vegetables) appears in 채소(vegetables), 야채(vegetables). Stir-fried glass noodles with vegetables and meat. Sweet soy-based. Related: 당면(sweet potato glass noodles). Beloved at celebrations and holidays."
+      "notes": ""
     },
     {
       "korean": "순두부찌개",
       "english": "soft tofu stew",
       "example": "추운 날에는 순두부찌개가 최고예요.",
       "example_en": "On cold days, soft tofu stew is the best.",
-      "notes": "순(純 pure/soft) appears in 순수(pure). 두부(豆腐 tofu). Native 찌개(stew). Soft/silken tofu stew. Served bubbling hot in stone bowl. Related: 두부찌개(regular tofu stew), 계란(egg, often added raw on top). Popular spicy comfort food."
+      "notes": ""
     },
     {
       "korean": "김치찌개",
       "english": "kimchi stew",
       "example": "김치찌개에는 돼지고기가 잘 어울려요.",
       "example_en": "Pork goes well with kimchi stew.",
-      "notes": "Native Korean 김치(kimchi) + 찌개(stew). Kimchi stew with pork. One of most common Korean home meals. Related: 된장찌개(soybean stew), 부대찌개(army stew). Best made with 묵은지(aged/sour kimchi). Served bubbling."
+      "notes": ""
     },
     {
       "korean": "삼계탕",
       "english": "ginseng chicken soup",
       "example": "여름에 삼계탕을 먹으면 기운이 나요.",
       "example_en": "If you eat ginseng chicken soup in summer, you get energized.",
-      "notes": "삼(參 ginseng) appears in 인삼(ginseng). 계(鷄 chicken) appears in 닭(chicken native), 계란(egg). 탕(湯 soup) appears in 갈비탕(rib soup). Ginseng chicken soup, whole young chicken stuffed with rice, jujubes, ginseng. Traditionally eaten on 복날(hottest summer days) for stamina."
+      "notes": ""
     },
     {
       "korean": "해물",
       "english": "seafood",
       "example": "이 식당은 해물이 정말 신선해요.",
       "example_en": "The seafood at this restaurant is really fresh.",
-      "notes": "해(海 sea) appears in 바다(sea native), 해안(seashore). 물(物 thing) appears in 동물(animal), 식물(plant). Seafood. Related: 해물탕(seafood stew), 해물파전(seafood pancake). Korea surrounded by ocean, seafood culture strong."
+      "notes": ""
     },
     {
       "korean": "새우",
@@ -2092,7 +2092,7 @@
       "english": "squid",
       "example": "오징어볶음은 매콤하고 맛있어요.",
       "example_en": "Stir-fried squid is spicy and delicious.",
-      "notes": "Native Korean. Squid. Very popular in Korean cuisine. Related: 오징어볶음(spicy stir-fried squid), 마른오징어(dried squid snack), 오징어채(shredded dried squid). Flexible, chewy texture prized. Dried squid popular drinking snack."
+      "notes": ""
     },
     {
       "korean": "조개",
@@ -2106,7 +2106,7 @@
       "english": "tuna",
       "example": "참치김밥이 제일 좋아하는 김밥이에요.",
       "example_en": "Tuna kimbap is my favorite kimbap.",
-      "notes": "참(參 true/real) + 치(魚 fish) or native 참(real/true). Tuna. Related: 참치캔(canned tuna, pantry staple), 참치김밥(tuna kimbap, very popular), 참치회(tuna sashimi). Canned tuna very common in Korean cooking."
+      "notes": ""
     },
     {
       "korean": "연어",
@@ -2127,7 +2127,7 @@
       "english": "pear (Korean pear)",
       "example": "한국 배는 크고 시원해요. 갈비 양념에도 넣어요.",
       "example_en": "Korean pears are big and refreshing. You put them in galbi marinade too.",
-      "notes": "Native Korean. Asian pear (Korean pear). Round, crisp, juicy, unlike Western elongated pears. Related: 배 주스(pear juice, helps with hangover), 배를 갈아서(grate pear for meat marinade). Used in galbi marinade as tenderizer."
+      "notes": ""
     },
     {
       "korean": "귤",
@@ -2155,7 +2155,7 @@
       "english": "cabbage (green cabbage)",
       "example": "양배추는 소화에 좋아요. 자주 먹어요.",
       "example_en": "Cabbage is good for digestion. I eat it often.",
-      "notes": "양(洋 Western) appears in 양파(onion), 양식(Western food). Native Korean 배추(napa cabbage). Green/round cabbage (different from 배추). Related: 배추(napa cabbage for kimchi), 양배추 샐러드(coleslaw). Good for digestion."
+      "notes": ""
     },
     {
       "korean": "시금치",
@@ -2183,21 +2183,21 @@
       "english": "honey",
       "example": "따뜻한 물에 꿀을 타서 마셔요.",
       "example_en": "I mix honey in warm water and drink it.",
-      "notes": "Native Korean. Honey. Also slang: 꿀 같아!(That's awesome! Sweet deal!). Related: 꿀물(honey water drink), 꿀 떠서(scoop honey), 꿀잠(sweet sleep). Cultural: honey in traditional remedies, teas."
+      "notes": ""
     },
     {
       "korean": "식용유",
       "english": "cooking oil",
       "example": "볶음 요리를 할 때 식용유가 필요해요.",
       "example_en": "You need cooking oil when making stir-fried dishes.",
-      "notes": "식(食 food) appears in 식사(meal), 식당(restaurant). 용(用 use) appears in 사용(use), 용도(purpose). 유(油 oil) appears in 기름(oil native). Cooking oil (general term). Related: 해바라기유(sunflower oil), 올리브유(olive oil), 기름 두르다(coat pan with oil)."
+      "notes": ""
     },
     {
       "korean": "후추",
       "english": "pepper (black pepper)",
       "example": "수프에 후추를 넣으면 더 맛있어요.",
       "example_en": "If you add pepper to the soup, it's tastier.",
-      "notes": "후(胡 foreign/barbarian) appears in 호두(walnut). 추(椒 pepper) appears in 고추(chili pepper). Black pepper (different from 고추 chili pepper). Related: 후춧가루(ground pepper), 흰후추(white pepper). Used in soups, stews."
+      "notes": ""
     },
     {
       "korean": "파",
@@ -2360,7 +2360,7 @@
       "english": "sweet",
       "example": "이 디저트 정말 달아요.",
       "example_en": "This dessert is really sweet.",
-      "notes": "Native Korean. Conjugates: 달아요, 달았어요. Related: 달콤하다(sweet and pleasant), 단맛(sweet taste). Korean desserts tend to be less sweet than Western ones."
+      "notes": "Sweet (taste). Adjective. 단 음식(sweet food). Related: 달콤하다(sweet/delicious)."
     },
     {
       "korean": "짜다",
@@ -2381,7 +2381,7 @@
       "english": "sour",
       "example": "이 김치 좀 셔요. 오래된 거예요?",
       "example_en": "This kimchi is a bit sour. Is it old?",
-      "notes": "Native Korean. ㅡ irregular: 시다 → 셔요, 셨어요. Mature kimchi is deliberately sour (김치찌개 uses it). Fresh kimchi is less sour."
+      "notes": "Sour (taste). Adjective. 신 맛(sour taste). Related: 신맛(sourness)."
     },
     {
       "korean": "배부르다",
@@ -2451,7 +2451,7 @@
       "english": "side dishes",
       "example": "반찬이 정말 다양해요.",
       "example_en": "The side dishes are really diverse.",
-      "notes": "반(飯 rice) appears in 공기밥(bowl of rice), 밥(rice). 찬(饌 side dish) appears in 찬거리(ingredients for side dishes). Refillable and free in Korean restaurants. Cultural staple."
+      "notes": "Side dishes (banchan). With 밥(rice) = full meal. Essential to Korean dining."
     },
     {
       "korean": "리필",
@@ -2479,7 +2479,7 @@
       "english": "dessert",
       "example": "디저트는 식후에 나와요.",
       "example_en": "Dessert comes after the meal.",
-      "notes": "Loanword from French 'dessert.' Korean desserts include 빙수(shaved ice), 떡(rice cake), pastries. Cafes very popular for dessert in Korea."
+      "notes": "Dessert (from English). 디저트를 먹다(eat dessert). Alternative: 후식."
     },
     {
       "korean": "서비스",
@@ -2584,14 +2584,14 @@
       "english": "spoon",
       "example": "숟가락 하나 더 주세요.",
       "example_en": "Please give me one more spoon.",
-      "notes": "Native Korean. Related: 젓가락(chopsticks). Korean spoons are flat and long, used for rice and soup. Cultural: never stick spoon upright in rice (funeral ritual)."
+      "notes": "Spoon. Native Korean. Related: 젓가락(chopsticks). With 밥(rice): 숟가락으로 먹다."
     },
     {
       "korean": "젓가락",
       "english": "chopsticks",
       "example": "젓가락 사용법을 배우고 있어요.",
       "example_en": "I'm learning how to use chopsticks.",
-      "notes": "Native Korean. Korean chopsticks are metal and flat, harder to use than wooden ones. Also called 젓가락질(chopstick skill). Related: 숟가락(spoon)."
+      "notes": "Chopsticks. Native Korean. Related: 숟가락(spoon). Traditional eating utensil."
     },
     {
       "korean": "그릇",
@@ -2747,7 +2747,7 @@
       "english": "lunch / noon",
       "example": "점심 같이 먹을래요?",
       "example_en": "Do you want to eat lunch together?",
-      "notes": "점(點 dot/point) appears in 점수(score), 요점(main point). 심(心 heart) appears in 관심(interest), 중심(center). Means both noon time and lunch meal."
+      "notes": "점(午 noon) + 심(心 heart/meal). Lunch/noon. Related: 점심 시간(lunch time)."
     },
     {
       "korean": "저녁",
@@ -2761,7 +2761,7 @@
       "english": "night",
       "example": "밤에 혼자 다니지 마세요.",
       "example_en": "Don't walk around alone at night.",
-      "notes": "Native Korean. Related: 밤새(all night), 한밤중(middle of night), 밤늦게(late at night). Korea generally very safe at night; vibrant night culture."
+      "notes": "Night (time). Native Korean. Related: 자정(midnight), 밤샘(all-nighter)."
     },
     {
       "korean": "새벽",
@@ -2845,42 +2845,42 @@
       "english": "Tuesday",
       "example": "화요일에 한국어 수업이 있어요.",
       "example_en": "I have Korean class on Tuesday.",
-      "notes": "화(火 fire) appears in 불(fire), 화재(fire disaster). 요일(曜日). Tuesday = fire day in East Asian tradition."
+      "notes": "화(火 fire/Tuesday) + 요일(day). Tuesday. In 7-day week cycle."
     },
     {
       "korean": "수요일",
       "english": "Wednesday",
       "example": "수요일은 좀 바빠요.",
       "example_en": "I'm a bit busy on Wednesday.",
-      "notes": "수(水 water) appears in 물(water), 수영(swimming). 요일(曜日). Wednesday = water day in East Asian tradition."
+      "notes": "수(水 water/Wednesday) + 요일(day). Wednesday. In 7-day week cycle."
     },
     {
       "korean": "목요일",
       "english": "Thursday",
       "example": "목요일에 시간 있어요?",
       "example_en": "Do you have time on Thursday?",
-      "notes": "목(木 wood/tree) appears in 나무(tree), 목재(lumber). 요일(曜日). Thursday = wood day in East Asian tradition."
+      "notes": "목(木 wood/Thursday) + 요일(day). Thursday. In 7-day week cycle."
     },
     {
       "korean": "금요일",
       "english": "Friday",
       "example": "금요일이라서 기분이 좋아요!",
       "example_en": "It's Friday so I'm in a good mood!",
-      "notes": "금(金 metal/gold) appears in 돈(money), 금속(metal). 요일(曜日). Friday = metal day. 불금(fire Friday) = exciting Friday night culture."
+      "notes": "금(金 metal/Friday) + 요일(day). Friday. In 7-day week cycle."
     },
     {
       "korean": "토요일",
       "english": "Saturday",
       "example": "토요일에 뭐 할 거예요?",
       "example_en": "What are you going to do on Saturday?",
-      "notes": "토(土 earth) appears in 흙(earth/soil), 토지(land). 요일(曜日). Saturday = earth day in East Asian tradition."
+      "notes": "토(土 earth/Saturday) + 요일(day). Saturday. In 7-day week cycle."
     },
     {
       "korean": "일요일",
       "english": "Sunday",
       "example": "일요일에는 보통 쉬어요.",
       "example_en": "I usually rest on Sundays.",
-      "notes": "일(日 sun/day) appears in 해(sun), 날(day). 요일(曜日). Sunday = sun day. Many businesses closed or have shorter hours on Sundays."
+      "notes": "일(日 sun/Sunday) + 요일(day). Sunday. In 7-day week cycle."
     },
     {
       "korean": "이번 주",
@@ -2957,7 +2957,7 @@
       "english": "new year",
       "example": "새해에는 뭐 할 거예요?",
       "example_en": "What are you going to do for the new year?",
-      "notes": "Native Korean. 새(new) + 해(year). Say: 새해 복 많이 받으세요(Happy New Year). Koreans celebrate both solar (1/1) and lunar new year (설날)."
+      "notes": "새(新 new) + 해(年 year). New year. With: 새해 복 많이 받으세요(Happy New Year)."
     },
     {
       "korean": "크리스마스",
@@ -2999,7 +2999,7 @@
       "english": "end of (period)",
       "example": "12월 말에 바빠요.",
       "example_en": "I'm busy at the end of December.",
-      "notes": "Native Korean. End of time period. Related: 연말(end of year), 월말(end of month), 학기말(end of semester). Also means 'horse' and 'speech' (different words)."
+      "notes": "End of (period). 달 말(end of month), 해 말(end of year). Native Korean time marker."
     },
     {
       "korean": "그때",
@@ -3027,14 +3027,14 @@
       "english": "for a long time",
       "example": "오래 기다렸어요?",
       "example_en": "Did you wait long?",
-      "notes": "Native Korean adverb. Related: 오래되다(be old/aged), 오랜만(long time no see), 오래 걸리다(take a long time)."
+      "notes": "For a long time. 오래 살다(live long). Related: 오랫동안(for a long time)."
     },
     {
       "korean": "잠시",
       "english": "for a moment",
       "example": "잠시만 기다려 주세요.",
       "example_en": "Please wait just a moment.",
-      "notes": "잠(暫 brief) appears in 잠깐(brief moment). 시(時 time) appears in 시간(time), 시각(hour). Polite: 잠시만요(just a moment please), 잠깐만요 (similar, slightly more casual)."
+      "notes": "For a moment/brief time. 잠시만요(just a moment). Borrowed: 잠(暫 temporary)."
     },
     {
       "korean": "동안",
@@ -3076,7 +3076,7 @@
       "english": "how many days/a few days",
       "example": "며칠 걸려요?",
       "example_en": "How many days does it take?",
-      "notes": "Native Korean. 며(how many) + 칠(days). Question word or indefinite amount. Context determines meaning: 며칠 걸려요?(how many days?) vs 며칠 전(a few days ago)."
+      "notes": "How many days / a few days. 며칠 동안(for a few days). Question marker: 며칠(which day?)."
     },
     {
       "korean": "얼마나",
@@ -3162,7 +3162,7 @@
       "english": "cafe",
       "example": "카페에서 공부하는 거 좋아해요.",
       "example_en": "I like studying at cafes.",
-      "notes": "Loanword from French 'café.' Cafe culture huge in Korea—many study, work, or meet at cafes. Common: 스타벅스, 카페베네, 이디야."
+      "notes": ""
     },
     {
       "korean": "공원",
@@ -3218,7 +3218,7 @@
       "english": "temple",
       "example": "주말에 절에 가 봤어요.",
       "example_en": "I visited a temple on the weekend.",
-      "notes": "Native Korean for Buddhist temple. Famous: 불국사, 해인사. Alternative Sino-Korean: 사찰(寺刹). Popular tourist and hiking destinations. Temple stays (템플스테이) popular cultural experience."
+      "notes": ""
     },
     {
       "korean": "아파트",
@@ -3246,7 +3246,7 @@
       "english": "bathroom",
       "example": "욕실이 깨끗해요.",
       "example_en": "The bathroom is clean.",
-      "notes": "욕(浴 bath) appears in 목욕(bath), 욕조(bathtub). 실(室 room). Home bathroom with shower/bath. Different from 화장실(public restroom)."
+      "notes": ""
     },
     {
       "korean": "학원",
@@ -3281,7 +3281,7 @@
       "english": "gym",
       "example": "매일 체육관에 가요.",
       "example_en": "I go to the gym every day.",
-      "notes": "체(體 body) appears in 신체(body), 구체적(specific). 육(育 raise) appears in 교육(education). 관(館 building). Fitness gym or sports gymnasium."
+      "notes": ""
     },
     {
       "korean": "미용실",
@@ -3894,7 +3894,7 @@
       "english": "cheap",
       "example": "여기 정말 싸요!",
       "example_en": "This place is really cheap!",
-      "notes": "Native Korean. Two meanings: cheap (Conjugation: 싸요, 쌌어요) and to wrap (싸요, 쌌어요). Context determines meaning."
+      "notes": "Cheap. Adjective. 싼 가격(cheap price). Related: 가격이 싸다(price is cheap)."
     },
     {
       "korean": "할인",
@@ -4048,7 +4048,7 @@
       "english": "skirt",
       "example": "치마가 너무 짧아요.",
       "example_en": "The skirt is too short.",
-      "notes": "Native Korean. Forms: 미니치마(mini skirt), 긴 치마(long skirt), 치마저고리(traditional hanbok skirt and top)."
+      "notes": "Skirt. Native Korean clothing. Related: 반팔(short sleeve), 청바지(jeans)."
     },
     {
       "korean": "모자",
@@ -4062,14 +4062,14 @@
       "english": "bag",
       "example": "가방이 무거워요.",
       "example_en": "The bag is heavy.",
-      "notes": "Native Korean. Forms: 책가방(school bag), 가방을 메다(carry bag on shoulder), 배낭(backpack), 핸드백(handbag)."
+      "notes": "Bag. Native Korean. Related: 가방을 메다(carry a bag), 가방을 들다(hold a bag)."
     },
     {
       "korean": "온라인 쇼핑",
       "english": "online shopping",
       "example": "요즘은 온라인 쇼핑을 많이 해요.",
       "example_en": "These days I do a lot of online shopping.",
-      "notes": "Loanword compound. 온라인(online from English) + 쇼핑(shopping from English). Korea has huge online shopping market: 쿠팡, 11번가."
+      "notes": "온라인(online) + 쇼핑(shopping). Online shopping. Related: 배송(delivery), 반품(return)."
     },
     {
       "korean": "배송",
@@ -4246,7 +4246,7 @@
       "english": "snow",
       "example": "첫눈이 내렸어요!",
       "example_en": "The first snow has fallen!",
-      "notes": "Native Korean. Two meanings: snow and eye. Context makes it clear. Forms: 눈이 오다(to snow), 첫눈(first snow, culturally special)."
+      "notes": "Snow. Native Korean. Related: 눈이 오다(it snows), 눈이 쌓이다(snow accumulates)."
     },
     {
       "korean": "눈이 오다",
@@ -4260,7 +4260,7 @@
       "english": "wind",
       "example": "오늘 바람이 세게 불어요.",
       "example_en": "The wind is blowing hard today.",
-      "notes": "Native Korean. Two meanings: wind and wish/hope. Forms: 바람이 불다(wind blows), 강한 바람(strong wind), 바람을 쐬다(get fresh air)."
+      "notes": "Wind. Native Korean. Related: 바람이 분다(wind blows), 바람이 강하다(strong wind)."
     },
     {
       "korean": "바람이 불다",
@@ -4295,7 +4295,7 @@
       "english": "fog",
       "example": "아침에 안개가 많이 꼈어요.",
       "example_en": "There was a lot of fog this morning.",
-      "notes": "Native Korean. Forms: 안개가 끼다(fog sets in), 안개 속(in the fog). Heavy fog is called 짙은 안개."
+      "notes": "Fog/mist. Native Korean. Related: 안개가 짙다(thick fog), 안개가 끼다(fog forms)."
     },
     {
       "korean": "태풍",
@@ -4386,28 +4386,28 @@
       "english": "sun",
       "example": "해가 뜨면 날씨가 따뜻해져요.",
       "example_en": "When the sun rises, the weather gets warm.",
-      "notes": "Native Korean. Two meanings: sun and year. Forms: 해가 뜨다(sun rises), 해가 지다(sun sets). Related: 일출(sunrise), 일몰(sunset)."
+      "notes": "Sun. Native Korean. Related: 해가 뜨다(sun rises), 해가 진다(sun sets)."
     },
     {
       "korean": "달",
       "english": "moon",
       "example": "오늘 밤에 달이 정말 밝아요.",
       "example_en": "The moon is really bright tonight.",
-      "notes": "Native Korean. Two meanings: moon and month. Forms: 달이 뜨다(moon rises), 보름달(full moon). Cultural: 추석(harvest festival) celebrates full moon."
+      "notes": "Moon. Native Korean. Related: 달이 뜨다(moon rises), 보름달(full moon)."
     },
     {
       "korean": "별",
       "english": "star",
       "example": "시골에서는 별이 많이 보여요.",
       "example_en": "You can see many stars in the countryside.",
-      "notes": "Native Korean. Two meanings: star and celebrity. Forms: 별을 보다(watch stars), 별똥별(shooting star), 유명한 별(famous celebrity)."
+      "notes": "Star. Native Korean. Related: 별이 많다(many stars), 별 보기(stargazing)."
     },
     {
       "korean": "소나기",
       "english": "rain shower / sudden rain",
       "example": "갑자기 소나기가 왔어요.",
       "example_en": "A sudden rain shower came.",
-      "notes": "Native Korean. Brief, heavy rain shower. Forms: 소나기가 오다(sudden rain comes), 소나기를 피하다(avoid sudden rain). Also famous Korean short story title."
+      "notes": "Rain shower / sudden rain. Native Korean. Related: 단비(timely rain), 폭우(downpour)."
     },
     {
       "korean": "천둥",
@@ -4675,7 +4675,7 @@
       "english": "knee",
       "example": "넘어져서 무릎을 다쳤어요.",
       "example_en": "I fell and hurt my knee.",
-      "notes": "Native Korean. 무릎을 꿇다(kneel), 무릎을 치다(slap knee in realization). 무릎팍(kneecap area)."
+      "notes": "Knee. Native Korean body part. Related: 무릎을 꿇다(kneel), 무릎이 아프다(knee hurts)."
     },
     {
       "korean": "아프다",
@@ -4922,7 +4922,7 @@
       "english": "taxi",
       "example": "늦어서 택시를 탔어요.",
       "example_en": "I was late so I took a taxi.",
-      "notes": "Loanword from English 'taxi.' Types: 모범택시(deluxe taxi), 콜택시(call taxi), 카카오택시(Kakao taxi app). 택시 미터기(taxi meter)."
+      "notes": "Taxi. From English. Related: 택시를 타다(take a taxi), 택시 요금(taxi fare)."
     },
     {
       "korean": "비행기",
@@ -5244,7 +5244,7 @@
       "english": "car wash",
       "example": "주말에 세차하러 갈 거예요.",
       "example_en": "I'm going to get a car wash this weekend.",
-      "notes": "세차(洗車 car wash) - 세(洗 wash) appears in 세탁(laundry), 세면(washing face). 차(車 vehicle) appears in 자동차(car). 셀프 세차(self car wash)."
+      "notes": "세(洗 wash) + 차(車 car). Car wash. Related: 세차소(car wash station)."
     },
     {
       "korean": "타이어",
@@ -5351,7 +5351,7 @@
       "english": "baseball",
       "example": "야구 경기 보러 갈까요?",
       "example_en": "Shall we go watch a baseball game?",
-      "notes": "야구(野球 baseball) - 야(野 field) appears in 야외(outdoors), 시야(view). 구(球 ball) appears in 축구(soccer), 농구(basketball). Korean baseball league is popular."
+      "notes": ""
     },
     {
       "korean": "농구",
@@ -5435,7 +5435,7 @@
       "english": "shopping",
       "example": "명동에서 쇼핑을 했어요.",
       "example_en": "I went shopping in Myeongdong.",
-      "notes": "Loanword from English 'shopping.' 쇼핑몰(shopping mall), 온라인 쇼핑(online shopping). 명동, 강남 are popular shopping areas."
+      "notes": ""
     },
     {
       "korean": "낚시",
@@ -5505,7 +5505,7 @@
       "english": "piano",
       "example": "어렸을 때 피아노를 배웠어요.",
       "example_en": "I learned piano when I was young.",
-      "notes": "Loanword from Italian 'piano.' 피아노를 치다(play piano). Many Korean children learn piano from young age."
+      "notes": ""
     },
     {
       "korean": "기타",
@@ -5773,7 +5773,7 @@
       "english": "proud",
       "example": "아들이 열심히 공부해서 자랑스러워요.",
       "example_en": "I'm proud because my son studies hard.",
-      "notes": "Native Korean. ㅂ irregular: 자랑스러워요(polite), 자랑스러웠어요(past). From 자랑(boast/pride) + 스럽다(having quality of). 자랑하다(to brag/boast). Common: 자랑스러운 순간(proud moment), 부모님이 자랑스러워요(I'm proud of my parents)."
+      "notes": "자랑(boast/pride) + 스럽다(adj. suffix). Proud. Related: 자랑하다(to boast)."
     },
     {
       "korean": "감동하다",
@@ -5794,7 +5794,7 @@
       "english": "tired",
       "example": "오늘 많이 일해서 피곤해요.",
       "example_en": "I'm tired because I worked a lot today.",
-      "notes": "Sino-Korean. 피(疲 fatigued) + 곤(困 exhausted). Polite: 피곤해요. Common: 피곤한 하루(tiring day), 너무 피곤해서 잠들었어요(I was so tired I fell asleep). Related: 지치다(exhausted), 녹초가 되다(to be worn out, colloquial)."
+      "notes": "피(疲 tired) + 곤(困 difficult/weary). Tired. Related: 피로(fatigue)."
     },
     {
       "korean": "배고프다",
@@ -5829,7 +5829,7 @@
       "english": "dislike, don't want",
       "example": "저는 매운 음식이 싫어요.",
       "example_en": "I dislike spicy food.",
-      "notes": "Native Korean. Polite: 싫어요. Essential distinction: 싫다(adjective, dislike state) vs 싫어하다(verb, active disliking). Opposite of 좋다. Common: 하기 싫다(don't want to do), 보기 싫다(don't want to see), 매운 음식이 싫다(dislike spicy food)."
+      "notes": "Dislike / dont want. Native Korean negative emotion. Related: 싫어하다(to hate)."
     },
     {
       "korean": "재미있다",
@@ -6004,7 +6004,7 @@
       "english": "to feel empty / to feel something is missing",
       "example": "친구가 떠나니까 마음이 허전해요.",
       "example_en": "Now that my friend has left, my heart feels empty.",
-      "notes": "Native Korean. Polite: 허전해요. An emotional or physical feeling that something is missing or empty. Common: 마음이 허전하다(heart feels empty), 허전한 기분(feeling of emptiness), 밥을 안 먹으니 속이 허전하다(stomach feels empty without food). Related: 공허하다(hollow)."
+      "notes": "To feel empty / to feel something is missing. Related: 텅 비다(to be empty)."
     },
     {
       "korean": "든든하다",
@@ -6067,14 +6067,14 @@
       "english": "to be sick of; to be fed up",
       "example": "매일 같은 메뉴라 질렸어요.",
       "example_en": "I'm sick of it because it's the same menu every day.",
-      "notes": "Native Korean. Polite: 질려요. Past: 질렸어요. To be completely sick of or fed up with something, usually from overexposure. Common: 질리도록 먹다(eat until sick of it), 매일 같은 거라 질렸어요(sick of it because it's the same every day). Related: 지겹다(tired of), 물리다(fed up with food)."
+      "notes": "To be sick of / to be fed up. Related: 질려하다(to get bored), 싫증(boredom)."
     },
     {
       "korean": "익숙하다",
       "english": "familiar; accustomed to",
       "example": "이제 한국 생활에 익숙해졌어요.",
       "example_en": "I've gotten used to life in Korea now.",
-      "notes": "Native Korean. Polite: 익숙해요. To be familiar or accustomed to something. Pattern: -에 익숙하다. 익숙해지다(to become familiar/get used to). Common: 한국 생활에 익숙하다(used to life in Korea), 익숙한 맛(familiar taste). Opposite: 낯설다(unfamiliar)."
+      "notes": "익(熟 familiar/ripe) + 숙(習 accustomed). Familiar. Related: 익숙해지다(to get used to)."
     },
     {
       "korean": "낯설다",
@@ -6139,35 +6139,35 @@
       "english": "red",
       "example": "사과가 빨개요.",
       "example_en": "The apple is red.",
-      "notes": "Native Korean color adjective. ㅎ irregular: 빨개요(polite), 빨갰어요(past). Modifier form: 빨간(빨간 사과 = red apple). Intensified: 새빨갛다(bright/vivid red). Related literary form: 붉다(red, poetic). Common: 빨간색(red color), 빨간 입술(red lips), 얼굴이 빨개지다(face turns red)."
+      "notes": "Red. Adjective. 빨간색(red color). Related: 빨강(redness), 빨간 사과(red apple)."
     },
     {
       "korean": "파랗다",
       "english": "blue",
       "example": "오늘 하늘이 정말 파래요.",
       "example_en": "The sky is really blue today.",
-      "notes": "Native Korean color adjective. ㅎ irregular: 파래요(polite), 파랬어요(past). Modifier: 파란(파란 하늘 = blue sky). Intensified: 새파랗다(vivid blue). Traditionally 파랗다 can include green (traffic lights: 파란불). Common: 파란색(blue color), 파란 바다(blue sea)."
+      "notes": "Blue. Adjective. 파란색(blue color). Related: 파랑(blueness), 파란 하늘(blue sky)."
     },
     {
       "korean": "노랗다",
       "english": "yellow",
       "example": "가을에 나뭇잎이 노래요.",
       "example_en": "The leaves turn yellow in autumn.",
-      "notes": "Native Korean color adjective. ㅎ irregular: 노래요(polite), 노랬어요(past). Modifier: 노란(노란 꽃 = yellow flower). Intensified: 샛노랗다(bright yellow). Common: 노란색(yellow color), 노란 나뭇잎(yellow leaves in autumn), 노란 병아리(yellow chick)."
+      "notes": "Yellow. Adjective. 노란색(yellow color). Related: 노랑(yellowness), 노란 꽃(yellow flower)."
     },
     {
       "korean": "하얗다",
       "english": "white",
       "example": "눈이 와서 세상이 하얘요.",
       "example_en": "It snowed so the world is white.",
-      "notes": "Native Korean color adjective. ㅎ irregular: 하얘요(polite), 하얬어요(past). Modifier: 하얀(하얀 눈 = white snow). Intensified: 새하얗다(pure white). Alternative form: 흰/흰색(white, also common). Common: 하얀 구름(white cloud), 얼굴이 하얘지다(face turns white/pale)."
+      "notes": "White. Adjective. 하얀색(white color). Related: 하양(whiteness), 하얀 눈(white snow)."
     },
     {
       "korean": "까맣다",
       "english": "black",
       "example": "머리카락이 까매요.",
       "example_en": "My hair is black.",
-      "notes": "Native Korean color adjective. ㅎ irregular: 까매요(polite), 까맸어요(past). Modifier: 까만(까만 머리 = black hair). Intensified: 새까맣다(jet black). Alternative form: 검은/검은색(black, also common). Common: 까만 밤(black night), 까만 눈동자(black pupils)."
+      "notes": "Black. Adjective. 까만색(black color). Related: 검다(to be black), 까만 밤(pitch black night)."
     },
     {
       "korean": "초록색",
@@ -6188,7 +6188,7 @@
       "english": "purple",
       "example": "보라색 꽃이 피었어요.",
       "example_en": "Purple flowers bloomed.",
-      "notes": "보라(purple, native Korean origin) + 색(色 color). Common: 보라색 꽃(purple flower), 보라색 하늘(purple sky at sunset). Related colors: 자주색(dark purple/magenta), 라벤더색(lavender), 연보라(light purple). K-pop fans may associate with BTS's 보라해(I purple you)."
+      "notes": "Purple color. 보라(violet) + 색(color). Related: 보라색 꽃(purple flower)."
     },
     {
       "korean": "분홍색",
@@ -6349,7 +6349,7 @@
       "english": "cute",
       "example": "이 강아지 정말 귀여워요!",
       "example_en": "This puppy is so cute!",
-      "notes": "Native Korean. ㅂ irregular: 귀여워요(polite), 귀여웠어요(past). Modifier: 귀여운. For cute things: babies, animals, small objects. Common: 귀여운 강아지(cute puppy), 귀여운 아기(cute baby), 귀여운 캐릭터(cute character). Noun: 귀여움(cuteness). Related: 앙증맞다(adorably small)."
+      "notes": "Cute/adorable. Related: 귀여워하다(to find cute), 귀여운 강아지(cute puppy)."
     },
     {
       "korean": "깨끗하다",
@@ -6440,7 +6440,7 @@
       "english": "light / pale (color)",
       "example": "연한 파란색을 좋아해요.",
       "example_en": "I like light blue.",
-      "notes": "Native Korean. Polite: 연해요. Modifier: 연한. For pale or light colors and mild flavors. Pattern: 연한 + color name (연한 파란색 = light blue, 연한 분홍색 = light pink). Common: 연한 색(light color), 연한 맛(mild taste). Opposite: 진하다(dark/deep/strong)."
+      "notes": "Light / pale (color). Related: 연한 파란색(light blue), 연한 분홍색(pale pink)."
     },
     {
       "korean": "진하다",
@@ -6489,7 +6489,7 @@
       "english": "thin",
       "example": "이 종이는 너무 얇아요.",
       "example_en": "This paper is too thin.",
-      "notes": "Native Korean. Regular: 얇아요(polite). Modifier: 얇은. Pronunciation: [얄따]. For thin flat objects. Common: 얇은 종이(thin paper), 얇은 옷(thin clothes), 얇은 피부(thin skin). Opposite: 두껍다(thick). Related: 가늘다(thin/slender, for lines, strings, or limbs)."
+      "notes": "Thin. Opposite: 두껍다(thick). Related: 얇은 종이(thin paper), 얇아지다(to become thin)."
     },
     {
       "korean": "촉촉하다",
@@ -6582,7 +6582,7 @@
       "english": "to do",
       "example": "뭐 해요?",
       "example_en": "What are you doing?",
-      "notes": "The most versatile Korean verb. Attaches to Sino-Korean nouns to create verbs: 공부하다(study), 운동하다(exercise), 요리하다(cook), 일하다(work). Polite: 해요. Past: 했어요. Imperative: 하세요. Also used in many grammatical patterns like -고 싶다(want to do)."
+      "notes": ""
     },
     {
       "korean": "가다",
@@ -6624,7 +6624,7 @@
       "english": "to wake up, to get up",
       "example": "매일 아침 7시에 일어나요.",
       "example_en": "I wake up at 7 every morning.",
-      "notes": "Native Korean compound. 일(rise) + 어나다. Polite: 일어나요(ㅏ+아 contracts). Past: 일어났어요. Two meanings: waking up and standing up. Common: 아침에 일어나다(wake up in morning), 자리에서 일어나다(stand up from seat). Related: 기상하다(to rise, formal/military)."
+      "notes": ""
     },
     {
       "korean": "씻다",
@@ -6645,7 +6645,7 @@
       "english": "to take off (clothes/shoes)",
       "example": "집에 들어오면 신발을 벗어요.",
       "example_en": "I take off my shoes when I enter the house.",
-      "notes": "Native Korean. Polite: 벗어요. Past: 벗었어요. To take off clothes, shoes, hats, or accessories. Common: 신발을 벗다(take off shoes, essential Korean custom indoors), 모자를 벗다(take off hat), 외투를 벗다(take off coat). Opposite: 입다/신다/쓰다 depending on item."
+      "notes": ""
     },
     {
       "korean": "신다",
@@ -6680,7 +6680,7 @@
       "english": "to run, to jump",
       "example": "아이들이 운동장에서 뛰어요.",
       "example_en": "The children are running in the playground.",
-      "notes": "Native Korean. Polite: 뛰어요. Past: 뛰었어요. Two meanings: running and jumping. Common: 뛰어가다(run toward), 줄넘기를 뛰다(jump rope), 계단을 뛰어 올라가다(run up stairs). Related: 달리다(to run, more specific to running), 점프하다(to jump, loanword)."
+      "notes": ""
     },
     {
       "korean": "보다",
@@ -6771,21 +6771,21 @@
       "english": "to turn on",
       "example": "불을 켜 주세요.",
       "example_en": "Please turn on the light.",
-      "notes": "Native Korean. Polite: 켜요(ㅕ+어 contracts). Past: 켰어요. For turning on lights, electronics, or engines. Common: 불을 켜다(turn on the light), TV를 켜다(turn on TV), 에어컨을 켜다(turn on AC). Opposite: 끄다(turn off). Passive: 켜지다(to be turned on)."
+      "notes": ""
     },
     {
       "korean": "끄다",
       "english": "to turn off",
       "example": "자기 전에 불을 꺼요.",
       "example_en": "I turn off the light before sleeping.",
-      "notes": "Native Korean. ㅡ irregular: 꺼요(polite, ㅡ drops). Past: 껐어요. For turning off lights, electronics, or flames. Common: 불을 끄다(turn off the light), 핸드폰을 끄다(turn off phone), 컴퓨터를 끄다(turn off computer). Opposite: 켜다(turn on). Passive: 꺼지다(to go off)."
+      "notes": ""
     },
     {
       "korean": "찾다",
       "english": "to find, to look for",
       "example": "지갑을 찾고 있어요.",
       "example_en": "I'm looking for my wallet.",
-      "notes": "Native Korean. Polite: 찾아요(ㅏ takes 아). Past: 찾았어요. Multiple meanings: to find, to look for, to pick up, to withdraw. Common: 길을 찾다(find the way), 사람을 찾다(look for someone), 돈을 찾다(withdraw money from bank), 짐을 찾다(pick up luggage)."
+      "notes": ""
     },
     {
       "korean": "기다리다",
@@ -6799,7 +6799,7 @@
       "english": "to meet",
       "example": "내일 친구를 만나요.",
       "example_en": "I'm meeting a friend tomorrow.",
-      "notes": "Native Korean. Polite: 만나요(ㅏ+아 contracts). Past: 만났어요. Common: 친구를 만나다(meet a friend), 만나서 반갑습니다(nice to meet you), 우연히 만나다(meet by chance). Related: 마주치다(to bump into), 만남(a meeting/encounter)."
+      "notes": ""
     },
     {
       "korean": "전화하다",
@@ -6827,7 +6827,7 @@
       "english": "to rest, to take a break",
       "example": "주말에는 집에서 쉬어요.",
       "example_en": "I rest at home on weekends.",
-      "notes": "Native Korean. Polite: 쉬어요. Past: 쉬었어요. Two meanings: to rest AND to breathe (숨을 쉬다). Common: 좀 쉬다(rest a bit), 쉬는 날(day off), 주말에 쉬다(rest on weekends). Related: 휴식(rest, formal noun), 휴가(vacation), 쉬엄쉬엄(taking it easy)."
+      "notes": ""
     },
     {
       "korean": "시작하다",
@@ -6848,7 +6848,7 @@
       "english": "to play, to hang out",
       "example": "주말에 같이 놀아요.",
       "example_en": "Let's hang out together on the weekend.",
-      "notes": "Native Korean. Polite: 놀아요. Past: 놀았어요. ㄹ verb (ㄹ drops before ㄴ,ㅂ,ㅅ: 노는, 놉니다, 노세요). Means to play AND to hang out. Common: 친구와 놀다(hang out with friend), 놀이터(playground), 놀이공원(amusement park), 신나게 놀다(have a blast)."
+      "notes": ""
     },
     {
       "korean": "좋아하다",
@@ -6862,7 +6862,7 @@
       "english": "to dislike, to hate",
       "example": "저는 거짓말을 싫어해요.",
       "example_en": "I hate lies.",
-      "notes": "Native compound. 싫어(from 싫다, dislike) + 하다. Polite: 싫어해요(하→해). Active verb meaning to dislike, distinct from 싫다(adjective). Common: 거짓말을 싫어하다(hate lies), 뭘 싫어해요?(what do you dislike?). Opposite: 좋아하다(to like). Stronger: 미워하다(to hate)."
+      "notes": ""
     },
     {
       "korean": "필요하다",
@@ -6960,7 +6960,7 @@
       "english": "to take (time), to catch (illness)",
       "example": "집에서 학교까지 30분 걸려요.",
       "example_en": "It takes 30 minutes from home to school.",
-      "notes": "Native Korean. Polite: 걸려요(리+어→려). Past: 걸렸어요. Multiple meanings: to take time, to catch illness, to be hung up. Common: 30분 걸리다(takes 30 minutes), 감기에 걸리다(catch a cold), 전화가 걸리다(a call comes through). Related: 소요되다(to take time, formal)."
+      "notes": ""
     },
     {
       "korean": "바꾸다",
@@ -7016,35 +7016,35 @@
       "english": "to put down / to let go / to release",
       "example": "가방을 여기에 놓으세요.",
       "example_en": "Please put your bag down here.",
-      "notes": "Native Korean. Polite: 놓아요 or contracted 놔요 (both correct). Past: 놓았어요/놨어요. To put down, place, or let go. Common: 가방을 놓다(put down a bag), 내려놓다(put down), 놓아주다(let go/release), 놓치다(to miss an opportunity). Related: 두다(to place/leave)."
+      "notes": ""
     },
     {
       "korean": "넣다",
       "english": "to put in / to insert",
       "example": "커피에 설탕을 넣어요?",
       "example_en": "Do you put sugar in your coffee?",
-      "notes": "Native Korean. Polite: 넣어요. Past: 넣었어요. To put something into a container or space. Common: 가방에 넣다(put in a bag), 설탕을 넣다(add sugar), 주머니에 넣다(put in pocket), 냉장고에 넣다(put in fridge). Opposite: 빼다(take out). Related: 집어넣다(to shove in)."
+      "notes": ""
     },
     {
       "korean": "빼다",
       "english": "to take out / to remove / to subtract",
       "example": "양파를 빼 주세요. 양파를 못 먹어요.",
       "example_en": "Please leave out the onion. I can't eat onion.",
-      "notes": "Native Korean. Polite: 빼요(ㅐ+어 contracts). Past: 뺐어요. To remove, take out, or subtract. Common: 양파를 빼 주세요(please leave out the onion), 주머니에서 빼다(take out from pocket), 빼놓다(to omit/leave out). Opposite: 넣다(put in). Related: 제외하다(to exclude, formal)."
+      "notes": ""
     },
     {
       "korean": "떨어지다",
       "english": "to fall / to drop / to run out",
       "example": "핸드폰을 떨어뜨려서 화면이 깨졌어요.",
       "example_en": "I dropped my phone and the screen cracked.",
-      "notes": "Native Korean compound. Polite: 떨어져요(지+어→져). Past: 떨어졌어요. Multiple meanings: to fall physically, to run out, to fail. Common: 잎이 떨어지다(leaves fall), 배터리가 떨어지다(battery runs out), 시험에 떨어지다(fail an exam). Related: 떨어뜨리다(to drop something, transitive)."
+      "notes": ""
     },
     {
       "korean": "올라가다",
       "english": "to go up / to ascend",
       "example": "엘리베이터가 고장 나서 계단으로 올라갔어요.",
       "example_en": "The elevator was broken, so I went up by stairs.",
-      "notes": "Native compound. 올라(up) + 가다(go). Polite: 올라가요(ㅏ+아 contracts). Past: 올라갔어요. Common: 계단으로 올라가다(go up the stairs), 산에 올라가다(go up a mountain), 가격이 올라가다(prices go up). Opposite: 내려가다(go down). Related: 오르다(to rise/ascend)."
+      "notes": ""
     },
     {
       "korean": "내려가다",
@@ -7072,7 +7072,7 @@
       "english": "to come back / to return",
       "example": "언제 한국에 돌아올 거예요?",
       "example_en": "When will you come back to Korea?",
-      "notes": "Native compound. 돌아(back/around) + 오다(come). Polite: 돌아와요(오+아→와). Past: 돌아왔어요. Common: 집에 돌아오다(come back home), 언제 돌아올 거예요?(when will you come back?). Related direction: 돌아가다(to go back). Related: 귀국하다(to return to home country)."
+      "notes": ""
     },
     {
       "korean": "데려가다",
@@ -7093,7 +7093,7 @@
       "english": "to send",
       "example": "이메일을 보냈어요. 확인해 주세요.",
       "example_en": "I sent an email. Please check it.",
-      "notes": "Native Korean. Polite: 보내요(ㅐ+어 contracts). Past: 보냈어요. To send or to spend (time). Common: 이메일을 보내다(send email), 편지를 보내다(send a letter), 시간을 보내다(spend time), 택배를 보내다(send a package). Related: 발송하다(to dispatch, formal), 전송하다(to transmit)."
+      "notes": ""
     },
     {
       "korean": "부르다",
@@ -7142,7 +7142,7 @@
       "english": "to reserve / to book / to make a reservation",
       "example": "식당을 예약했어요. 7시에 가면 돼요.",
       "example_en": "I reserved a restaurant. We can go at 7.",
-      "notes": "Sino-Korean compound. 예(豫 advance/beforehand) + 약(約 promise/arrange) + 하다. Polite: 예약해요(하→해). Common: 호텔을 예약하다(book a hotel), 식당을 예약하다(reserve a restaurant), 예약 취소(cancel a reservation). Related: 예매하다(to book tickets specifically for shows/transport)."
+      "notes": ""
     },
     {
       "korean": "나누다",
@@ -7163,28 +7163,28 @@
       "english": "to fill",
       "example": "컵에 물을 채워 주세요.",
       "example_en": "Please fill the cup with water.",
-      "notes": "Native Korean. Polite: 채워요(우+어→워). Past: 채웠어요. To fill something up. Common: 물을 채우다(fill with water), 배를 채우다(fill one's stomach), 빈칸을 채우다(fill in the blank), 목표를 채우다(meet a goal/quota). Opposite: 비우다(to empty)."
+      "notes": ""
     },
     {
       "korean": "비우다",
       "english": "to empty",
       "example": "쓰레기통을 비워야 해요.",
       "example_en": "I need to empty the trash can.",
-      "notes": "Native Korean. Polite: 비워요(우+어→워). Past: 비웠어요. To empty or vacate. Common: 쓰레기통을 비우다(empty the trash), 자리를 비우다(vacate a seat/be away from desk), 마음을 비우다(empty one's mind, let go). Opposite: 채우다(to fill)."
+      "notes": ""
     },
     {
       "korean": "잠그다",
       "english": "to lock",
       "example": "나가기 전에 문을 잠가요.",
       "example_en": "I lock the door before going out.",
-      "notes": "Native Korean. ㅡ irregular: 잠가요(polite, ㅡ drops, previous syllable 잠 has ㅏ so 아). Past: 잠갔어요. To lock or to turn off (water). Common: 문을 잠그다(lock the door), 수도를 잠그다(turn off the faucet/tap). Opposite: 열다(open/unlock). Related: 자물쇠(padlock), 잠금(lock)."
+      "notes": ""
     },
     {
       "korean": "숨기다",
       "english": "to hide (something)",
       "example": "선물을 옷장 안에 숨겼어요.",
       "example_en": "I hid the present inside the closet.",
-      "notes": "Native Korean. Polite: 숨겨요(기+어→겨). Past: 숨겼어요. To hide or conceal something (transitive). Common: 선물을 숨기다(hide a gift), 비밀을 숨기다(hide a secret), 감정을 숨기다(hide emotions). Intransitive (hide oneself): 숨다. Related: 감추다(to conceal, synonym)."
+      "notes": ""
     },
     {
       "korean": "발견하다",
@@ -7212,14 +7212,14 @@
       "english": "to endure; to hold back",
       "example": "웃음을 참을 수가 없었어요.",
       "example_en": "I couldn't hold back my laughter.",
-      "notes": "Native Korean. Polite: 참아요(ㅏ takes 아). Past: 참았어요. To endure, bear, or hold back. Common: 눈물을 참다(hold back tears), 웃음을 참다(hold back laughter), 참을 수 없다(can't endure/bear it), 좀만 참으세요(please bear with it a little). Related: 견디다(to withstand, longer endurance)."
+      "notes": ""
     },
     {
       "korean": "포기하다",
       "english": "to give up",
       "example": "절대 포기하지 마세요!",
       "example_en": "Never give up!",
-      "notes": "Sino-Korean compound. 포(抛 throw away) + 기(棄 abandon/discard) + 하다. Polite: 포기해요(하→해). Common: 꿈을 포기하다(give up a dream), 절대 포기하지 마세요(never give up), 포기할 수 없다(can't give up). Related: 단념하다(to give up, formal), 체념하다(to resign oneself)."
+      "notes": ""
     },
     {
       "korean": "성공하다",
@@ -7247,7 +7247,7 @@
       "english": "to cheer for; to support",
       "example": "항상 응원하고 있어요!",
       "example_en": "I'm always cheering for you!",
-      "notes": "Sino-Korean compound. 응(應 respond/answer) + 원(援 aid/support) + 하다. Polite: 응원해요(하→해). To cheer for or support someone. Common: 팀을 응원하다(cheer for a team), 항상 응원하고 있어요(I'm always rooting for you). Noun: 응원(cheering), 응원단(cheering squad/cheerleaders)."
+      "notes": ""
     },
     {
       "korean": "거짓말하다",
@@ -7289,14 +7289,14 @@
       "english": "to win; to beat",
       "example": "우리 팀이 3 대 1로 이겼어요!",
       "example_en": "Our team won 3 to 1!",
-      "notes": "Native Korean. Polite: 이겨요(기+어→겨). Past: 이겼어요. To win or to beat/overcome. Common: 시합에서 이기다(win a match), 유혹을 이기다(overcome temptation), 3 대 1로 이기다(win 3 to 1). Opposite: 지다(lose). Related: 승리하다(to win, formal)."
+      "notes": ""
     },
     {
       "korean": "지다",
       "english": "to lose (a game/match)",
       "example": "아깝게 졌어요.",
       "example_en": "We lost by a narrow margin.",
-      "notes": "Native Korean. Polite: 져요(지+어→져). Past: 졌어요. To lose in a competition. Common: 경기에서 지다(lose a game), 아깝게 지다(lose by a narrow margin), 지고 싶지 않다(don't want to lose). Opposite: 이기다(win). Related: 패배하다(to be defeated, formal). Note: 지다 has other meanings like 해가 지다(sun sets)."
+      "notes": ""
     },
     {
       "korean": "비기다",
@@ -7403,7 +7403,7 @@
       "english": "again, also, and",
       "example": "또 만나요!",
       "example_en": "See you again!",
-      "notes": "Native Korean. Multiple meanings: again, also, and. Can link items: 사과, 또 바나나(apples and also bananas)."
+      "notes": ""
     },
     {
       "korean": "다시",
@@ -7755,7 +7755,7 @@
       "english": "fish",
       "example": "강에서 물고기를 잡았어요.",
       "example_en": "I caught a fish in the river.",
-      "notes": "Literally 물(water) + 고기(meat/flesh). 생선 refers to fish as food. Counter: 마리."
+      "notes": "물(water) + 고기(meat/fish). Fish. Related: 물고기를 잡다(catch fish), 수족관(aquarium)."
     },
     {
       "korean": "토끼",
@@ -7839,7 +7839,7 @@
       "english": "pig",
       "example": "돼지가 진흙에서 놀고 있어요.",
       "example_en": "The pig is playing in the mud.",
-      "notes": "Native Korean. Food: 돼지고기(pork). Culture: dreaming of pig = lucky omen(wealth). Zodiac: 돼지띠."
+      "notes": "Pig. Native Korean animal. Related: 돼지고기(pork), 돼지 우리(pigsty)."
     },
     {
       "korean": "닭",
@@ -7867,7 +7867,7 @@
       "english": "butterfly",
       "example": "봄에 예쁜 나비가 많이 날아다녀요.",
       "example_en": "In spring, many pretty butterflies fly around.",
-      "notes": "Native Korean. Related: 나비넥타이(bow tie, lit. butterfly necktie). Poetic symbol in Korean literature."
+      "notes": "Butterfly. Native Korean. Related: 나방(moth), 나비처럼(butterfly-like)."
     },
     {
       "korean": "벌",
@@ -8028,7 +8028,7 @@
       "english": "rose",
       "example": "빨간 장미 한 송이를 샀어요.",
       "example_en": "I bought one red rose.",
-      "notes": "Native Korean. Rose flower. Collocations: 장미꽃(rose), 장미 정원(rose garden). Symbol: love."
+      "notes": "장(薔 rose plant) + 미(薇 rose). Rose flower. Related: 장미꽃(rose flower)."
     },
     {
       "korean": "해바라기",
@@ -8049,7 +8049,7 @@
       "english": "autumn leaves",
       "example": "산에 단풍이 정말 예뻐요.",
       "example_en": "The autumn leaves on the mountain are really pretty.",
-      "notes": "Native Korean. Autumn foliage/leaves. Fall activity: 단풍 구경(viewing autumn leaves). Related: 단풍잎."
+      "notes": "단(丹 red) + 풍(楓 maple). Autumn leaves / maple. Related: 단풍놀이(autumn outing)."
     },
     {
       "korean": "동물원",
@@ -8070,7 +8070,7 @@
       "english": "pet",
       "example": "애완동물을 키우고 싶어요.",
       "example_en": "I want to raise a pet.",
-      "notes": "애(愛 love) + 완(玩 play) appears in 장난(play). 동물(animal). Pet animal."
+      "notes": "애완(愛玩 beloved/pet) + 동물(animal). Pet. Related: 반려동물(companion animal)."
     },
     {
       "korean": "산책시키다",
@@ -8324,7 +8324,7 @@
       "english": "printer",
       "example": "프린터로 보고서를 출력했어요.",
       "example_en": "I printed the report with the printer.",
-      "notes": "Loanword from English 'printer'. Verbs: 출력하다/인쇄하다(to print). 프린트 means both printer and printout."
+      "notes": ""
     },
     {
       "korean": "교실",
@@ -8394,7 +8394,7 @@
       "english": "to memorize",
       "example": "한자를 외우는 게 제일 어려워요.",
       "example_en": "Memorizing Chinese characters is the hardest.",
-      "notes": "Native Korean verb. To memorize by heart. Study essential: 단어를 외우다(memorize vocabulary). Related: 암기하다."
+      "notes": ""
     },
     {
       "korean": "번역하다",
@@ -8415,14 +8415,14 @@
       "english": "to be wrong",
       "example": "답이 틀렸어요. 다시 해 보세요.",
       "example_en": "The answer is wrong. Please try again.",
-      "notes": "Native Korean verb. To be wrong/incorrect. Common mistake confusion with 다르다(different). 틀린 답(wrong answer)."
+      "notes": ""
     },
     {
       "korean": "맞다",
       "english": "to be correct",
       "example": "네, 맞아요! 정답이에요.",
       "example_en": "Yes, that's correct! It's the right answer.",
-      "notes": "Native Korean verb. To be correct/right. Multiple meanings: hit, fit, correct. 답이 맞다(answer is correct)."
+      "notes": ""
     },
     {
       "korean": "점수",
@@ -8471,7 +8471,7 @@
       "english": "vacation",
       "example": "방학 때 뭐 할 거예요?",
       "example_en": "What are you going to do during vacation?",
-      "notes": "방(放 release) appears in 개방(opening), 방송(broadcast). 학(學 study). Vacation period. Types: 여름방학(summer), 겨울방학(winter)."
+      "notes": ""
     },
     {
       "korean": "과목",
@@ -8569,35 +8569,35 @@
       "english": "listening",
       "example": "듣기 시험이 제일 어려워요.",
       "example_en": "The listening test is the hardest.",
-      "notes": "Native Korean. From 듣다(hear/listen). Listening skill. Test section: 듣기 시험."
+      "notes": ""
     },
     {
       "korean": "말하기",
       "english": "speaking",
       "example": "말하기 연습을 많이 하고 싶어요.",
       "example_en": "I want to practice speaking a lot.",
-      "notes": "Native Korean. From 말하다(speak). Speaking skill. Important: 말하기 연습(speaking practice)."
+      "notes": ""
     },
     {
       "korean": "읽기",
       "english": "reading",
       "example": "읽기 속도가 점점 빨라지고 있어요.",
       "example_en": "My reading speed is gradually getting faster.",
-      "notes": "Native Korean. From 읽다(read). Reading skill. ㄱ irregular. Practice: 읽기 이해(reading comprehension)."
+      "notes": ""
     },
     {
       "korean": "쓰기",
       "english": "writing",
       "example": "쓰기 숙제를 아직 못 끝냈어요.",
       "example_en": "I haven't finished my writing homework yet.",
-      "notes": "Native Korean. From 쓰다(write). Writing skill. Practice: 쓰기 연습(writing practice)."
+      "notes": ""
     },
     {
       "korean": "회화",
       "english": "conversation",
       "example": "매주 한국어 회화 수업을 들어요.",
       "example_en": "I take Korean conversation classes every week.",
-      "notes": "회(會 meet) appears in 회의(meeting), 회사(company). 화(話 talk) appears in 대화(dialogue), 전화(phone). Conversation practice."
+      "notes": ""
     },
     {
       "korean": "문제",
@@ -8646,7 +8646,7 @@
       "english": "tuition",
       "example": "한국 대학교 등록금이 많이 비싸요.",
       "example_en": "Korean university tuition is very expensive.",
-      "notes": "등(登 register) appears in 등록(registration). 록(錄 record) appears in 기록(record). 금(金 money). Tuition fees."
+      "notes": ""
     },
     {
       "korean": "학위",
@@ -8753,7 +8753,7 @@
       "english": "overtime",
       "example": "이번 주에 야근을 세 번이나 했어요.",
       "example_en": "I worked overtime three times this week.",
-      "notes": "야(夜 night) appears in 야간(nighttime), 밤(night). 근(勤 work) appears in 근무(work), 출근(go to work). Overtime work, common in Korea."
+      "notes": ""
     },
     {
       "korean": "동료",
@@ -8809,7 +8809,7 @@
       "english": "getting a job",
       "example": "대학교를 졸업하고 취직했어요.",
       "example_en": "I got a job after graduating from university.",
-      "notes": "취(就 take position) appears in 취업(employment). 직(職 job) appears in 직업(occupation), 직원(employee), 직장(workplace). Getting a job."
+      "notes": ""
     },
     {
       "korean": "퇴직",
@@ -9075,7 +9075,7 @@
       "english": "leadership",
       "example": "팀장님의 리더십 덕분에 프로젝트가 성공했어요.",
       "example_en": "The project succeeded thanks to the team leader's leadership.",
-      "notes": "Loanword from English 'leadership'. Leadership skills. Develop: 리더십을 기르다."
+      "notes": ""
     },
     {
       "korean": "성장",
@@ -9744,7 +9744,7 @@
       "english": "blog",
       "example": "블로그에 여행 후기를 썼어요.",
       "example_en": "I wrote a travel review on my blog.",
-      "notes": "Loanword from English 'blog.' Related: 블로거(blogger), 포스팅(posting), 댓글(comment). Common: 블로그에 글을 쓰다(write blog post)."
+      "notes": ""
     },
     {
       "korean": "댓글",
@@ -9884,7 +9884,7 @@
       "english": "camera",
       "example": "이 핸드폰은 카메라가 정말 좋아요.",
       "example_en": "The camera on this phone is really good.",
-      "notes": "Loanword from English 'camera.' Related: 전면 카메라(front camera), 후면 카메라(rear camera). Cultural: camera quality very important in Korea."
+      "notes": ""
     },
     {
       "korean": "이어폰",
@@ -9961,7 +9961,7 @@
       "english": "QR code",
       "example": "QR코드를 찍으면 메뉴를 볼 수 있어요.",
       "example_en": "You can see the menu if you scan the QR code.",
-      "notes": "QR (Quick Response) + 코드(code). Related: QR코드를 스캔하다(scan QR code), QR코드 결제(QR code payment). Cultural: widely used for menus, payment, check-in in Korea."
+      "notes": ""
     }
   ],
   "외모 & 옷 (Appearance & Clothes)": [
@@ -10026,7 +10026,7 @@
       "english": "sunscreen",
       "example": "매일 선크림을 발라요.",
       "example_en": "I apply sunscreen every day.",
-      "notes": "Konglish: 선(sun) + 크림(cream). Also: 자외선 차단제(UV blocker). Cultural: sunscreen use essential in Korean skincare. Common: 선크림을 바르다(apply sunscreen)."
+      "notes": ""
     },
     {
       "korean": "안경",
@@ -10075,7 +10075,7 @@
       "english": "bracelet",
       "example": "팔찌를 선물로 줬어요.",
       "example_en": "I gave a bracelet as a gift.",
-      "notes": "Native compound: 팔(arm) + 찌(ornament suffix). Related: 팔찌를 차다(wear bracelet), 팔찌를 하다. Common: 팔찌를 선물로 주다(give bracelet as gift)."
+      "notes": ""
     },
     {
       "korean": "시계",
@@ -10124,7 +10124,7 @@
       "english": "jacket",
       "example": "가을에는 재킷을 입어요.",
       "example_en": "I wear a jacket in autumn.",
-      "notes": "Loanword from English 'jacket.' Related: 가죽 재킷(leather jacket), 봄 재킷(spring jacket). Common: 가을에 재킷을 입다(wear jacket in fall)."
+      "notes": ""
     },
     {
       "korean": "코트",
@@ -10159,7 +10159,7 @@
       "english": "shorts",
       "example": "더울 때 반바지를 입어요.",
       "example_en": "I wear shorts when it's hot.",
-      "notes": "Native compound: 반(half) + 바지(pants). Related: 핫팬츠(hot pants), 반반이(half and half). Common: 여름에 반바지를 입다(wear shorts in summer)."
+      "notes": ""
     },
     {
       "korean": "운동복",
@@ -10194,7 +10194,7 @@
       "english": "dress shoes",
       "example": "회사에 갈 때 구두를 신어요.",
       "example_en": "I wear dress shoes when I go to work.",
-      "notes": "Native Korean word. Related: 구두를 신다(wear dress shoes), 구두를 닦다(polish shoes), 하이힐(high heels). Common: 회사에 구두를 신다(wear dress shoes to work)."
+      "notes": ""
     },
     {
       "korean": "운동화",
@@ -10208,21 +10208,21 @@
       "english": "slippers",
       "example": "집에서는 슬리퍼를 신어요.",
       "example_en": "I wear slippers at home.",
-      "notes": "Loanword from English 'slipper.' Related: 실내 슬리퍼(indoor slippers), 샤워 슬리퍼. Common: 집에서 슬리퍼를 신다(wear slippers at home)."
+      "notes": ""
     },
     {
       "korean": "부츠",
       "english": "boots",
       "example": "비 올 때 부츠를 신어요.",
       "example_en": "I wear boots when it rains.",
-      "notes": "Loanword from English 'boots.' Related: 레인부츠(rain boots), 롱부츠(tall boots), 앵클부츠(ankle boots). Common: 겨울에 부츠를 신다(wear boots in winter)."
+      "notes": ""
     },
     {
       "korean": "우비",
       "english": "raincoat",
       "example": "비가 많이 와서 우비를 입었어요.",
       "example_en": "It was raining heavily, so I wore a raincoat.",
-      "notes": "Native compound: 우(雨 rain) + 비(cover/protect). Related: 우산(umbrella), 비옷(raincoat). Common: 비 올 때 우비를 입다(wear raincoat when it rains)."
+      "notes": ""
     },
     {
       "korean": "장갑",
@@ -10243,7 +10243,7 @@
       "english": "belt",
       "example": "바지가 커서 벨트를 매요.",
       "example_en": "The pants are big, so I wear a belt.",
-      "notes": "Loanword from English 'belt.' Related: 가죽 벨트(leather belt), 벨트를 매다(wear belt). Common: 바지에 벨트를 매다(wear belt with pants)."
+      "notes": ""
     },
     {
       "korean": "넥타이",
@@ -10441,7 +10441,7 @@
       "english": "neighbor",
       "example": "이웃이 이사 오면 인사를 해요.",
       "example_en": "When a neighbor moves in, you greet them.",
-      "notes": "Native Korean 이(this) + 웃(old form of neighbor). Neighbor. Formal: 이웃집. Traditional culture emphasized good neighbor relations."
+      "notes": "Neighbor. Native Korean. Related: 이웃 집(neighboring house), 이웃사촌(neighbor relation)."
     },
     {
       "korean": "손님",
@@ -10532,7 +10532,7 @@
       "english": "to greet",
       "example": "어른을 만나면 먼저 인사해요.",
       "example_en": "When you meet an elder, you greet them first.",
-      "notes": "인(人 person) + 사(事 matter). To greet, to say hello. Noun: 인사(greeting). Bowing depth varies by relationship and formality."
+      "notes": "인사(挨拶 greeting) + 하다(to do). To greet. Related: 인사말(greeting), 인사말을 하다."
     },
     {
       "korean": "악수",
@@ -10609,21 +10609,21 @@
       "english": "to refuse; to decline",
       "example": "미안하지만 그 부탁은 거절해야 해요.",
       "example_en": "I'm sorry, but I have to decline that request.",
-      "notes": "거(拒 refuse) appears in 거부(refusal), 거역(defiance). 절(絶 cut off) appears in 절대(absolute), 단절(severance). To refuse, to decline. Korean culture makes direct refusal difficult."
+      "notes": "거절(據折 refuse/decline) + 하다. To refuse/decline. Related: 거절 당하다(be refused)."
     },
     {
       "korean": "동의하다",
       "english": "to agree",
       "example": "저도 그 의견에 동의해요.",
       "example_en": "I agree with that opinion too.",
-      "notes": "동(同 same/agree) appears in 동일(identical), 동료(colleague). 의(意 meaning/intention) appears in 의견(opinion), 의도(intention). To agree, to consent. Noun: 동의(agreement)."
+      "notes": "동의(同意 agree) + 하다. To agree. Related: 동의를 얻다(get agreement)."
     },
     {
       "korean": "반대하다",
       "english": "to oppose; to disagree",
       "example": "부모님이 그 계획을 반대해요.",
       "example_en": "My parents oppose that plan.",
-      "notes": "반(反 oppose/reverse) appears in 반응(reaction), 위반(violation). 대(對 against/toward) appears in 대결(confrontation), 반응(reaction). To oppose, to object. Noun: 반대(opposition)."
+      "notes": "반(反 oppose) + 대(對 against) + 하다. To oppose/disagree. Related: 반대 의견(opposing opinion)."
     },
     {
       "korean": "의견",
@@ -10637,7 +10637,7 @@
       "english": "to discuss; to debate",
       "example": "이 주제에 대해 같이 토론해요.",
       "example_en": "Let's discuss this topic together.",
-      "notes": "토(討 discuss) appears in 검토(review), 토의(discussion). 론(論 discuss/theory) appears in 논쟁(argument), 이론(theory). To debate, to discuss. Noun: 토론(debate)."
+      "notes": "토론(討論 discussion) + 하다. To discuss/debate. Related: 토론회(debate), 토론자(debater)."
     },
     {
       "korean": "오해",
@@ -10651,42 +10651,42 @@
       "english": "to reconcile; to make up",
       "example": "싸운 후에 금방 화해했어요.",
       "example_en": "We made up quickly after fighting.",
-      "notes": "화(和 harmony/reconcile) appears in 평화(peace), 조화(harmony). 해(解 resolve) appears in 해결(solution), 이해(understanding). To reconcile, to make up. Noun: 화해(reconciliation)."
+      "notes": "화해(和解 reconciliation) + 하다. To reconcile/make up. Related: 화해의 악수(handshake of reconciliation)."
     },
     {
       "korean": "사이좋다",
       "english": "to get along well; to be on good terms",
       "example": "우리 가족은 다 사이가 좋아요.",
       "example_en": "Everyone in our family gets along well.",
-      "notes": "Native Korean 사이(relationship/between) + 좋다(good). To be on good terms, to get along well. Used for any relationship type."
+      "notes": "사이(between/relationship) + 좋다(good). To get along well. Related: 사이가 좋다(good relationship)."
     },
     {
       "korean": "싸우다",
       "english": "to fight; to argue",
       "example": "어제 친구하고 싸웠어요.",
       "example_en": "I had a fight with my friend yesterday.",
-      "notes": "Native Korean. To fight, to quarrel. Related: 싸움(fight), 다투다(to argue). Can be physical or verbal."
+      "notes": "To fight/argue. Native Korean. Related: 싸움(fight/quarrel), 싸움박질(fighting)."
     },
     {
       "korean": "헤어지다",
       "english": "to break up; to part ways",
       "example": "남자친구하고 지난달에 헤어졌어요.",
       "example_en": "I broke up with my boyfriend last month.",
-      "notes": "Native Korean. To part, to separate, to break up. Used for romantic breakups or general partings. More dramatic than 떠나다."
+      "notes": "To break up / part ways. Related: 헤어짐(breakup/parting), 헤어지는 방법(way to break up)."
     },
     {
       "korean": "사귀다",
       "english": "to date someone; to go out with",
       "example": "두 사람이 6개월째 사귀고 있어요.",
       "example_en": "The two of them have been dating for 6 months.",
-      "notes": "Native Korean. To date, to go out with. Also means to make friends: 친구를 사귀다. Common in relationship contexts."
+      "notes": "To date / go out with. Related: 사귐(dating), 사귀는 사람(person dating)."
     },
     {
       "korean": "연락하다",
       "english": "to contact; to get in touch",
       "example": "나중에 연락할게요.",
       "example_en": "I'll contact you later.",
-      "notes": "연(連 connect) appears in 연결(connection), 관련(related). 락(絡 connect) appears only in 연락. To contact, to get in touch. Noun: 연락(contact)."
+      "notes": "연락(聯絡 contact) + 하다. To contact / get in touch. Related: 연락처(contact info)."
     },
     {
       "korean": "소식",
@@ -10770,7 +10770,7 @@
       "english": "fan",
       "example": "그 가수의 열성적인 팬이에요.",
       "example_en": "I'm a passionate fan of that singer.",
-      "notes": "English loanword: fan. Fan, supporter. Very strong fan culture in Korea, especially for K-pop. Related: 팬덤(fandom)."
+      "notes": "Fan (from English). Related: 유명인 팬(celebrity fan), 팬클럽(fan club)."
     },
     {
       "korean": "회원",
@@ -10805,7 +10805,7 @@
       "english": "voting",
       "example": "선거일에 투표하러 갔어요.",
       "example_en": "I went to vote on election day.",
-      "notes": "투(投 throw/cast) appears in 투자(investment), 투입(input). 표(票 vote/ballot) appears in 득표(win votes), 표결(vote). Vote, voting. Democracy participation; voting age is 18."
+      "notes": "투(投 cast) + 표(票 ballot). Voting. Related: 투표하다(to vote), 투표소(voting place)."
     },
     {
       "korean": "법",
@@ -10856,21 +10856,21 @@
       "english": "Help!",
       "example": "누구 없어요? 도와주세요!",
       "example_en": "Is anyone there? Help!",
-      "notes": "Native Korean 돕다(help) stem + 아 + 주세요(please do for me). Help! Emergency phrase. Even in urgencies, polite form is used, but 도와주세요! or 도와줘! both acceptable."
+      "notes": "도와주다(help me) + 세요(please formal). Emergency request. Related: 살려주세요(save me!)."
     },
     {
       "korean": "위험해요!",
       "english": "It's dangerous!",
       "example": "거기 가면 위험해요! 조심하세요!",
       "example_en": "It's dangerous if you go there! Be careful!",
-      "notes": "위(危 danger) appears in 위기(crisis), 위협(threat). 험(險 dangerous) appears in 보험(insurance), 험난(perilous). It's dangerous! Can shout 위험해! in 반말 for urgency."
+      "notes": "위험(危險 danger) + 해요(is). Its dangerous! Emergency warning phrase."
     },
     {
       "korean": "불이야!",
       "english": "Fire!",
       "example": "불이야! 빨리 나가세요!",
       "example_en": "Fire! Get out quickly!",
-      "notes": "Native Korean 불(fire). Fire! Shouted in 반말 even to strangers — emergencies override politeness rules. Related: 불이 나다(fire breaks out)."
+      "notes": "불(fire) + 이야(is/exclamation). Fire! Emergency exclamation."
     },
     {
       "korean": "경찰",
@@ -10898,14 +10898,14 @@
       "english": "emergency number (fire/ambulance)",
       "example": "사고가 나면 119에 전화하세요.",
       "example_en": "If there's an accident, call 119.",
-      "notes": "Korean emergency number for fire and medical emergencies. Say 일일구 or 백십구. Free call from any phone, including cell phones without credit."
+      "notes": "Emergency number for fire/ambulance in Korea. Related: 911(US), 999(UK)."
     },
     {
       "korean": "112",
       "english": "police emergency number",
       "example": "도둑을 봤으면 112에 신고하세요.",
       "example_en": "If you saw a thief, report it to 112.",
-      "notes": "Korean emergency number for police. Say 일일이 or 백십이. Free call from any phone. Available 24/7."
+      "notes": "Police emergency number in Korea. Related: 119(fire), 긴급신고(emergency report)."
     },
     {
       "korean": "사고",
@@ -10919,7 +10919,7 @@
       "english": "emergency room",
       "example": "밤에 아프면 응급실에 가세요.",
       "example_en": "If you're sick at night, go to the emergency room.",
-      "notes": "응(應 respond) appears in 대응(response), 반응(reaction). 급(急 urgent) appears in 긴급(emergency), 급히(urgently). 실(室 room) appears in 교실(classroom). Emergency room (ER)."
+      "notes": "응급(應急 emergency) + 실(室 room). Emergency room. Related: 병원(hospital), 119."
     },
     {
       "korean": "도둑",
@@ -10940,7 +10940,7 @@
       "english": "to report (to authorities)",
       "example": "이상한 사람을 보면 신고해 주세요.",
       "example_en": "If you see a suspicious person, please report it.",
-      "notes": "신(申 report) + 고(告 tell/inform). To report (to authorities). Noun: 신고(report). Must provide: 신고자(reporter), 신고 내용(report details)."
+      "notes": "신고(申告 report) + 하다. To report (to authorities). Related: 112신고(police report)."
     },
     {
       "korean": "대피하다",
@@ -11031,7 +11031,7 @@
       "english": "to make an appointment; to set up plans",
       "example": "병원에 약속을 잡았어요.",
       "example_en": "I made an appointment at the hospital.",
-      "notes": "약속(promise/appointment) + 잡다(catch/set). To make an appointment, to schedule. Casual phrase. Formal: 예약하다."
+      "notes": "약속(promise/appointment) + 잡다(to set). To make an appointment. Related: 약속 시간."
     },
     {
       "korean": "취소하다",
@@ -11045,7 +11045,7 @@
       "english": "to change; to modify",
       "example": "비행기 날짜를 변경하고 싶어요.",
       "example_en": "I want to change my flight date.",
-      "notes": "변(變 change) appears in 변화(change), 변동(fluctuation). 경(更 change/renew) appears in 갱신(renewal), 경신(renewal). To change, to modify. Noun: 변경(modification)."
+      "notes": "변(變 change) + 경(更 modify) + 하다. To change/modify. Related: 변경 예정(planned change)."
     },
     {
       "korean": "서명하다",
@@ -11066,7 +11066,7 @@
       "english": "CPR (cardiopulmonary resuscitation)",
       "example": "심폐소생술을 할 줄 아세요?",
       "example_en": "Do you know how to perform CPR?",
-      "notes": "심(心 heart) + 폐(肺 lung) + 소(蘇 revive) + 생(生 life) + 술(術 technique). CPR (cardiopulmonary resuscitation). Life-saving skill; learn proper technique."
+      "notes": "심(心 heart) + 폐(肺 lung) + 소생(蘇生 resuscitation) + 술(術 technique). CPR."
     },
     {
       "korean": "붕대",
@@ -11094,7 +11094,7 @@
       "english": "blood type",
       "example": "혈액형이 뭐예요? 저는 A형이에요.",
       "example_en": "What's your blood type? I'm type A.",
-      "notes": "혈(血 blood) + 액(液 liquid) + 형(型 type). Blood type. Know yours: A형, B형, O형, AB형. Important for emergencies and blood donation."
+      "notes": "혈액(血液 blood) + 형(型 type). Blood type. Related: O형(type O), A형(type A)."
     },
     {
       "korean": "수혈",
@@ -11164,7 +11164,7 @@
       "english": "to be careful; to watch out",
       "example": "길을 건널 때 조심하세요.",
       "example_en": "Be careful when crossing the street.",
-      "notes": "조(操 handle) + 심(心 heart/mind). To be careful, watch out. Common warning: 조심하세요!(Be careful!). Related: 조심스럽다(cautious), 주의하다(pay attention)."
+      "notes": "To be careful / watch out. Related: 조심해요(be careful), 조심성(carefulness)."
     },
     {
       "korean": "구명보트",
@@ -11178,7 +11178,7 @@
       "english": "life jacket; life vest",
       "example": "배에 타기 전에 구명조끼를 입으세요.",
       "example_en": "Put on a life jacket before boarding the boat.",
-      "notes": "구(救 rescue) + 명(命 life) + 조끼(vest). Life jacket, life vest. Required on boats. Emergency equipment. Verb: 구명조끼를 입다(wear life jacket)."
+      "notes": "구명(救命 life-saving) + 조끼(vest). Life jacket/vest. Related: 안전(safety)."
     },
     {
       "korean": "응급",
@@ -11241,14 +11241,14 @@
       "english": "forest fire; wildfire",
       "example": "건조한 날씨에 산불이 자주 나요.",
       "example_en": "Forest fires occur frequently in dry weather.",
-      "notes": "산(山 mountain) + 불(fire). Forest fire, wildfire. Serious problem in spring in Korea. Prevention: 산불 조심(watch for forest fires). Related: 산불 진화(firefighting)."
+      "notes": "산(山 mountain) + 불(fire). Forest fire / wildfire. Related: 산불 진화(extinguish fire)."
     },
     {
       "korean": "응급 연락처",
       "english": "emergency contact",
       "example": "응급 연락처를 적어 두세요.",
       "example_en": "Write down your emergency contact information.",
-      "notes": "응급(emergency) + 연락처(連絡處 contact information). Emergency contact. Important to have readily available. ICE (In Case of Emergency) in phones. Related: 비상 연락망(emergency contact network)."
+      "notes": "응급(emergency) + 연락(contact) + 처(place). Emergency contact info."
     },
     {
       "korean": "환자",
@@ -11262,7 +11262,7 @@
       "english": "first aid kit; emergency kit",
       "example": "집에 구급상자를 준비해 두세요.",
       "example_en": "Keep a first aid kit ready at home.",
-      "notes": "구급(救急 emergency rescue) + 상자(箱子 box). First aid kit. Essential for emergencies. Contains: 붕대(bandages), 소독약(disinfectant), 반창고(band-aids). Should be in every home/car."
+      "notes": "구급(急 emergency) + 상자(box). First aid kit. Related: 밴드(band-aid)."
     }
   ],
   "한국 문화 (Korean Culture)": [
@@ -11285,7 +11285,7 @@
       "english": "rice cake soup",
       "example": "설날 아침에 떡국을 먹어요.",
       "example_en": "We eat rice cake soup on the morning of Lunar New Year.",
-      "notes": "Native Korean 떡(rice cake) + 국(soup). Rice cake soup eaten on 설날 (New Year). Eating 떡국 symbolizes gaining a year; sliced rice cakes resemble coins (prosperity)."
+      "notes": ""
     },
     {
       "korean": "송편",
@@ -11299,14 +11299,14 @@
       "english": "New Year's bow",
       "example": "어른들께 세배를 드려요.",
       "example_en": "We bow to our elders for the New Year.",
-      "notes": "세(歲 year) + 배(拜 bow/worship). New Year's bow to elders. Children bow and receive 세뱃돈; shows respect and receives blessings."
+      "notes": ""
     },
     {
       "korean": "세뱃돈",
       "english": "New Year's money",
       "example": "세배하고 세뱃돈을 받았어요.",
       "example_en": "I bowed and received New Year's money.",
-      "notes": "세배(New Year's bow) + 돈(money). New Year's money given to children by elders after 세배. Given in white envelope; amount varies by age/relationship."
+      "notes": ""
     },
     {
       "korean": "추석",
@@ -11320,7 +11320,7 @@
       "english": "Lunar New Year",
       "example": "설날에 온 가족이 모여요.",
       "example_en": "The whole family gathers on Lunar New Year.",
-      "notes": "Native Korean 설(New Year's Day) + 날(day). Lunar New Year, most important holiday. Traditional activities: 세배, 떡국, 윷놀이, 한복 wearing."
+      "notes": ""
     },
     {
       "korean": "한글날",
@@ -11418,7 +11418,7 @@
       "english": "senior-junior relationship system",
       "example": "한국에서는 선후배 문화가 강해요.",
       "example_en": "In Korea, the senior-junior culture is strong.",
-      "notes": "선배(senior) + 후배(junior). Senior-junior relationship system. Pervasive in schools, military, workplace. Age and entry year determine hierarchy."
+      "notes": ""
     },
     {
       "korean": "회식",
@@ -11432,35 +11432,35 @@
       "english": "Han River",
       "example": "주말에 한강 공원에서 자전거를 탔어요.",
       "example_en": "I rode a bicycle at Han River Park on the weekend.",
-      "notes": "한(漢 Han) + 강(江 river). Han River running through Seoul. Major landmark; parks along river for biking, picnics, festivals. '한강의 기적' (miracle of Han River) refers to economic development."
+      "notes": ""
     },
     {
       "korean": "남산타워",
       "english": "Namsan Tower (N Seoul Tower)",
       "example": "남산타워에서 서울 야경을 봤어요.",
       "example_en": "I saw the Seoul night view from Namsan Tower.",
-      "notes": "남(南 south) + 산(山 mountain) + tower. N Seoul Tower on Namsan mountain. Iconic Seoul landmark; observation deck, love locks, restaurants. Height: 236.7m (tower) + 243m (mountain)."
+      "notes": ""
     },
     {
       "korean": "경복궁",
       "english": "Gyeongbokgung Palace",
       "example": "경복궁에서 한복을 입고 사진을 찍었어요.",
       "example_en": "I took photos wearing hanbok at Gyeongbokgung.",
-      "notes": "경(景 scenery/capital) + 복(福 fortune/blessing) + 궁(宮 palace). Gyeongbokgung Palace, main royal palace of Joseon Dynasty. Built 1395; changing of guard ceremony; major tourist site."
+      "notes": ""
     },
     {
       "korean": "제주도",
       "english": "Jeju Island",
       "example": "제주도는 한국에서 가장 인기 있는 여행지예요.",
       "example_en": "Jeju Island is the most popular travel destination in Korea.",
-      "notes": "제주(濟州 Jeju) + 도(島 island). Jeju Island, largest island of Korea. Subtropical island; UNESCO sites, volcanic landscape, beaches. Popular honeymoon and vacation destination."
+      "notes": ""
     },
     {
       "korean": "불국사",
       "english": "Bulguksa Temple",
       "example": "경주에 가면 불국사에 꼭 가 보세요.",
       "example_en": "If you go to Gyeongju, definitely visit Bulguksa.",
-      "notes": "불(佛 Buddha) + 국(國 country/land) + 사(寺 temple). Bulguksa Temple in Gyeongju. UNESCO World Heritage Site; Silla Dynasty; architectural masterpiece. Houses national treasures."
+      "notes": ""
     },
     {
       "korean": "사물놀이",
@@ -11474,7 +11474,7 @@
       "english": "pansori (traditional Korean narrative singing)",
       "example": "판소리는 유네스코 문화유산이에요.",
       "example_en": "Pansori is a UNESCO cultural heritage.",
-      "notes": "Native Korean 판(venue/public place) + 소리(sound/song). Traditional Korean narrative singing. One singer, one drummer; epic stories. UNESCO intangible cultural heritage."
+      "notes": ""
     },
     {
       "korean": "태권도",
@@ -11488,7 +11488,7 @@
       "english": "Korean traditional medicine clinic",
       "example": "허리가 아파서 한의원에 갔어요.",
       "example_en": "I went to a Korean medicine clinic because my back hurt.",
-      "notes": "한(韓 Korean) + 의(醫 medicine) + 원(院 clinic). Traditional Korean medicine clinic. Treatments: 침(acupuncture), 한약(herbal medicine), 부항(cupping)."
+      "notes": ""
     },
     {
       "korean": "사우나",
@@ -11544,14 +11544,14 @@
       "english": "Korean Wave (Hallyu)",
       "example": "한류 덕분에 한국어를 배우는 사람이 많아요.",
       "example_en": "Thanks to the Korean Wave, many people are learning Korean.",
-      "notes": "한(韓 Korean) + 류(流 wave/flow). Korean Wave, Hallyu. Global spread of Korean culture: K-pop, K-drama, K-beauty, K-food. Began late 1990s, accelerated 2010s."
+      "notes": ""
     },
     {
       "korean": "케이팝",
       "english": "K-pop",
       "example": "케이팝은 전 세계에서 인기가 있어요.",
       "example_en": "K-pop is popular all around the world.",
-      "notes": "K-pop (loanword). Korean pop music. Global phenomenon; synchronized choreography, visual focus, fandom culture. Major groups: BTS, BLACKPINK, etc."
+      "notes": ""
     },
     {
       "korean": "한식",
@@ -11565,7 +11565,7 @@
       "english": "Korean traditional medicine",
       "example": "한의학에서는 몸의 균형을 중요하게 생각해요.",
       "example_en": "Korean traditional medicine considers body balance important.",
-      "notes": "한(韓 Korean) + 의(醫 medicine) + 학(學 study/science). Traditional Korean medicine. Based on Chinese medicine; yin-yang, five elements theory. Treatments: 침, 한약, 부항."
+      "notes": ""
     },
     {
       "korean": "풍수",
@@ -11614,7 +11614,7 @@
       "english": "words of blessing",
       "example": "설날에 어른들이 덕담을 해 주세요.",
       "example_en": "Elders give words of blessing on Lunar New Year.",
-      "notes": "덕(德 virtue/blessing) + 담(談 talk/words). Words of blessing, auspicious talk. Exchanged during 설날, new year. Examples: 건강하세요, 돈 많이 버세요."
+      "notes": ""
     },
     {
       "korean": "돌잔치",
@@ -11791,14 +11791,14 @@
       "english": "boarding pass",
       "example": "탑승권을 보여 주세요.",
       "example_en": "Please show your boarding pass.",
-      "notes": "탑(搭 board/ride) + 승(乘 board/ride) + 권(券 ticket). Boarding pass. Receive at check-in or print at kiosk. Mobile boarding pass: 모바일 탑승권."
+      "notes": "탑승(搭乘 boarding) + 권(券 ticket). Boarding pass. Related: 항공권(flight ticket)."
     },
     {
       "korean": "출국",
       "english": "departure from country",
       "example": "출국 수속은 2시간 전에 하는 게 좋아요.",
       "example_en": "It's good to do departure procedures two hours in advance.",
-      "notes": "출(出 exit/leave) appears in 출발(departure), 출입(entry/exit). 국(國 country) appears in 한국(Korea), 국가(nation). Departure from country, exit immigration. Opposite: 입국(entry)."
+      "notes": "출(出 depart) + 국(國 country). Departure from country. Related: 귀국(return to country)."
     },
     {
       "korean": "입국",
@@ -11847,7 +11847,7 @@
       "english": "to take photos",
       "example": "여기서 사진 찍어도 돼요?",
       "example_en": "Can I take photos here?",
-      "notes": "사(寫 copy/photograph) + 진(眞 real/truth) + Native Korean 찍다(take/shoot). To take a photo. Common request: 사진 좀 찍어주세요?(Can you take my photo?)."
+      "notes": "사진(photograph) + 찍다(take). To take photos. Related: 사진관(photo studio)."
     },
     {
       "korean": "기념품",
@@ -11896,14 +11896,14 @@
       "english": "single room",
       "example": "1인실로 예약하고 싶어요.",
       "example_en": "I'd like to book a single room.",
-      "notes": "1인(one person) + 실(室 room). Single room. Hotel room for one person. More expensive per person than shared."
+      "notes": "1인(one person) + 실(room). Single room. Related: 2인실(double room), 방(room)."
     },
     {
       "korean": "2인실",
       "english": "double room",
       "example": "2인실 하루에 얼마예요?",
       "example_en": "How much is a double room per night?",
-      "notes": "2인(two people) + 실(室 room). Double room, twin room. Hotel room for two people. Specify: 더블(double bed) vs. 트윈(twin beds)."
+      "notes": "2인(two people) + 실(room). Double room. Related: 1인실(single room)."
     },
     {
       "korean": "조식",
@@ -11959,7 +11959,7 @@
       "english": "ski resort",
       "example": "겨울에 스키장에 갈 거예요.",
       "example_en": "I'm going to the ski resort in winter.",
-      "notes": "Ski (loanword) + 장(場 place). Ski resort. Korea has several resorts: 용평(Yongpyong), 평창(Pyeongchang - Olympics site). Season: Dec-Feb."
+      "notes": "스키(ski) + 장(place/ground). Ski resort. Related: 스키를 타다(to ski)."
     },
     {
       "korean": "캠핑장",
@@ -12022,7 +12022,7 @@
       "english": "customs declaration form",
       "example": "세관신고서를 작성해야 해요.",
       "example_en": "You need to fill out the customs declaration form.",
-      "notes": "세관(customs) + 신(申 report/declare) + 고(告 inform) + 서(書 document). Customs declaration form. Fill out on international flights; declare goods exceeding limits."
+      "notes": "세관(稅關 customs) + 신고(申告 declaration) + 서(書 form). Customs declaration form."
     },
     {
       "korean": "입국심사",
@@ -12057,14 +12057,14 @@
       "english": "arrival time",
       "example": "도착 시간이 변경됐어요.",
       "example_en": "The arrival time has been changed.",
-      "notes": "도착(arrival) + 시간(time). Arrival time. Estimated arrival: 도착 예정 시간. Actual arrival may vary due to traffic/weather."
+      "notes": "도착(到着 arrival) + 시간(time). Arrival time. Related: 출발 시간(departure time)."
     },
     {
       "korean": "지연",
       "english": "delay",
       "example": "비행기가 두 시간 지연됐어요.",
       "example_en": "The flight was delayed by two hours.",
-      "notes": "지(遲 late/delay) appears in 늦다(late), 지각(tardiness). 연(延 延) appears in 연기(postponement), 연장(extension). Delay. Flight/train delay common. Announcement: 지연 안내."
+      "notes": "지연(遲延 delay) + . Delay. Related: 지연되다(to be delayed), 연착(train delay)."
     },
     {
       "korean": "취소",
@@ -12078,7 +12078,7 @@
       "english": "reservation confirmation",
       "example": "예약 확인 메일을 받았어요?",
       "example_en": "Did you receive the reservation confirmation email?",
-      "notes": "예약(reservation) + 확인(confirmation). Reservation confirmation. Always get confirmation number: 예약 번호. Verify before travel."
+      "notes": "예약(reservation) + 확인(confirmation). Reservation confirmation check."
     },
     {
       "korean": "성수기",
@@ -12099,7 +12099,7 @@
       "english": "package tour",
       "example": "이번에는 패키지 여행으로 갈 거예요.",
       "example_en": "This time I'm going on a package tour.",
-      "notes": "Package (loanword) + 여행(travel). Package tour. All-inclusive: flights, hotels, meals, guides. Convenient but less flexible than 자유 여행."
+      "notes": "패키지(package from English) + 여행(travel). Package tour. All-included trip."
     },
     {
       "korean": "자유 여행",
@@ -12143,7 +12143,7 @@
       "english": "to grill/bake",
       "example": "고기를 숯불에 구워요.",
       "example_en": "I grill the meat over charcoal.",
-      "notes": "Native Korean. Two meanings: to grill/bake or to bend. Context determines meaning. Common: 고기를 굽다(grill meat), 빵을 굽다(bake bread), 생선을 굽다(grill fish)."
+      "notes": ""
     },
     {
       "korean": "찌다",
@@ -12192,7 +12192,7 @@
       "english": "to cool down",
       "example": "너무 뜨거우니까 좀 식혀요.",
       "example_en": "It's too hot, so I cool it down a bit.",
-      "notes": "Native Korean. Causative of 식다(to cool off). Means to make something cool down. Common: 국을 식히다(cool the soup), 좀 식혀서 먹다(eat after cooling). Conjugates: 식혀요, 식혔어요. Opposite: 데우다(to heat up)."
+      "notes": ""
     },
     {
       "korean": "맛보다",
@@ -12234,7 +12234,7 @@
       "english": "pot",
       "example": "큰 냄비에 물을 끓여요.",
       "example_en": "I boil water in a big pot.",
-      "notes": "Native Korean. General pot for cooking. Common: 냄비에 끓이다(boil in pot), 압력냄비(pressure cooker), 작은 냄비(small pot)."
+      "notes": ""
     },
     {
       "korean": "프라이팬",
@@ -12248,7 +12248,7 @@
       "english": "cutting board",
       "example": "도마 위에서 야채를 썰어요.",
       "example_en": "I chop vegetables on the cutting board.",
-      "notes": "Native Korean. Cutting board. Common: 도마 위에(on the cutting board), 도마를 씻다(wash cutting board). From 刀(칼 도) + 마(board)."
+      "notes": ""
     },
     {
       "korean": "칼",
@@ -12262,7 +12262,7 @@
       "english": "ladle",
       "example": "국자로 국을 떠요.",
       "example_en": "I scoop the soup with a ladle.",
-      "notes": "국(soup) + 자(spoon-like suffix). A ladle for scooping soup or stew. Common: 국자로 떠요(scoop with a ladle), 국자로 국을 떠요(ladle the soup). Essential Korean kitchen tool for serving 찌개 and 국."
+      "notes": ""
     },
     {
       "korean": "뒤집개",
@@ -12290,14 +12290,14 @@
       "english": "cup",
       "example": "컵에 물을 따라 주세요.",
       "example_en": "Please pour water into the cup.",
-      "notes": "From English 'cup'. Common: 물 한 컵(one cup of water), 종이컵(paper cup), 머그컵(mug)."
+      "notes": ""
     },
     {
       "korean": "유리잔",
       "english": "glass",
       "example": "유리잔에 주스를 따랐어요.",
       "example_en": "I poured juice into a glass.",
-      "notes": "유리(琉璃 glass material) + 잔(盞 cup/goblet). A drinking glass. 유리 appears in 유리창(glass window). 잔 appears in 술잔(wine glass), 찻잔(teacup). Common: 유리잔에 따르다(pour into a glass)."
+      "notes": ""
     },
     {
       "korean": "냅킨",
@@ -12325,7 +12325,7 @@
       "english": "gas stove",
       "example": "가스레인지 불을 켜 주세요.",
       "example_en": "Please turn on the gas stove.",
-      "notes": "가스 from English 'gas'. 레인지 from English 'range'. Common: 가스레인지로 요리하다(cook on gas stove), 가스레인지 불(gas stove flame)."
+      "notes": ""
     },
     {
       "korean": "인덕션",
@@ -12367,21 +12367,21 @@
       "english": "low heat",
       "example": "약불에서 천천히 끓여요.",
       "example_en": "I simmer it slowly on low heat.",
-      "notes": "약(弱 weak) + 불(fire/heat). Low heat for gentle simmering. Common: 약불에서 끓이다(simmer on low), 약불로 줄이다(reduce to low heat). Recipes often say 약불에서 30분(on low for 30 min). See also: 중불, 강불."
+      "notes": ""
     },
     {
       "korean": "강불",
       "english": "high heat",
       "example": "강불에서 빨리 볶아요.",
       "example_en": "I stir-fry quickly on high heat.",
-      "notes": "강(強 strong) + 불(fire/heat). High heat for quick cooking. Common: 강불에서 볶다(stir-fry on high), 강불로 올리다(raise to high heat). Used for 볶음(stir-fry) and bringing water to a boil. See also: 약불, 중불."
+      "notes": ""
     },
     {
       "korean": "중불",
       "english": "medium heat",
       "example": "중불에서 10분 정도 익혀요.",
       "example_en": "I cook it on medium heat for about 10 minutes.",
-      "notes": "중(中 middle) + 불(fire/heat). Medium heat, the most common cooking heat level. Common: 중불에서 익히다(cook on medium heat), 중불로 조절하다(adjust to medium). The default heat for most Korean stews and soups."
+      "notes": ""
     },
     {
       "korean": "맛",
@@ -12423,21 +12423,21 @@
       "english": "to grind; to mill",
       "example": "고추를 빻아서 고춧가루를 만들어요.",
       "example_en": "I grind peppers to make chili flakes.",
-      "notes": "Native Korean. To grind or mill into powder. Common: 고추를 빻다(grind peppers), 깨를 빻다(grind sesame seeds), 콩을 빻다(grind beans). Conjugates: 빻아요, 빻았어요. Related: 고춧가루(chili flakes), 맷돌(millstone)."
+      "notes": ""
     },
     {
       "korean": "거르다",
       "english": "to strain; to filter",
       "example": "국물을 체에 거르면 더 깔끔해요.",
       "example_en": "If you strain the broth through a sieve, it's cleaner.",
-      "notes": "Native Korean. To strain or filter liquid. Common: 체에 거르다(strain through a sieve), 국물을 거르다(strain broth), 커피를 거르다(filter coffee). Conjugates: 걸러요, 걸렀어요. Also means 'to skip' in other contexts."
+      "notes": ""
     },
     {
       "korean": "담그다",
       "english": "to soak; to make (kimchi/pickles)",
       "example": "올해는 김치를 직접 담갔어요.",
       "example_en": "This year I made kimchi myself.",
-      "notes": "Native Korean. To soak or submerge; also specifically means to make fermented foods. Common: 김치를 담그다(make kimchi), 물에 담그다(soak in water), 된장을 담그다(make doenjang). Conjugates: 담가요, 담갔어요."
+      "notes": ""
     },
     {
       "korean": "졸이다",
@@ -12451,7 +12451,7 @@
       "english": "to boil (something)",
       "example": "달걀을 10분 동안 삶아요.",
       "example_en": "I boil the eggs for 10 minutes.",
-      "notes": "Native Korean. To boil something (transitive). Common: 달걀을 삶다(boil eggs), 면을 삶다(boil noodles), 감자를 삶다(boil potatoes). Conjugates: 삶아요, 삶았어요. Different from 끓이다(to boil liquid/make soup)."
+      "notes": ""
     },
     {
       "korean": "해동하다",
@@ -12465,14 +12465,14 @@
       "english": "to store; to keep",
       "example": "남은 음식은 냉장고에 보관해요.",
       "example_en": "I store the leftover food in the fridge.",
-      "notes": "보(保 protect) + 관(管 manage) + 하다. To store or keep safely. Common: 냉장 보관(refrigerated storage), 실온 보관(room temp storage), 밀폐 용기에 보관하다(store in airtight container). 보 appears in 보존(preservation)."
+      "notes": ""
     },
     {
       "korean": "유통기한",
       "english": "expiration date; best-before date",
       "example": "유통기한이 지난 우유는 버려야 해요.",
       "example_en": "You should throw away milk that's past the expiration date.",
-      "notes": "유통(流通 distribution) + 기한(期限 time limit). Literally 'distribution period limit.' The best-before date on food. Common: 유통기한이 지나다(to be expired), 유통기한을 확인하다(check expiration date). Also: 소비기한(use-by date)."
+      "notes": ""
     },
     {
       "korean": "식재료",
@@ -12486,7 +12486,7 @@
       "english": "basic side dishes; make-ahead side dishes",
       "example": "주말에 밑반찬을 여러 개 만들어요.",
       "example_en": "I make several basic side dishes on the weekend.",
-      "notes": "밑(base/bottom) + 반찬(飯饌 side dish). Pre-made side dishes kept in the fridge for daily meals. A staple of Korean home cooking. Common types: 김치, 장아찌, 나물. Common: 밑반찬을 만들다(make banchan)."
+      "notes": ""
     },
     {
       "korean": "국물",
@@ -12507,7 +12507,7 @@
       "english": "one serving; one portion",
       "example": "1인분에 얼마예요?",
       "example_en": "How much is one serving?",
-      "notes": "1(일) + 인(人 person) + 분(分 portion). One serving. Counter pattern: 2인분(two servings), 3인분(three servings). Common at restaurants: 1인분 주문 가능(can order one serving). Note: some dishes require minimum 2인분."
+      "notes": ""
     },
     {
       "korean": "맛있게 드세요",
@@ -12521,7 +12521,7 @@
       "english": "to be well-seasoned; the seasoning is right",
       "example": "간이 딱 맞아요, 정말 맛있어요.",
       "example_en": "The seasoning is just right, it's really delicious.",
-      "notes": "간(seasoning level) + 맞다(to be right/correct). Means the seasoning is just right. Common: 간이 딱 맞다(seasoning is perfect). Opposite: 간이 싱겁다(too bland), 간이 짜다(too salty). Related: 간을 맞추다(to adjust seasoning)."
+      "notes": ""
     },
     {
       "korean": "불 조절",
@@ -12544,7 +12544,7 @@
       "english": "what should I do",
       "example": "지갑을 잃어버렸어요. 어떡해요!",
       "example_en": "I lost my wallet. What should I do!",
-      "notes": "Contraction of 어떻게 해요(how do/what do). Native Korean expression. Common: 어떡하지(what should I do - informal), 어떡해(casual form)."
+      "notes": ""
     },
     {
       "korean": "그래요?",
@@ -12698,7 +12698,7 @@
       "english": "for no reason / needlessly",
       "example": "괜히 화를 냈어요.",
       "example_en": "I got angry for no reason.",
-      "notes": "Native Korean adverb from 괜하다(pointless). Means 'for no good reason/needlessly/in vain.' Common: 괜히 걱정했어요(I worried for nothing). Also expresses regret: 괜히 갔어요(I went for nothing)."
+      "notes": ""
     },
     {
       "korean": "아무것도",
@@ -12768,7 +12768,7 @@
       "english": "what do I do? / how do I do it?",
       "example": "이거 어떻게 해요?",
       "example_en": "How do I do this?",
-      "notes": "Native Korean. 어떻게(how) + 하다(to do). Asks 'how do I do it?' or expresses helplessness: 'what do I do?' Casual: 어떻게 해? Also: 어떡해요(contracted form, same meaning). Very versatile expression."
+      "notes": ""
     },
     {
       "korean": "천천히 말해 주세요",
@@ -12831,7 +12831,7 @@
       "english": "is it close from here?",
       "example": "지하철역이 여기서 가까워요?",
       "example_en": "Is the subway station close from here?",
-      "notes": "여기(here) + 서(from) + 가까워요(is it close). 가깝다(to be close) is a ㅂ-irregular adjective: 가깝 → 가까워. Opposite: 여기서 멀어요?(is it far?). Useful when asking for directions in Korea."
+      "notes": ""
     },
     {
       "korean": "괜찮아요",
@@ -12845,7 +12845,7 @@
       "english": "just a moment",
       "example": "잠깐만요, 지금 갈게요.",
       "example_en": "Just a moment, I'll be right there.",
-      "notes": "잠깐(a moment) + 만(only/just) + 요(polite). Literally 'just a moment please.' 잠깐 is native Korean. Casual: 잠깐만! More polite: 잠시만요. Also: 잠깐만 기다려 주세요(please wait just a moment)."
+      "notes": ""
     },
     {
       "korean": "그럼요",
@@ -12873,7 +12873,7 @@
       "english": "I don't know / I'm not sure",
       "example": "이 문제 답을 모르겠어요.",
       "example_en": "I don't know the answer to this question.",
-      "notes": "모르다(to not know) + 겠(uncertain/conjecture) + 어요. The 겠 adds uncertainty: 'I don't think I know.' Softer than 몰라요(I don't know). Casual: 모르겠어. Formal: 모르겠습니다. Very common in daily speech."
+      "notes": ""
     },
     {
       "korean": "생각해 볼게요",
@@ -12922,7 +12922,7 @@
       "english": "I'll give it a try",
       "example": "어려워 보이지만 한번 해 볼게요.",
       "example_en": "It looks difficult but I'll give it a try.",
-      "notes": "한번(once/a try) + 해(do) + 보다(try) + ㄹ게요(I will). -아/어 보다 = 'try doing.' 한번 adds a sense of 'giving it a shot.' Shows willingness despite uncertainty. Casual: 한번 해 볼게. Encouraging: 한번 해 봐!"
+      "notes": ""
     },
     {
       "korean": "시간이 없어요",
@@ -12985,7 +12985,7 @@
       "english": "see you tomorrow",
       "example": "오늘 즐거웠어요, 내일 봐요!",
       "example_en": "I had fun today, see you tomorrow!",
-      "notes": "내일(來日 tomorrow) + 봐요(let's see/meet). 보다(to see) is used for meeting people: 만나다 = 보다 in casual context. Casual: 내일 봐! Pattern: [time] 봐요 — 나중에 봐요(see you later), 주말에 봐요(see you on the weekend)."
+      "notes": ""
     },
     {
       "korean": "연락할게요",
@@ -13029,7 +13029,7 @@
       "english": "money",
       "example": "돈이 부족해서 더 벌어야 해요.",
       "example_en": "I don't have enough money, so I need to earn more.",
-      "notes": "Native Korean. Money (general term). Common: 돈을 벌다(earn money), 돈이 없다(have no money), 용돈(allowance)."
+      "notes": ""
     },
     {
       "korean": "현금",
@@ -13057,14 +13057,14 @@
       "english": "debit card",
       "example": "체크카드는 통장 잔액에서 바로 빠져요.",
       "example_en": "A debit card deducts directly from your account balance.",
-      "notes": "체크 from English 'check'. 카드 from English 'card'. Debit card (direct withdrawal from account)."
+      "notes": ""
     },
     {
       "korean": "계좌",
       "english": "account",
       "example": "새 계좌를 개설하고 싶어요.",
       "example_en": "I want to open a new account.",
-      "notes": "계(計 calculate) appears in 계산(calculation), 회계(accounting). 좌(座 seat) appears in 좌석(seat), 좌표(coordinates). Bank account - 'calculation seat'."
+      "notes": ""
     },
     {
       "korean": "통장",
@@ -13092,7 +13092,7 @@
       "english": "withdrawal",
       "example": "ATM에서 출금하려고 해요.",
       "example_en": "I'm going to make a withdrawal at the ATM.",
-      "notes": "출(出 exit) appears in 출구(exit), 출발(departure), 출장(business trip). 금(金 money). Withdrawal (taking money out)."
+      "notes": ""
     },
     {
       "korean": "이체",
@@ -13120,7 +13120,7 @@
       "english": "interest",
       "example": "이자가 너무 높아서 부담돼요.",
       "example_en": "The interest is so high that it's burdensome.",
-      "notes": "이(利 profit) appears in 이익(profit), 권리(rights), 유리(advantageous). 자(子 child/interest) - classical meaning. Interest (on loan/savings)."
+      "notes": ""
     },
     {
       "korean": "수수료",
@@ -13134,14 +13134,14 @@
       "english": "balance",
       "example": "잔액이 부족해서 결제가 안 됐어요.",
       "example_en": "The payment didn't go through because of insufficient balance.",
-      "notes": "잔(殘 remain) appears in 잔고(balance), 잔금(remaining payment). 액(額 amount) appears in 금액(sum), 액수(amount). Balance (remaining amount)."
+      "notes": ""
     },
     {
       "korean": "입금",
       "english": "deposit money",
       "example": "월급이 통장에 입금됐어요.",
       "example_en": "My salary was deposited into my account.",
-      "notes": "입(入 enter) appears in 입구(entrance), 입장(admission), 수입(income). 금(金 money) appears in 현금(cash), 금액(amount). Deposit (putting money in)."
+      "notes": ""
     },
     {
       "korean": "ATM",
@@ -13190,7 +13190,7 @@
       "english": "euro",
       "example": "유로가 많이 올랐어요.",
       "example_en": "The euro has gone up a lot.",
-      "notes": "From English 'euro'. The European currency. Common: 유로화(euro currency), 유로로 결제하다(pay in euros). 화(貨 currency) is often added formally: 유로화가 오르다(the euro rises)."
+      "notes": ""
     },
     {
       "korean": "위안",
@@ -13225,7 +13225,7 @@
       "english": "installment",
       "example": "3개월 할부로 결제할게요.",
       "example_en": "I'll pay in 3 monthly installments.",
-      "notes": "할(割 divide) + 부(賦 levy/payment). Installment plan. Common: 3개월 할부(3-month installment), 할부로 결제하다(pay in installments). In Korea, cashiers ask '할부로 하시겠어요?' when you use a card."
+      "notes": ""
     },
     {
       "korean": "일시불",
@@ -13239,7 +13239,7 @@
       "english": "monthly rent",
       "example": "월세가 매달 50만 원이에요.",
       "example_en": "The monthly rent is 500,000 won per month.",
-      "notes": "월(月 month) + 세(貰 rent). Monthly rent with a smaller deposit. Contrast with 전세(lump-sum deposit). Common: 월세를 내다(pay rent). A common housing option for students and young workers in Korea."
+      "notes": ""
     },
     {
       "korean": "전세",
@@ -13253,21 +13253,21 @@
       "english": "deposit / security deposit",
       "example": "보증금을 돌려받으려면 어떻게 해야 해요?",
       "example_en": "What should I do to get my deposit back?",
-      "notes": "보증(保證 guarantee) + 금(金 money). 보(保 protect), 증(證 proof). Security deposit for rentals. Common: 보증금을 내다(pay a deposit), 보증금을 돌려받다(get deposit back). Required for both 월세 and 전세."
+      "notes": ""
     },
     {
       "korean": "관리비",
       "english": "maintenance fee",
       "example": "이 아파트 관리비가 얼마예요?",
       "example_en": "How much is the maintenance fee for this apartment?",
-      "notes": "관리(管理 management) + 비(費 expense). 관(管 manage), 리(理 reason/manage). Apartment maintenance fee for elevators, cleaning, security. Common: 관리비가 비싸다(maintenance is expensive). Paid monthly."
+      "notes": ""
     },
     {
       "korean": "공과금",
       "english": "utility bills",
       "example": "이번 달 공과금이 많이 나왔어요.",
       "example_en": "The utility bills were high this month.",
-      "notes": "공과(公課 public levy) + 금(金 money). 공(公 public), 과(課 levy). Covers electricity, water, gas bills collectively. Common: 공과금을 내다(pay utility bills). Often paid via auto-transfer(자동이체) in Korea."
+      "notes": ""
     },
     {
       "korean": "전기세",
@@ -13281,21 +13281,21 @@
       "english": "water bill",
       "example": "수도세는 보통 얼마 안 나와요.",
       "example_en": "The water bill usually isn't much.",
-      "notes": "수도(水道 waterway/plumbing) + 세(稅 tax, here 'bill'). 수(水 water), 도(道 way/path). Common: 수도세를 내다(pay the water bill). Water bills in Korea are relatively cheap compared to electricity and gas."
+      "notes": ""
     },
     {
       "korean": "가스비",
       "english": "gas bill",
       "example": "겨울에 난방 때문에 가스비가 많이 나와요.",
       "example_en": "The gas bill is high in winter because of heating.",
-      "notes": "가스(from English 'gas') + 비(費 expense). Gas bill for heating and cooking. Common: 가스비가 많이 나오다(gas bill is high). Korean apartments use city gas(도시가스) for ondol floor heating, making winter bills high."
+      "notes": ""
     },
     {
       "korean": "인터넷비",
       "english": "internet bill",
       "example": "인터넷비는 매달 자동이체로 내요.",
       "example_en": "I pay the internet bill by automatic transfer every month.",
-      "notes": "인터넷(from English 'internet') + 비(費 expense). Internet service bill. Common: 인터넷비를 내다(pay the internet bill). Korea has some of the world's fastest internet. Often bundled with TV(IPTV) as a package."
+      "notes": ""
     },
     {
       "korean": "보험료",
@@ -13316,7 +13316,7 @@
       "english": "fund",
       "example": "펀드에 투자해 본 적 있어요?",
       "example_en": "Have you ever invested in a fund?",
-      "notes": "From English 'fund'. Investment fund. Common: 펀드에 가입하다(subscribe to a fund), 펀드에 투자하다(invest in a fund). Korean banks offer various fund products. Also: 적립식 펀드(installment fund)."
+      "notes": ""
     },
     {
       "korean": "주식",
@@ -13337,14 +13337,14 @@
       "english": "to earn",
       "example": "열심히 일해서 돈을 많이 벌고 싶어요.",
       "example_en": "I want to work hard and earn a lot of money.",
-      "notes": "Native Korean. To earn. Common: 돈을 벌다(earn money), 돈 벌러 가요(going to work/earn)."
+      "notes": ""
     },
     {
       "korean": "쓰다",
       "english": "to spend (money)",
       "example": "이번 달에 돈을 너무 많이 썼어요.",
       "example_en": "I spent too much money this month.",
-      "notes": "Native Korean. To spend/use or to write (different words, same spelling). Context determines meaning. Common: 돈을 쓰다(spend money), 많이 쓰다(spend a lot)."
+      "notes": ""
     },
     {
       "korean": "아끼다",
@@ -13500,14 +13500,14 @@
       "english": "Olympics",
       "example": "2024년 올림픽은 파리에서 열렸어요.",
       "example_en": "The 2024 Olympics were held in Paris.",
-      "notes": "From English 'Olympic.' Korea hosted the 1988 Seoul Olympics and 2018 PyeongChang Winter Olympics. Common: 올림픽에 출전하다(compete in the Olympics), 하계/동계 올림픽(summer/winter Olympics)."
+      "notes": "Olympics (from English). 올림픽 메달(Olympic medal). International sporting event."
     },
     {
       "korean": "월드컵",
       "english": "World Cup",
       "example": "월드컵 때 한국 거리가 빨간색으로 물들어요.",
       "example_en": "During the World Cup, Korean streets are colored red.",
-      "notes": "월드(from English 'World') + 컵(from English 'Cup'). Korea co-hosted the 2002 FIFA World Cup and reached the semifinals. 붉은 악마(Red Devils) = Korean national team supporters."
+      "notes": "World Cup (English). 월드컵 경기(World Cup game). International tournament."
     },
     {
       "korean": "체조",
@@ -13521,21 +13521,21 @@
       "english": "weightlifting",
       "example": "역도는 힘뿐만 아니라 기술도 중요해요.",
       "example_en": "In weightlifting, technique is important, not just strength.",
-      "notes": "역(力 power/strength) + 도(道 way/path). Literally 'the way of strength.' 역(力) appears in 노력(effort), 능력(ability). Korea has won multiple Olympic weightlifting medals. Common: 역도 선수(weightlifter)."
+      "notes": "역(力 strength/force) + 도(道 way). Weightlifting. Olympic sport."
     },
     {
       "korean": "양궁",
       "english": "archery",
       "example": "한국은 양궁 강국이에요.",
       "example_en": "Korea is a powerhouse in archery.",
-      "notes": "양(洋 Western) + 궁(弓 bow). Literally 'Western bow' (vs traditional Korean archery 국궁). Korea dominates Olympic archery. 궁(弓) appears in 궁술(bowmanship). Common: 양궁 선수(archer)."
+      "notes": "양(洋 Western) + 궁(弓 bow). Archery. Korean traditional sport."
     },
     {
       "korean": "펜싱",
       "english": "fencing",
       "example": "펜싱은 빠른 반응 속도가 필요해요.",
       "example_en": "Fencing requires fast reaction speed.",
-      "notes": "From English 'fencing.' Three disciplines: 에페(epee), 플뢰레(foil), 사브르(sabre). Korea has strong Olympic fencing results. Common: 펜싱을 하다(to fence), 펜싱 선수(fencer)."
+      "notes": "Fencing (from English). 펜싱 선수(fencing athlete). Olympic sport."
     },
     {
       "korean": "유도",
@@ -13577,21 +13577,21 @@
       "english": "surfing",
       "example": "양양에서 서핑을 즐기는 사람이 많아요.",
       "example_en": "Many people enjoy surfing in Yangyang.",
-      "notes": "From English 'surfing.' 양양(Yangyang) in 강원도 is Korea's top surfing destination. Common: 서핑을 하다(to surf), 서핑 보드(surfboard), 서핑 강습(surfing lesson). Growing trend among young Koreans."
+      "notes": "Surfing (from English). 서핑을 하다(to surf). Water sport."
     },
     {
       "korean": "클라이밍",
       "english": "climbing",
       "example": "실내 클라이밍장에 다니고 있어요.",
       "example_en": "I go to an indoor climbing gym.",
-      "notes": "From English 'climbing.' Indoor climbing (실내 클라이밍) is hugely popular in Korea. Common: 클라이밍장(climbing gym), 볼더링(bouldering). Now an Olympic sport. Common: 클라이밍을 하다(to climb)."
+      "notes": "Climbing (from English). 클라이밍 벽(climbing wall). Indoor/outdoor sport."
     },
     {
       "korean": "조깅",
       "english": "jogging",
       "example": "아침마다 한강에서 조깅해요.",
       "example_en": "I jog along the Han River every morning.",
-      "notes": "From English 'jogging.' Common: 조깅하다(to jog), 조깅을 하다(same meaning). 한강(Han River) parks are popular jogging spots in Seoul. Related: 달리기(running), 마라톤(marathon)."
+      "notes": "Jogging (from English). 조깅하다(to jog). 조깅 루트(jogging route)."
     },
     {
       "korean": "스트레칭",
@@ -13740,7 +13740,7 @@
       "english": "newspaper",
       "example": "요즘은 종이 신문을 읽는 사람이 적어요.",
       "example_en": "These days, few people read paper newspapers.",
-      "notes": "신(新 new) appears in 최신(latest), 신제품(new product). 문(聞 hear/news) appears in 견문(knowledge), 문의(inquiry). Newspaper - 'new information'."
+      "notes": "Newspaper. Native Korean. Related: 신문을 읽다(read newspaper), 신문사(newspaper company)."
     },
     {
       "korean": "잡지",
@@ -13789,7 +13789,7 @@
       "english": "news anchor",
       "example": "그 뉴스캐스터는 발음이 정확해요.",
       "example_en": "That news anchor has precise pronunciation.",
-      "notes": "From English 'newscaster'. Also called 앵커(anchor). Common: 뉴스캐스터가 되다(become a news anchor). Korean news anchors are known for standard 표준어 pronunciation."
+      "notes": "News anchor (from English). 뉴스캐스터의 발표(news anchors announcement)."
     },
     {
       "korean": "기자",
@@ -13803,7 +13803,7 @@
       "english": "advertisement",
       "example": "이 광고 진짜 재미있지 않아요?",
       "example_en": "Isn't this ad really funny?",
-      "notes": "광(廣 wide/broad) appears in 광장(plaza), 광대(vast). 고(告 inform/announce) appears in 보고(report), 고백(confession). Advertisement - 'broadly announce'. Verb: 광고하다."
+      "notes": "광고(廣告 advertisement) + . Related: 광고를 보다(see advertisement), 광고주(advertiser)."
     },
     {
       "korean": "라디오",
@@ -13866,7 +13866,7 @@
       "english": "movie release",
       "example": "새 영화가 다음 주에 개봉해요.",
       "example_en": "A new movie is releasing next week.",
-      "notes": "개(開 open) appears in 개방(opening), 개시(start). 봉(封 seal) appears in 봉투(envelope). Movie release - 'opening the seal'. Common: 개봉하다(to release), 개봉일(release date)."
+      "notes": "개(開 open) + 봉(封 seal). Movie release. Related: 개봉일(release date)."
     },
     {
       "korean": "관람",
@@ -13880,7 +13880,7 @@
       "english": "subtitles",
       "example": "자막 없이 한국 영화를 보고 싶어요.",
       "example_en": "I want to watch Korean movies without subtitles.",
-      "notes": "자(字 character/letter) appears in 글자(letter), 문자(text). 막(幕 curtain/screen). Subtitles - 'letters on screen'. Common: 자막을 켜다(turn on subtitles), 한국어 자막(Korean subtitles)."
+      "notes": "자(字 character) + 막(幕 curtain). Subtitles. Related: 한국어 자막(Korean subtitles)."
     },
     {
       "korean": "더빙",
@@ -13901,7 +13901,7 @@
       "english": "singer",
       "example": "좋아하는 가수가 있어요?",
       "example_en": "Do you have a favorite singer?",
-      "notes": "가(歌 song) appears in 가요(popular song), 국가(national anthem). 수(手 hand/person skilled) appears in 선수(athlete), 악수(handshake). Singer - 'song person'."
+      "notes": "가(歌 song) + 수(手 person). Singer. Related: 유명한 가수(famous singer)."
     },
     {
       "korean": "밴드",
@@ -13978,7 +13978,7 @@
       "english": "lighting",
       "example": "무대 조명이 정말 멋있었어요.",
       "example_en": "The stage lighting was really cool.",
-      "notes": "조(照 shine/illuminate) appears in 조사(investigation, lit. 'shining on'). 명(明 bright) appears in 설명(explanation), 발명(invention). Lighting - 'shining bright'. Common: 조명을 켜다(turn on lights)."
+      "notes": "조(照 light) + 명(明 bright). Lighting (in performance/video). Related: 조명 효과(lighting effect)."
     },
     {
       "korean": "마이크",
@@ -14006,14 +14006,14 @@
       "english": "choreography",
       "example": "이번 신곡 안무가 어려워 보여요.",
       "example_en": "The choreography for the new song looks difficult.",
-      "notes": "안(按 arrange/press) + 무(舞 dance). Choreography - 'arranging dance'. Common: 안무를 짜다(create choreography), 안무가(choreographer). Central to K-pop; 칼군무(knife-sharp group choreography) is iconic."
+      "notes": "안(按 arrange) + 무(舞 dance). Choreography. Related: 안무가(choreographer)."
     },
     {
       "korean": "연기",
       "english": "acting",
       "example": "그 배우의 연기에 감동받았어요.",
       "example_en": "I was moved by that actor's acting.",
-      "notes": "연(演 perform/act) appears in 공연(performance), 연출(directing). 기(技 skill) appears in 기술(technology). Acting - 'performing skill'. Common: 연기하다(to act), 연기력(acting ability). Homophone: 연기(煙氣 smoke)."
+      "notes": "연(演 perform) + 기(技 skill). Acting. Related: 연기를 하다(to act), 연기자(actor)."
     },
     {
       "korean": "오디션",
@@ -14027,14 +14027,14 @@
       "english": "debut",
       "example": "그 그룹은 작년에 데뷔했어요.",
       "example_en": "That group debuted last year.",
-      "notes": "From French 'début' via English. Common: 데뷔하다(to debut), 데뷔곡(debut song), 데뷔 무대(debut stage). In K-pop, debut day is a major milestone after years of trainee life."
+      "notes": "Debut (from French via English). 데뷔하다(to debut). Related: 데뷔 앨범(debut album)."
     },
     {
       "korean": "히트곡",
       "english": "hit song",
       "example": "이 노래는 올해 최고의 히트곡이에요.",
       "example_en": "This song is the biggest hit of the year.",
-      "notes": "히트(from English 'hit') + 곡(曲 song/tune). Hit song. Common: 히트곡을 내다(produce a hit song), 올해의 히트곡(hit song of the year). Related: 대표곡(signature song), 명곡(masterpiece)."
+      "notes": "히트(hit from English) + 곡(曲 song). Hit song. Related: 히트 노래(hit song)."
     },
     {
       "korean": "차트",
@@ -14055,7 +14055,7 @@
       "english": "subscription",
       "example": "유튜브 채널 구독 부탁드려요.",
       "example_en": "Please subscribe to my YouTube channel.",
-      "notes": "구(購 purchase) appears in 구매(purchase), 구입(buying). 독(讀 read) appears in 독서(reading), 읽다(read). Subscription - originally 'purchasing to read'. Common: 구독하다(subscribe), 구독자(subscriber)."
+      "notes": "구(購 purchase) + 독(讀 read). Subscription. Related: 유튜브 구독(YouTube subscription)."
     },
     {
       "korean": "리뷰",
