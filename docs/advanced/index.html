@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#0f1117">
+<meta name="theme-color" content="#0f1117" id="theme-color-meta">
 <title>한국어 코치 — Korean Coach</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +27,14 @@
   --shadow-md: 0 2px 8px rgba(0,0,0,0.3);
 }
 
+[data-theme="light"] {
+  --bg: #faf7f2; --surface: #fff; --surface2: #f0ebe3; --border: #e0d8cc;
+  --text: #2d2418; --dim: #8c7e6a; --blue: #4a90d9; --cyan: #2d9ea8;
+  --green: #3a9d5c; --red: #d94452; --yellow: #c9a227; --magenta: #9b6ab0;
+  --orange: #e08a3c;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06); --shadow-md: 0 2px 8px rgba(0,0,0,0.08);
+}
+
 * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 button, .option-btn, .rating button, .menu button, .btn { user-select: none; }
 .btn:focus-visible, .option-btn:focus-visible, .rating button:focus-visible, .menu button:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
@@ -42,6 +50,7 @@ body {
   align-items: center;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   overscroll-behavior: none;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .container {
@@ -54,7 +63,7 @@ h1 {
   text-align: center;
   font-size: 2em;
   margin: 30px 0 5px;
-  color: #fff;
+  color: var(--text);
 }
 
 .subtitle {
@@ -110,6 +119,8 @@ h1 {
 .menu button:nth-child(8) { animation-delay: 0.21s; }
 .menu button:nth-child(9) { animation-delay: 0.24s; }
 .menu button:nth-child(10) { animation-delay: 0.27s; }
+.menu button:nth-child(11) { animation-delay: 0.3s; }
+.menu button:nth-child(12) { animation-delay: 0.33s; }
 
 .menu button:hover {
   background: var(--surface2);
@@ -138,7 +149,7 @@ h1 {
 .card-korean {
   font-size: 2em;
   font-weight: bold;
-  color: #fff;
+  color: var(--text);
   margin-bottom: 8px;
   font-family: 'Noto Sans KR', sans-serif;
   overflow-wrap: break-word;
@@ -159,7 +170,7 @@ h1 {
 .card-english {
   font-size: 1.8em;
   font-weight: bold;
-  color: #fff;
+  color: var(--text);
   margin-bottom: 8px;
 }
 
@@ -211,7 +222,7 @@ h1 {
 .reveal-answer {
   font-size: 1.2em;
   font-weight: bold;
-  color: #fff;
+  color: var(--text);
   margin-bottom: 6px;
 }
 
@@ -533,7 +544,7 @@ mark { background: rgba(96,165,250,0.2); color: inherit; padding: 0 2px; border-
 
 .production-english {
   font-size: 1.3em;
-  color: #fff;
+  color: var(--text);
   margin-bottom: 10px;
   line-height: 1.4;
 }
@@ -561,7 +572,7 @@ mark { background: rgba(96,165,250,0.2); color: inherit; padding: 0 2px; border-
 
 .model-answer .korean {
   font-size: 1.2em;
-  color: #fff;
+  color: var(--text);
   font-weight: bold;
 }
 
@@ -576,7 +587,7 @@ mark { background: rgba(96,165,250,0.2); color: inherit; padding: 0 2px; border-
 
 .error-sentence .korean {
   font-size: 1.3em;
-  color: #fff;
+  color: var(--text);
   line-height: 1.5;
 }
 
@@ -717,7 +728,7 @@ mark { background: rgba(96,165,250,0.2); color: inherit; padding: 0 2px; border-
 
 .register-sentence {
   font-size: 1.25em;
-  color: #fff;
+  color: var(--text);
   line-height: 1.5;
   font-family: 'Noto Sans KR', sans-serif;
 }
@@ -824,6 +835,32 @@ mark { background: rgba(96,165,250,0.2); color: inherit; padding: 0 2px; border-
   display: none;
 }
 .offline-banner.visible { display: block; }
+
+/* Listening drill */
+.listen-prompt {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 30px;
+  margin: 15px 0;
+  text-align: center;
+}
+.listen-big-btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid var(--blue);
+  background: var(--surface2);
+  cursor: pointer;
+  font-size: 2em;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+}
+.listen-big-btn:hover { background: var(--blue); color: #fff; }
+.listen-hint { color: var(--dim); font-size: 0.9em; margin-top: 12px; }
 
 /* Timer */
 .timer-bar {
@@ -1074,14 +1111,25 @@ function toggleAutoTts() {
   showMenu();
 }
 
+let darkMode = localStorage.getItem('korean_coach_dark') !== 'false';
+if (!darkMode) document.documentElement.setAttribute('data-theme', 'light');
+
+function toggleDarkMode() {
+  darkMode = !darkMode;
+  safeSave('korean_coach_dark', darkMode);
+  document.documentElement.setAttribute('data-theme', darkMode ? '' : 'light');
+  document.getElementById('theme-color-meta').content = darkMode ? '#0f1117' : '#faf7f2';
+  showMenu();
+}
+
 function getShowKorean(entry) {
   if (drillDirection === 'kor') return true;
   if (drillDirection === 'eng') return false;
   return Math.random() < 0.5;
 }
 
-const SESSION = { vocab: 15, grammar: 15, mixed: 15, production: 12, error: 10, grammarCtx: 10, reading: 8, register: 10, cloze: 12, dialogue: 8 };
-const TIMER = { vocab: 15, grammar: 20, production: 30, error: 25, grammarCtx: 20, reading: 30, register: 25, cloze: 12 };
+const SESSION = { vocab: 15, grammar: 15, mixed: 15, production: 12, error: 10, grammarCtx: 10, reading: 8, register: 10, cloze: 12, dialogue: 8, listening: 12 };
+const TIMER = { vocab: 15, grammar: 20, production: 30, error: 25, grammarCtx: 20, reading: 30, register: 25, cloze: 12, listening: 15 };
 
 // ===== SCREENS =====
 function countTotal() {
@@ -1138,6 +1186,7 @@ function showMenu() {
       <button onclick="startRegisterSwitching()"><span class="num">8</span> \u{1F504} Register Switching</button>
       <button onclick="startClozeDrill()"><span class="num">9</span> \u{1F9E9} Cloze Drill (fill the gap)</button>
       <button onclick="startDialogueDrill()"><span class="num">D</span> \u{1F4AC} Dialogue Practice</button>
+      <button onclick="startListeningDrill()"><span class="num">L</span> \u{1F3A7} Listening Drill</button>
       <button onclick="showProgress()"><span class="num">0</span> \u{1F4CA} View Progress</button>
     </div>
     <div class="timed-toggle${timedMode ? ' active' : ''}" onclick="toggleTimedMode()">
@@ -1151,7 +1200,10 @@ function showMenu() {
     <div class="timed-toggle${autoTts ? ' active' : ''}" onclick="toggleAutoTts()">
       <div class="switch"></div> \uD83D\uDD0A Auto-play ${autoTts ? 'ON' : 'OFF'}
     </div>
-    <div class="shortcuts">Keyboard: Q for Study Now &nbsp;|&nbsp; 1-9, D, 0 to select</div>`;
+    <div style="text-align:center;margin-top:8px">
+      <button class="back-btn" onclick="toggleDarkMode()" style="margin:0">${darkMode ? 'Light Mode' : 'Dark Mode'}</button>
+    </div>
+    <div class="shortcuts">Keyboard: Q for Study Now &nbsp;|&nbsp; 1-9, D, L, 0 to select</div>`;
 
   setKeyHandler(e => {
     if (e.key === 'q') quickStart();
@@ -1165,6 +1217,7 @@ function showMenu() {
     else if (e.key === '8') startRegisterSwitching();
     else if (e.key === '9') startClozeDrill();
     else if (e.key === 'd') startDialogueDrill();
+    else if (e.key === 'l') startListeningDrill();
     else if (e.key === '0') showProgress();
     else if (e.key === 't') toggleTimedMode();
   });
@@ -1174,7 +1227,7 @@ function showMenu() {
 function quickStart() {
   const pool = buildPool('vocab', null);
   const session = prioritizeCards(pool, SESSION.vocab);
-  if (session.length === 0) { showToast('No cards due — come back later!'); return; }
+  if (session.length === 0) { showToast('No cards due — come back later!'); showMenu(); return; }
   runSession(session);
 }
 
@@ -1288,13 +1341,13 @@ function runSession(cards) {
         if (entry.hanja) extra += `<div class="breakdown">${escHtml(entry.hanja)}</div>`;
         if (entry.breakdown) extra += `<div class="breakdown">${escHtml(entry.breakdown)}</div>`;
         if (entry.notes && !notesAreRedundant(entry.english, entry.notes)) extra += `<div class="reveal-notes">${escHtml(entry.notes)}</div>`;
-        if (entry.example) extra += `<div class="example"><div class="example-kr">${highlightWord(entry.example, entry.korean)}</div>
+        if (entry.example) extra += `<div class="example"><div class="example-kr">${highlightWord(entry.example, entry.korean)} ${ttsBtn(entry.example)}</div>
           ${entry.example_en ? `<div class="example-en">${highlightWord(entry.example_en, entry.english)}</div>` : ''}</div>`;
         const guessHtml = result.guess ? `<div class="your-guess">Your answer: <span>${escHtml(result.guess)}</span></div>` : '';
         app.innerHTML = `${drillHeader(cat, prog)}
-          <div class="card" style="margin-bottom:8px"><div class="${isKoreanAnswer ? 'card-english' : 'card-korean'}">${escHtml(promptWord)}</div></div>
+          <div class="card" style="margin-bottom:8px"><div class="${isKoreanAnswer ? 'card-english' : 'card-korean'}">${escHtml(promptWord)} ${!isKoreanAnswer ? ttsBtn(promptWord) : ''}</div></div>
           ${guessHtml}
-          <div class="reveal"><div class="reveal-answer">${escHtml(result.answer).replace(/\n/g,'<br>')}</div>${extra}</div>
+          <div class="reveal"><div class="reveal-answer">${escHtml(result.answer).replace(/\n/g,'<br>')} ${isKoreanAnswer ? ttsBtn(entry.korean) : ''}</div>${extra}</div>
           ${ratingButtonsHtml(id)}`;
       } else {
         // Grammar reveal — may have drill exercise
@@ -1613,17 +1666,18 @@ function startErrorCorrection() {
 }
 
 // ===== CLOZE DELETION DRILL =====
-function getDistractors(entry, cat) {
+function getDistractors(entry, cat, field) {
+  field = field || 'korean';
   const candidates = [];
   const sameCat = vocabData[cat] || [];
   for (const e of sameCat) {
-    if (e.korean !== entry.korean && !e.korean.includes(' vs ') && e.korean.length > 1) candidates.push(e.korean);
+    if (e[field] !== entry[field] && e[field] && e[field].length > 1) candidates.push(e[field]);
   }
   if (candidates.length < 3) {
     for (const [c, entries] of Object.entries(vocabData)) {
       if (c === cat) continue;
       for (const e of entries) {
-        if (e.korean !== entry.korean && !e.korean.includes(' vs ') && e.korean.length > 1) candidates.push(e.korean);
+        if (e[field] !== entry[field] && e[field] && e[field].length > 1) candidates.push(e[field]);
       }
       if (candidates.length >= 20) break;
     }
@@ -1744,6 +1798,58 @@ function showProgress() {
   setKeyHandler(e => { if (e.key === 'Escape') showMenu(); });
 }
 
+// ===== LISTENING DRILL =====
+function startListeningDrill() {
+  const pool = buildPool('vocab', null);
+  const session = prioritizeCards(pool, SESSION.listening);
+  if (session.length === 0) { showToast('No cards due — come back later!'); showMenu(); return; }
+
+  const engine = DrillEngine({
+    session,
+    renderCard(item, prog, onReveal) {
+      const {id, cat, entry} = item;
+      const distractors = getDistractors(entry, cat, 'english');
+      const options = shuffle([entry.english, ...distractors]);
+      app.innerHTML = `${drillHeader('Listening Drill', prog)}
+        ${timerHtml(TIMER.listening)}
+        <div class="listen-prompt">
+          <button class="listen-big-btn" data-tts="${escHtml(entry.korean)}" onclick="speak(this.dataset.tts)" aria-label="Play audio">&#128264;</button>
+          <div class="listen-hint">Tap to listen again</div>
+        </div>
+        <div class="card-prompt">What did you hear?</div>
+        <div class="option-grid">
+          ${options.map((opt, i) => `<button class="option-btn" data-idx="${i}" data-val="${escHtml(opt)}">${escHtml(opt)}</button>`).join('')}
+        </div>`;
+      setTimeout(() => speak(entry.korean), 300);
+      const reveal = (chosenIdx) => {
+        const chosen = chosenIdx >= 0 ? options[chosenIdx] : '';
+        const isCorrect = chosen === entry.english;
+        const optionsHtml = options.map((opt, i) => {
+          let cls = opt === entry.english ? 'correct' : (i === chosenIdx && !isCorrect ? 'wrong' : '');
+          return `<button class="option-btn ${cls}" disabled>${escHtml(opt)}</button>`;
+        }).join('');
+        engine.autoGrade(id, isCorrect);
+        let extra = '';
+        if (entry.hanja) extra += `<div class="breakdown">${escHtml(entry.hanja)}</div>`;
+        if (entry.breakdown) extra += `<div class="breakdown">${escHtml(entry.breakdown)}</div>`;
+        if (entry.notes && !notesAreRedundant(entry.english, entry.notes)) extra += `<div class="reveal-notes">${escHtml(entry.notes)}</div>`;
+        app.innerHTML = `${drillHeader('Listening Drill', prog)}
+          <div class="card"><div class="card-korean">${escHtml(entry.korean)} ${ttsBtn(entry.korean)}</div></div>
+          <div class="option-grid">${optionsHtml}</div>
+          <div class="reveal ${isCorrect ? 'result-correct' : 'result-incorrect'}">
+            <div class="reveal-answer">${escHtml(entry.english)}</div>
+            ${extra}
+          </div>
+          <button class="btn btn-primary" id="next-btn" style="width:100%;margin-top:15px">Next &#8594;</button>`;
+        setupNextButton(engine);
+      };
+      const fire = setupOptionHandlers(reveal, e => { if (e.key === 'r') speak(entry.korean); });
+      if (timedMode) startTimer(TIMER.listening, () => fire(-1));
+    },
+    renderReveal() {} // handled inline
+  });
+}
+
 // ===== DIALOGUE DRILL =====
 function startDialogueDrill() {
   if (dialogueDrills.length === 0) {
@@ -1820,6 +1926,7 @@ function startDialogueDrill() {
             if (btn.dataset.text === turn.line) {
               if (dlgFired) return;
               dlgFired = true;
+              document.querySelectorAll('.option-btn').forEach(b => b.disabled = true);
               answered.push(blankIdx);
               runDialogue(item, prog, blankIdx + 1, answered);
             } else {

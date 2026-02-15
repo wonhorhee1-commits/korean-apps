@@ -141,6 +141,8 @@ function showToast(msg, duration) {
   if (existing) existing.remove();
   const el = document.createElement('div');
   el.className = 'toast';
+  el.setAttribute('role', 'status');
+  el.setAttribute('aria-live', 'polite');
   el.textContent = msg;
   document.body.appendChild(el);
   setTimeout(() => el.remove(), duration || 3000);
@@ -199,7 +201,7 @@ function speak(text) {
 }
 
 function ttsBtn(text) {
-  return `<button class="tts-btn" data-tts="${escHtml(text)}" onclick="event.stopPropagation();KoreanCore.speak(this.dataset.tts)">&#128264;</button>`;
+  return `<button class="tts-btn" data-tts="${escHtml(text)}" onclick="event.stopPropagation();KoreanCore.speak(this.dataset.tts)" aria-label="Play audio">&#128264;</button>`;
 }
 
 // ===== TIMER =====

@@ -1061,7 +1061,7 @@ function toggleDarkMode() {
 function quickStart() {
   const pool = buildPool('vocab', null);
   const session = prioritizeCards(pool, SESSION.vocab);
-  if (session.length === 0) { showToast('No cards due — come back later!'); return; }
+  if (session.length === 0) { showToast('No cards due — come back later!'); showMenu(); return; }
   runVocabSession(session);
 }
 
@@ -1344,7 +1344,7 @@ function startListeningDrill() {
       app.innerHTML = `${drillHeader('Listening Drill', prog)}
         ${timerHtml(TIMER.listening)}
         <div class="listen-prompt">
-          <button class="listen-big-btn" data-tts="${escHtml(entry.korean)}" onclick="speak(this.dataset.tts)">&#128264;</button>
+          <button class="listen-big-btn" data-tts="${escHtml(entry.korean)}" onclick="speak(this.dataset.tts)" aria-label="Play audio">&#128264;</button>
           <div class="listen-hint">Tap to listen again</div>
         </div>
         <div class="card-prompt">What did you hear?</div>
@@ -1726,6 +1726,7 @@ function startDialogueDrill() {
         if (chosen === turn.line) {
           if (dlgFired) return;
           dlgFired = true;
+          document.querySelectorAll('.option-btn').forEach(b => b.disabled = true);
           answered.push(blankIdx);
           runDialogue(engine, id, drill, blankIdx + 1, answered, prog);
         } else {
