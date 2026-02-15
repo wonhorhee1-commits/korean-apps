@@ -136,6 +136,21 @@ function notesAreRedundant(english, notes) {
   return overlap > engWords.size * 0.5 && overlap > noteWords.length * 0.7;
 }
 
+function showToast(msg, duration) {
+  const existing = document.querySelector('.toast');
+  if (existing) existing.remove();
+  const el = document.createElement('div');
+  el.className = 'toast';
+  el.textContent = msg;
+  document.body.appendChild(el);
+  setTimeout(() => el.remove(), duration || 3000);
+}
+
+function smoothScrollTop() {
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  window.scrollTo({ top: 0, behavior: reducedMotion ? 'instant' : 'smooth' });
+}
+
 function normalizeKorean(s) {
   return s.trim().replace(/\s+/g, ' ').replace(/[.!?]+$/, '').toLowerCase();
 }
@@ -173,6 +188,13 @@ function speak(text) {
   u.lang = 'ko-KR';
   u.rate = 0.85;
   if (koVoice) u.voice = koVoice;
+  // Find matching TTS button and pulse it
+  let btn = null;
+  document.querySelectorAll('.tts-btn').forEach(b => { if (b.dataset.tts === text) btn = b; });
+  if (btn) btn.classList.add('tts-speaking');
+  const cleanup = () => { if (btn) btn.classList.remove('tts-speaking'); };
+  u.onend = cleanup;
+  u.onerror = cleanup;
   speechSynthesis.speak(u);
 }
 
@@ -429,12 +451,14 @@ function prioritizeCards(pool, limit) {
 function DrillEngine({ session, renderCard, renderReveal, ratingDescs, onRate }) {
   let idx = 0, correct = 0, reviewed = 0;
   const mistakes = [];
+  const ratings = { [AGAIN]: 0, [HARD]: 0, [GOOD]: 0, [EASY]: 0 };
+  const sessionStart = Date.now();
 
   function showCard() {
-    window.scrollTo(0, 0);
+    smoothScrollTop();
     setKeyHandler(null);
     clearTimer();
-    if (idx >= session.length) { showSummary(reviewed, correct, mistakes); return; }
+    if (idx >= session.length) { showSummary(reviewed, correct, mistakes, ratings, sessionStart); return; }
     renderCard(session[idx], progress(), showReveal);
   }
 
@@ -469,6 +493,7 @@ function DrillEngine({ session, renderCard, renderReveal, ratingDescs, onRate })
   function rate(id, quality) {
     if (quality <= HARD) mistakes.push(session[idx]);
     if (onRate) onRate(session[idx], quality);
+    ratings[quality] = (ratings[quality] || 0) + 1;
     _cfg.srs.recordReview(id, quality);
     reviewed++;
     if (quality >= GOOD) correct++;
@@ -492,7 +517,9 @@ function DrillEngine({ session, renderCard, renderReveal, ratingDescs, onRate })
 
   function autoGrade(id, isCorrect) {
     if (!isCorrect) mistakes.push(session[idx]);
-    _cfg.srs.recordReview(id, isCorrect ? GOOD : AGAIN);
+    const q = isCorrect ? GOOD : AGAIN;
+    ratings[q] = (ratings[q] || 0) + 1;
+    _cfg.srs.recordReview(id, q);
     reviewed++;
     if (isCorrect) correct++;
   }
@@ -516,23 +543,30 @@ function drillHeader(title, prog) {
 // ===== DRILL HELPERS =====
 function setupOptionHandlers(onSelect, extraKeys) {
   let fired = false;
+  const btns = document.querySelectorAll('.option-btn');
+  const n = btns.length;
   const fire = (idx) => {
     if (fired) return;
     fired = true;
     setKeyHandler(null);
-    document.querySelectorAll('.option-btn').forEach(b => b.disabled = true);
+    btns.forEach(b => b.disabled = true);
     clearTimer();
     onSelect(idx);
   };
-  document.querySelectorAll('.option-btn').forEach(btn => {
+  btns.forEach(btn => {
     btn.onclick = () => fire(parseInt(btn.dataset.idx));
   });
   setKeyHandler(e => {
     const num = parseInt(e.key);
-    if (num >= 1 && num <= 4) fire(num - 1);
+    if (num >= 1 && num <= n) fire(num - 1);
     else if (e.key === 'Escape') { clearTimer(); _cfg.showMenu(); }
     else if (extraKeys) extraKeys(e);
   });
+  // Add keyboard hint below option grid
+  const grid = document.querySelector('.option-grid');
+  if (grid && !grid.nextElementSibling?.classList?.contains('shortcuts')) {
+    grid.insertAdjacentHTML('afterend', `<div class="shortcuts">Press 1\u2013${n} to choose</div>`);
+  }
   return fire;
 }
 
@@ -558,8 +592,9 @@ function setupTextInput(onReveal, timerSeconds) {
 }
 
 // ===== SHOW SUMMARY =====
-function showSummary(reviewed, correct, mistakes) {
+function showSummary(reviewed, correct, mistakes, ratings, sessionStart) {
   mistakes = mistakes || [];
+  ratings = ratings || {};
   const acc = reviewed > 0 ? correct / reviewed : 0;
   const accPct = Math.round(acc * 100);
   const tone = _cfg.toneConfig || {};
@@ -573,6 +608,25 @@ function showSummary(reviewed, correct, mistakes) {
   for (const c of comments) {
     if (acc >= c.min) { comment = c.text; ringColor = c.ring; break; }
   }
+
+  // Session duration
+  let durationHtml = '';
+  if (sessionStart) {
+    const secs = Math.round((Date.now() - sessionStart) / 1000);
+    const mins = Math.floor(secs / 60);
+    const remSecs = secs % 60;
+    durationHtml = `<div class="summary-stat"><div class="value">${mins > 0 ? mins + 'm ' : ''}${remSecs}s</div><div class="label">Duration</div></div>`;
+  }
+
+  // Rating breakdown
+  const rAgain = ratings[AGAIN] || 0, rHard = ratings[HARD] || 0, rGood = ratings[GOOD] || 0, rEasy = ratings[EASY] || 0;
+  const hasRatings = rAgain + rHard + rGood + rEasy > 0;
+  const ratingBreakdown = hasRatings ? `<div style="display:flex;justify-content:center;gap:16px;margin:12px 0;font-size:0.85em;flex-wrap:wrap">
+    ${rAgain ? `<span style="color:var(--red)">Again: ${rAgain}</span>` : ''}
+    ${rHard ? `<span style="color:var(--orange)">Hard: ${rHard}</span>` : ''}
+    ${rGood ? `<span style="color:var(--green)">Good: ${rGood}</span>` : ''}
+    ${rEasy ? `<span style="color:var(--cyan)">Easy: ${rEasy}</span>` : ''}
+  </div>` : '';
 
   const streak = getStreak();
   const streakMsg = streak > 0 ? `<div style="margin-top:12px"><span class="streak-badge" onclick="KoreanCore.showStreakCalendar()">\u{1F525} ${streak} day${streak > 1 ? 's' : ''} streak</span></div>` : '';
@@ -596,7 +650,9 @@ function showSummary(reviewed, correct, mistakes) {
       <div class="summary-stats">
         <div class="summary-stat"><div class="value count-up" data-target="${reviewed}">0</div><div class="label">Reviewed</div></div>
         <div class="summary-stat"><div class="value count-up" data-target="${correct}">0</div><div class="label">Correct</div></div>
+        ${durationHtml}
       </div>
+      ${ratingBreakdown}
       <div class="comment">${comment}</div>
       ${streakMsg}
     </div>
@@ -607,7 +663,10 @@ function showSummary(reviewed, correct, mistakes) {
         <span style="color:var(--dim);margin-left:8px">${escHtml(m.entry.english || m.entry.meaning || m.entry.correct || '')}</span>
       </div>`).join('')}
     </div>` : ''}
-    <button class="btn btn-primary" onclick="KoreanCore._cfg.showMenu()" style="width:100%">Back to Menu</button>`;
+    <div style="display:flex;gap:10px">
+      ${mistakes.length > 0 ? `<button class="btn" onclick="KoreanCore._cfg.showMenu()" style="flex:1">Study Again</button>` : ''}
+      <button class="btn btn-primary" onclick="KoreanCore._cfg.showMenu()" style="flex:1">Back to Menu</button>
+    </div>`;
 
   requestAnimationFrame(() => {
     const ring = _cfg.app.querySelector('circle:nth-child(2)');
@@ -656,7 +715,7 @@ window.KoreanCore = {
   // Classes
   Card, SRSEngine,
   // Utilities
-  shuffle, escHtml, safeSave, normalizeKorean, highlightWord, validateVocab, notesAreRedundant,
+  shuffle, escHtml, safeSave, showToast, smoothScrollTop, normalizeKorean, highlightWord, validateVocab, notesAreRedundant,
   // TTS
   initTTS, speak, ttsBtn,
   // Timer

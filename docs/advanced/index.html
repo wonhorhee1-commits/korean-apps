@@ -988,6 +988,25 @@ mark { background: rgba(96,165,250,0.2); color: inherit; padding: 0 2px; border-
   .menu button { padding: 10px 14px; }
   .menu { gap: 4px; }
 }
+/* Confirm modal */
+.confirm-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 100; display: flex; align-items: center; justify-content: center; animation: fadeIn 0.15s ease-out; }
+.confirm-box { background: var(--surface); border-radius: 16px; padding: 24px; max-width: 340px; width: 90%; box-shadow: var(--shadow-md); text-align: center; animation: slideIn 0.2s ease-out; }
+.confirm-box h3 { margin-bottom: 8px; font-size: 1.1em; }
+.confirm-box p { color: var(--dim); font-size: 0.9em; margin-bottom: 20px; }
+.confirm-box .confirm-actions { display: flex; gap: 10px; }
+.confirm-box .confirm-actions button { flex: 1; padding: 10px; border-radius: 8px; border: 1px solid var(--border); cursor: pointer; font-size: 0.95em; }
+.confirm-box .btn-cancel { background: var(--surface); color: var(--text); }
+.confirm-box .btn-cancel:hover { background: var(--surface2); }
+.confirm-box .btn-destructive { background: var(--red); color: #fff; border-color: var(--red); font-weight: bold; }
+.confirm-box .btn-destructive:hover { opacity: 0.9; }
+
+/* Toast */
+.toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 12px 24px; border-radius: 12px; box-shadow: var(--shadow-md); font-size: 0.95em; z-index: 200; animation: slideIn 0.25s ease-out; pointer-events: none; }
+
+/* TTS pulse */
+@keyframes ttsPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; transform: scale(1.1); } }
+.tts-speaking { animation: ttsPulse 0.8s ease-in-out infinite; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
@@ -1006,7 +1025,7 @@ mark { background: rgba(96,165,250,0.2); color: inherit; padding: 0 2px; border-
 <script>
 // ===== IMPORTS FROM SHARED LIBRARY =====
 const { AGAIN, HARD, GOOD, EASY, shuffle, escHtml, safeSave, normalizeKorean,
-  highlightWord, validateVocab, speak, ttsBtn, startTimer, clearTimer, timerHtml,
+  highlightWord, validateVocab, showToast, smoothScrollTop, speak, ttsBtn, startTimer, clearTimer, timerHtml,
   getNextInterval, formatInterval, ratingButtonsHtml, getStreak, showStreakCalendar,
   setKeyHandler, buildPool, prioritizeCards, DrillEngine, drillHeader,
   setupOptionHandlers, setupNextButton, setupTextInput, SRSEngine,
@@ -1073,7 +1092,7 @@ function countTotal() {
 }
 
 function showMenu() {
-  window.scrollTo(0, 0);
+  smoothScrollTop();
   clearTimer();
   const stats = srs.getStats();
   const totals = countTotal();
@@ -1107,6 +1126,7 @@ function showMenu() {
     ${syncHtml}
     ${streakHtml}
     ${statsHtml}
+    <button class="btn btn-primary" onclick="quickStart()" style="width:100%;margin-bottom:12px;padding:14px;font-size:1.1em">\u{26A1} Study Now</button>
     <div class="menu">
       <button onclick="showCategorySelect('vocab')"><span class="num">1</span> \u{1F4D6} Vocabulary Drill</button>
       <button onclick="showCategorySelect('grammar')"><span class="num">2</span> \u{270F}\u{FE0F} Grammar Practice</button>
@@ -1131,10 +1151,11 @@ function showMenu() {
     <div class="timed-toggle${autoTts ? ' active' : ''}" onclick="toggleAutoTts()">
       <div class="switch"></div> \uD83D\uDD0A Auto-play ${autoTts ? 'ON' : 'OFF'}
     </div>
-    <div class="shortcuts">Keyboard: 1-9, D, 0 to select</div>`;
+    <div class="shortcuts">Keyboard: Q for Study Now &nbsp;|&nbsp; 1-9, D, 0 to select</div>`;
 
   setKeyHandler(e => {
-    if (e.key === '1') showCategorySelect('vocab');
+    if (e.key === 'q') quickStart();
+    else if (e.key === '1') showCategorySelect('vocab');
     else if (e.key === '2') showCategorySelect('grammar');
     else if (e.key === '3') startMixedReview();
     else if (e.key === '4') startSentenceProduction();
@@ -1147,6 +1168,32 @@ function showMenu() {
     else if (e.key === '0') showProgress();
     else if (e.key === 't') toggleTimedMode();
   });
+}
+
+// ===== QUICK START =====
+function quickStart() {
+  const pool = buildPool('vocab', null);
+  const session = prioritizeCards(pool, SESSION.vocab);
+  if (session.length === 0) { showToast('No cards due — come back later!'); return; }
+  runSession(session);
+}
+
+// ===== CONFIRM MODAL =====
+function showConfirm(title, msg, onConfirm) {
+  const overlay = document.createElement('div');
+  overlay.className = 'confirm-overlay';
+  overlay.innerHTML = `<div class="confirm-box">
+    <h3>${escHtml(title)}</h3>
+    <p>${escHtml(msg)}</p>
+    <div class="confirm-actions">
+      <button class="btn-cancel">Cancel</button>
+      <button class="btn-destructive">Reset All Progress</button>
+    </div>
+  </div>`;
+  overlay.querySelector('.btn-cancel').onclick = () => overlay.remove();
+  overlay.querySelector('.btn-destructive').onclick = () => { overlay.remove(); onConfirm(); };
+  overlay.onclick = e => { if (e.target === overlay) overlay.remove(); };
+  document.body.appendChild(overlay);
 }
 
 function showCategorySelect(type) {
@@ -1184,7 +1231,7 @@ function showCategorySelect(type) {
 function startDrill(type, category) {
   const pool = buildPool(type, category);
   const session = prioritizeCards(pool, type === 'vocab' ? SESSION.vocab : SESSION.grammar);
-  if (session.length === 0) { showMenu(); return; }
+  if (session.length === 0) { showToast('No cards due — come back later!'); showMenu(); return; }
   runSession(session);
 }
 
@@ -1193,7 +1240,7 @@ function startMixedReview() {
   const gPool = buildPool('grammar', null);
   const pool = [...vPool, ...gPool];
   const session = prioritizeCards(pool, SESSION.mixed);
-  if (session.length === 0) { showMenu(); return; }
+  if (session.length === 0) { showToast('No cards due — come back later!'); showMenu(); return; }
   runSession(session);
 }
 
@@ -1304,7 +1351,7 @@ function startSentenceProduction() {
       if (e.example && e.example_en) pool.push({id: `prod:${cat}:${i}`, cat, entry: e});
     }
   }
-  if (pool.length === 0) { showMenu(); return; }
+  if (pool.length === 0) { showToast('No cards available for this drill.'); showMenu(); return; }
   const session = prioritizeCards(pool, SESSION.production);
 
   DrillEngine({
@@ -1590,7 +1637,7 @@ function startClozeDrill() {
         pool.push({id: `cloze:${cat}:${i}`, cat, entry: e});
     }
   }
-  if (pool.length === 0) { showMenu(); return; }
+  if (pool.length === 0) { showToast('No cards available for this drill.'); showMenu(); return; }
   const session = prioritizeCards(pool, SESSION.cloze);
   const descs = {again: 'wrong', hard: 'guessed', good: 'knew it', easy: 'obvious'};
 
@@ -1690,7 +1737,7 @@ function showProgress() {
         <tr><th>Card</th><th>Accuracy</th><th>Reviews</th><th>Ease</th></tr>
         ${weakRows}
       </table></div>` : '<p style="color:var(--dim)">No cards reviewed yet. Start a drill!</p>'}
-    <button class="btn" onclick="if(confirm('Reset all progress?')){localStorage.removeItem('korean_coach_srs');location.reload()}" style="margin-top:20px;color:var(--red);border-color:var(--red)">Reset Progress</button>`;
+    <button class="btn" onclick="showConfirm('Reset all progress?','This cannot be undone. All SRS data and streak will be cleared.',()=>{localStorage.removeItem('korean_coach_srs');localStorage.removeItem('korean_coach_streak');location.reload()})" style="margin-top:20px;color:var(--red);border-color:var(--red)">Reset Progress</button>`;
   setKeyHandler(e => { if (e.key === 'Escape') showMenu(); });
 }
 
@@ -1761,7 +1808,8 @@ function startDialogueDrill() {
         app.innerHTML = `${drillHeader('Dialogue Practice', prog)}
           <div class="dialogue-context">${escHtml(drill.title)} — ${escHtml(drill.context)}</div>
           <div class="dialogue-area">${bubblesHtml}</div>
-          <div class="dialogue-options">${optionsHtml}</div>`;
+          <div class="dialogue-options">${optionsHtml}</div>
+          <div class="shortcuts">Press 1\u2013${shuffledOpts.length} to choose</div>`;
 
         let dlgFired = false;
         document.querySelectorAll('.option-btn').forEach(btn => {

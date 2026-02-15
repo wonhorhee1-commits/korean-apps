@@ -861,6 +861,25 @@ mark { background: rgba(96,165,250,0.2); color: inherit; padding: 0 2px; border-
   .menu button { padding: 10px 14px; }
   .menu { gap: 4px; }
 }
+/* Confirm modal */
+.confirm-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 100; display: flex; align-items: center; justify-content: center; animation: fadeIn 0.15s ease-out; }
+.confirm-box { background: var(--surface); border-radius: 16px; padding: 24px; max-width: 340px; width: 90%; box-shadow: var(--shadow-md); text-align: center; animation: slideIn 0.2s ease-out; }
+.confirm-box h3 { margin-bottom: 8px; font-size: 1.1em; }
+.confirm-box p { color: var(--dim); font-size: 0.9em; margin-bottom: 20px; }
+.confirm-box .confirm-actions { display: flex; gap: 10px; }
+.confirm-box .confirm-actions button { flex: 1; padding: 10px; border-radius: 8px; border: 1px solid var(--border); cursor: pointer; font-size: 0.95em; }
+.confirm-box .btn-cancel { background: var(--surface); color: var(--text); }
+.confirm-box .btn-cancel:hover { background: var(--surface2); }
+.confirm-box .btn-destructive { background: var(--red); color: #fff; border-color: var(--red); font-weight: bold; }
+.confirm-box .btn-destructive:hover { opacity: 0.9; }
+
+/* Toast */
+.toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 12px 24px; border-radius: 12px; box-shadow: var(--shadow-md); font-size: 0.95em; z-index: 200; animation: slideIn 0.25s ease-out; pointer-events: none; }
+
+/* TTS pulse */
+@keyframes ttsPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; transform: scale(1.1); } }
+.tts-speaking { animation: ttsPulse 0.8s ease-in-out infinite; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
@@ -879,7 +898,7 @@ mark { background: rgba(96,165,250,0.2); color: inherit; padding: 0 2px; border-
 <script>
 // ===== IMPORTS FROM SHARED LIBRARY =====
 const { AGAIN, HARD, GOOD, EASY, shuffle, escHtml, safeSave, normalizeKorean,
-  highlightWord, validateVocab, speak, ttsBtn, startTimer, clearTimer, timerHtml,
+  highlightWord, validateVocab, showToast, smoothScrollTop, speak, ttsBtn, startTimer, clearTimer, timerHtml,
   getNextInterval, formatInterval, ratingButtonsHtml, getStreak, showStreakCalendar,
   setKeyHandler, buildPool, prioritizeCards, DrillEngine, drillHeader,
   setupOptionHandlers, setupNextButton, setupTextInput, SRSEngine,
@@ -951,7 +970,7 @@ function countTotal() {
 
 // ===== MAIN MENU =====
 function showMenu() {
-  window.scrollTo(0, 0);
+  smoothScrollTop();
   clearTimer();
   const stats = srs.getStats();
   const totals = countTotal();
@@ -985,6 +1004,7 @@ function showMenu() {
     ${syncHtml}
     ${streakHtml}
     ${statsHtml}
+    <button class="btn btn-primary" onclick="quickStart()" style="width:100%;margin-bottom:12px;padding:14px;font-size:1.1em">\u{26A1} Study Now</button>
     <div class="menu">
       <button onclick="showCategorySelect('vocab')"><span class="num">1</span> \u{1F4D6} Vocabulary Drill</button>
       <button onclick="startMultipleChoice()"><span class="num">2</span> \u{2753} Multiple Choice Quiz</button>
@@ -1011,10 +1031,11 @@ function showMenu() {
     <div style="text-align:center;margin-top:8px">
       <button class="back-btn" onclick="toggleDarkMode()" style="margin:0">${darkMode ? 'Light Mode' : 'Dark Mode'}</button>
     </div>
-    <div class="shortcuts">Keyboard: 1-9, 0 to select &nbsp;|&nbsp; T for timer</div>`;
+    <div class="shortcuts">Keyboard: Q for Study Now &nbsp;|&nbsp; 1-9, 0 to select &nbsp;|&nbsp; T for timer</div>`;
 
   setKeyHandler(e => {
-    if (e.key === '1') showCategorySelect('vocab');
+    if (e.key === 'q') quickStart();
+    else if (e.key === '1') showCategorySelect('vocab');
     else if (e.key === '2') startMultipleChoice();
     else if (e.key === '3') showCategorySelect('grammar');
     else if (e.key === '4') startListeningDrill();
@@ -1034,6 +1055,32 @@ function toggleDarkMode() {
   document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : '');
   document.getElementById('theme-color-meta').content = darkMode ? '#1a1a2e' : '#faf7f2';
   showMenu();
+}
+
+// ===== QUICK START =====
+function quickStart() {
+  const pool = buildPool('vocab', null);
+  const session = prioritizeCards(pool, SESSION.vocab);
+  if (session.length === 0) { showToast('No cards due — come back later!'); return; }
+  runVocabSession(session);
+}
+
+// ===== CONFIRM MODAL =====
+function showConfirm(title, msg, onConfirm) {
+  const overlay = document.createElement('div');
+  overlay.className = 'confirm-overlay';
+  overlay.innerHTML = `<div class="confirm-box">
+    <h3>${escHtml(title)}</h3>
+    <p>${escHtml(msg)}</p>
+    <div class="confirm-actions">
+      <button class="btn-cancel">Cancel</button>
+      <button class="btn-destructive">Reset All Progress</button>
+    </div>
+  </div>`;
+  overlay.querySelector('.btn-cancel').onclick = () => overlay.remove();
+  overlay.querySelector('.btn-destructive').onclick = () => { overlay.remove(); onConfirm(); };
+  overlay.onclick = e => { if (e.target === overlay) overlay.remove(); };
+  document.body.appendChild(overlay);
 }
 
 // ===== CATEGORY SELECT =====
@@ -1095,7 +1142,7 @@ function showCategorySelect(type) {
 function startDrill(type, category) {
   const pool = buildPool(type, category);
   const session = prioritizeCards(pool, type === 'grammar' ? SESSION.grammar : SESSION.vocab);
-  if (session.length === 0) { showMenu(); return; }
+  if (session.length === 0) { showToast('No cards due — come back later!'); showMenu(); return; }
   if (type === 'grammar') { runGrammarSession(session); return; }
   runVocabSession(session);
 }
@@ -1235,7 +1282,7 @@ function runGrammarSession(cards) {
 function startMultipleChoice() {
   const pool = buildPool('vocab', null);
   const session = prioritizeCards(pool, SESSION.mc);
-  if (session.length === 0) { showMenu(); return; }
+  if (session.length === 0) { showToast('No cards due — come back later!'); showMenu(); return; }
 
   const engine = DrillEngine({
     session,
@@ -1283,7 +1330,7 @@ function startMultipleChoice() {
 function startListeningDrill() {
   const pool = buildPool('vocab', null);
   const session = prioritizeCards(pool, SESSION.listening);
-  if (session.length === 0) { showMenu(); return; }
+  if (session.length === 0) { showToast('No cards due — come back later!'); showMenu(); return; }
 
   const engine = DrillEngine({
     session,
@@ -1333,7 +1380,7 @@ function startMixedReview() {
   const gPool = buildPool('grammar', null);
   const pool = [...vPool, ...gPool];
   const session = prioritizeCards(pool, SESSION.mixed);
-  if (session.length === 0) { showMenu(); return; }
+  if (session.length === 0) { showToast('No cards due — come back later!'); showMenu(); return; }
   runMixedSession(session);
 }
 
@@ -1397,9 +1444,9 @@ function startClozeDrill() {
       }
     }
   }
-  if (pool.length === 0) { showMenu(); return; }
+  if (pool.length === 0) { showToast('No cards available for this drill.'); showMenu(); return; }
   const session = prioritizeCards(pool, SESSION.cloze);
-  if (session.length === 0) { showMenu(); return; }
+  if (session.length === 0) { showToast('No cards due — come back later!'); showMenu(); return; }
 
   const engine = DrillEngine({
     session,
@@ -1481,7 +1528,7 @@ function startErrorCorrection() {
 
   const pool = errorDrills.map((d, i) => ({id: `err:${i}`, drill: d}));
   const session = prioritizeCards(pool, SESSION.error);
-  if (session.length === 0) { showMenu(); return; }
+  if (session.length === 0) { showToast('No cards due — come back later!'); showMenu(); return; }
 
   const engine = DrillEngine({
     session,
@@ -1529,7 +1576,7 @@ function startReadingComprehension() {
 
   const pool = readingDrills.map((d, i) => ({id: `read:${i}`, drill: d}));
   const session = prioritizeCards(pool, SESSION.reading);
-  if (session.length === 0) { showMenu(); return; }
+  if (session.length === 0) { showToast('No cards due — come back later!'); showMenu(); return; }
 
   const engine = DrillEngine({
     session,
@@ -1603,7 +1650,7 @@ function startDialogueDrill() {
 
   const pool = dialogueDrills.map((d, i) => ({id: `dlg:${i}`, drill: d}));
   const session = prioritizeCards(pool, SESSION.dialogue);
-  if (session.length === 0) { showMenu(); return; }
+  if (session.length === 0) { showToast('No cards due — come back later!'); showMenu(); return; }
 
   const engine = DrillEngine({
     session,
@@ -1666,7 +1713,8 @@ function startDialogueDrill() {
     app.innerHTML = `${drillHeader('Dialogue Practice', prog)}
       <div class="dialogue-context">${escHtml(drill.title)} &#8212; ${escHtml(drill.context)}</div>
       <div class="dialogue-area">${bubblesHtml}</div>
-      <div class="dialogue-options">${optionsHtml}</div>`;
+      <div class="dialogue-options">${optionsHtml}</div>
+      <div class="shortcuts">Press 1\u2013${shuffledOpts.length} to choose</div>`;
 
     let dlgFired = false;
     document.querySelectorAll('.option-btn').forEach(btn => {
@@ -1765,7 +1813,7 @@ function showProgress() {
         <tr><th>Category</th><th>Reviewed</th><th>%</th></tr>
         ${catBreakdown}
       </table></div>` : ''}
-    <button class="btn" onclick="if(confirm('Reset all progress? This cannot be undone.')){localStorage.removeItem('beginner_korean_srs');localStorage.removeItem('beginner_korean_streak');location.reload()}" style="margin-top:20px;color:var(--red);border-color:var(--red)">Reset Progress</button>`;
+    <button class="btn" onclick="showConfirm('Reset all progress?','This cannot be undone. All SRS data and streak will be cleared.',()=>{localStorage.removeItem('beginner_korean_srs');localStorage.removeItem('beginner_korean_streak');location.reload()})" style="margin-top:20px;color:var(--red);border-color:var(--red)">Reset Progress</button>`;
   setKeyHandler(e => { if (e.key === 'Escape') showMenu(); });
 }
 
