@@ -126,6 +126,16 @@ function safeSave(key, val) {
   try { localStorage.setItem(key, val); } catch(e) { console.warn('Storage full'); }
 }
 
+function notesAreRedundant(english, notes) {
+  if (!notes || !english) return false;
+  const engWords = new Set(english.toLowerCase().split(/\s+/));
+  const noteWords = notes.toLowerCase().split(/\s+/);
+  const overlap = noteWords.filter(w => engWords.has(w)).length;
+  // Notes must mostly consist of english words (>70% of note words overlap)
+  // AND english words must be well-represented in notes (>50%)
+  return overlap > engWords.size * 0.5 && overlap > noteWords.length * 0.7;
+}
+
 function normalizeKorean(s) {
   return s.trim().replace(/\s+/g, ' ').replace(/[.!?]+$/, '').toLowerCase();
 }
@@ -646,7 +656,7 @@ window.KoreanCore = {
   // Classes
   Card, SRSEngine,
   // Utilities
-  shuffle, escHtml, safeSave, normalizeKorean, highlightWord, validateVocab,
+  shuffle, escHtml, safeSave, normalizeKorean, highlightWord, validateVocab, notesAreRedundant,
   // TTS
   initTTS, speak, ttsBtn,
   // Timer

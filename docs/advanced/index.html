@@ -728,12 +728,8 @@ mark { background: rgba(96,165,250,0.2); color: inherit; padding: 0 2px; border-
   margin: 10px 0;
 }
 
-@media (max-width: 600px) {
-  .option-grid { grid-template-columns: 1fr; }
-}
 @media (max-width: 380px) {
   .option-grid { grid-template-columns: 1fr; }
-  .rating { flex-wrap: wrap; }
   .cloze-blank, .context-passage .blank { min-width: 50px; }
 }
 
@@ -795,12 +791,17 @@ mark { background: rgba(96,165,250,0.2); color: inherit; padding: 0 2px; border-
 
 @media (max-width: 600px) {
   .container { padding: 12px; }
+  .card { padding: 20px; margin: 8px 0; }
   .card-korean { font-size: 1.7em; }
   .card-english { font-size: 1.3em; }
-  .rating { flex-direction: column; }
-  .rating button { min-width: unset; width: 100%; }
+  .rating { flex-wrap: wrap; }
+  .rating button { min-width: 45%; flex: 1 1 45%; }
   .summary-stats { gap: 15px; }
   h1 { font-size: 1.5em; }
+  .back-btn { margin-bottom: 4px; }
+  .progress-bar { margin: 8px 0; }
+  .option-grid { gap: 6px; }
+  .option-btn { padding: 10px 12px; }
 }
 .sync-status {
   text-align: center;
@@ -1009,7 +1010,7 @@ const { AGAIN, HARD, GOOD, EASY, shuffle, escHtml, safeSave, normalizeKorean,
   getNextInterval, formatInterval, ratingButtonsHtml, getStreak, showStreakCalendar,
   setKeyHandler, buildPool, prioritizeCards, DrillEngine, drillHeader,
   setupOptionHandlers, setupNextButton, setupTextInput, SRSEngine,
-  createFirebaseSync, initTTS } = KoreanCore;
+  createFirebaseSync, initTTS, notesAreRedundant } = KoreanCore;
 
 // ===== FIREBASE CONFIG =====
 const FIREBASE_CONFIG = {
@@ -1236,7 +1237,7 @@ function runSession(cards) {
         let extra = '';
         if (entry.hanja) extra += `<div class="breakdown">${escHtml(entry.hanja)}</div>`;
         if (entry.breakdown) extra += `<div class="breakdown">${escHtml(entry.breakdown)}</div>`;
-        if (entry.notes) extra += `<div class="reveal-notes">${escHtml(entry.notes)}</div>`;
+        if (entry.notes && !notesAreRedundant(entry.english, entry.notes)) extra += `<div class="reveal-notes">${escHtml(entry.notes)}</div>`;
         if (entry.example) extra += `<div class="example"><div class="example-kr">${highlightWord(entry.example, entry.korean)}</div>
           ${entry.example_en ? `<div class="example-en">${highlightWord(entry.example_en, entry.english)}</div>` : ''}</div>`;
         const guessHtml = result.guess ? `<div class="your-guess">Your answer: <span>${escHtml(result.guess)}</span></div>` : '';
@@ -1325,7 +1326,7 @@ function startSentenceProduction() {
     renderReveal(item, result, prog) {
       const {entry} = item;
       let extra = '';
-      if (entry.notes) extra += `<div class="reveal-notes" style="margin-top:8px">${escHtml(entry.notes)}</div>`;
+      if (entry.notes && !notesAreRedundant(entry.english, entry.notes)) extra += `<div class="reveal-notes" style="margin-top:8px">${escHtml(entry.notes)}</div>`;
       const guessHtml = result.guess ? `<div class="your-guess">Your sentence: <span>${escHtml(result.guess)}</span></div>` : '';
       app.innerHTML = `${drillHeader('Sentence Production', prog)}
         ${guessHtml}
@@ -1622,7 +1623,7 @@ function startClozeDrill() {
         return `<button class="option-btn ${cls}" disabled>${escHtml(opt)}</button>`;
       }).join('');
       let extra = '';
-      if (entry.notes) extra += `<div class="reveal-notes">${escHtml(entry.notes)}</div>`;
+      if (entry.notes && !notesAreRedundant(entry.english, entry.notes)) extra += `<div class="reveal-notes">${escHtml(entry.notes)}</div>`;
       app.innerHTML = `${drillHeader('Cloze Drill', prog)}
         <div class="cloze-sentence">${sentenceHtml}</div>
         <div class="option-grid">${optionsHtml}</div>

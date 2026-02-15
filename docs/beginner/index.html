@@ -705,12 +705,16 @@ mark { background: rgba(96,165,250,0.2); color: inherit; padding: 0 2px; border-
 
 @media (max-width: 600px) {
   .container { padding: 12px; }
+  .card { padding: 20px; margin: 8px 0; }
   .card-korean { font-size: 1.7em; }
   .card-english { font-size: 1.3em; }
   .rating button { min-width: 60px; padding: 10px 4px; }
   h1 { font-size: 1.5em; }
   .summary-stats { gap: 15px; }
-  .option-grid { grid-template-columns: 1fr 1fr; }
+  .back-btn { margin-bottom: 4px; }
+  .progress-bar { margin: 8px 0; }
+  .option-grid { grid-template-columns: 1fr 1fr; gap: 6px; }
+  .option-btn { padding: 10px 12px; }
 }
 
 @media (max-width: 380px) {
@@ -879,7 +883,7 @@ const { AGAIN, HARD, GOOD, EASY, shuffle, escHtml, safeSave, normalizeKorean,
   getNextInterval, formatInterval, ratingButtonsHtml, getStreak, showStreakCalendar,
   setKeyHandler, buildPool, prioritizeCards, DrillEngine, drillHeader,
   setupOptionHandlers, setupNextButton, setupTextInput, SRSEngine,
-  createFirebaseSync, initTTS } = KoreanCore;
+  createFirebaseSync, initTTS, notesAreRedundant } = KoreanCore;
 
 // ===== FIREBASE CONFIG =====
 const FIREBASE_CONFIG = {
@@ -1119,7 +1123,7 @@ function runVocabSession(cards) {
       const isKoreanAnswer = (result.answer === entry.korean);
       const promptWord = isKoreanAnswer ? entry.english : entry.korean;
       let extra = '';
-      if (entry.notes) extra += `<div class="reveal-notes">${escHtml(entry.notes)}</div>`;
+      if (entry.notes && !notesAreRedundant(entry.english, entry.notes)) extra += `<div class="reveal-notes">${escHtml(entry.notes)}</div>`;
       if (entry.example) extra += `<div class="example"><div class="example-kr">${highlightWord(entry.example, entry.korean)} ${ttsBtn(entry.example)}</div>
         ${entry.example_en ? `<div class="example-en">${highlightWord(entry.example_en, entry.english)}</div>` : ''}</div>`;
       const guessHtml = result.guess ? `<div class="your-guess">Your answer: <span>${escHtml(result.guess)}</span></div>` : '';
@@ -1254,7 +1258,7 @@ function startMultipleChoice() {
           return `<button class="option-btn ${cls}" disabled>${escHtml(opt)}</button>`;
         }).join('');
         let extra = '';
-        if (entry.notes) extra += `<div class="reveal-notes">${escHtml(entry.notes)}</div>`;
+        if (entry.notes && !notesAreRedundant(entry.english, entry.notes)) extra += `<div class="reveal-notes">${escHtml(entry.notes)}</div>`;
         if (entry.example) extra += `<div class="example"><div class="example-kr">${escHtml(entry.example)} ${ttsBtn(entry.example)}</div>
           ${entry.example_en ? `<div class="example-en">${escHtml(entry.example_en)}</div>` : ''}</div>`;
         engine.autoGrade(id, isCorrect);
@@ -1311,7 +1315,7 @@ function startListeningDrill() {
           <div class="option-grid">${optionsHtml}</div>
           <div class="reveal ${isCorrect ? 'result-correct' : 'result-incorrect'}">
             <div class="reveal-answer">${escHtml(entry.english)}</div>
-            ${entry.notes ? `<div class="reveal-notes">${escHtml(entry.notes)}</div>` : ''}
+            ${entry.notes && !notesAreRedundant(entry.english, entry.notes) ? `<div class="reveal-notes">${escHtml(entry.notes)}</div>` : ''}
           </div>
           <button class="btn btn-primary" id="next-btn" style="width:100%;margin-top:15px">Next &#8594;</button>`;
         setupNextButton(engine);
@@ -1365,7 +1369,7 @@ function runMixedSession(cards) {
       const {id, entry} = item;
       const guessHtml = result.guess ? `<div class="your-guess">Your answer: <span>${escHtml(result.guess)}</span></div>` : '';
       let extra = '';
-      if (entry.notes) extra += `<div class="reveal-notes">${escHtml(entry.notes)}</div>`;
+      if (entry.notes && !notesAreRedundant(entry.english, entry.notes)) extra += `<div class="reveal-notes">${escHtml(entry.notes)}</div>`;
       if (entry.example) extra += `<div class="example"><div class="example-kr">${highlightWord(entry.example, entry.korean)} ${ttsBtn(entry.example)}</div>
         ${entry.example_en ? `<div class="example-en">${highlightWord(entry.example_en, entry.english)}</div>` : ''}</div>`;
       if (entry.examples) {
@@ -1429,7 +1433,7 @@ function startClozeDrill() {
           <div class="option-grid">${optionsHtml}</div>
           <div class="reveal ${isCorrect ? 'result-correct' : 'result-incorrect'}">
             <div class="reveal-answer">${escHtml(entry.korean)} — ${escHtml(entry.english)}</div>
-            ${entry.notes ? `<div class="reveal-notes">${escHtml(entry.notes)}</div>` : ''}
+            ${entry.notes && !notesAreRedundant(entry.english, entry.notes) ? `<div class="reveal-notes">${escHtml(entry.notes)}</div>` : ''}
           </div>
           <button class="btn btn-primary" id="next-btn" style="width:100%;margin-top:15px">Next &#8594;</button>`;
         setupNextButton(engine);

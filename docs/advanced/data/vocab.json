@@ -1834,21 +1834,21 @@
       "english": "아쉽다 = regretful (situation-focused, 'what a shame')\n서운하다 = hurt/disappointed (person-focused, feeling let down by someone)",
       "example": "시간이 없어서 아쉽다. / 연락도 없이 가서 서운했다.",
       "example_en": "It's a shame there's no time. / I was hurt that you left without contacting me.",
-      "notes": "Compare 아쉽다 and 서운하다: 아쉽다 = regretful (situation-focused, 'what a shame')\n서운하다 = hurt/disappointed (person-focused, feeling let down by someone). See example for context difference."
+      "notes": "아쉽다는 상황 자체, 서운하다는 누군가의 행동으로 인한 대인관계 중심."
     },
     {
       "korean": "부럽다 vs 질투하다",
       "english": "부럽다 = envious (benign, admiring)\n질투하다 = jealous (more negative, possessive)",
       "example": "네가 부럽다. / 친구의 성공에 질투를 느꼈다.",
       "example_en": "I envy you. / I felt jealous of my friend's success.",
-      "notes": "Compare 부럽다 and 질투하다: 부럽다 = envious (benign, admiring)\n질투하다 = jealous (more negative, possessive). See example for context difference."
+      "notes": "부럽다는 긍정적 감탄, 질투하다는 소유욕·부정적 감정으로 파괴적."
     },
     {
       "korean": "무섭다 vs 두렵다",
       "english": "무섭다 = scary (immediate, visceral fear)\n두렵다 = fearful/daunting (deeper, more abstract fear)",
       "example": "귀신이 무섭다. / 미래가 두렵다.",
       "example_en": "Ghosts are scary. / The future is daunting.",
-      "notes": "Compare 무섭다 and 두렵다: 무섭다 = scary (immediate, visceral fear)\n두렵다 = fearful/daunting (deeper, more abstract fear). See example for context difference."
+      "notes": "무섭다는 추상명사 불가('무서운 미래' X); 두렵다는 더 문학적."
     },
     {
       "korean": "고치다 vs 수정하다 vs 보완하다",
@@ -1869,42 +1869,42 @@
       "english": "차라리 = rather/I'd rather (choosing lesser evil)\n오히려 = on the contrary; rather (unexpected reversal)",
       "example": "이럴 바에야 차라리 안 할래. / 도와주려다가 오히려 방해가 됐다.",
       "example_en": "If it's like this, I'd rather not. / I tried to help but rather got in the way.",
-      "notes": "Compare 차라리 and 오히려: 차라리 = rather/I'd rather (choosing lesser evil)\n오히려 = on the contrary; rather (unexpected reversal). See example for context difference."
+      "notes": "차라리는 양자택일(악중 나음), 오히려는 의외성·역설."
     },
     {
       "korean": "내세우다 vs 주장하다",
       "english": "내세우다 = to put forward / champion (a person, cause, principle)\n주장하다 = to argue / claim (an opinion or position)",
       "example": "그를 후보로 내세웠다. / 자기 의견을 강하게 주장했다.",
       "example_en": "They put him forward as a candidate. / He argued his opinion strongly.",
-      "notes": "Compare 내세우다 and 주장하다: 내세우다 = to put forward / champion (a person, cause, principle)\n주장하다 = to argue / claim (an opinion or position). See example for context difference."
+      "notes": "내세우다=인물·단체 대상, 주장하다=의견·주장 대상."
     },
     {
       "korean": "눈치 vs 분위기",
       "english": "눈치 = social awareness; reading people (interpersonal)\n분위기 = atmosphere; mood; vibe (of a place or situation)",
       "example": "눈치가 빨라서 바로 알아챘다. / 분위기가 좋은 카페다.",
       "example_en": "He's perceptive so he caught on right away. / It's a cafe with a good vibe.",
-      "notes": "Compare 눈치 and 분위기: 눈치 = social awareness; reading people (interpersonal)\n분위기 = atmosphere; mood; vibe (of a place or situation). See example for context difference."
+      "notes": "눈치는 사람 읽기, 분위기는 환경 기분. 눈치가 주관적."
     },
     {
       "korean": "삼가다 vs 자제하다",
       "english": "삼가다 = to refrain from (respectful/formal, often warnings)\n자제하다 = to restrain oneself (self-control focused)",
       "example": "음주를 삼가세요. / 감정을 자제해야 한다.",
       "example_en": "Please refrain from drinking. / You need to restrain your emotions.",
-      "notes": "Compare 삼가다 and 자제하다: 삼가다 = to refrain from (respectful/formal, often warnings)\n자제하다 = to restrain oneself (self-control focused). See example for context difference."
+      "notes": "삼가다는 공식·경고조, 자제하다는 개인적 절제."
     },
     {
       "korean": "헤아리다 vs 파악하다",
       "english": "헤아리다 = to fathom/empathize (emotional, deeper understanding)\n파악하다 = to grasp/assess (analytical, factual understanding)",
       "example": "남의 마음을 헤아리다. / 상황을 정확히 파악하다.",
       "example_en": "To fathom someone's feelings. / To accurately grasp the situation.",
-      "notes": "Compare 헤아리다 and 파악하다: 헤아리다 = to fathom/empathize (emotional, deeper understanding)\n파악하다 = to grasp/assess (analytical, factual understanding). See example for context difference."
+      "notes": "헤아리다는 감정 이입, 파악하다는 순수 인지·분석."
     },
     {
       "korean": "익숙하다 vs 친숙하다",
       "english": "익숙하다 = familiar through habit/practice (skill-based)\n친숙하다 = familiar in a warm/friendly way (comfort-based)",
       "example": "이 길은 익숙하다. / 친숙한 얼굴을 보니 반갑다.",
       "example_en": "I'm used to this road. / It's nice to see a familiar face.",
-      "notes": "Compare 익숙하다 and 친숙하다: 익숙하다 = familiar through habit/practice (skill-based)\n친숙하다 = familiar in a warm/friendly way (comfort-based). See example for context difference."
+      "notes": "익숙하다=기술기반, 친숙하다=따뜻한 접근가능성."
     },
     {
       "korean": "참다 vs 견디다 vs 인내하다",
@@ -1918,14 +1918,14 @@
       "english": "미루다 = put off/procrastinate (casual, often laziness)\n연기하다 = postpone (official/formal, with reason)",
       "example": "공부를 내일로 미뤘다. / 행사가 우천으로 연기되었다.",
       "example_en": "I put off studying until tomorrow. / The event was postponed due to rain.",
-      "notes": "Compare 미루다 and 연기하다: 미루다 = put off/procrastinate (casual, often laziness)\n연기하다 = postpone (official/formal, with reason). See example for context difference."
+      "notes": "미루다는 게으름, 연기하다는 공식적 외부사유."
     },
     {
       "korean": "탓하다 vs 비난하다",
       "english": "탓하다 = blame (general, can be self or others)\n비난하다 = criticize/condemn (stronger, public, moral judgment)",
       "example": "남 탓하지 마. / 언론이 정부를 비난했다.",
       "example_en": "Don't blame others. / The media condemned the government.",
-      "notes": "Compare 탓하다 and 비난하다: 탓하다 = blame (general, can be self or others)\n비난하다 = criticize/condemn (stronger, public, moral judgment). See example for context difference."
+      "notes": "탓하다는 일상적, 비난하다는 공개적·도덕적."
     },
     {
       "korean": "빠지다 vs 몰두하다 vs 열중하다",
@@ -1939,7 +1939,7 @@
       "english": "꺼리다 = be reluctant/hesitant about (personal discomfort)\n기피하다 = avoid/shun (deliberate avoidance, stronger)",
       "example": "남 앞에서 말하기를 꺼린다. / 병역을 기피하다.",
       "example_en": "I'm reluctant to speak in front of others. / To evade military service.",
-      "notes": "Compare 꺼리다 and 기피하다: 꺼리다 = be reluctant/hesitant about (personal discomfort)\n기피하다 = avoid/shun (deliberate avoidance, stronger). See example for context difference."
+      "notes": "꺼리다는 주저, 기피하다는 의도적 회피."
     },
     {
       "korean": "물러나다 vs 사퇴하다 vs 사임하다",
@@ -1953,21 +1953,21 @@
       "english": "따지다 = question/nitpick (confrontational, demanding accountability)\n캐묻다 = pry/dig into (nosy, invasive questioning)",
       "example": "잘잘못을 따지다. / 사생활을 캐묻다.",
       "example_en": "To question who's right and wrong. / To pry into someone's private life.",
-      "notes": "Compare 따지다 and 캐묻다: 따지다 = question/nitpick (confrontational, demanding accountability)\n캐묻다 = pry/dig into (nosy, invasive questioning). See example for context difference."
+      "notes": "따지다는 대결적·책임추궁, 캐묻다는 침입적."
     },
     {
       "korean": "시달리다 vs 시련을 겪다",
       "english": "시달리다 = be plagued/tormented (ongoing, wearing you down)\n시련을 겪다 = go through a trial/ordeal (discrete event, builds character)",
       "example": "불면증에 시달리다. / 큰 시련을 겪고 성장했다.",
       "example_en": "To be plagued by insomnia. / Grew through a great ordeal.",
-      "notes": "Compare 시달리다 and 시련을 겪다: 시달리다 = be plagued/tormented (ongoing, wearing you down)\n시련을 겪다 = go through a trial/ordeal (discrete event, builds character). See example for context difference."
+      "notes": "시달리다=지속고통, 시련=일회적 성장."
     },
     {
       "korean": "그르치다 vs 망치다",
       "english": "그르치다 = to spoil/ruin (lead astray, esp. a person's path)\n망치다 = to mess up/wreck (broader, any situation)",
       "example": "아이의 교육을 그르치다. / 발표를 완전히 망쳤다.",
       "example_en": "To ruin a child's upbringing. / Completely messed up the presentation.",
-      "notes": "Compare 그르치다 and 망치다: 그르치다 = to spoil/ruin (lead astray, esp. a person's path)\n망치다 = to mess up/wreck (broader, any situation). See example for context difference."
+      "notes": "그르치다는 잘못인도, 망치다는 광범위."
     },
     {
       "korean": "바라다 vs 원하다 vs 희망하다",
@@ -1988,35 +1988,35 @@
       "english": "내키다 = to feel like it (motivation/willingness from within)\n마음이 끌리다 = to be drawn to (attraction, pulled toward something)",
       "example": "오늘은 운동이 내키지 않는다. / 그 사람한테 마음이 끌린다.",
       "example_en": "I don't feel like exercising today. / I'm drawn to that person.",
-      "notes": "Compare 내키다 and 마음이 끌리다: 내키다 = to feel like it (motivation/willingness from within)\n마음이 끌리다 = to be drawn to (attraction, pulled toward something). See example for context difference."
+      "notes": "내키다=내적동기, 마음이끌리다=외적매력."
     },
     {
       "korean": "꾸미다 vs 치장하다",
       "english": "꾸미다 = to decorate/make up (general — room, appearance, story)\n치장하다 = to dress up/adorn (specifically appearance, often excessive)",
       "example": "방을 예쁘게 꾸몄다. / 화려하게 치장하고 나타났다.",
       "example_en": "Decorated the room prettily. / Showed up dressed to the nines.",
-      "notes": "Compare 꾸미다 and 치장하다: 꾸미다 = to decorate/make up (general — room, appearance, story)\n치장하다 = to dress up/adorn (specifically appearance, often excessive). See example for context difference."
+      "notes": "치장하다는 과화려함, 꾸미다는 중립."
     },
     {
       "korean": "심하다 vs 지나치다",
       "english": "심하다 = severe/extreme (degree of intensity)\n지나치다 = excessive/going too far (crossing a line)",
       "example": "감기가 심하다. / 농담이 지나쳤다.",
       "example_en": "The cold is severe. / The joke went too far.",
-      "notes": "Compare 심하다 and 지나치다: 심하다 = severe/extreme (degree of intensity)\n지나치다 = excessive/going too far (crossing a line). See example for context difference."
+      "notes": "심하다=강도, 지나치다=선을넘음."
     },
     {
       "korean": "돕다 vs 거들다",
       "english": "돕다 = help (general, sincere assistance)\n거들다 = lend a hand / pitch in (lighter, supplementary help — sometimes implies doing the easy part)",
       "example": "이사할 때 친구가 도와줬다. / 거들기만 하고 힘든 건 안 했다.",
       "example_en": "My friend helped me move. / He only pitched in a little and didn't do the hard part.",
-      "notes": "Compare 돕다 and 거들다: 돕다 = help (general, sincere assistance)\n거들다 = lend a hand / pitch in (lighter, supplementary help — sometimes implies doing the easy part). See example for context difference."
+      "notes": "거들다는 쉬운부분만, 돕다는 진정."
     },
     {
       "korean": "아끼다 vs 절약하다",
       "english": "아끼다 = to cherish / save (emotional + practical — treasuring or being frugal)\n절약하다 = to economize / save (purely practical, resource-focused)",
       "example": "이 인형은 어릴 때부터 아끼던 거야. / 전기를 절약합시다.",
       "example_en": "I've treasured this doll since childhood. / Let's save electricity.",
-      "notes": "Compare 아끼다 and 절약하다: 아끼다 = to cherish / save (emotional + practical — treasuring or being frugal)\n절약하다 = to economize / save (purely practical, resource-focused). See example for context difference."
+      "notes": "아끼다=감정적, 절약하다=순수실질."
     },
     {
       "korean": "얕보다 vs 무시하다 vs 업신여기다",
@@ -2030,7 +2030,7 @@
       "english": "부추기다 = to egg on / instigate (negative: encouraging bad behavior)\n독려하다 = to encourage / urge on (positive: motivating toward good)",
       "example": "친구가 싸움을 부추겼다. / 선생님이 학생들을 독려했다.",
       "example_en": "My friend egged on the fight. / The teacher encouraged the students.",
-      "notes": "Compare 부추기다 and 독려하다: 부추기다 = to egg on / instigate (negative: encouraging bad behavior)\n독려하다 = to encourage / urge on (positive: motivating toward good). See example for context difference."
+      "notes": "부추기다=나쁜행동, 독려하다=선행."
     },
     {
       "korean": "풀다 vs 해결하다 vs 해소하다",
@@ -2044,7 +2044,7 @@
       "english": "떠맡다 = to get stuck with / take on reluctantly (burden, unwanted task)\n담당하다 = to be in charge of (neutral/official responsibility)",
       "example": "아무도 안 하려는 일을 내가 떠맡았다. / 마케팅을 담당하고 있습니다.",
       "example_en": "I got stuck with the work nobody wanted. / I'm in charge of marketing.",
-      "notes": "Compare 떠맡다 and 담당하다: 떠맡다 = to get stuck with / take on reluctantly (burden, unwanted task)\n담당하다 = to be in charge of (neutral/official responsibility). See example for context difference."
+      "notes": "떠맡다=부정, 담당하다=중립."
     },
     {
       "korean": "사그라지다 vs 가라앉다 vs 잦아들다",
@@ -2058,7 +2058,7 @@
       "english": "다그치다 = to press/pressure someone (aggressive, cornering — often with questions)\n재촉하다 = to urge/hurry someone (impatient but less hostile — wanting speed)",
       "example": "형사가 용의자를 다그쳤다. / 편집장이 마감을 재촉했다.",
       "example_en": "The detective pressed the suspect. / The editor urged the deadline.",
-      "notes": "Compare 다그치다 and 재촉하다: 다그치다 = to press/pressure someone (aggressive, cornering — often with questions)\n재촉하다 = to urge/hurry someone (impatient but less hostile — wanting speed). See example for context difference."
+      "notes": "다그치다는 공격적, 재촉하다는 덜적대."
     },
     {
       "korean": "낡다 vs 오래되다 vs 노후하다",
@@ -2093,14 +2093,14 @@
       "english": "억울하다 = to feel wronged / unjustly treated (external injustice done to you)\n분하다 = to feel indignant / frustrated (internal burning — you want to fight back)",
       "example": "도둑으로 몰려서 억울했다. / 지는 것이 분했다.",
       "example_en": "I felt wronged being accused of stealing. / Losing was infuriating.",
-      "notes": "Compare 억울하다 and 분하다: 억울하다 = to feel wronged / unjustly treated (external injustice done to you)\n분하다 = to feel indignant / frustrated (internal burning — you want to fight back). See example for context difference."
+      "notes": "억울하다=부당피해, 분하다=내부분노."
     },
     {
       "korean": "튀다 vs 눈에 띄다",
       "english": "튀다 = to stand out / stick out (can be negative — gaudy, weird)\n눈에 띄다 = to catch the eye / be noticeable (neutral to positive)",
       "example": "혼자 너무 튀는 옷을 입었다. / 성적이 눈에 띄게 올랐다.",
       "example_en": "He wore clothes that stuck out too much. / Grades improved noticeably.",
-      "notes": "Compare 튀다 and 눈에 띄다: 튀다 = to stand out / stick out (can be negative — gaudy, weird)\n눈에 띄다 = to catch the eye / be noticeable (neutral to positive). See example for context difference."
+      "notes": "튀다=부정과장, 눈에띄다=중립긍정."
     },
     {
       "korean": "서투르다 vs 미숙하다 vs 어설프다",
@@ -2121,7 +2121,7 @@
       "english": "가다듬다 = to compose / steady oneself (collecting thoughts, voice, emotions before acting)\n추스르다 = to pull oneself together (recovering from shock, grief, or collapse)",
       "example": "마음을 가다듬고 발표를 시작했다. / 슬픔을 추스르고 일어섰다.",
       "example_en": "I composed myself and began the presentation. / I pulled myself together from grief and stood up.",
-      "notes": "Compare 가다듬다 and 추스르다: 가다듬다 = to compose / steady oneself (collecting thoughts, voice, emotions before acting)\n추스르다 = to pull oneself together (recovering from shock, grief, or collapse). See example for context difference."
+      "notes": "가다듬다=행동전준비, 추스르다=회복."
     },
     {
       "korean": "흐릿하다 vs 희미하다 vs 어렴풋하다",
@@ -2184,14 +2184,14 @@
       "english": "그립다 = to miss / long for (deep, nostalgic yearning — places, times, people gone)\n보고 싶다 = to miss / want to see (direct, personal — actively wanting reunion)",
       "example": "고향이 그립다. / 엄마가 보고 싶다.",
       "example_en": "I miss my hometown. / I miss my mom (I want to see her).",
-      "notes": "Compare 그립다 and 보고 싶다: 그립다 = to miss / long for (deep, nostalgic yearning — places, times, people gone)\n보고 싶다 = to miss / want to see (direct, personal — actively wanting reunion). See example for context difference."
+      "notes": "그립다=향수, 보고싶다=재회욕구."
     },
     {
       "korean": "섭섭하다 vs 허전하다",
       "english": "섭섭하다 = disappointed / a bit hurt (by someone's actions or parting — interpersonal)\n허전하다 = feeling empty / something's missing (a void left behind — situational)",
       "example": "인사도 없이 가서 섭섭했다. / 그가 떠나니 마음이 허전하다.",
       "example_en": "I was hurt that you left without saying goodbye. / With him gone, I feel empty.",
-      "notes": "Compare 섭섭하다 and 허전하다: 섭섭하다 = disappointed / a bit hurt (by someone's actions or parting — interpersonal)\n허전하다 = feeling empty / something's missing (a void left behind — situational). See example for context difference."
+      "notes": "섭섭하다=대인상처, 허전하다=상황공허."
     },
     {
       "korean": "짜증나다 vs 화나다 vs 성나다",
@@ -2205,7 +2205,7 @@
       "english": "설레다 = to flutter / feel butterflies (romantic, hopeful anticipation)\n흥분하다 = to be excited / agitated (intense arousal — positive or negative, can imply losing composure)",
       "example": "첫 데이트라 설렌다. / 골이 들어가자 관중이 흥분했다.",
       "example_en": "I have butterflies because it's my first date. / The crowd got excited when the goal went in.",
-      "notes": "Compare 설레다 and 흥분하다: 설레다 = to flutter / feel butterflies (romantic, hopeful anticipation)\n흥분하다 = to be excited / agitated (intense arousal — positive or negative, can imply losing composure). See example for context difference."
+      "notes": "설레다=낭만, 흥분=절제상실."
     },
     {
       "korean": "안타깝다 vs 가엾다 vs 불쌍하다",
@@ -2219,7 +2219,7 @@
       "english": "뿌듯하다 = deeply satisfied / fulfilled (quiet inner pride from effort or nurturing)\n자랑스럽다 = proud (outward pride, wanting to show off or celebrate)",
       "example": "아이가 잘 자라서 뿌듯하다. / 대한민국이 자랑스럽다.",
       "example_en": "I feel fulfilled seeing my child grow well. / I'm proud of Korea.",
-      "notes": "Compare 뿌듯하다 and 자랑스럽다: 뿌듯하다 = deeply satisfied / fulfilled (quiet inner pride from effort or nurturing)\n자랑스럽다 = proud (outward pride, wanting to show off or celebrate). See example for context difference."
+      "notes": "뿌듯=조용한만족, 자랑=외향적."
     },
     {
       "korean": "민망하다 vs 창피하다 vs 부끄럽다",
@@ -2233,21 +2233,21 @@
       "english": "속상하다 = upset / vexed (frustrated distress, something eating at you)\n마음이 아프다 = heartbroken / heart aches (deeper emotional pain, empathy or loss)",
       "example": "시험에 떨어져서 속상하다. / 아픈 아이를 보면 마음이 아프다.",
       "example_en": "I'm upset about failing the exam. / It breaks my heart to see a sick child.",
-      "notes": "Compare 속상하다 and 마음이 아프다: 속상하다 = upset / vexed (frustrated distress, something eating at you)\n마음이 아프다 = heartbroken / heart aches (deeper emotional pain, empathy or loss). See example for context difference."
+      "notes": "속상=좌절, 마음=깊은감정."
     },
     {
       "korean": "허무하다 vs 공허하다",
       "english": "허무하다 = futile / anticlimactic (effort was pointless, 'all for nothing')\n공허하다 = hollow / void (existential emptiness, lack of meaning)",
       "example": "열심히 준비했는데 취소되어 허무하다. / 성공했지만 마음은 공허하다.",
       "example_en": "I prepared hard but it was canceled — so futile. / I succeeded but feel hollow inside.",
-      "notes": "Compare 허무하다 and 공허하다: 허무하다 = futile / anticlimactic (effort was pointless, 'all for nothing')\n공허하다 = hollow / void (existential emptiness, lack of meaning). See example for context difference."
+      "notes": "허무=무의미, 공허=실존."
     },
     {
       "korean": "짠하다 vs 측은하다",
       "english": "짠하다 = touching in a pitiful way / makes your heart ache (colloquial, emotional gut response)\n측은하다 = to feel compassion / pity (literary/formal, noble sympathy)",
       "example": "혼자 밥 먹는 모습이 짠하다. / 측은한 마음에 도와주었다.",
       "example_en": "Seeing them eat alone is heartbreaking. / I helped out of compassion.",
-      "notes": "Compare 짠하다 and 측은하다: 짠하다 = touching in a pitiful way / makes your heart ache (colloquial, emotional gut response)\n측은하다 = to feel compassion / pity (literary/formal, noble sympathy). See example for context difference."
+      "notes": "짠하다=구어, 측은하다=문학."
     },
     {
       "korean": "던지다 vs 내던지다 vs 집어던지다",
@@ -2261,7 +2261,7 @@
       "english": "끌다 = to drag / pull along (continuous, often heavy — also figurative: attract, prolong)\n당기다 = to pull toward oneself (quick, direct tug — also: craving food)",
       "example": "짐을 끌고 갔다. / 문을 당겨서 여세요. / 매운 게 당긴다.",
       "example_en": "Dragged the luggage along. / Pull the door to open it. / I'm craving something spicy.",
-      "notes": "Compare 끌다 and 당기다: 끌다 = to drag / pull along (continuous, often heavy — also figurative: attract, prolong)\n당기다 = to pull toward oneself (quick, direct tug — also: craving food). See example for context difference."
+      "notes": "끌다=지속(비유:매력), 당기다=빠른."
     },
     {
       "korean": "흔들다 vs 떨다 vs 진동하다",
@@ -2296,7 +2296,7 @@
       "english": "붙잡다 = to grab / hold onto (catching or restraining — people, opportunities)\n움켜쥐다 = to clutch / grip tightly (forceful, desperate grasp)",
       "example": "도망치는 도둑을 붙잡았다. / 그녀는 그의 손을 움켜쥐었다.",
       "example_en": "Caught the fleeing thief. / She clutched his hand tightly.",
-      "notes": "Compare 붙잡다 and 움켜쥐다: 붙잡다 = to grab / hold onto (catching or restraining — people, opportunities)\n움켜쥐다 = to clutch / grip tightly (forceful, desperate grasp). See example for context difference."
+      "notes": "붙잡=잡기, 움켜쥐=절박."
     },
     {
       "korean": "흘리다 vs 쏟다 vs 엎지르다",
@@ -2338,7 +2338,7 @@
       "english": "속삭이다 = to whisper (soft, intimate, poetic — lovers, wind, secrets)\n귓속말하다 = to whisper into someone's ear (physical act, secretive, childlike)",
       "example": "그가 사랑한다고 속삭였다. / 친구에게 귓속말로 비밀을 전했다.",
       "example_en": "He whispered 'I love you.' / I whispered the secret into my friend's ear.",
-      "notes": "Compare 속삭이다 and 귓속말하다: 속삭이다 = to whisper (soft, intimate, poetic — lovers, wind, secrets)\n귓속말하다 = to whisper into someone's ear (physical act, secretive, childlike). See example for context difference."
+      "notes": "속삭=시적, 귓속말=물리."
     },
     {
       "korean": "외치다 vs 소리치다 vs 고함치다",
@@ -2366,14 +2366,14 @@
       "english": "의심하다 = to doubt / suspect (direct suspicion of a person or claim)\n수상히 여기다 = to find suspicious / sense something fishy (observation-based, preliminary unease)",
       "example": "그의 말을 의심했다. / 행동이 이상해서 수상히 여겼다.",
       "example_en": "I doubted his words. / His behavior was odd, so I found it suspicious.",
-      "notes": "Compare 의심하다 and 수상히 여기다: 의심하다 = to doubt / suspect (direct suspicion of a person or claim)\n수상히 여기다 = to find suspicious / sense something fishy (observation-based, preliminary unease). See example for context difference."
+      "notes": "의심=직접, 수상=관찰."
     },
     {
       "korean": "설득하다 vs 꼬드기다",
       "english": "설득하다 = to persuade / convince (rational, legitimate arguments)\n꼬드기다 = to coax / sweet-talk into (manipulative, tempting someone into something)",
       "example": "부모님을 설득해서 허락을 받았다. / 친구를 꼬드겨서 같이 수업을 빠졌다.",
       "example_en": "I persuaded my parents and got permission. / I sweet-talked my friend into skipping class together.",
-      "notes": "Compare 설득하다 and 꼬드기다: 설득하다 = to persuade / convince (rational, legitimate arguments)\n꼬드기다 = to coax / sweet-talk into (manipulative, tempting someone into something). See example for context difference."
+      "notes": "설득=이성, 꼬드=조종."
     },
     {
       "korean": "중얼거리다 vs 투덜거리다 vs 불평하다",
@@ -2471,7 +2471,7 @@
       "english": "자다 = to sleep (plain/casual)\n주무시다 = to sleep (honorific — used for parents, elders, superiors)",
       "example": "나 먼저 잘게. / 아버지는 일찍 주무셨다.",
       "example_en": "I'll go to sleep first. / Father went to sleep early.",
-      "notes": "Compare 자다 and 주무시다: 자다 = to sleep (plain/casual)\n주무시다 = to sleep (honorific — used for parents, elders, superiors). See example for context difference."
+      "notes": "주무시다=부모경어, 자다=평문."
     },
     {
       "korean": "주다 vs 드리다 vs 하사하다",
@@ -2485,14 +2485,14 @@
       "english": "있다 = to be / exist / stay (plain)\n계시다 = to be / exist / stay (honorific — referring to esteemed persons' location or existence)",
       "example": "형은 집에 있어. / 사장님은 회의실에 계십니다.",
       "example_en": "My brother is at home. / The president is in the conference room.",
-      "notes": "Compare 있다 and 계시다: 있다 = to be / exist / stay (plain)\n계시다 = to be / exist / stay (honorific — referring to esteemed persons' location or existence). See example for context difference."
+      "notes": "계시다=공식격상, 있다=중립."
     },
     {
       "korean": "말 vs 말씀",
       "english": "말 = words / speech (plain)\n말씀 = words / speech (honorific — elevating the speaker's words, or humble when referring to one's own words to a superior)",
       "example": "무슨 말이야? / 말씀 감사합니다. / 말씀드릴 게 있습니다.",
       "example_en": "What are you saying? / Thank you for your words. / I have something to tell you (humbly).",
-      "notes": "Compare 말 and 말씀: 말 = words / speech (plain)\n말씀 = words / speech (honorific — elevating the speaker's words, or humble when referring to one's own words to a superior). See example for context difference."
+      "notes": "말씈은존경·겸손을전달, 상급자자신의견도겸손."
     },
     {
       "korean": "죽다 vs 돌아가시다 vs 서거하다",
@@ -2506,14 +2506,14 @@
       "english": "데리고 가다 = to take someone along (plain — children, juniors, peers)\n모시고 가다 = to escort / accompany someone (humble honorific — elders, superiors)",
       "example": "아이를 데리고 병원에 갔다. / 어머니를 모시고 병원에 갔다.",
       "example_en": "Took the child to the hospital. / Accompanied my mother to the hospital.",
-      "notes": "Compare 데리고 가다 and 모시고 가다: 데리고 가다 = to take someone along (plain — children, juniors, peers)\n모시고 가다 = to escort / accompany someone (humble honorific — elders, superiors). See example for context difference."
+      "notes": "데리고 가다 is casual (peers/juniors); 모시고 가다 is honorific for elders/superiors."
     },
     {
       "korean": "보다 vs 뵙다",
       "english": "보다 = to see / meet (plain)\n뵙다 = to see / meet (humble honorific — meeting someone of higher status)",
       "example": "내일 친구를 만나서 봐야 해. / 처음 뵙겠습니다.",
       "example_en": "I need to see my friend tomorrow. / It's nice to meet you (humble, formal).",
-      "notes": "Compare 보다 and 뵙다: 보다 = to see / meet (plain)\n뵙다 = to see / meet (humble honorific — meeting someone of higher status). See example for context difference."
+      "notes": "뵙다 is humble form of 보다 used only toward superiors. 뵙다 cannot take objects like TV/movies."
     },
     {
       "korean": "나이 vs 연세 vs 춘추",
@@ -2534,49 +2534,49 @@
       "english": "전하다 = to convey / pass along (warm, personal — relaying a message or feelings)\n통보하다 = to notify / inform officially (cold, one-directional — formal decisions, results)",
       "example": "안부를 전해 주세요. / 합격 여부는 이메일로 통보됩니다.",
       "example_en": "Please convey my regards. / Pass/fail status will be notified by email.",
-      "notes": "Compare 전하다 and 통보하다: 전하다 = to convey / pass along (warm, personal — relaying a message or feelings)\n통보하다 = to notify / inform officially (cold, one-directional — formal decisions, results). See example for context difference."
+      "notes": "전하다 is neutral delivery; 통보하다 implies one-way official notice, often unwelcome news."
     },
     {
       "korean": "강조하다 vs 역설하다",
       "english": "강조하다 = to emphasize / stress (highlighting importance — general)\n역설하다 = to insist / argue passionately (persuading against opposition, advocating forcefully)",
       "example": "안전의 중요성을 강조했다. / 그는 평화의 필요성을 역설했다.",
       "example_en": "Emphasized the importance of safety. / He passionately argued the need for peace.",
-      "notes": "Compare 강조하다 and 역설하다: 강조하다 = to emphasize / stress (highlighting importance — general)\n역설하다 = to insist / argue passionately (persuading against opposition, advocating forcefully). See example for context difference."
+      "notes": "강조하다 is general emphasis; 역설하다 implies passionate, persuasive argumentation."
     },
     {
       "korean": "호소하다 vs 탄원하다",
       "english": "호소하다 = to appeal / plead (calling for sympathy or public support)\n탄원하다 = to petition / beg (formal supplication to authority — legal, desperate)",
       "example": "시민들에게 협조를 호소했다. / 판사에게 선처를 탄원했다.",
       "example_en": "Appealed to citizens for cooperation. / Petitioned the judge for leniency.",
-      "notes": "Compare 호소하다 and 탄원하다: 호소하다 = to appeal / plead (calling for sympathy or public support)\n탄원하다 = to petition / beg (formal supplication to authority — legal, desperate). See example for context difference."
+      "notes": "호소하다 is a public appeal; 탄원하다 is a formal plea to authority, often written."
     },
     {
       "korean": "지적하다 vs 꼬집다",
       "english": "지적하다 = to point out / indicate (neutral, identifying a flaw or fact)\n꼬집다 = to pinch / single out and criticize (sharper, targeting a specific problem pointedly)",
       "example": "문제점을 지적했다. / 언론이 정부의 모순을 꼬집었다.",
       "example_en": "Pointed out the problems. / The media singled out the government's contradictions.",
-      "notes": "Compare 지적하다 and 꼬집다: 지적하다 = to point out / indicate (neutral, identifying a flaw or fact)\n꼬집다 = to pinch / single out and criticize (sharper, targeting a specific problem pointedly). See example for context difference."
+      "notes": "지적하다 is neutral/formal criticism; 꼬집다 is sharper, more pointed critique."
     },
     {
       "korean": "변명하다 vs 해명하다",
       "english": "변명하다 = to make excuses (defensive, often seen as dodging blame)\n해명하다 = to clarify / explain (attempting to clear up a misunderstanding, more dignified)",
       "example": "또 변명만 늘어놓을 거야? / 회사 측이 사건에 대해 해명했다.",
       "example_en": "Are you just going to make excuses again? / The company clarified the incident.",
-      "notes": "Compare 변명하다 and 해명하다: 변명하다 = to make excuses (defensive, often seen as dodging blame)\n해명하다 = to clarify / explain (attempting to clear up a misunderstanding, more dignified). See example for context difference."
+      "notes": "변명하다 has negative connotation (excuses); 해명하다 is neutral clarification of facts."
     },
     {
       "korean": "맹세하다 vs 다짐하다",
       "english": "맹세하다 = to swear / vow (solemn, sacred — often invoking God or honor)\n다짐하다 = to resolve / pledge to oneself (personal determination, self-promise)",
       "example": "영원한 사랑을 맹세했다. / 올해는 꼭 금연하겠다고 다짐했다.",
       "example_en": "Swore eternal love. / I resolved to definitely quit smoking this year.",
-      "notes": "Compare 맹세하다 and 다짐하다: 맹세하다 = to swear / vow (solemn, sacred — often invoking God or honor)\n다짐하다 = to resolve / pledge to oneself (personal determination, self-promise). See example for context difference."
+      "notes": "맹세하다 is a solemn oath (religious/legal); 다짐하다 is personal resolve/promise."
     },
     {
       "korean": "칭찬하다 vs 추켜세우다",
       "english": "칭찬하다 = to compliment / praise (genuine, appropriate recognition)\n추켜세우다 = to flatter / praise lavishly (exaggerated, sometimes insincere — puffing someone up)",
       "example": "선생님이 학생을 칭찬했다. / 아부하려고 상사를 추켜세웠다.",
       "example_en": "The teacher praised the student. / Flattered the boss to curry favor.",
-      "notes": "Compare 칭찬하다 and 추켜세우다: 칭찬하다 = to compliment / praise (genuine, appropriate recognition)\n추켜세우다 = to flatter / praise lavishly (exaggerated, sometimes insincere — puffing someone up). See example for context difference."
+      "notes": "추켜세우다 can imply excessive or insincere flattery; 칭찬하다 is genuine praise."
     },
     {
       "korean": "꾸짖다 vs 야단치다 vs 혼내다",
@@ -2590,35 +2590,35 @@
       "english": "맞장구치다 = to chime in / echo agreement (conversational, affirming what someone says enthusiastically)\n동조하다 = to side with / go along with (aligning oneself with an opinion or movement — can be passive)",
       "example": "그녀가 말할 때마다 맞장구를 쳤다. / 여론에 동조하여 입장을 바꿨다.",
       "example_en": "Chimed in every time she spoke. / Changed position by going along with public opinion.",
-      "notes": "Compare 맞장구치다 and 동조하다: 맞장구치다 = to chime in / echo agreement (conversational, affirming what someone says enthusiastically)\n동조하다 = to side with / go along with (aligning oneself with an opinion or movement — can be passive). See example for context difference."
+      "notes": "맞장구치다 is casual active agreement in conversation; 동조하다 is formal alignment with a position."
     },
     {
       "korean": "공감하다 vs 동의하다",
       "english": "공감하다 = to empathize / relate to (emotional resonance — feeling the same way)\n동의하다 = to agree / consent (intellectual alignment — accepting a proposition)",
       "example": "그 말에 깊이 공감했다. / 제안에 동의합니다.",
       "example_en": "I deeply related to those words. / I agree with the proposal.",
-      "notes": "Compare 공감하다 and 동의하다: 공감하다 = to empathize / relate to (emotional resonance — feeling the same way)\n동의하다 = to agree / consent (intellectual alignment — accepting a proposition). See example for context difference."
+      "notes": "공감하다 is emotional empathy; 동의하다 is intellectual/logical agreement."
     },
     {
       "korean": "토로하다 vs 하소연하다",
       "english": "토로하다 = to confide / pour out one's feelings (earnest, opening up about deep emotions)\n하소연하다 = to complain / lament to someone (seeking sympathy, telling one's troubles to others)",
       "example": "오랫동안 품었던 심정을 토로했다. / 친구에게 직장 고충을 하소연했다.",
       "example_en": "Poured out feelings held inside for a long time. / Lamented about work hardships to a friend.",
-      "notes": "Compare 토로하다 and 하소연하다: 토로하다 = to confide / pour out one's feelings (earnest, opening up about deep emotions)\n하소연하다 = to complain / lament to someone (seeking sympathy, telling one's troubles to others). See example for context difference."
+      "notes": "토로하다 is confiding deep feelings; 하소연하다 implies seeking sympathy for hardship."
     },
     {
       "korean": "핑계 대다 vs 구실을 삼다",
       "english": "핑계 대다 = to make an excuse (casual, dodging responsibility — everyone knows it's an excuse)\n구실을 삼다 = to use as a pretext (calculated, finding justification for a hidden purpose)",
       "example": "아프다고 핑계 대고 안 왔다. / 사소한 실수를 구실 삼아 해고했다.",
       "example_en": "Made an excuse of being sick and didn't come. / Used a minor mistake as a pretext to fire them.",
-      "notes": "Compare 핑계 대다 and 구실을 삼다: 핑계 대다 = to make an excuse (casual, dodging responsibility — everyone knows it's an excuse)\n구실을 삼다 = to use as a pretext (calculated, finding justification for a hidden purpose). See example for context difference."
+      "notes": "핑계 대다 is casual excuse-making; 구실을 삼다 is more deliberate pretext, often strategic."
     },
     {
       "korean": "항의하다 vs 이의를 제기하다",
       "english": "항의하다 = to protest / object (active, emotional — demonstrations, angry complaints)\n이의를 제기하다 = to raise an objection (formal, procedural — legal, meetings, logical disagreement)",
       "example": "판정에 항의했다. / 결정에 대해 공식적으로 이의를 제기했다.",
       "example_en": "Protested the ruling. / Formally raised an objection to the decision.",
-      "notes": "Compare 항의하다 and 이의를 제기하다: 항의하다 = to protest / object (active, emotional — demonstrations, angry complaints)\n이의를 제기하다 = to raise an objection (formal, procedural — legal, meetings, logical disagreement). See example for context difference."
+      "notes": "항의하다 is emotional protest; 이의를 제기하다 is formal/legal objection."
     },
     {
       "korean": "부인하다 vs 부정하다",
