@@ -554,7 +554,7 @@ function setupOptionHandlers(onSelect, extraKeys) {
     onSelect(idx);
   };
   btns.forEach(btn => {
-    btn.onclick = () => fire(parseInt(btn.dataset.idx));
+    btn.onclick = () => { const idx = parseInt(btn.dataset.idx); if (!isNaN(idx)) fire(idx); };
   });
   setKeyHandler(e => {
     const num = parseInt(e.key);
@@ -644,12 +644,12 @@ function showSummary(reviewed, correct, mistakes, ratings, sessionStart) {
             stroke-linecap="round" stroke-dasharray="${circ}" stroke-dashoffset="${circ}"
             transform="rotate(-90 65 65)" style="transition: stroke-dashoffset 1s ease-out"/>
           <text x="65" y="65" text-anchor="middle" dominant-baseline="central"
-            fill="${ringColor}" font-size="28" font-weight="bold" class="acc-number">0%</text>
+            fill="${ringColor}" font-size="28" font-weight="bold" class="acc-number">${accPct}%</text>
         </svg>
       </div>
       <div class="summary-stats">
-        <div class="summary-stat"><div class="value count-up" data-target="${reviewed}">0</div><div class="label">Reviewed</div></div>
-        <div class="summary-stat"><div class="value count-up" data-target="${correct}">0</div><div class="label">Correct</div></div>
+        <div class="summary-stat"><div class="value count-up" data-target="${reviewed}">${reviewed}</div><div class="label">Reviewed</div></div>
+        <div class="summary-stat"><div class="value count-up" data-target="${correct}">${correct}</div><div class="label">Correct</div></div>
         ${durationHtml}
       </div>
       ${ratingBreakdown}

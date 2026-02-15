@@ -1,4 +1,4 @@
-const CACHE_NAME = 'korean-coach-v15';
+const CACHE_NAME = 'korean-coach-v16';
 const ASSETS = [
   './',
   './index.html',
