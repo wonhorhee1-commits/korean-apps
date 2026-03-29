@@ -1,4 +1,4 @@
-const CACHE_NAME = 'beginner-korean-v17';
+const CACHE_NAME = 'beginner-korean-v18';
 const ASSETS = [
   './',
   './index.html',

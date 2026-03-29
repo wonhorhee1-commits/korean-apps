@@ -1261,6 +1261,7 @@ function runGrammarSession(cards) {
           di.focus();
           di.onkeydown = e => {
             if (e.key === 'Enter') {
+              e.stopPropagation();
               const isCorrect = di.value.trim() === entry.drill.answer;
               document.getElementById('drill-result').innerHTML = `
                 <div class="reveal ${isCorrect ? 'result-correct' : 'result-incorrect'}" style="margin-top:12px">
@@ -1272,7 +1273,7 @@ function runGrammarSession(cards) {
               di.disabled = true;
               engine.setupRating(id);
             }
-            if (e.key === 'Escape') showMenu();
+            if (e.key === 'Escape') { e.stopPropagation(); showMenu(); }
           };
         }
         return false; // Don't setup rating yet — wait for drill input

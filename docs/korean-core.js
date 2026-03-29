@@ -588,8 +588,8 @@ function setupTextInput(onReveal, timerSeconds) {
   const showBtn = document.getElementById('show-answer');
   if (showBtn) showBtn.onclick = reveal;
   input.onkeydown = e => {
-    if (e.key === 'Enter') reveal();
-    if (e.key === 'Escape') { clearTimer(); _cfg.showMenu(); }
+    if (e.key === 'Enter') { e.stopPropagation(); reveal(); }
+    if (e.key === 'Escape') { e.stopPropagation(); clearTimer(); _cfg.showMenu(); }
   };
 }
 
